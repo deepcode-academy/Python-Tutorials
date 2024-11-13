@@ -15,6 +15,7 @@
 #     kiritma = input("So'z kiriting (to'xtatish uchun 'stop' yozing): ")
 #     print(f"Siz '{kiritma}' so'zini kiritdingiz")
 
+#
 # sonlar = [1, 3, 5, 7, 9, 11]
 # i = 0
 #
@@ -24,8 +25,9 @@
 #         break
 #     i += 1
 
-#
-# sonlar = [-2, -1, 0, 1, 2, 3]
+
+
+# sonlar = [-2, -1, 0, 1, 2, 3, -5]
 # i = 0
 #
 # while i < len(sonlar):

@@ -47,7 +47,7 @@ import os
 
 
 # Ikkilik faylni o'qish
-# with open("img.png", "rb") as img:
+# with open("selectos.png", "rb") as img:
 #     data = img.read()
 #     print(data)
 
@@ -65,7 +65,7 @@ import os
 # os.rename("file.txt", "python.jpg")
 
 # Fayl mavjudligini tekshirish
-# if os.path.exists("img.png"):
+# if os.path.exists("selectos.png"):
 #     print("File exists")
 # else:
 #     print("File not found")
