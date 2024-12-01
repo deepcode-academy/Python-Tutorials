@@ -14,8 +14,17 @@
 ### CREATING A LIST
 
 ```python
-my_list = [1, 2, 3, 4, 5]
-print(my_list)
+# An empty list
+empty_list = []
+print(empty_list)
+
+# A list of integers
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+
+# A list of strings
+fruits = ["apple", "banana", "
+print(fruits)
 ```
 
 ### RO'YHATLARGA MUROJAT QILISH
