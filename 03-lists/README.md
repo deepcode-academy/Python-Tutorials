@@ -5,7 +5,11 @@
 
 ## WORKING WITH PYTHON LISTS
 
-Python dasturlash tilida ro'yxatlar (`lists`) bir nechta qiymatlarni bitta o'zgaruvchiga saqlash imkonini beradi. Ro'yxatlar `dinamik` tuzilma bo'lib, ular yaratishdan keyin ham o'zgartirilishi mumkin.
+> [!NOTE]
+> `List` `ordered`, `mutable` va turli xil ma'lumot turlarini (`integer`, `string`, `float`, `even other lists` ham) saqlay oladigan ma'lumotlar turi hisoblanadi 
+
+
+
 
 ### CREATING A LIST
 
