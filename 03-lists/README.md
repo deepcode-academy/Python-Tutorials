@@ -6,7 +6,7 @@
 ## WORKING WITH PYTHON LISTS
 
 > [!NOTE]
-> `List` `ordered`, `mutable` va turli xil ma'lumot turlarini (`integer`, `string`, `float`, `even other lists` ham) saqlay oladigan ma'lumotlar turi hisoblanadi 
+> `List` - `ordered`, `mutable` va turli xil ma'lumot turlarini (`integer`, `string`, `float`, `even other lists` ham) saqlay oladigan ma'lumotlar turi hisoblanadi 
 
 
 
