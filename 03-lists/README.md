@@ -23,8 +23,12 @@ numbers = [1, 2, 3, 4, 5]
 print(numbers)
 
 # A list of strings
-fruits = ["apple", "banana", "
+fruits = ["apple", "banana", "cherry"]
 print(fruits)
+
+# A mixed list
+mixed = [1, "hello", 3.14, [7, 8, 9]]
+print(mixed)
 ```
 
 ### RO'YHATLARGA MUROJAT QILISH
