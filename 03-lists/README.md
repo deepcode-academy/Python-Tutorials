@@ -3,7 +3,7 @@
 # LISTS
 
 
-## LISTS RO'YHATLAR BILAN ISHLASH
+## WORKING WITH PYTHON LISTS
 
 Python dasturlash tilida ro'yxatlar (`lists`) bir nechta qiymatlarni bitta o'zgaruvchiga saqlash imkonini beradi. Ro'yxatlar `dinamik` tuzilma bo'lib, ular yaratishdan keyin ham o'zgartirilishi mumkin.
 
