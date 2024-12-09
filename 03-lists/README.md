@@ -1,13 +1,9 @@
-# PYTHON DASTURLASH ASOSLARI
-
 # LISTS
-
 
 ## WORKING WITH PYTHON LISTS
 
 > [!NOTE]
 > `List` - `ordered`, `mutable` va turli xil ma'lumot turlarini (`integer`, `string`, `float`, `even other lists` ham) saqlay oladigan ma'lumotlar turi hisoblanadi 
-
 
 
 
@@ -31,7 +27,7 @@ mixed = [1, "hello", 3.14, [7, 8, 9]]
 print(mixed)
 ```
 
-### RO'YHATLARGA MUROJAT QILISH
+### ACCESSING LIST ELEMENTS
 
 > [!CAUTION]
 > Dasturlash olamida indeks `0` dan boshlanadi! Ya'ni Listning birinchi elementing tartib raqami (indeksi) `0` ga, ikkinchi elementning indeksi `1` ga teng va hokazo.
