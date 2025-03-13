@@ -202,14 +202,6 @@ aholi_soni = 7_594_000_000 # o'qishga qulay bo'lishi uchun shunaqa ko'rinishda y
 print("Yer sharida", aholi_soni, "ga yaqin odam yashaydi")
 ```
 
-### KONSTANTA
-
-Aksar dasturlash tillarida `konstant` qiymatlar tushunchasi bor. Konstantlar o'zgarmas bo'ladi (misol uchun `π` ning qiymati konstant, o'zgarmas qiymat). Pythonda konstant tushunchasi yo'q, shuning uchun dasturchilar bunday o'zgaruvchilarning nomini katta harflar bilan yozadilar (`ogohlantirish sifatida`). Bu albatta qat'iy qonun emas, lekin kelajakda o'zgaruvchilar orasida konstant qiymatlarni ajratish uchun yaxshi usul.
-
-```python
-PI = 3.14159
-radius = 20.7
-```
 
 ### BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
 Birdaniga bir nechta o'zgaruvchiga qiymat berish uchun o'zgaruvchilar va ularga mos qiymatlar vergul (`,`) bilan ajratiladi:
