@@ -48,3 +48,32 @@ conn.close()
 Ma’lumotlar bazasiga bog‘landik!
 ```
 ⏩ Agar "students.db" bazasi mavjud bo‘lmasa, yangi fayl hosil bo‘ladi.
+
+### Jadval yaratish
+
+- Jadval yaratish uchun CREATE TABLE SQL buyrug‘idan foydalanamiz.
+
+```python
+import sqlite3
+
+# Bazaga ulanish
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+# Studentlar jadvalini yaratamiz
+cur.execute("""
+CREATE TABLE IF NOT EXISTS students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    grade TEXT NOT NULL
+)
+""")
+
+print("Jadval yaratildi!")
+
+# O‘zgarishlarni saqlaymiz va ulanishni yopamiz
+conn.commit()
+conn.close()
+```
+
