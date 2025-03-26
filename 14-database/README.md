@@ -25,7 +25,7 @@
 
 ### Ma’lumotlar bazasiga ulanish
 
-- Ma’lumotlar bazasiga ulanish uchun sqlite3.connect() funksiyasidan foydalanamiz.
+- Ma’lumotlar bazasiga ulanish uchun `sqlite3.connect()` funksiyasidan foydalanamiz.
 
 ```python
 import sqlite3
@@ -120,4 +120,42 @@ conn.commit()
 conn.close()
 ```
 
+## Ma’lumotlarni o‘qish
 
+- Jadvaldagi barcha ma’lumotlarni olish uchun `SELECT` buyrug‘idan foydalanamiz.
+
+```python
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+cur.execute("SELECT * FROM students")  # Barcha yozuvlarni olish
+students = cur.fetchall()  # Ma’lumotlarni list ko‘rinishida olish
+
+for student in students:
+    print(student)
+
+conn.close()
+```
+
+**⏩ Natija:**
+
+```shell
+(1, 'Ali', 20, 'A')
+(2, 'Vali', 19, 'B')
+(3, 'Hasan', 21, 'A')
+(4, 'Shahnoza', 20, 'C')
+```
+
+- Agar faqat bitta ma’lumot olish kerak bo‘lsa:
+
+```python
+cur.execute("SELECT * FROM students WHERE name = ?", ("Ali",))
+student = cur.fetchone()
+print(student)
+```
+
+**Natija:**
+
+```shell
+(1, 'Ali', 20, 'A')
+```
