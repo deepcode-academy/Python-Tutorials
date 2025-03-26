@@ -271,3 +271,10 @@ finally:
 11. Fakultet bo‘yicha qidirish
     - Foydalanuvchidan fakultet nomini so‘rang.
     - Shu fakultetdagi talabalarni chiqaring.
+
+12. Eng yosh talabani topish
+    - `"students"` jadvalidan eng yosh talabani toping.
+
+13. Talabaning yoshini yangilash
+    - `"name"` ismli talabaning yoshini `21` ga o‘zgartiring.
+
