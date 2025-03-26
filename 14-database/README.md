@@ -264,3 +264,10 @@ finally:
    - `name TEXT NOT NULL`,
    - `age INTEGER NOT NULL`,
    - `faculty TEXT NOT NULL`.
+
+10. Talabalar jadvaliga ma’lumot qo‘shish
+    - `"students"` jadvaliga kamida 5 ta talaba haqida ma’lumot kiriting.
+
+11. Fakultet bo‘yicha qidirish
+    - Foydalanuvchidan fakultet nomini so‘rang.
+    - Shu fakultetdagi talabalarni chiqaring.
