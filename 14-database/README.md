@@ -217,3 +217,20 @@ finally:
 ```
 
 # PRACTICS
+
+1. Yangi jadval yaratish
+   - `"library.db"` nomli SQLite bazasini yarating.
+   - `"books"` nomli jadval yarating (`id`, `title`, `author`, `year`).
+   - PK: `id INTEGER PRIMARY KEY AUTOINCREMENT.`
+   - NOT NULL: `title`, `author`, `year`.
+
+2. Kitoblar ma’lumotlarini kiritish
+   - `"books"` jadvaliga quyidagi ma’lumotlarni kiriting:
+   - `executemany()` funksiyasidan foydalaning.
+
+| id  | title              | author        | year  |
+|-----|--------------------|---------------|-------|
+| 1   | Python Basics      | John Smith    | 2020  |
+| 2   | SQL for Beginners  | Alice Brown   | 2018  |
+| 3   | Data Science Guide | Michael Clark | 2021  |
+
