@@ -250,3 +250,17 @@ finally:
 6. Eng eski kitobni topish
     - `"books"` jadvalidan chiqish yili eng kichik bo‘lgan kitobni toping.
 
+7. 2020-yildan keyin chiqqan kitoblarni chiqarish
+   - `"books"` jadvalidan `2020` yildan keyin chiqqan kitoblarni chiqarish kodini yozing.
+
+8. Kitobni o‘chirish
+   - `"Data Science Guide"` kitobini `"books"` jadvalidan o‘chiring.
+   - O‘chirilganidan keyin jadvaldagi barcha kitoblarni ekranga chiqaring.
+
+9. Talabalar jadvallarini yaratish
+   - `"university.db"` bazasini yarating.
+   - `"students"` jadvalini yarating:
+   - `id INTEGER PRIMARY KEY AUTOINCREMENT`,
+   - `name TEXT NOT NULL`,
+   - `age INTEGER NOT NULL`,
+   - `faculty TEXT NOT NULL`.
