@@ -77,3 +77,47 @@ conn.commit()
 conn.close()
 ```
 
+- `id INTEGER PRIMARY KEY AUTOINCREMENT` – har bir yozuv uchun unikal ID yaratiladi.
+- `name TEXT NOT NULL` – talabalar ismi matn ko‘rinishida bo‘ladi.
+- `age INTEGER NOT NULL` – yosh raqam ko‘rinishida bo‘ladi.
+- `grade TEXT NOT NULL` – baho matn sifatida saqlanadi.
+
+### Ma’lumot qo‘shish
+
+- Ma’lumot qo‘shish uchun INSERT INTO buyrug‘idan foydalanamiz.
+
+```python
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+# Bitta talaba qo‘shamiz
+cur.execute("INSERT INTO students (name, age, grade) VALUES (?, ?, ?)", ("Ali", 20, "A"))
+
+print("Ma’lumot qo‘shildi!")
+
+conn.commit()
+conn.close()
+```
+
+- Agar bir nechta ma’lumot qo‘shmoqchi bo‘lsak:
+
+```python
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+# Bir nechta yozuv qo‘shish
+students = [
+    ("Vali", 19, "B"),
+    ("Hasan", 21, "A"),
+    ("Shahnoza", 20, "C")
+]
+
+cur.executemany("INSERT INTO students (name, age, grade) VALUES (?, ?, ?)", students)
+
+print("Bir nechta yozuv qo‘shildi!")
+
+conn.commit()
+conn.close()
+```
+
+
