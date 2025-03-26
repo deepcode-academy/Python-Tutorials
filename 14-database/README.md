@@ -120,7 +120,7 @@ conn.commit()
 conn.close()
 ```
 
-## Ma’lumotlarni o‘qish
+### Ma’lumotlarni o‘qish
 
 - Jadvaldagi barcha ma’lumotlarni olish uchun `SELECT` buyrug‘idan foydalanamiz.
 
@@ -215,3 +215,5 @@ except sqlite3.Error as e:
 finally:
     conn.close()
 ```
+
+# PRACTICS
