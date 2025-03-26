@@ -242,3 +242,11 @@ finally:
     - Foydalanuvchidan **muallif nomini** so‘rang.
     - Shu muallif tomonidan yozilgan barcha kitoblarni chiqaring.
     - Agar kitob topilmasa, `"Bu muallifning kitoblari yo'q"` deb chiqaring.
+
+5. Kitob yilini yangilash
+   - `"SQL for Beginners"` kitobining chiqish yilini `2019` ga o‘zgartiring.
+   - Yangilangan ma’lumotni ekranga chiqaring.
+
+6. Eng eski kitobni topish
+    - `"books"` jadvalidan chiqish yili eng kichik bo‘lgan kitobni toping.
+
