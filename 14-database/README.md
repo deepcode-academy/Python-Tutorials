@@ -19,3 +19,32 @@
   - **Ma’lumot qo‘shish** – Bazaga yangi malumotlar kiritish.
   - **Ma’lumotlarni o‘qish** – Jadvaldagi ma’lumotlarni olish.
   - **Ma’lumotlarni yangilash** va o‘chirish – Malumotlarni o‘zgartirish yoki o‘chirish.
+
+
+## SQLite bilan ishlashni boshlash
+
+### Ma’lumotlar bazasiga ulanish
+
+- Ma’lumotlar bazasiga ulanish uchun sqlite3.connect() funksiyasidan foydalanamiz.
+
+```python
+import sqlite3
+
+# students.db nomli ma’lumotlar bazasiga ulanamiz
+conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
+cur = conn.cursor()
+
+print("Ma’lumotlar bazasiga bog‘landik!")
+
+# Ulashni yopamiz
+conn.close()
+```
+
+**Result:**
+
+```markdown
+Ma’lumotlar bazasiga bog‘landik!
+```
+⏩ Agar "students.db" bazasi mavjud bo‘lmasa, yangi fayl hosil bo‘ladi.
