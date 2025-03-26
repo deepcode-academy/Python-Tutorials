@@ -47,11 +47,11 @@ conn.close()
 ```markdown
 Ma’lumotlar bazasiga bog‘landik!
 ```
-⏩ Agar "students.db" bazasi mavjud bo‘lmasa, yangi fayl hosil bo‘ladi.
+⏩ Agar `"students.db"` bazasi mavjud bo‘lmasa, yangi fayl hosil bo‘ladi.
 
 ### Jadval yaratish
 
-- Jadval yaratish uchun CREATE TABLE SQL buyrug‘idan foydalanamiz.
+- Jadval yaratish uchun `CREATE TABLE` SQL buyrug‘idan foydalanamiz.
 
 ```python
 import sqlite3
@@ -84,7 +84,7 @@ conn.close()
 
 ### Ma’lumot qo‘shish
 
-- Ma’lumot qo‘shish uchun INSERT INTO buyrug‘idan foydalanamiz.
+- Ma’lumot qo‘shish uchun `INSERT INTO` buyrug‘idan foydalanamiz.
 
 ```python
 conn = sqlite3.connect("students.db")
