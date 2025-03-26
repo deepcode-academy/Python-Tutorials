@@ -193,3 +193,25 @@ print("Ma’lumot o‘chirildi!")
 conn.commit()
 conn.close()
 ```
+
+## Xatoliklarni ushlash
+
+- Ma’lumotlar bazasi bilan ishlaganda xatoliklarni ushlash muhim.
+
+```python
+try:
+    conn = sqlite3.connect("students.db")
+    cur = conn.cursor()
+
+    cur.execute("SELECT * FROM students")
+    students = cur.fetchall()
+
+    for student in students:
+        print(student)
+
+except sqlite3.Error as e:
+    print("Xatolik yuz berdi:", e)
+
+finally:
+    conn.close()
+```
