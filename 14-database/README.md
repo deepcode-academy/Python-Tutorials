@@ -159,3 +159,37 @@ print(student)
 ```shell
 (1, 'Ali', 20, 'A')
 ```
+
+### Ma’lumotlarni yangilash
+
+- Ma’lumotlarni o‘zgartirish uchun `UPDATE` buyrug‘idan foydalanamiz.
+
+```python
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+# Ali’ning yoshini 21 ga o‘zgartiramiz
+cur.execute("UPDATE students SET age = ? WHERE name = ?", (21, "Ali"))
+
+print("Ma’lumot yangilandi!")
+
+conn.commit()
+conn.close()
+```
+
+### Ma’lumotlarni o‘chirish
+
+- Ma’lumotlarni o‘chirish uchun `DELETE FROM` buyrug‘idan foydalanamiz.
+
+```python
+conn = sqlite3.connect("students.db")
+cur = conn.cursor()
+
+# "Ali" ismli talabani o‘chiramiz
+cur.execute("DELETE FROM students WHERE name = ?", ("Ali",))
+
+print("Ma’lumot o‘chirildi!")
+
+conn.commit()
+conn.close()
+```
