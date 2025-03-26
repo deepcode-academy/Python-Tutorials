@@ -278,3 +278,8 @@ finally:
 13. Talabaning yoshini yangilash
     - `"name"` ismli talabaning yoshini `21` ga o‘zgartiring.
 
+14. Fakultet bo‘yicha talabalarni sanash
+    - `"students"` jadvalidagi har bir fakultet bo‘yicha nechta talaba borligini hisoblang.
+
+15. Eng ko‘p talabaga ega fakultetni topish
+    - `"students"` jadvalidan eng ko‘p talabaga ega bo‘lgan fakultetni aniqlang.
