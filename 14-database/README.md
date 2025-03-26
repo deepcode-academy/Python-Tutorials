@@ -234,3 +234,11 @@ finally:
 | 2   | SQL for Beginners  | Alice Brown   | 2018  |
 | 3   | Data Science Guide | Michael Clark | 2021  |
 
+3. Barcha kitoblarni chiqarish
+    - `"books"` jadvalidagi barcha kitoblarni ekranga chiqaring.
+    - Natija `id`, `title`, `author`, `year` formatida bo‘lsin.
+
+4. Muallif bo‘yicha qidirish
+    - Foydalanuvchidan **muallif nomini** so‘rang.
+    - Shu muallif tomonidan yozilgan barcha kitoblarni chiqaring.
+    - Agar kitob topilmasa, `"Bu muallifning kitoblari yo'q"` deb chiqaring.
