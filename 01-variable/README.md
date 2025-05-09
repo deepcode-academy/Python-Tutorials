@@ -474,7 +474,7 @@ q = 78
 Matn uzunligi: 12
 ```
 
-5. Topshiriq: Ikki raqamni qo'shish
+5. Ikki raqamni qo'shish
     - `raqam1` degan o'zgaruvchi yarating va unga `"5"` qiymat bering.
     - `raqam2` degan o'zgaruvchi yarating va unga `"5.5"` qiymat bering.
     - Berilgan ikkita raqamni (`int` yoki `float`) qo'shing va natijani terminalga chiqarib bering.
