@@ -162,10 +162,64 @@ Bu orqali har bir loyiha o‘z kutubxonalariga ega bo‘ladi.
 
 ---
 
-## ✅ Xulosa
+# PRACTICS
 
-- **Third-party packages** dasturchilar uchun katta imkoniyatlar eshigini ochadi.
-- `pip` orqali o‘rnatiladi va boshqariladi.
-- Har doim rasmiy manba: [https://pypi.org](https://pypi.org) dan foydalaning.
-- `virtual environment` orqali har bir loyihani alohida boshqarish tavsiya qilinadi.
-- `requirements.txt` orqali loyiha kutubxonalarini boshqalar bilan bo‘lishish mumkin.
+1. requests bilan soʻrov yuborish
+
+https://jsonplaceholder.typicode.com/posts sahifasiga GET soʻrovi yuboring va javobdan 5 ta postning sarlavhasini (title) chiqaring.
+
+2. beautifulsoup4 bilan HTML tahlil qilish
+
+https://www.example.com sahifasidan barcha <a> teglarini ajrating va havola (href) manzillarini chop eting.
+
+3. numpy yordamida massiv bilan ishlash
+
+1 dan 100 gacha boʻlgan sonlar bilan massiv yarating va barcha juft sonlarni chiqaring.
+
+4. matplotlib bilan grafik chizish
+
+1 dan 10 gacha sonlarning kvadratlarini chizadigan grafik tuzing.
+
+5. pandas yordamida maʼlumotlar tahlili
+
+Talabalar haqida maʼlumotlardan iborat DataFrame yarating (Ism, Yoshi, Ball). Yoshi 20 dan katta boʻlganlarni ajrating.
+
+6. flask bilan oddiy web ilova
+
+Flask yordamida sahifada "Assalomu alaykum!" yozuvi chiqadigan web ilova yarating.
+
+7. pytest bilan test yozish
+
+Ikki sonni qoʻshuvchi funksiya yozing va pytest orqali uni test qiling.
+
+8. pandas bilan CSV fayl o'qish
+
+data.csv faylini pandas yordamida o'qing va maʼlumotlarni ekranga chiqaring.
+
+9. requests bilan JSON API dan maʼlumot olish
+
+https://api.coindesk.com/v1/bpi/currentprice.json API dan Bitcoin narxini olib, konsolga chiqaring.
+
+10. matplotlib bilan histogram chizish
+
+Tasodifiy 100 ta son yarating (numpy yordamida) va histogram ko'rinishida chizing.
+
+11. numpy bilan matritsalar ustida amallar
+
+2 ta 3x3 o'lchamdagi matritsa yarating va ularni qo'shing.
+
+12. flask bilan parametrli sahifa
+
+URL orqali foydalanuvchi ismini qabul qilib, "Salom, Ism!" degan javob qaytaradigan Flask ilova yarating.
+
+13. beautifulsoup4 bilan sahifa sarlavhasini olish
+
+Web sahifadan <title> tegidagi matnni chiqaradigan dastur tuzing.
+
+14. pandas bilan ustun qoʻshish
+
+Mavjud jadvalga yangi ustun qoʻshing: talaba baholari asosida "Oʻtdi" yoki "Oʻtmadi" degan ustun hosil qiling.
+
+15. venv yordamida virtual muhit yaratish
+
+Terminal orqali yangi virtual muhit yarating va unga requests, numpy, pandas paketlarini o‘rnating.
