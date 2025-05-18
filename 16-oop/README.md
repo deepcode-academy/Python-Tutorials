@@ -135,6 +135,34 @@ mushuk.ovoz()  # Natija: Miyav
 
 - `It` va `Mushuk` — `Hayvon` classining merosxo‘rlari.
 
+## Polymorphism
+
+- Bir xil nomdagi metodlar, lekin turli classlarda har xil ishlashi mumkin.
+
+- Afzalligi:
+  - Kodni soddalashtiradi
+  - Har xil obyektlar bir xil metodga ega bo‘lishi mumkin
+
+```python
+class Talaba:
+    def ishlash(self):
+        print("Talaba dars qilmoqda")
+
+class Uqituvchi:
+    def ishlash(self):
+        print("Uqituvchi dars bermoqda")
+
+def ish_boshla(shaxs):
+    shaxs.ishlash()
+
+t = Talaba()
+u = Uqituvchi()
+
+ish_boshla(t)  # Natija: Talaba dars qilmoqda
+ish_boshla(u)  # Natija: Uqituvchi dars bermoqda
+```
+
+- `ish_boshla()` funksiyasi kimga berilsa, shunga qarab o‘zini tutadi — bu `polymorphism`.
 
 
 ## OOP afzalliklari:
