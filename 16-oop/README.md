@@ -105,6 +105,38 @@ print(hisob.pul_yechish(30000))  # Natija: 30000 so‘m yechildi
 - `__balans` tashqaridan to‘g‘ridan-to‘g‘ri o‘zgartirilmaydi — bu **encapsulation**.
 
 
+## Inheritance
+
+- Bitta classdan boshqa class xususiyatlarini meros olish (ya’ni, boshqa class unga o‘xshash bo‘ladi).
+
+- Afzalligi:
+  - Kodni takrorlamaslik
+  - Kengaytma qilish oson
+
+```python
+class Hayvon:
+    def ovoz(self):
+        print("Bu hayvon tovush chiqaryapti")
+
+class It(Hayvon):  # Hayvon classidan meros oldi
+    def ovoz(self):
+        print("Vov-vov")
+
+class Mushuk(Hayvon):
+    def ovoz(self):
+        print("Miyav")
+
+it = It()
+it.ovoz()  # Natija: Vov-vov
+
+mushuk = Mushuk()
+mushuk.ovoz()  # Natija: Miyav
+```
+
+- `It` va `Mushuk` — `Hayvon` classining merosxo‘rlari.
+
+
+
 ## OOP afzalliklari:
 - Katta loyihalarda kodni tartibli saqlaydi
 - Qayta ishlatiladigan kodlar yozish mumkin
