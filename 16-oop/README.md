@@ -11,7 +11,7 @@ OOP – bu dasturda real hayotdagi obyektlar (mashina, inson, kompyuter) kabi ob
 
 ## OOP ning asosiy tushunchalari:
 
-### 1. Class (sinf)
+### 1. Class
 Class bu - shablon. U orqali ko‘plab obyektlar (instance) yaratiladi.
 
 ```python
@@ -21,7 +21,7 @@ class Car:
         self.rang = rang
 ```
 
-### 2. Object (obyekt)
+### 2. Object
 Class asosida yaratilgan nusxa (instance).
 
 ```python
@@ -58,7 +58,7 @@ print(talaba1.yosh)
 
 ---
 
-## Method (xatti-harakat)
+## Method
 Bu class ichida yozilgan funksiyadir.
 
 ```python
@@ -74,16 +74,44 @@ talaba1 = Talaba("Umid", 20)
 talaba1.salom_ber()
 ```
 
----
+## Encapsulation 
+
+- Obyekt ichidagi ma’lumotlarni (atributlar) tashqi muhitdan yashirish, faqat kerakli metodlar orqali foydalanishga ruxsat berish.
+
+- Afzalligi:
+  - Ma’lumotlar himoyalanadi
+  - Keraksiz aralashuvlarning oldi olinadi
+
+```python
+class BankHisobi:
+    def __init__(self, balans):
+        self.__balans = balans  # ikki pastki chiziq bilan yashirilgan
+
+    def balans_korish(self):
+        return self.__balans
+
+    def pul_yechish(self, summa):
+        if summa <= self.__balans:
+            self.__balans -= summa
+            return f"{summa} so‘m yechildi"
+        else:
+            return "Yetarli mablag‘ yo‘q"
+
+hisob = BankHisobi(100000)
+print(hisob.balans_korish())  # Natija: 100000
+print(hisob.pul_yechish(30000))  # Natija: 30000 so‘m yechildi
+```
+
+- `__balans` tashqaridan to‘g‘ridan-to‘g‘ri o‘zgartirilmaydi — bu **encapsulation**.
+
 
 ## OOP afzalliklari:
 - Katta loyihalarda kodni tartibli saqlaydi
 - Qayta ishlatiladigan kodlar yozish mumkin
 - Kengaytirishga qulay
 
----
 
-## Amaliy mashqlar
+# PRACTICS
 
 ### 1-masala:
 Quyidagi classni yozing: `Kitob`. U quyidagi atributlarga ega bo‘lsin: `nomi`, `muallif`, `sahifa_soni`.
@@ -120,7 +148,3 @@ telefon1 = Telefon("Samsung", "Galaxy A52", 300)
 telefon1.narx_oshir(10)
 print(telefon1.narx)
 ```
-
----
-
-Davomini keyingi darsda davom ettiramiz. OOP mavzusi chuqur va qiziqarli mavzu.
