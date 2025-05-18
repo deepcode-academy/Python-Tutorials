@@ -164,6 +164,26 @@ ish_boshla(u)  # Natija: Uqituvchi dars bermoqda
 
 - `ish_boshla()` funksiyasi kimga berilsa, shunga qarab o‘zini tutadi — bu `polymorphism`.
 
+## Abstraction 
+
+- Foydalanuvchiga faqat **kerakli funksiyalarni** ko‘rsatish, ortiqcha tafsilotlarni yashirish.
+
+- Afzalligi:
+  - Foydalanuvchi kodni oson tushunadi
+
+```python
+class Telefon:
+    def __init__(self, brend):
+        self.brend = brend
+
+    def qongiroq_qilish(self):
+        print(f"{self.brend} bilan qo‘ng‘iroq qilinmoqda...")
+
+iphone = Telefon("iPhone")
+iphone.qongiroq_qilish()  # Natija: iPhone bilan qo‘ng‘iroq qilinmoqda...
+```
+
+- Telefon ichidagi murakkab tizimlar bizga ko‘rinmaydi, faqat "qo‘ng‘iroq" funksiyasidan foydalanamiz — bu **abstraction**.
 
 ## OOP afzalliklari:
 - Katta loyihalarda kodni tartibli saqlaydi
