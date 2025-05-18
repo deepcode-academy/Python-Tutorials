@@ -197,34 +197,6 @@ iphone.qongiroq_qilish()  # Natija: iPhone bilan qo‘ng‘iroq qilinmoqda...
 Quyidagi classni yozing: `Kitob`. U quyidagi atributlarga ega bo‘lsin: `nomi`, `muallif`, `sahifa_soni`.
 Method: `malumot_ber()` – kitob haqida ma’lumot chiqaradi.
 
-```python
-class Kitob:
-    def __init__(self, nomi, muallif, sahifa_soni):
-        self.nomi = nomi
-        self.muallif = muallif
-        self.sahifa_soni = sahifa_soni
-
-    def malumot_ber(self):
-        print(f"{self.nomi} muallifi: {self.muallif}, sahifalar soni: {self.sahifa_soni}")
-
-kitob1 = Kitob("Ufq", "Said Ahmad", 300)
-kitob1.malumot_ber()
-```
 
 ### 2-masala:
 `Telefon` nomli class yarating. Atributlari: `brend`, `model`, `narx`. Method: `narx_oshir(foiz)` – narxni berilgan foizga oshirsin.
-
-```python
-class Telefon:
-    def __init__(self, brend, model, narx):
-        self.brend = brend
-        self.model = model
-        self.narx = narx
-
-    def narx_oshir(self, foiz):
-        self.narx += self.narx * foiz / 100
-
-telefon1 = Telefon("Samsung", "Galaxy A52", 300)
-telefon1.narx_oshir(10)
-print(telefon1.narx)
-```
