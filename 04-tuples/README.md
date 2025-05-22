@@ -33,6 +33,16 @@ print(single_element_tuple)  # (1,)
 - **O‘zgarmasligi:** Tupleni `himoyalangan` yoki `o‘zgartirilmas` ma’lumotlar saqlash uchun ishlatish mumkin.
 - **Tezligi:** Tuplelar ro‘yxatlarga qaraganda `tezroq` ishlovchi ma'lumot turi hisoblanadi.
 
+### TUPLE VA LIST FARQI
+
+|Feature|Tuple|List|
+|-------|-----|----|
+|O'zgarishi mumkinmi?|Yo'q(immutable)|ha(mutable)|
+|Tezligi|Tezroq|Sekinroq|
+|Qavs turi|()|[]|
+|Xotira sarfi|Kamroq|Ko'proq|
+|Qo'llanilish holati|O'zgarmas ma'lumotlar uchun|O'zgaruvchi ma'lumotlar uchun|
+
 ### TUPLE E'LEMENTLARIGA MUROJAT QILISH
 
 `Tuple` elementlariga ham `list`larga o'xshab indeks orqali murojaat qilish mumkin. Indekslar `0` dan boshlanadi:
