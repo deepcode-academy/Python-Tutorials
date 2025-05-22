@@ -37,9 +37,9 @@ print(single_element_tuple)  # (1,)
 
 |Feature|Tuple|List|
 |-------|-----|----|
-|O'zgarishi mumkinmi?|Yo'q(immutable)|ha(mutable)|
+|O'zgarishi mumkinmi?|Yo'q(**immutable**)|Ha(**mutable**)|
 |Tezligi|Tezroq|Sekinroq|
-|Qavs turi|()|[]|
+|Qavs turi|**()**|**[]**|
 |Xotira sarfi|Kamroq|Ko'proq|
 |Qo'llanilish holati|O'zgarmas ma'lumotlar uchun|O'zgaruvchi ma'lumotlar uchun|
 
