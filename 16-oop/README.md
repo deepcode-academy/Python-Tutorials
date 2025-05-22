@@ -1,202 +1,298 @@
+# PYTHON DASTURLASH ASOSLARI
 
-# 14-DARS: OOP – OBJECT ORIENTED PROGRAMMING
+# 14-dars OOP(Object-Oriented Programming)
 
-Ushbu darsimizda OOP (Object-Oriented Programming) ya’ni obyektga yo‘naltirilgan dasturlash haqida gaplashamiz. OOP dasturlash tamoyillaridan foydalangan holda kodni ancha tartibli va qulay holatda yozish mumkin.
+> [!NOTE]
+> **Object-Oriented Programming** (`OOP`) Python dasturlash tilida muhim mavzulardan biri hisoblanadi va u orqali dasturlarni modulli, qayta foydalanish mumkin bo'lgan, tuzilmaviy kodlarni yaratish mumkin. Keling, OOPning asosiy tushunchalari va amaliy misollari bilan tanishib chiqamiz.
 
-## OOP nima?
+**Key OOP Principles:**
+1. **Encapsulation** (Inkapsulyatsiya) - Ma'lumotlarni va funksiyalarni (metodlarni) bitta birlikda, ya'ni ob'ekt ichida saqlashni ta'minlaydi. Bu ma'lumotlarni tashqi tomondan to'g'ridan-to'g'ri o'zgartirilmasligini ta'minlash uchun ishlatiladi.
+2. **Inheritance** (Meros olish) - Bir klass (ota klass) xususiyatlarini boshqa klassga (farzand klass) o'tkazish imkoniyatini beradi, ya'ni yangi klassni mavjud klass asosida yaratish mumkin.
+3. **Polymorphism** (Polimorfizm) - Bir xil nomdagi metodlarning turli xil sinflarda turlicha ishlash imkoniyatini beradi.
+4. **Abstraction** (Abstraksiya) - Muhim detallarni ajratib olish va ortiqcha tafsilotlarni yashirishni ta'minlaydi.
 
-OOP – bu dasturda real hayotdagi obyektlar (mashina, inson, kompyuter) kabi obyektlarni yaratish va ular bilan ishlash usulidir. Har bir obyekt o‘ziga xos xususiyatlar (attributes) va xatti-harakatlarga (methods) ega bo‘ladi.
+# What is a `class` in Python?
+> [!NOTE] 
+> `class` bu ma'lumotlar va ularni qayta ishlovchi funksiyalarni birlashtiruvchi `shablon` yoki `qolip` hisoblanadi. class yordamida `obyektlar` yaratamiz. Har bir obyekt biror `class` ning nusxasi hisoblanadi.
 
----
-
-## OOP ning asosiy tushunchalari:
-
-### 1. Class
-Class bu - shablon. U orqali ko‘plab obyektlar (instance) yaratiladi.
-
+# Creating a Simple `class`
+`class` yaratish uchun `class` kalit so'zidan foydalanamiz va unga `nom` beramiz.
 ```python
 class Car:
-    def __init__(self, model, rang):
+    def __init__(self, model, color):
         self.model = model
-        self.rang = rang
+        self.color = color
+    
+    def display_info(self):
+        print(f"Model: {self.model}, Color: {self.color}")
 ```
+Yuqoridagi misolda `Car` nomli `class` yaratilgan. `__init__` metodi har safar yangi obyekt yaratilganda avtomatik ravishda chaqiriladi. Bu metod obyektni boshlang'ich holatini o'rnatadi. `self` bu obyektning o'zi, ya'ni yaratilgan obyektga murojaat qilish uchun ishlatiladi.
 
-### 2. Object
-Class asosida yaratilgan nusxa (instance).
-
+# Creating an Object
+`class` asosida obyekt yaratish uchun `class` nomiga qavs ichida kerakli parametrlarni yozamiz:
 ```python
-car1 = Car("Malibu", "oq")
-car2 = Car("Cobalt", "qora")
+class Car:
+    def __init__(self, model, color):
+        self.model = model
+        self.color = color
+    
+    def display_info(self):
+        print(f"Model: {self.model}, Color: {self.color}")
+        
+my_car = Car("Chevrolet", "Black")
+my_car.display_info()
 ```
-
-### 3. __init__ metodi
-Bu metod classdan obyekt yaratilganda avtomatik chaqiriladi.
-
-```python
-def __init__(self, model, rang):
-    self.model = model
-    self.rang = rang
+Bu kod `Car` classidan yangi `my_car` obyektini yaratadi va uning ma'lumotlarini qaytaradi. Natija quyidagicha bo'ladi:
+```shell
+Model: Chevrolet, Color: Black
 ```
-
-### 4. self
-Bu parametr obyektning o‘ziga ishora qiladi.
-
----
-
-## Misol: Obyekt yaratish va atributlarga murojaat qilish
-
+## Encapsulation(Inkapsulyatsiya)
+`Encapsulation` yordamida `class`dagi xususiyatlar (`property`) va metodlarni yashirish mumkin. Bu o'zgaruvchilarning to'g'ridan-to'g'ri o'zgartirilishini oldini olib, maxsus metodlar orqali ularga kirishni ta'minlaydi.
+Pythonda private(`xususiy`) o'zgaruvchilarni yaratish uchun o'zgaruvchining nomi oldiga ikki pastki chiziq (`__`) qo'yamiz:
 ```python
-class Talaba:
-    def __init__(self, ism, yosh):
-        self.ism = ism
-        self.yosh = yosh
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # private attribute
 
-talaba1 = Talaba("Umid", 20)
-print(talaba1.ism)
-print(talaba1.yosh)
-```
-
----
-
-## Method
-Bu class ichida yozilgan funksiyadir.
-
-```python
-class Talaba:
-    def __init__(self, ism, yosh):
-        self.ism = ism
-        self.yosh = yosh
-
-    def salom_ber(self):
-        print(f"Salom, mening ismim {self.ism}")
-
-talaba1 = Talaba("Umid", 20)
-talaba1.salom_ber()
-```
-
-## Encapsulation 
-
-- Obyekt ichidagi ma’lumotlarni (atributlar) tashqi muhitdan yashirish, faqat kerakli metodlar orqali foydalanishga ruxsat berish.
-
-- Afzalligi:
-  - Ma’lumotlar himoyalanadi
-  - Keraksiz aralashuvlarning oldi olinadi
-
-```python
-class BankHisobi:
-    def __init__(self, balans):
-        self.__balans = balans  # ikki pastki chiziq bilan yashirilgan
-
-    def balans_korish(self):
-        return self.__balans
-
-    def pul_yechish(self, summa):
-        if summa <= self.__balans:
-            self.__balans -= summa
-            return f"{summa} so‘m yechildi"
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"{amount} deposited. New balance: {self.__balance}")
         else:
-            return "Yetarli mablag‘ yo‘q"
+            print("Invalid deposit amount")
 
-hisob = BankHisobi(100000)
-print(hisob.balans_korish())  # Natija: 100000
-print(hisob.pul_yechish(30000))  # Natija: 30000 so‘m yechildi
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            print(f"{amount} withdrawn. New balance: {self.__balance}")
+        else:
+            print("Insufficient funds")
+
+# BankAccount ob'ektini yaratamiz va unga pul qo'shamiz
+account = BankAccount(1000)
+account.deposit(500)      # 500 deposited. New balance: 1500
+account.withdraw(200)     # 200 withdrawn. New balance: 1300
 ```
+Yuqorida `__balance` xususiyati to'g'ridan-to'g'ri obyektdan kirish mumkin emas, faqat `deposit` va `withdraw` metodlari orqali o'zgartiriladi.
 
-- `__balans` tashqaridan to‘g‘ridan-to‘g‘ri o‘zgartirilmaydi — bu **encapsulation**.
+## Inheritance(Meros olish)
+Meros olish boshqa `class`dan xususiyatlar va metodlarni `meros` qilib olish imkonini beradi, bu orqali kod qayta ishlatiladi. Keling, `Car` va `ElectricCar` misollarini yanada kengaytiramiz.
+```python
+class Car:
+    def __init__(self, model, color, year):
+        self.model = model
+        self.color = color
+        self.year = year
 
+    def drive(self):
+        print(f"{self.model} is driving")
 
-## Inheritance
+    def stop(self):
+        print(f"{self.model} has stopped")
 
-- Bitta classdan boshqa class xususiyatlarini meros olish (ya’ni, boshqa class unga o‘xshash bo‘ladi).
+class ElectricCar(Car):
+    def __init__(self, model, color, year, battery_size):
+        super().__init__(model, color, year)  # Ota klass `Car` ning __init__ metodini chaqiramiz
+        self.battery_size = battery_size
 
-- Afzalligi:
-  - Kodni takrorlamaslik
-  - Kengaytma qilish oson
+    def charge(self):
+        print(f"{self.model} is charging. Battery size: {self.battery_size} kWh")
+
+tesla = ElectricCar("Tesla Model S", "Red", 2023, 100)
+tesla.drive()      # Tesla Model S is driving
+tesla.charge()     # Tesla Model S is charging. Battery size: 100 kWh
+tesla.stop()       # Tesla Model S has stopped
+```
+Bu yerda `ElectricCar` classi `Car` classidan `meros` oladi va qo'shimcha `charge` metodini qo'shadi:
+
+**Natija:**
+```shell
+Model: Tesla, Color: White
+Battery size: 75 kWh
+```
+## Polymorphism(Polimorfizm)
+Polimorfizm bir xil nomdagi metodlarning turli `class`larda turlicha ishlashini anglatadi. Bu `OOP` da muhim bo'lib, turli ob'ektlarga bir xil metodni qo'llash imkonini beradi.
 
 ```python
-class Hayvon:
-    def ovoz(self):
-        print("Bu hayvon tovush chiqaryapti")
+class Bird:
+    def sound(self):
+        print("Bird makes a sound")
 
-class It(Hayvon):  # Hayvon classidan meros oldi
-    def ovoz(self):
-        print("Vov-vov")
+class Parrot(Bird):
+    def sound(self):
+        print("Parrot says hello")
 
-class Mushuk(Hayvon):
-    def ovoz(self):
-        print("Miyav")
-
-it = It()
-it.ovoz()  # Natija: Vov-vov
-
-mushuk = Mushuk()
-mushuk.ovoz()  # Natija: Miyav
+class Sparrow(Bird):
+    def sound(self):
+        print("Sparrow chirps")
 ```
-
-- `It` va `Mushuk` — `Hayvon` classining merosxo‘rlari.
-
-## Polymorphism
-
-- Bir xil nomdagi metodlar, lekin turli classlarda har xil ishlashi mumkin.
-
-- Afzalligi:
-  - Kodni soddalashtiradi
-  - Har xil obyektlar bir xil metodga ega bo‘lishi mumkin
+Yuqorida `Parrot` va `Sparrow` classlari `Bird` classidan meros olgan, lekin har bir classda `sound` metodi turlicha bajariladi:
 
 ```python
-class Talaba:
-    def ishlash(self):
-        print("Talaba dars qilmoqda")
+class Bird:
+    def sound(self):
+        print("Bird makes a sound")
 
-class Uqituvchi:
-    def ishlash(self):
-        print("Uqituvchi dars bermoqda")
+class Parrot(Bird):
+    def sound(self):
+        print("Parrot says hello")
 
-def ish_boshla(shaxs):
-    shaxs.ishlash()
+class Sparrow(Bird):
+    def sound(self):
+        print("Sparrow chirps")
+        
+def make_sound(bird):
+    bird.sound()
 
-t = Talaba()
-u = Uqituvchi()
+parrot = Parrot()
+sparrow = Sparrow()
 
-ish_boshla(t)  # Natija: Talaba dars qilmoqda
-ish_boshla(u)  # Natija: Uqituvchi dars bermoqda
+make_sound(parrot)   # Parrot says hello
+make_sound(sparrow)  # Sparrow chirps
 ```
-
-- `ish_boshla()` funksiyasi kimga berilsa, shunga qarab o‘zini tutadi — bu `polymorphism`.
-
-## Abstraction 
-
-- Foydalanuvchiga faqat **kerakli funksiyalarni** ko‘rsatish, ortiqcha tafsilotlarni yashirish.
-
-- Afzalligi:
-  - Foydalanuvchi kodni oson tushunadi
+## Abstraction(Abstraksiya)
+Abstraksiya yordamida foydalanuvchilar faqat kerakli `metod` va `atribut`larga kirishi mumkin bo'ladi. Pythonda to‘g‘ridan-to‘g‘ri abstrakt classlar mavjud emas, ammo **abc**(`Abstract Base Classes`) modulidan foydalanib, `abstrakt class` yaratish mumkin. Keling, hayvonlar misolida ko'ramiz:
 
 ```python
-class Telefon:
-    def __init__(self, brend):
-        self.brend = brend
+from abc import ABC, abstractmethod
 
-    def qongiroq_qilish(self):
-        print(f"{self.brend} bilan qo‘ng‘iroq qilinmoqda...")
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
 
-iphone = Telefon("iPhone")
-iphone.qongiroq_qilish()  # Natija: iPhone bilan qo‘ng‘iroq qilinmoqda...
+class Dog(Animal):
+    def sound(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def sound(self):
+        print("Meow!")
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()  # Woof!
+cat.sound()  # Meow!
+
+```
+Bu yerda `Animal class`i `abstract class` bo'lib, undagi `sound` metodi barcha farzand classlarida aniqlanishi kerak. `Dog` va `Cat` classlarida `sound` metodini har xil bajarish mumkin.
+
+# AMALIYOT
+
+1. `class` yaratish
+   - `Book` classini yarating. U quyidagi atributlarga ega bo'lishi kerak:
+     - **title**(`nomi`)
+     - **author**(`muallifi`)
+     - **year**(`nashr yili`)
+   - Shuningdek, classda `display_info` metodini qo'shing, u kitob haqida ma'lumotlarni chiqarishi kerak.
+```python
+class Book:
+    # Bu yerga kod yozing
 ```
 
-- Telefon ichidagi murakkab tizimlar bizga ko‘rinmaydi, faqat "qo‘ng‘iroq" funksiyasidan foydalanamiz — bu **abstraction**.
+2. Instansiya O'zgaruvchilarini Qo'llash
+   - Yuqoridagi `Book` classini davom ettiring va unda `get_age` metodini qo'shing. Bu metod kitobning bugungi kunga nisbatan `yoshini` hisoblash kerak (`hozirgi yil - nashr yili`).
+```python
+class Book:
+    # Bu yerga kod yozing
+```
 
-## OOP afzalliklari:
-- Katta loyihalarda kodni tartibli saqlaydi
-- Qayta ishlatiladigan kodlar yozish mumkin
-- Kengaytirishga qulay
+3. Meros Olish
+   - Book classidan meros oluvchi `Ebook` classini yarating. `Ebook` classi quyidagi qo'shimcha atributga ega bo'lishi kerak:
+     - **file_size**(`fayl o'lchami`)
+   - `Ebook` classida `display_info` metodini yangilang va unda `fayl o'lchamini` ko'rsatish uchun ma'lumotlarni chiqarishi kerak.
 
+```python
+class Book:
+    # Bu yerga kod yozing
 
-# PRACTICS
+class Ebook(Book):
+    # Bu yerga kod yozing
+```
 
-### 1-masala:
-Quyidagi classni yozing: `Kitob`. U quyidagi atributlarga ega bo‘lsin: `nomi`, `muallif`, `sahifa_soni`.
-Method: `malumot_ber()` – kitob haqida ma’lumot chiqaradi.
+4. Inkapsulyatsiya
+   - `BankAccount` classini yarating, unda maxfiy `__balance` atributi bo'lishi kerak. classda quyidagi metodlar bo'lishi kerak:
+     - **deposit**(`amount`) - hisobga pul qo'shish.
+     - **withdraw**(`amount`) - hisobdan pul yechib olish.
+     - **get_balance()** - hisobdagi mablag'ni ko'rsatish.
 
+```python
+class BankAccount:
+    # Bu yerga kod yozing
+```
 
-### 2-masala:
-`Telefon` nomli class yarating. Atributlari: `brend`, `model`, `narx`. Method: `narx_oshir(foiz)` – narxni berilgan foizga oshirsin.
+5. classlararo Aloqa
+   - `Author` classini yarating, unda `name` va `books` atributlari bo'lishi kerak. `books` - bu `Book` classidan iborat ro'yxat. `Author` classida quyidagi metodlar bo'lishi kerak:
+     - **add_book**(`book`) - yangi kitob qo'shish.
+     - **display_books()** - muallifga tegishli kitoblarni ko'rsatish.
+
+```python
+class Author:
+    # Bu yerga kod yozing
+```
+
+6. Barcha Tuzilmalarni Qo'llash
+   - Yangi dastur yarating, unda Library classini yarating. `Library` classida quyidagi atributlar bo'lishi kerak:
+     - **name**(`kutubxona nomi`)
+     - **books**(`kitoblar ro'yxati`)
+   - `Library` classida quyidagi metodlar bo'lishi kerak:
+     - **add_book**(`book`) - kutubxonaga kitob qo'shish.
+     - **remove_book**(`title`) - kutubxonadan kitobni olib tashlash.
+     - **display_books()** - kutubxonadagi kitoblarni ko'rsatish.
+
+```python
+class Library:
+    # Bu yerga kod yozing
+```
+
+7. Avtobus classini yaratish
+   - `Bus` classini yarating, bu class quyidagi atributlarga ega bo'lishi kerak:
+     - **bus_number**(`avtobus raqami`)
+     - **capacity**(`sig'imi`)
+     - **passengers**(`yo'lovchilar ro'yxati`)
+   - `Bus` classida quyidagi metodlar bo'lishi kerak:
+     - **add_passenger**(`passenger`) - avtobusga yo'lovchi qo'shish.
+     - **remove_passenger**(`passenger`) - avtobusdan yo'lovchini olib tashlash.
+     - **display_passengers()** - avtobusdagi barcha yo'lovchilarni ko'rsatish.
+
+```python
+class Bus:
+    # Bu yerga kod yozing
+```
+
+8. Avtobusdan meros olish
+   - `DoubleDeckerBus` classini `Bus` classidan meros qilib oling. Bu classda qo'shimcha atributlar sifatida `upper_capacity` (yuqori qavat sig'imi) va `lower_capacity` (pastki qavat sig'imi) bo'lishi kerak. `DoubleDeckerBus` klassida `add_passenger` metodini yangilang, shunda u har ikki qavatda yo'lovchilarni hisobga olishi kerak.
+
+```python
+class Bus:
+    # Bu yerga kod yozing
+
+class DoubleDeckerBus(Bus):
+    # Bu yerga kod yozing
+```
+
+9. Mashinalar garaji
+   - `Garage` classini yarating, bu classda quyidagi atributlar bo'lishi kerak:
+     - **name**(`garaj nomi`)
+     - **cars**(`mashinalar ro'yxati`)
+   - `Garage` classida quyidagi metodlar bo'lishi kerak:
+     - **add_car**(`car`) - garajga mashina qo'shish.
+     - **remove_car**(`car`) - garajdan mashinani olib tashlash.
+     - **display_cars()** - garajdagi barcha mashinalarni ko'rsatish.
+
+```python
+class Garage:
+    # Bu yerga kod yozing
+```
+
+10. Qo'shimcha muallif classini yaratish
+    - `Publisher` classini yarating, unda `name` va `books` atributlari bo'lishi kerak. `books` - bu `Book` classidan iborat ro'yxat. `Publisher` classida quyidagi metodlar bo'lishi kerak:
+      - **add_book**(`book`) - nashriyotga kitob qo'shish.
+      - **remove_book**(`title`) - nashriyotdan kitobni olib tashlash.
+      - **display_books()** - nashriyotdagi kitoblarni ko'rsatish.
+
+```python
+class Publisher:
+    # Bu yerga kod yozing
+```
