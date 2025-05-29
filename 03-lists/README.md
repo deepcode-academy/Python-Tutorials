@@ -76,9 +76,9 @@ print(len(companies))
 
 ### RO'YHATGA E'LEMENT QO'SHISH
 
-1. .append(x) - listning oxiriga e'lement qo'shadi.
+1. `.append(x)` - listning oxiriga e'lement qo'shadi.
 
-- Sintaksis:
+Sintaksis:
 
 ```python
 list_nomi.append(x)
