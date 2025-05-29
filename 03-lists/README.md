@@ -31,12 +31,47 @@ print(fruits[0])  # 'olma'
 print(fruits[2])  # 'gilos'
 ```
 
-### FINDING THE LENGTH OF A LIST
+2. Negative Indexing
 
-Ro'yhat uzunligini topish ya'ni ichida nechta element borligini topish uchun `len()` funksiyasidan foydalanamiz.
+Pythonda oxirgi elementga manfiy indekslar yordamida murojaat qilinadi.
 
 ```python
-print(len(my_list))
+fruits = ['olma', 'banan', 'gilos', 'shaftoli']
+
+print(fruits[-1])  # 'shaftoli'
+print(fruits[-2])  # 'gilos'
+```
+`-1` — oxirgi element, `-2` — oxirgi elementdan oldingisi va hokazo.
+
+3. Slicing
+
+Listning ma’lum qismini olish uchun slicing ishlatiladi: `list[start:stop]`
+
+```python
+fruits = ['olma', 'banan', 'gilos', 'shaftoli']
+
+print(fruits[1:3])  # ['banan', 'gilos']
+print(fruits[:2])   # ['olma', 'banan']
+print(fruits[2:])   # ['gilos', 'shaftoli']
+```
+
+4.  Slicing with Step (Access Every N-th Element)
+
+```python
+fruits = ['olma', 'banan', 'gilos', 'shaftoli']
+
+print(fruits[::2])   # ['apple', 'cherry']  (every 2nd element)
+print(fruits[::-1])  # ['peach', 'cherry', 'banana', 'apple']  (reversed list)
+```
+
+### FINDING THE LENGTH OF A LIST
+
+List uzunligi — bu list ichidagi elementlar soni. Pythonda list uzunligini aniqlash uchun `len()` funksiyasi ishlatiladi.
+
+```python
+# companies listini ichida nechta element borligini hisoblash
+companies = ['Google', 'Microsoft', 'Amazon', 'Tesla', 'Apple']
+print(len(companies))
 ``` 
 
 ### RO'YHATGA E'LEMENT QO'SHISH
