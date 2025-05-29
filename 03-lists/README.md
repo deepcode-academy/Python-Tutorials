@@ -76,22 +76,32 @@ print(len(companies))
 
 ### RO'YHATGA E'LEMENT QO'SHISH
 
-- **Oxiriga element qo'shish:** `.append()`
+1. .append(x) - listning oxiriga e'lement qo'shadi.
+
+- Sintaksis:
 
 ```python
-my_list = [1, 2, 3]
-my_list.append(6)
-print(my_list)
+list_nomi.append(x)
+```
+- **list_nomi** — siz ishlatayotgan list
+- **x** — siz qo‘shmoqchi bo‘lgan 1ta e'lement (son, matn, list, tuple, va h.k.)
+
+```python
+cars = ['Nexia', 'Cobalt']
+cars.append('Malibu')
+print(cars)
 ```
 **Natija:** <br>
 ```shell
-[1, 2, 3, 6]
+['Nexia', 'Cobalt', 'Malibu']
 ```
 
-- Oddiy `.append()` faqat bitta element qo'shadi, lekin agar siz list yoki boshqa takrorlanadigan obyekt qo'shsangiz, u element emas, balki ro'yxat sifatida qo'shiladi.
+- Oddiy `.append()` faqat bitta element qo'shadi, lekin agar siz bir nechta e'lement qo'shmoqchi bo'lsangiz, u e'lement emas, balki **list** sifatida qo'shiladi.
+
 ```python
+# ko'proq e'lement qo'shmoqchi bo'lsak [] qavs ichida yozishimiz kerak
 my_list = [1, 2, 3]
-my_list.append([4, 5])  # List ichiga yana bir list qo'shish
+my_list.append([4, 5])
 print(my_list)
 ```
 **Natija:** <br>
