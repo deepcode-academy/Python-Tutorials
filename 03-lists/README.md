@@ -1,11 +1,11 @@
 # LISTS
 
-## WORKING WITH PYTHON LISTS
+## PYTHONDA LISTS BILAN ISHLASH
 
 > [!NOTE]
 > **List** - bu Pythondagi eng ko‘p ishlatiladigan ma’lumot turi bo‘lib, bir nechta qiymatlarni bitta o‘zgaruvchida saqlashga yordam beradi.
 
-### CREATING A LIST
+### LIST YARATISH
 
 ```python
 # elementlar bilan list yaratish
@@ -18,14 +18,17 @@ print(my_list)
 empty_list = []
 ```
 
-### ACCESSING LIST ELEMENTS
+### LIST ELEMENTLARIGA MUROJAT QILISH
 
-> [!CAUTION]
-> Dasturlash olamida indeks `0` dan boshlanadi! Ya'ni Listning birinchi elementing tartib raqami (indeksi) `0` ga, ikkinchi elementning indeksi `1` ga teng va hokazo.
+1. Indeks orqali murojaat qilish
+
+Listdagi har bir element o‘zining indeks raqami bilan tartiblanadi. Pythonda indekslash `0` dan boshlanadi.
 
 ```python
-print(my_list[0])  # Birinchi element
-print(my_list[-1])  # Oxirgi element
+fruits = ['olma', 'banan', 'gilos', 'shaftoli']
+
+print(fruits[0])  # 'olma'
+print(fruits[2])  # 'gilos'
 ```
 
 ### FINDING THE LENGTH OF A LIST
