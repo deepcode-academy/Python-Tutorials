@@ -3,28 +3,19 @@
 ## WORKING WITH PYTHON LISTS
 
 > [!NOTE]
-> `List` - bu Pythondagi eng ko‘p ishlatiladigan ma’lumot turi bo‘lib, bir nechta qiymatlarni bitta o‘zgaruvchida saqlashga yordam beradi.
-
-
+> **List** - bu Pythondagi eng ko‘p ishlatiladigan ma’lumot turi bo‘lib, bir nechta qiymatlarni bitta o‘zgaruvchida saqlashga yordam beradi.
 
 ### CREATING A LIST
 
 ```python
-# An empty list
+# elementlar bilan list yaratish
+my_list = [10, "DeepCode", True, 3.14]
+print(my_list)
+```
+
+```python
+# bo'sh list yaratish
 empty_list = []
-print(empty_list)
-
-# A list of integers
-numbers = [1, 2, 3, 4, 5]
-print(numbers)
-
-# A list of strings
-fruits = ["apple", "banana", "cherry"]
-print(fruits)
-
-# A mixed list
-mixed = [1, "hello", 3.14, [7, 8, 9]]
-print(mixed)
 ```
 
 ### ACCESSING LIST ELEMENTS
