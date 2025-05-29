@@ -3,7 +3,7 @@
 ## WORKING WITH PYTHON LISTS
 
 > [!NOTE]
-> `List` - `ordered`, `mutable` va turli xil ma'lumot turlarini (`integer`, `string`, `float`, `even other lists` ham) saqlay oladigan ma'lumotlar turi hisoblanadi 
+> `List` - bu Pythondagi eng ko‘p ishlatiladigan ma’lumot turi bo‘lib, bir nechta qiymatlarni bitta o‘zgaruvchida saqlashga yordam beradi.
 
 
 
