@@ -1,8 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# For Loop
 
-## 7-dars For loop(tsikl)
-
-Python dasturlash tilida `for` tsikli muhim komponent hisoblanadi va ko'p hollarda **iteratsiya** (`takrorlash`) vazifalarini bajarish uchun ishlatiladi.
+**for** — bu takrorlovchi tsikl, ya’ni bir nechta qiymatlar ustida yurib chiqib, har bir qiymat ustida amal bajaradi.
 
 ### FOR LOOP SINTAKSISI
 - Pythonda `for` tsiklining umumiy sintaksisi quyidagicha:
