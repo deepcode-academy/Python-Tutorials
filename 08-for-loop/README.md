@@ -1,6 +1,7 @@
 # For Loop
 
-**for** — bu takrorlovchi tsikl, ya’ni bir nechta qiymatlar ustida yurib chiqib, har bir qiymat ustida amal bajaradi.
+> [!NOTE]
+> **for** — bu takrorlovchi tsikl, ya’ni bir nechta qiymatlar ustida yurib chiqib, har bir qiymat ustida amal bajaradi.
 
 ### FOR LOOP SINTAKSISI
 - Pythonda `for` tsiklining umumiy sintaksisi quyidagicha:
