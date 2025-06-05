@@ -21,7 +21,7 @@ finally:
     # Har doim ishlaydigan kod
 ```
 
-1. **try** VA **except**
+1. **try VA except**
 - `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
     
 ```python
@@ -81,7 +81,7 @@ finally:
     print("Dastur yakunlandi.")
 ```
 
-4. XATONI NOMI BILAN CHIQARISH
+4. **XATONI NOMI BILAN CHIQARISH**
 - Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
 
 ```py
@@ -98,7 +98,7 @@ except FileNotFoundError as xato:
 ```
 
 
-5. BIR NECHTA XATOLARNI BITA **except** DA USHLASH
+5. **BIR NECHTA XATOLARNI BITA except DA USHLASH**
 
 - Bir nechta xatolarni bitta `except` blokida ushlash mumkin.
 
