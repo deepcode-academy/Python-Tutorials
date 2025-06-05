@@ -21,7 +21,7 @@ finally:
     # Har doim ishlaydigan kod
 ```
 
-1. **try VA except**
+1. **try, except**
 - `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
     
 ```python
@@ -98,7 +98,7 @@ except FileNotFoundError as xato:
 ```
 
 
-5. **BIR NECHTA XATOLARNI BITA except DA USHLASH**
+5. **BIR NECHTA XATOLARNI BITTA except DA USHLASH**
 
 - Bir nechta xatolarni bitta `except` blokida ushlash mumkin.
 
@@ -117,7 +117,7 @@ except (ValueError, ZeroDivisionError) as x:
     print(f"Xatolik: {x}")
 ```
 
-6. MAXSUS XATOLIK YARATISH (**raise**)
+6. **MAXSUS XATOLIK YARATISH (raise)**
 
 > [!NOTE]
 > Pythonda `raise` — bu sun'iy (ya'ni o‘zimiz xohlagan paytda) xatolik chaqirish uchun ishlatiladi. Ayniqsa, foydalanuvchi noto‘g‘ri ma'lumot kiritsa, unga aniq xatolik berish uchun foydalidir.
@@ -141,22 +141,36 @@ except ValueError as x:
 ```
 
 ## AMALIYOT
-1. Nolga bo'lishni tekshirish
-    - Foydalanuvchi `2` ta son kiritadi. Siz bu sonlarni `bir-biriga` bo'lishingiz kerak, lekin `0` ga bo'lishdan ehtiyot bo'lish kerak.
 
-**Natija:** Agar foydalanuvchi `0` kiritsa, `Xatolik: Nolga bo'lish mumkin emas` degan xabar chiqadi. Agar foydalanuvchi son o'rniga boshqa belgilar kiritsa, `Xatolik: Iltimos, faqat son kiriting` degan xabar chiqadi.
+1. Nolga bo‘lish
+    - Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalaning.
 
-2. Faylni ochish va o'qish
-    - Berilgan fayl nomini ochishga harakat qiling. Agar fayl mavjud bo'lmasa, tegishli xatolik xabari chiqsin.
+2. Raqamga aylantirish
+    - Foydalanuvchidan matn ko‘rinishida qiymat oling va uni `int` yoki `float` ga aylantiring. Agar foydalanuvchi harf kiritsa, xatolik chiqsin.
 
-**Natija:** Agar foydalanuvchi mavjud bo'lmagan fayl nomini kiritsa, `Xatolik: Fayl topilmadi` degan xabar chiqadi.
+3. Notog‘ri operator
+    - Foydalanuvchi ikkita son va bitta operator kiritsin (`+`, `-`, `*`, `/`). Operator noto‘g‘ri bo‘lsa, xatolik chiqsin.
 
-3. Raqamli qiymatni aylantirish
-    - Foydalanuvchi kiritgan satrni butun son yoki haqiqiy songa aylantirishga harakat qiling.
+4. Manfiy sonni taqiqlash
+    - Foydalanuvchi son kiritadi. Agar son manfiy bo‘lsa, `raise` orqali `ValueError` chiqarilsin: `"Manfiy son kiritish mumkin emas!"`
 
-**Natija:** Agar foydalanuvchi son emas, balki boshqa harflar yoki belgilar kiritsa, `Xatolik: Satrni son ko'rinishiga o'tkazib bo'lmadi` degan xabar chiqadi.
+5. Listdagi elementga murojaat
+    - Berilgan ro‘yxatdan (`list`) indeks orqali element oling. Agar noto‘g‘ri indeks kiritilsa, `IndexError` chiqsin.
 
-4. Hisoblash operatsiyasi
-    - Foydalanuvchi ikkita son va bir operator (`+, -, *, /`) kiritsin. Hisoblashni amalga oshiring va natijani ko'rsating.
+6. Lug‘atdan qiymat o‘qish
+    - Foydalanuvchi lug‘atdan `key` bo‘yicha ma’lumot olishga harakat qiladi. Agar `key` mavjud bo‘lmasa, `KeyError` chiqsin.
 
-**Natija:** Agar foydalanuvchi noto'g'ri operator kiritsa yoki nolga bo'lishga harakat qilsa, tegishli xatolik xabarlari chiqadi.
+7. Foydalanuvchidan parol olish
+    - Foydalanuvchi parol kiritadi. Agar parol bo‘sh bo‘lsa, `raise ValueError` bilan xatolik chiqarilsin.
+
+8. Har doim ishlaydigan kod
+    - Foydalanuvchi son kiritadi va uni `int` ga aylantirib chiqarasiz. `finally` blokida `"Dastur tugadi"` degan matn chiqsin.
+
+9. Bir nechta xatolarni ushlash
+    - Foydalanuvchidan son kiriting va 10 ni ushbu songa bo‘ling. `ValueError` yoki `ZeroDivisionError` yuz bersa, bitta `except` bilan ushlang.
+
+10. Funksiya orqali xatolik
+    - Funksiya yarating: son kiritsa va u 100 dan katta bo‘lsa, `raise ValueError("100 dan katta son kiritish mumkin emas")` chiqsin.
+
+11. Float sonni tekshirish
+    - Foydalanuvchi haqiqiy son kiritsin. Agar son butun bo‘lsa, `raise ValueError("Faqat haqiqiy son kiriting")` chiqsin.
