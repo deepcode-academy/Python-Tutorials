@@ -21,7 +21,7 @@ finally:
     # Har doim ishlaydigan kod
 ```
 
-1. **try** va **except**
+1. **try** VA **except**
 - `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
     
 ```python
@@ -64,7 +64,7 @@ else:
 
 
 
-3. finally
+3. **finally**
 - `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
 
 ```python
@@ -81,7 +81,7 @@ finally:
     print("Dastur yakunlandi.")
 ```
 
-4. Xatoni nom bilan chiqarish:
+4. XATONI NOMI BILAN CHIQARISH
 - Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
 
 ```py
