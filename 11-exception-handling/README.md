@@ -1,36 +1,69 @@
 # PYTHON DASTURLASH ASOSLARI
 
-## 10-Dars Exception Handling
+## 11-Dars: ISTISNO HOLARLARNI BOSHQARISH (EXCEPTION HANDLING)
 
 > [!NOTE]
-> Pythonda `Exception Handling`(**Istisno holatlarni boshqarish**) dasturlashda xatoliklarni to'g'ri boshqarish va dasturimizni xatoliklardan himoya qilish uchun muhimdir. Pythonda bu jarayonni `try`, `except`, `else`, va `finally` bloklari yordamida amalga oshirish mumkin.
+> **Eslatma:** Pythonda istisno holatlarni boshqarish dasturda yuzaga keladigan xatoliklarni to'g'ri boshqarish va dasturimizni barqaror ishlashini ta'minlash uchun muhim hisoblanadi. Bu `try`, `except`, `else`, va `finally` bloklari orqali amalga oshiriladi.
 
 ### EXCEPTION HANDLING HAQIDA UMUMIY TUSHUNCHA
-Dastur ishlashi davomida turli xatoliklar yuz berishi mumkin, masalan, noto'g'ri ma'lumot kiritish, bo'linishda nolga bo'lishga urinish yoki fayl mavjud bo'lmaganda uni o'qishga urinish. Bu kabi holatlarda dastur to'xtab qolishi mumkin, lekin Exception Handling yordamida biz bu xatolarni boshqarishimiz va dasturimizning barqaror ishlashini ta'minlashimiz mumkin.
+Dastur bajarilishi davomida foydalanuvchidan noto‘g‘ri ma'lumot kiritilishi, fayl topilmasligi, nolga bo‘lish holati yoki boshqa xatoliklar yuz berishi mumkin. Exception Handling orqali bu xatoliklar dastur to‘xtab qolmasdan, foydalanuvchiga tushunarli tarzda xabar berib, dasturni davom ettirish imkonini beradi.
 
 ### EXCEPTION HANDLING SINTAKSISI
 
 ```python
 try:
-    # Potensial xato yuzaga kelishi mumkin bo'lgan kod
+    # Xato chiqishi mumkin bo'lgan kod
 except XatoNomi:
-    # Xato sodir bo'lganda bajariladigan kod
+    # Xato yuz bersa ishlaydigan kod
+else:
+    # Xato chiqmasa ishlaydigan kod
+finally:
+    # Har doim ishlaydigan kod
 ```
-1. `try` va `except`
-- `try` bloki ichida xatolik yuz berishi mumkin bo'lgan kod yoziladi. Agar xatolik yuz bersa, `except` bloki ishga tushadi va xatolikni boshqaradi.
-    ```python
-    try:
-        son = int(input("Biror son kiriting: "))
-        natija = 10 / son
-        print(f"Natija: {natija}")
-    except ZeroDivisionError:
-        print("Xatolik: Nolga bo'lish mumkin emas!")
-    except ValueError:
-        print("Xatolik: Iltimos, butun son kiriting!")
-    ```
-        - Bu yerda:
-            - Agar foydalanuvchi `0` kiritsa, `ZeroDivisionError` xatosi yuz beradi va u `except ZeroDivisionError` tomonidan boshqariladi.
-            - Agar foydalanuvchi son o'rniga harf kiritsa, `ValueError` xatosi yuz beradi va u `except ValueError` tomonidan boshqariladi.
+
+1. **try** va **except**
+- `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
+    
+```python
+try:
+    son = int(input("Biror son kiriting: "))
+    natija = 10 / son
+    print(f"Natija: {natija}")
+except ZeroDivisionError:
+    print("Xatolik: Nolga bo'lish mumkin emas!")
+except ValueError:
+    print("Xatolik: Iltimos, butun son kiriting!")
+```
+
+- TUSHUNTIRISH:
+
+- try:
+    - Bu kod bloki ichida xatolik chiqishi mumkin bo‘lgan amallar yoziladi. Agar shu blokdagi kodlarda xatolik yuz bersa, Python avtomatik tarzda pastdagi except bloklariga o‘tadi.
+
+- son = int(input("Biror son kiriting: "))
+    - Bu qator foydalanuvchidan qiymat so‘raydi va uni butun son (int) ko‘rinishiga o‘tkazadi.
+    Agar foydalanuvchi son o‘rniga harf yoki belgilar kiritsa, bu qator ValueError xatosini beradi.
+
+- natija = 10 / son
+    - Bu qator 10 sonini foydalanuvchi kiritgan son ga bo‘ladi va natija o‘zgaruvchisiga saqlaydi.
+    Agar foydalanuvchi 0 kiritsa, bu yerda ZeroDivisionError xatosi yuz beradi, chunki 0 ga bo‘lish mumkin emas.
+
+- print(f"Natija: {natija}")
+    - Agar yuqoridagi amallar to‘g‘ri bajarilgan bo‘lsa, bu qator natijani ekranga chiqaradi.
+
+- except ZeroDivisionError:
+    - Agar 10 / son qismida son qiymati 0 bo‘lsa, bu qator ishga tushadi va foydalanuvchiga xato xabari chiqariladi.
+
+- print("Xatolik: Nolga bo'lish mumkin emas!")
+    - Bu ZeroDivisionError sodir bo‘lganda ishlaydi va foydalanuvchiga aniq, tushunarli ogohlantirish beradi.
+
+- except ValueError:
+    - Agar foydalanuvchi son o‘rniga matn yoki noto‘g‘ri belgi kiritsa, bu qator ishga tushadi.
+
+print("Xatolik: Iltimos, butun son kiriting!")
+Bu ValueError yuz berganda ishlaydi va foydalanuvchiga to‘g‘ri yo‘l ko‘rsatadi.
+
+
 2. `else`
 - Agar `try` blokida xatolik yuz bermasa, `else` bloki ishga tushadi. Bu blokda xatoliklar bo'lmasa bajarilishi kerak bo'lgan kodlar yoziladi.
     ```python
