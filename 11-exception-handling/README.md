@@ -64,8 +64,9 @@ else:
 
 
 
-3. `finally`
+3. finally
 - `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
+
 ```python
 try:
     # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
@@ -80,21 +81,64 @@ finally:
     print("Dastur yakunlandi.")
 ```
 
-
 4. Xatoni nom bilan chiqarish:
 - Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
 
-    ```py
-    try:
-        file = open('myfile.txt')
-    except FileNotFoundError as e:
-        print(f"Xato: {e}")
-    ```
-    **Tushuntirish:**
-    - Agar `myfile.txt` nomli fayl mavjud bo'lmasa, `FileNotFoundError` xatosi paydo bo'ladi.
-    - `as e` orqali bu xatoni `e` nomli o'zgaruvchida saqlab, uni ekranga chiqarish mumkin.
+```py
+try:
+    # "malumot.txt" faylini ochamiz
+    file = open("malumot.txt")
+    # Fayldagi barcha ma'lumotlarni o‘qiymiz
+    data = file.read()
+    # O‘qilgan ma'lumotlarni ekranga chiqaramiz
+    print(data)
+except FileNotFoundError as xato:
+    # Agar fayl mavjud bo‘lmasa, xato xabari chiqariladi
+    print(f"Xatolik: {xato}")
+```
 
-5. 
+
+5. BIR NECHTA XATOLARNI BITA **except** DA USHLASH
+
+- Bir nechta xatolarni bitta `except` blokida ushlash mumkin.
+
+```python
+try:
+# Foydalanuvchidan son so‘raymiz va uni butun songa o‘giramiz
+x = int(input("Son kiriting: "))
+
+# 10 ni kiritilgan songa bo‘lamiz
+y = 10 / x
+
+# Agar foydalanuvchi son o‘rniga matn kiritsa (ValueError),
+# yoki 0 kiritsa (ZeroDivisionError), bu except bloki ishga tushadi
+except (ValueError, ZeroDivisionError) as x:
+    # Xatolik haqida foydalanuvchiga xabar beramiz
+    print(f"Xatolik: {x}")
+```
+
+6. MAXSUS XATOLIK YARATISH (**raise**)
+
+> [!NOTE]
+> Pythonda `raise` — bu sun'iy (ya'ni o‘zimiz xohlagan paytda) xatolik chaqirish uchun ishlatiladi. Ayniqsa, foydalanuvchi noto‘g‘ri ma'lumot kiritsa, unga aniq xatolik berish uchun foydalidir.
+
+```python
+# Manfiy son kiritilsa xatolik (ValueError) chiqaradigan funksiya
+def tekshir(son):
+    # Agar son manfiy bo‘lsa, xatolik chiqaramiz
+    if son < 0:
+        raise ValueError("Manfiy son kiritish mumkin emas!")
+    # Aks holda, sonni qaytaramiz
+    return son
+
+try:
+    # Funksiyani manfiy son bilan chaqiramiz (bu xatoga olib keladi)
+    tekshir(-5)
+
+except ValueError as x:
+    # Agar ValueError yuz bersa, xatolik haqida xabar chiqaramiz
+    print(f"Xatolik: {x}")
+```
 
 ## AMALIYOT
 1. Nolga bo'lishni tekshirish
