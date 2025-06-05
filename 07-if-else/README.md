@@ -1,6 +1,6 @@
 # PYTHON DASTURLASH ASOSLARI
 
-## 6-dars Shart operatorlari
+## 7-dars Shart operatorlari
 
 ## TARMOQLANISH
 
