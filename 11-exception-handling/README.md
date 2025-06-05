@@ -37,31 +37,20 @@ except ValueError:
 
 - TUSHUNTIRISH:
 
-- try:
-    - Bu kod bloki ichida xatolik chiqishi mumkin bo‘lgan amallar yoziladi. Agar shu blokdagi kodlarda xatolik yuz bersa, Python avtomatik tarzda pastdagi except bloklariga o‘tadi.
+- try: – Xatolik chiqishi mumkin bo‘lgan kodlar shu yerda yoziladi.
 
-- son = int(input("Biror son kiriting: "))
-    - Bu qator foydalanuvchidan qiymat so‘raydi va uni butun son (int) ko‘rinishiga o‘tkazadi.
-    Agar foydalanuvchi son o‘rniga harf yoki belgilar kiritsa, bu qator ValueError xatosini beradi.
+- input() – Foydalanuvchidan qiymat so‘raydi.
 
-- natija = 10 / son
-    - Bu qator 10 sonini foydalanuvchi kiritgan son ga bo‘ladi va natija o‘zgaruvchisiga saqlaydi.
-    Agar foydalanuvchi 0 kiritsa, bu yerda ZeroDivisionError xatosi yuz beradi, chunki 0 ga bo‘lish mumkin emas.
+- int() – Kiritilgan qiymatni butun songa aylantiradi.
 
-- print(f"Natija: {natija}")
-    - Agar yuqoridagi amallar to‘g‘ri bajarilgan bo‘lsa, bu qator natijani ekranga chiqaradi.
+- 10 / son – 10 ni foydalanuvchi kiritgan songa bo‘ladi.
 
-- except ZeroDivisionError:
-    - Agar 10 / son qismida son qiymati 0 bo‘lsa, bu qator ishga tushadi va foydalanuvchiga xato xabari chiqariladi.
+- except ZeroDivisionError: – Agar son = 0 bo‘lsa, bu xatoni ushlaydi.
 
-- print("Xatolik: Nolga bo'lish mumkin emas!")
-    - Bu ZeroDivisionError sodir bo‘lganda ishlaydi va foydalanuvchiga aniq, tushunarli ogohlantirish beradi.
+- except ValueError: – Agar son o‘rniga harf kiritsa, shu blok ishlaydi.
 
-- except ValueError:
-    - Agar foydalanuvchi son o‘rniga matn yoki noto‘g‘ri belgi kiritsa, bu qator ishga tushadi.
+- print() – Xatolik yoki natijani ekranga chiqaradi.
 
-print("Xatolik: Iltimos, butun son kiriting!")
-Bu ValueError yuz berganda ishlaydi va foydalanuvchiga to‘g‘ri yo‘l ko‘rsatadi.
 
 
 2. `else`
