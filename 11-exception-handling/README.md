@@ -26,18 +26,18 @@ finally:
     
 ```python
 try:
-    son = int(input("Biror son kiriting: "))
     # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
-    natija = 10 / son
+    son = int(input("Biror son kiriting: "))
     # 10 ni kiritilgan songa bo‘lamiz
-    print(f"Natija: {natija}")
+    natija = 10 / son
     # Hisoblangan natijani chiqaramiz
+    print(f"Natija: {natija}")
 except ZeroDivisionError:
-    print("Xatolik: Nolga bo'lish mumkin emas!")
     # Agar son 0 bo‘lsa, bo‘lish amali xatoga olib keladi va bu xabar chiqadi
+    print("Xatolik: Nolga bo'lish mumkin emas!")
 except ValueError:
-    print("Xatolik: Iltimos, butun son kiriting!")
     # Agar son emas, noto‘g‘ri qiymat kiritsa, bu xato yuz beradi va bu xabar chiqadi
+    print("Xatolik: Iltimos, butun son kiriting!")
 ```
 
 
@@ -47,38 +47,37 @@ except ValueError:
 
 ```python
 try:
-    son = int(input("Biror son kiriting: "))
     # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
-    natija = 10 / son
+    son = int(input("Biror son kiriting: "))
     # 10 ni kiritilgan songa bo‘lamiz
+    natija = 10 / son
 except ZeroDivisionError:
-    print("Xatolik: Nolga bo'lish mumkin emas!")
     # Agar son 0 bo‘lsa, bu xatolik chiqadi
+    print("Xatolik: Nolga bo'lish mumkin emas!")
 except ValueError:
-    print("Xatolik: Iltimos, butun son kiriting!")
     # Agar son emas, noto‘g‘ri qiymat kiritsa, bu xatolik chiqadi
+    print("Xatolik: Iltimos, butun son kiriting!")
 else:
-    print(f"Natija: {natija}")
     # Agar xatolik bo‘lmasa, natijani chiqaramiz
+    print(f"Natija: {natija}")
 ```
-
 
 
 
 3. `finally`
 - `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
 ```python
-    try:
-    son = int(input("Biror son kiriting: "))
+try:
     # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
-    natija = 10 / son
+    son = int(input("Biror son kiriting: "))
     # 10 ni kiritilgan songa bo‘lamiz
+    natija = 10 / son
 except Exception as e:
-    print(f"Xatolik: {e}")
     # Har qanday xatolik yuz bersa, xato haqida ma’lumot chiqaramiz
+    print(f"Xatolik: {e}")
 finally:
-    print("Dastur yakunlandi.")
     # Bu blok har doim, xato bo‘lsa ham, bo‘lmasa ham ishlaydi
+    print("Dastur yakunlandi.")
 ```
 
 
