@@ -35,7 +35,7 @@ except ValueError:
     print("Xatolik: Iltimos, butun son kiriting!")
 ```
 
-- TUSHUNTIRISH:
+### TUSHUNTIRISH:
 
 - try: – Xatolik chiqishi mumkin bo‘lgan kodlar shu yerda yoziladi.
 
