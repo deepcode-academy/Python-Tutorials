@@ -27,62 +27,60 @@ finally:
 ```python
 try:
     son = int(input("Biror son kiriting: "))
+    # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
     natija = 10 / son
+    # 10 ni kiritilgan songa bo‘lamiz
     print(f"Natija: {natija}")
+    # Hisoblangan natijani chiqaramiz
 except ZeroDivisionError:
     print("Xatolik: Nolga bo'lish mumkin emas!")
+    # Agar son 0 bo‘lsa, bo‘lish amali xatoga olib keladi va bu xabar chiqadi
 except ValueError:
     print("Xatolik: Iltimos, butun son kiriting!")
+    # Agar son emas, noto‘g‘ri qiymat kiritsa, bu xato yuz beradi va bu xabar chiqadi
 ```
 
-### TUSHUNTIRISH:
-
-- try: – Xatolik chiqishi mumkin bo‘lgan kodlar shu yerda yoziladi.
-
-- input() – Foydalanuvchidan qiymat so‘raydi.
-
-- int() – Kiritilgan qiymatni butun songa aylantiradi.
-
-- 10 / son – 10 ni foydalanuvchi kiritgan songa bo‘ladi.
-
-- except ZeroDivisionError: – Agar son = 0 bo‘lsa, bu xatoni ushlaydi.
-
-- except ValueError: – Agar son o‘rniga harf kiritsa, shu blok ishlaydi.
-
-- print() – Xatolik yoki natijani ekranga chiqaradi.
 
 
-
-2. `else`
+2. **else**
 - Agar `try` blokida xatolik yuz bermasa, `else` bloki ishga tushadi. Bu blokda xatoliklar bo'lmasa bajarilishi kerak bo'lgan kodlar yoziladi.
-    ```python
-    try:
-        son = int(input("Biror son kiriting: "))
-        natija = 10 / son
-    except ZeroDivisionError:
-        print("Xatolik: Nolga bo'lish mumkin emas!")
-    except ValueError:
-        print("Xatolik: Iltimos, butun son kiriting!")
-    else:
-        print(f"Natija: {natija}")
-    ```
-    Yuqoridagi misolda, agar foydalanuvchi to'g'ri son kiritsa va `0` bo'lmasa, `else` qismi ichidagi `natija` chop etiladi.
+
+```python
+try:
+    son = int(input("Biror son kiriting: "))
+    # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
+    natija = 10 / son
+    # 10 ni kiritilgan songa bo‘lamiz
+except ZeroDivisionError:
+    print("Xatolik: Nolga bo'lish mumkin emas!")
+    # Agar son 0 bo‘lsa, bu xatolik chiqadi
+except ValueError:
+    print("Xatolik: Iltimos, butun son kiriting!")
+    # Agar son emas, noto‘g‘ri qiymat kiritsa, bu xatolik chiqadi
+else:
+    print(f"Natija: {natija}")
+    # Agar xatolik bo‘lmasa, natijani chiqaramiz
+```
+
+
+
+
 3. `finally`
 - `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
-    ```python
+```python
     try:
-        son = int(input("Biror son kiriting: "))
-        natija = 10 / son
-    except ZeroDivisionError:
-        print("Xatolik: Nolga bo'lish mumkin emas!")
-    except ValueError:
-        print("Xatolik: Iltimos, butun son kiriting!")
-    else:
-        print(f"Natija: {natija}")
-    finally:
-        print("Dastur yakunlandi.")
-    ```
-    Yuqoridagi misolda, dastur yakunida har doim `finally` bloki ichidagi `Dastur yakunlandi.` xabari chop etiladi.
+    son = int(input("Biror son kiriting: "))
+    # Foydalanuvchidan son so‘raymiz va butun songa o‘girib olamiz
+    natija = 10 / son
+    # 10 ni kiritilgan songa bo‘lamiz
+except Exception as e:
+    print(f"Xatolik: {e}")
+    # Har qanday xatolik yuz bersa, xato haqida ma’lumot chiqaramiz
+finally:
+    print("Dastur yakunlandi.")
+    # Bu blok har doim, xato bo‘lsa ham, bo‘lmasa ham ishlaydi
+```
+
 
 4. Xatoni nom bilan chiqarish:
 - Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
