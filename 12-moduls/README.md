@@ -165,7 +165,7 @@ def divide(a, b):
 
 ### 📌 [math MODULI](https://docs.python.org/3/library/math.html)
 
-### 📌 NIMA UCHUN FOYDALI?
+### ✅ NIMA UCHUN FOYDALI?
 
 - Matematik hisob-kitoblarni oson va aniq bajarish uchun kerak.
 - Kvadrat ildiz, logarifm, trigonometrik funksiyalar, faktoriyal kabi ko‘plab matematik operatsiyalarni bajarish imkonini beradi.
@@ -217,14 +217,14 @@ print(math.floor(7))      # Natija: 7
 
 📌 `random` moduli — bu Python kutubxonasi bo‘lib, u yordamida tasodifiy sonlar, tasodifiy elementlar tanlash va ro‘yxatlarni aralashtirish mumkin.
 
-### 📌 NIMA UCHUN FOYDALI?
+### ✅ NIMA UCHUN FOYDALI?
 
 - O'yinlarda qahramonlar yoki voqealar uchun tasodifiylik yaratish uchun,
 - Testlarda tasodifiy savollar tanlash uchun,
 - Statistik tadqiqotlarda namuna olish uchun ishlatiladi.
 - Shuningdek, har xil dasturlarda tasodifiy natijalar yaratishda qo‘llaniladi.
 
-### 1. random.randint(a, b)
+### 1. `random.randint(a, b)`
 
 📌 `a` va `b` orasidagi tasodifiy butun sonni qaytaradi (a va b ham shu oraliqqa kiradi).
 
@@ -239,7 +239,7 @@ son = random.randint(1, 10)
 print(son)  # 1 dan 10 gacha bo'lgan butun son (masalan, 3, 7, 10 va hokazo)
 ```
 
-### 2. random.choice(sequence)
+### 2. `random.choice(sequence)`
 
 📌 Berilgan ketma-ketlik (list, string yoki boshqa iterable) ichidan tasodifiy bitta elementni tanlaydi.
 
@@ -257,7 +257,7 @@ tasodifiy_meva = random.choice(mevalar)
 print(tasodifiy_meva)  # masalan, 'anor' yoki 'banan' chiqishi mumkin
 ```
 
-### 3. random.shuffle(list)
+### 3. `random.shuffle(list)`
 
 📌 List elementlarini joyini tasodifiy tarzda almashtiradi (listni o‘zgartiradi).
 
@@ -279,14 +279,14 @@ print(raqamlar)  # ro'yxat elementlari aralashadi, masalan, [3, 1, 5, 2, 4]
 
 📌 `datetime` moduli - Python kutubxonasi bo‘lib, sana va vaqt bilan ishlash uchun ishlatiladi. 
 
-### 📌 NIMA UCHUN FOYDALI?
+### ✅ NIMA UCHUN FOYDALI?
 
 - Vaqtni hisoblash (masalan, ikki sana orasidagi farqni topish)
 - Hozirgi vaqtni olish
 - Sanalarni formatlash va ko‘rsatish
 - Muddatlarni qo‘shish yoki ayirish.
 
-### 1. datetime.date.today()
+### 1. `datetime.date.today()`
 
 📌 Hozirgi kundagi sanani qaytaradi (faqat sana, vaqt emas).
 
@@ -301,7 +301,7 @@ bugun = datetime.date.today()
 print(bugun)  # masalan, 2025-06-06
 ```
 
-### 2. datetime.datetime.now()
+### 2. `datetime.datetime.now()`
 
 📌 Hozirgi sanani va vaqtni to‘liq qaytaradi (soat, daqiqa, soniya bilan).
 
@@ -316,7 +316,7 @@ hozir = datetime.datetime.now()
 print(hozir)  # masalan, 2025-06-06 15:30:25.123456
 ```
 
-### 3. datetime.timedelta(days=5)
+### 3. `datetime.timedelta(days=5)`
 
 📌 Vaqt oralig‘ini ifodalaydi. Masalan, 5 kun yoki 2 soat kabilarni yaratadi.
 
@@ -341,13 +341,13 @@ print(kelasi_sana)  # bugun sanadan 5 kun keyingi sana chiqadi
 
 `os moduli` — bu Python kutubxonasi bo‘lib, u orqali operatsion tizim bilan bog‘liq amallarni bajarish mumkin.
 
-### 📌 NIMA UCHUN FOYDALI?
+### ✅ NIMA UCHUN FOYDALI?
 
 - Fayllar va papkalar ustida amallar bajarish (yaratish, o‘chirish, ko‘rish)
 - Biz ishlab turgan papkani yo'lini aniqlash
 - Papka va fayllar bilan dastur orqali interaktiv ishlash
 
-### 1. os.getcwd()
+### 1. `os.getcwd()`
 
 📌 Biz ishlab turgan papkani (working directory) yo‘lini qaytaradi.
 
@@ -362,7 +362,7 @@ papka = os.getcwd()
 print(papka)  # Masalan: /home/username/projects
 ```
 
-### 2. os.listdir(path)
+### 2. `os.listdir(path)`
 
 📌 Berilgan papka ichidagi barcha fayl va papkalar ro‘yxatini beradi.
 
@@ -377,7 +377,7 @@ fayllar = os.listdir('.')  # '.' bu hozirgi ishlab turgan papkani bildiradi
 print(fayllar)  # Masalan: ['file1.txt', 'image.png', 'folder1']
 ```
 
-### 3. os.mkdir(name)
+### 3. `os.mkdir(name)`
 
 📌 Yangi papka yaratadi.
 
@@ -390,4 +390,19 @@ os.mkdir('yangi_papka')
 
 # Papka yaratilib bo‘lgani haqida xabar beramiz
 print("Yangi papka yaratildi")
+```
+
+### 3. `os.remove(filename)`
+
+📌 Faylni o‘chiradi.
+
+```python
+# os modulini import qilamiz, fayllar va papkalar bilan ishlash uchun kerak
+import os
+
+# 'eskifayl.txt' nomli faylni o'chiramiz (agar mavjud bo'lsa)
+os.remove('old_file.txt')
+
+# Fayl muvaffaqiyatli o'chirilgani haqida xabar beramiz
+print("Fayl o'chirildi")
 ```
