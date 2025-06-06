@@ -163,7 +163,7 @@ def divide(a, b):
 
 ## ✅ FOYDALI MODULLAR
 
-### 📌 [`math` MODULI](https://docs.python.org/3/library/math.html)
+### 📌 [math MODULI](https://docs.python.org/3/library/math.html)
 
 ### 📌 NIMA UCHUN FOYDALI?
 
@@ -190,4 +190,68 @@ print(math.ceil(-3.4))  # Natija: -3
 
 # 7 allaqachon butun son, shuning uchun o‘zgarmaydi
 print(math.ceil(7))     # Natija: 7  
+```
+
+### 2. `math.floor(x)`
+
+📌 `x` sonini pastga qarab yaxlitlaydi. Ya'ni, agar son butun emas bo‘lsa, oldingi eng yaqin butun songa tushiradi. Agar son butun bo‘lsa, o‘zi o‘zgarmaydi.
+
+```python
+# 'math' modulini import qilamiz
+import math
+
+# 5.9 sonini pastga qarab butun songa yaxlitlaymiz (floor funksiyasi)
+print(math.floor(5.9))    # Natija: 5
+
+# 5.1 sonini pastga qarab butun songa yaxlitlaymiz
+print(math.floor(5.1))    # Natija: 5
+
+# Manfiy -3.4 sonini pastga qarab yaxlitlaymiz (-3.4 dan kichik eng katta butun son -4)
+print(math.floor(-3.4))   # Natija: -4  
+
+# 7 allaqachon butun son, shuning uchun o‘zgarmaydi
+print(math.floor(7))      # Natija: 7  
+```
+
+### [random MODULI](https://www.w3schools.com/python/module_random.asp)
+
+📌 `random` moduli — bu Python kutubxonasi bo‘lib, u yordamida tasodifiy sonlar, tasodifiy elementlar tanlash va ro‘yxatlarni aralashtirish mumkin.
+
+### 📌 NIMA UCHUN FOYDALI?
+
+- O'yinlarda qahramonlar yoki voqealar uchun tasodifiylik yaratish uchun,
+- Testlarda tasodifiy savollar tanlash uchun,
+- Statistik tadqiqotlarda namuna olish uchun ishlatiladi.
+
+### 1. random.randint(a, b)
+
+📌 `a` va `b` orasidagi tasodifiy butun sonni qaytaradi (a va b ham shu oraliqqa kiradi).
+
+```python
+# random modulini import qilamiz, bu modul tasodifiy sonlar bilan ishlash uchun kerak
+import random
+
+# 1 dan 10 gacha (ikkala chegarani ham qo'shib) tasodifiy butun son hosil qilamiz
+son = random.randint(1, 10)
+
+# Hosil qilingan tasodifiy sonni ekranga chiqaramiz
+print(son)  # 1 dan 10 gacha bo'lgan butun son (masalan, 3, 7, 10 va hokazo)
+```
+
+### 2. random.choice(sequence)
+
+📌 Berilgan ketma-ketlik (list, string yoki boshqa iterable) ichidan tasodifiy bitta elementni tanlaydi.
+
+```python
+# random modulini import qilamiz, tasodifiy element tanlash uchun kerak bo‘ladi
+import random
+
+# Mevalar ro‘yxatini yaratamiz
+mevalar = ['olma', 'banan', 'anor', 'shaftoli']
+
+# Ro‘yxatdan tasodifiy bitta meva tanlaymiz
+tasodifiy_meva = random.choice(mevalar)
+
+# Tanlangan mevaning nomini ekranga chiqaramiz
+print(tasodifiy_meva)  # masalan, 'anor' yoki 'banan' chiqishi mumkin
 ```
