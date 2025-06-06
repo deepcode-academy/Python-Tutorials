@@ -1,10 +1,12 @@
 # PYTHON DASTURLASH ASOSLARI
 
-**Pythonda fayllar bilan ishlash dasturlashning muhim qismidir. Bu orqali siz ma'lumotlarni saqlash, o'qish, tahrirlash va boshqarish imkoniyatiga ega bo'lasiz.**
+# 13-DARS FAYLLAR
 
-# Faylni ochish
+📌 Pythonda fayllar bilan ishlash dasturlashning muhim qismidir. Bu orqali siz ma'lumotlarni saqlash, o'qish, tahrirlash va boshqarish imkoniyatiga ega bo'lasiz.
 
-Faylni ochish uchun `open()` funksiyasidan foydalaniladi. Bu funksiya fayl nomini va rejimini qabul qiladi. `open()` funksiyasida ikkinchi parametr sifatida fayl rejimini ko'rsatishingiz mumkin:
+## ✅ FAYLNI OCHISH
+
+📌 Faylni ochish uchun `open()` funksiyasidan foydalaniladi. Bu funksiya fayl nomini va rejimini qabul qiladi. `open()` funksiyasida ikkinchi parametr sifatida fayl rejimini ko'rsatishingiz mumkin:
 
 ### Fayl rejimlari
 
