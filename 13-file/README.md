@@ -1,6 +1,6 @@
 # PYTHON DASTURLASH ASOSLARI
 
-# 13-DARS FAYLLAR
+# 🧩 13-DARS FAYLLAR
 
 📌 Pythonda fayllar bilan ishlash dasturlashning muhim qismidir. Bu orqali siz ma'lumotlarni saqlash, o'qish, tahrirlash va boshqarish imkoniyatiga ega bo'lasiz.
 
