@@ -406,3 +406,54 @@ os.remove('old_file.txt')
 # Fayl muvaffaqiyatli o'chirilgani haqida xabar beramiz
 print("Fayl o'chirildi")
 ```
+
+### 📌 [json moduli](https://www.w3schools.com/python/python_json.asp)
+
+📌 `json moduli` — bu Python kutubxonasi bo‘lib, `JSON` formatidagi ma’lumotlar bilan ishlash uchun ishlatiladi. `JSON` — bu ma’lumotlarni yozish va uzatishda keng qo‘llaniladigan standart format.
+Web dasturlashda, `API` (Application Programming Interface) lar bilan ishlashda juda muhim.
+
+### ✅ NIMA UCHUN FOYDALI?
+
+- JSON formatidagi ma’lumotlarni Python obyektlariga o‘qish,
+- Python obyektlarini JSON formatiga yozish,
+- API dan kelgan JSON javoblarini qayta ishlash,
+- Ma’lumotlarni faylga JSON formatida saqlash va o‘qish.
+
+### `json.loads(s)`
+
+📌 JSON ko‘rinishidagi satrni Python obyektiga (list, dictionary va boshqalar) aylantiradi.
+
+```python
+# json modulini import qilamiz, JSON formatidagi ma'lumotlarni o'qish va yozish uchun kerak
+import json
+
+# JSON formatidagi satrni yaratamiz (string ko'rinishida)
+json_satr = '{"ism": "Umid", "yosh": 25}'
+
+# json.loads() funksiyasi yordamida JSON stringlarni Python dictionaryga aylantiramiz
+python_obj = json.loads(json_satr)
+
+# Python lug'atini ekranga chiqaramiz
+print(python_obj)  # {'ism': 'Umid', 'yosh': 25}
+
+# Dictionarydan 'ism' kalitiga mos keluvchi qiymatni chiqaramiz
+print(python_obj['ism'])  # Umid
+```
+
+### 2. `json.dumps(obj)`
+
+📌 Python obyektini JSON formatidagi stringga aylantiradi.
+
+```python
+# json modulini import qilamiz, JSON formatiga o‘tkazish va o‘qish uchun kerak
+import json
+
+# Python dictionary yaratamiz
+python_obj = {'ism': 'Umid', 'yosh': 25}
+
+# json.dumps() yordamida Python dictionaryni JSON formatidagi stringga aylantiramiz
+json_satr = json.dumps(python_obj)
+
+# JSON formatidagi stringni ekranga chiqaramiz
+print(json_satr)  # '{"ism": "Umid", "yosh": 25}'
+```
