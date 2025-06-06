@@ -6,7 +6,7 @@
 > **Eslatma:** Pythonda istisno holatlarni boshqarish dasturda yuzaga keladigan xatoliklarni to'g'ri boshqarish va dasturimizni barqaror ishlashini ta'minlash uchun muhim hisoblanadi. Bu `try`, `except`, `else`, va `finally` bloklari orqali amalga oshiriladi.
 
 ## ✅ EXCEPTION HANDLING HAQIDA UMUMIY TUSHUNCHA
-Dastur bajarilishi davomida foydalanuvchidan noto‘g‘ri ma'lumot kiritilishi, fayl topilmasligi, nolga bo‘lish holati yoki boshqa xatoliklar yuz berishi mumkin. Exception Handling orqali bu xatoliklar dastur to‘xtab qolmasdan, foydalanuvchiga tushunarli tarzda xabar berib, dasturni davom ettirish imkonini beradi.
+📌 Dastur bajarilishi davomida foydalanuvchidan noto‘g‘ri ma'lumot kiritilishi, fayl topilmasligi, nolga bo‘lish holati yoki boshqa xatoliklar yuz berishi mumkin. Exception Handling orqali bu xatoliklar dastur to‘xtab qolmasdan, foydalanuvchiga tushunarli tarzda xabar berib, dasturni davom ettirish imkonini beradi.
 
 ## ✅ EXCEPTION HANDLING SINTAKSISI
 
@@ -21,8 +21,8 @@ finally:
     # Har doim ishlaydigan kod
 ```
 
-## ✅ 1. **try, except**
-- `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
+## ✅ try, except
+📌 `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
     
 ```python
 try:
@@ -42,8 +42,8 @@ except ValueError:
 
 
 
-2. **else**
-- Agar `try` blokida xatolik yuz bermasa, `else` bloki ishga tushadi. Bu blokda xatoliklar bo'lmasa bajarilishi kerak bo'lgan kodlar yoziladi.
+## ✅ else
+📌 Agar `try` blokida xatolik yuz bermasa, `else` bloki ishga tushadi. Bu blokda xatoliklar bo'lmasa bajarilishi kerak bo'lgan kodlar yoziladi.
 
 ```python
 try:
@@ -64,8 +64,8 @@ else:
 
 
 
-3. **finally**
-- `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
+## ✅ finally
+📌 `finally` bloki har qanday holatda ham, xatolik yuz bergan yoki bermagan bo'lsa ham, bajariladi. Bu blok, masalan, resurslarni tozalash yoki fayllarni yopish uchun ishlatilishi mumkin.
 
 ```python
 try:
@@ -81,8 +81,8 @@ finally:
     print("Dastur yakunlandi.")
 ```
 
-4. **XATONI NOMI BILAN CHIQARISH**
-- Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
+## ✅ XATONI NOMI BILAN CHIQARISH
+📌 Ba'zi hollarda, sodir bo'lgan xatoni dasturiy tilda yozib chiqish kerak bo'lishi mumkin. Bunda `as` kalit so'zi orqali xato ob'ektiga nom berish mumkin:
 
 ```py
 try:
@@ -98,9 +98,9 @@ except FileNotFoundError as xato:
 ```
 
 
-5. **BIR NECHTA XATOLARNI BITTA except DA USHLASH**
+## ✅ BIR NECHTA XATOLARNI BITTA except DA USHLASH
 
-- Bir nechta xatolarni bitta `except` blokida ushlash mumkin.
+📌 Bir nechta xatolarni bitta `except` blokida ushlash mumkin.
 
 ```python
 try:
@@ -117,7 +117,7 @@ except (ValueError, ZeroDivisionError) as x:
     print(f"Xatolik: {x}")
 ```
 
-6. **MAXSUS XATOLIK YARATISH (raise)**
+## ✅ MAXSUS XATOLIK YARATISH (raise)
 
 > [!NOTE]
 > Pythonda `raise` — bu sun'iy (ya'ni o‘zimiz xohlagan paytda) xatolik chaqirish uchun ishlatiladi. Ayniqsa, foydalanuvchi noto‘g‘ri ma'lumot kiritsa, unga aniq xatolik berish uchun foydalidir.
@@ -140,7 +140,7 @@ except ValueError as x:
     print(f"Xatolik: {x}")
 ```
 
-## AMALIYOT
+## ✅ AMALIYOT
 
 1. Nolga bo‘lish
     - Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalaning.
