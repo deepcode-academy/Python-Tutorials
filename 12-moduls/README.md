@@ -121,7 +121,7 @@ class Person:
 ```
 
 ## ✅MODULDAN FOYDALANISH
-📌 `Modul` yaratganingizdan so'ng, uni boshqa Python dasturlarida `import` qilib ishlatishingiz mumkin.
+📌 Modul yaratganingizdan so'ng, uni boshqa Python dasturlarida `import` qilib ishlatishingiz mumkin.
 
 ```python
 # mymodule modulini import qilamiz, undagi funksiyalar va klasslardan foydalanish uchun
@@ -301,7 +301,7 @@ bugun = datetime.date.today()
 print(bugun)  # masalan, 2025-06-06
 ```
 
-### 1. datetime.datetime.now()
+### 2. datetime.datetime.now()
 
 📌 Hozirgi sanani va vaqtni to‘liq qaytaradi (soat, daqiqa, soniya bilan).
 
@@ -314,4 +314,80 @@ hozir = datetime.datetime.now()
 
 # Olingan sana va vaqtni ekranga chiqaramiz, masalan: 2025-06-06 15:30:25.123456
 print(hozir)  # masalan, 2025-06-06 15:30:25.123456
+```
+
+### 3. datetime.timedelta(days=5)
+
+📌 Vaqt oralig‘ini ifodalaydi. Masalan, 5 kun yoki 2 soat kabilarni yaratadi.
+
+```python
+# datetime modulini import qilamiz, sana va vaqt bilan ishlash uchun kerak
+import datetime
+
+# timedelta obyektini yaratamiz, bu 5 kunlik vaqt farqini ifodalaydi
+besh_kun = datetime.timedelta(days=5)
+
+# Hozirgi sanani olamiz
+bugun = datetime.date.today()
+
+# Bugungi sanaga 5 kun qo'shamiz, natijada kelasi sana hosil bo'ladi
+kelasi_sana = bugun + besh_kun
+
+# Kelasi sanani ekranga chiqaramiz
+print(kelasi_sana)  # bugun sanadan 5 kun keyingi sana chiqadi
+```
+
+### 📌 [os moduli](https://www.w3schools.com/python/module_os.asp)
+
+`os moduli` — bu Python kutubxonasi bo‘lib, u orqali operatsion tizim bilan bog‘liq amallarni bajarish mumkin.
+
+### 📌 NIMA UCHUN FOYDALI?
+
+- Fayllar va papkalar ustida amallar bajarish (yaratish, o‘chirish, ko‘rish)
+- Biz ishlab turgan papkani yo'lini aniqlash
+- Papka va fayllar bilan dastur orqali interaktiv ishlash
+
+### 1. os.getcwd()
+
+📌 Biz ishlab turgan papkani (working directory) yo‘lini qaytaradi.
+
+```python
+# os modulini import qilamiz, operatsion tizim bilan bog‘liq funksiyalar uchun kerak
+import os
+
+# Hozirgi ishchi papkaning (current working directory) yo‘lini olamiz
+papka = os.getcwd()
+
+# Olingan papka yo‘lini ekranga chiqaramiz, masalan: /home/username/projects
+print(papka)  # Masalan: /home/username/projects
+```
+
+### 2. os.listdir(path)
+
+📌 Berilgan papka ichidagi barcha fayl va papkalar ro‘yxatini beradi.
+
+```python
+# os modulini import qilamiz, operatsion tizim bilan ishlash uchun kerak
+import os
+
+# Hozirgi papkadagi barcha fayl va papkalar ro'yxatini olamiz
+fayllar = os.listdir('.')  # '.' bu hozirgi ishlab turgan papkani bildiradi
+
+# Olingan fayl va papkalar ro'yxatini ekranga chiqaramiz
+print(fayllar)  # Masalan: ['file1.txt', 'image.png', 'folder1']
+```
+
+### 3. os.mkdir(name)
+
+📌 Yangi papka yaratadi.
+
+```python
+# os modulini import qilamiz, operatsion tizim bilan ishlash uchun kerak
+import os
+
+# 'yangi_papka' nomli yangi papka yaratamiz (agar mavjud bo'lmasa)
+os.mkdir('yangi_papka')
+
+# Papka yaratilib bo‘lgani haqida xabar beramiz
+print("Yangi papka yaratildi")
 ```
