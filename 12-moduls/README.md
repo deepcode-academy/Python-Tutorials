@@ -162,76 +162,10 @@ def divide(a, b):
 ```
 
 ## ✅ FOYDALI MODULLAR
-### SANA VA VAQT BILAN ISHLASH UCHUN
 
-- `datetime` moduli sana va vaqt bilan ishlash uchun juda foydali. Ushbu modul quyidagi asosiy komponentlarni o'z ichiga oladi:
-- **datetime:** Sana va vaqtni ifodalovchi obyektlar yaratish uchun.
-- **date:** Faqat sana ma'lumotini ifodalash uchun.
-- **time:** Faqat vaqt ma'lumotini ifodalash uchun.
-- **timedelta:** Sana yoki vaqt o'rtasidagi farqni ifodalash uchun.
-- **timezone:** Soat zonalarini boshqarish uchun.
+📌 [`math` moduli](https://docs.python.org/3/library/math.html)
 
-1. `datetime` - sana va vaqtni ifodalash uchun ishlatiladi:
-```python
-from datetime import datetime
+📌 Nima uchun foydali?
 
-# Hozirgi sana va vaqtni olish
-now = datetime.now()
-print(now)  # 2024-08-19 14:30:00.123456
-
-# Sana va vaqtni formatlash
-formatted = now.strftime("%Y-%m-%d %H:%M:%S")
-print(formatted)  # 2024-08-19 14:30:00
-```
-2. `date` - faqat sana ma'lumotini saqlaydi:
-```python
-from datetime import date
-
-# Hozirgi sanani olish
-today = date.today()
-print(today)  # 2024-08-19
-
-# Sana obyektini yaratish
-specific_date = date(2024, 8, 19)
-print(specific_date)  # 2024-08-19
-```
-3. `time` - faqat vaqt ma'lumotlarini saqlaydi:
-```python
-from datetime import time
-
-# Vaqt obyektini yaratish
-specific_time = time(14, 30, 45)
-print(specific_time)  # 14:30:45
-```
-4. `timedelta` - ikki sana yoki vaqtni o'rtasidagi farqni ifodalash uchun ishlatiladi:
-```python
-from datetime import datetime, timedelta
-
-# Hozirgi sana va vaqt
-now = datetime.now()
-
-# 5 kun qo'shish
-future_date = now + timedelta(days=5)
-print(future_date)
-
-# 5 kun oldingi sana
-past_date = now - timedelta(days=5)
-print(past_date)
-```
-5. `timezone` - soat zonalarini boshqarish uchun ishlatiladi:
-```python
-from datetime import datetime, timedelta
-
-# Hozirgi sana va vaqt
-now = datetime.now()
-
-# 5 kun qo'shish
-future_date = now + timedelta(days=5)
-print(future_date)
-
-# 5 kun oldingi sana
-past_date = now - timedelta(days=5)
-print(past_date)
-```
-
+- Matematik amallar uchun kerak bo'ladigan ko'plab funksiyalarni taqdim etadi: kvadrat ildiz, logarifm, trigonometrik funksiyalar va boshqalar.
 
