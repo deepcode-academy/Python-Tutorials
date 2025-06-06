@@ -163,15 +163,15 @@ def divide(a, b):
 
 ## ✅ FOYDALI MODULLAR
 
-📌 [`math` moduli](https://docs.python.org/3/library/math.html)
+### 📌 [`math` MODULI](https://docs.python.org/3/library/math.html)
 
-### 📌 Nima uchun foydali?
+### 📌 NIMA UCHUN FOYDALI?
 
 - Matematik hisob-kitoblarni oson va aniq bajarish uchun kerak.
 - Kvadrat ildiz, logarifm, trigonometrik funksiyalar, faktoriyal kabi ko‘plab matematik operatsiyalarni bajarish imkonini beradi.
 - Dasturlashda murakkab matematik formulalarni ishlatishda yordam beradi.
 
-1. `math.ceil(x)` 
+### 1. `math.ceil(x)` 
 
 📌 `x` sonini yuqoriga qarab yaxlitlaydi. Ya'ni, agar son butun emas bo‘lsa, keyingi eng yaqin butun songa oshiradi. Agar son butun bo‘lsa, o‘zi o‘zgarmaydi.
 
