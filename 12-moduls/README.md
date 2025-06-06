@@ -165,7 +165,29 @@ def divide(a, b):
 
 📌 [`math` moduli](https://docs.python.org/3/library/math.html)
 
-📌 Nima uchun foydali?
+### 📌 Nima uchun foydali?
 
-- Matematik amallar uchun kerak bo'ladigan ko'plab funksiyalarni taqdim etadi: kvadrat ildiz, logarifm, trigonometrik funksiyalar va boshqalar.
+- Matematik hisob-kitoblarni oson va aniq bajarish uchun kerak.
+- Kvadrat ildiz, logarifm, trigonometrik funksiyalar, faktoriyal kabi ko‘plab matematik operatsiyalarni bajarish imkonini beradi.
+- Dasturlashda murakkab matematik formulalarni ishlatishda yordam beradi.
 
+1. `math.ceil(x)` 
+
+📌 `x` sonini yuqoriga qarab yaxlitlaydi. Ya'ni, agar son butun emas bo‘lsa, keyingi eng yaqin butun songa oshiradi. Agar son butun bo‘lsa, o‘zi o‘zgarmaydi.
+
+```python
+# 'math' modulini import qilamiz
+import math
+
+# 5.1 sonini yuqoriga qarab butun songa yaxlitlaymiz (ceil funksiyasi)
+print(math.ceil(5.1))   # Natija: 6
+
+# 5.9 sonini yuqoriga qarab butun songa yaxlitlaymiz
+print(math.ceil(5.9))   # Natija: 6
+
+# Manfiy -3.4 sonini yuqoriga qarab yaxlitlaymiz (-3.4 dan katta eng kichik butun son -3)
+print(math.ceil(-3.4))  # Natija: -3  
+
+# 7 allaqachon butun son, shuning uchun o‘zgarmaydi
+print(math.ceil(7))     # Natija: 7  
+```
