@@ -1,14 +1,14 @@
 # PYTHON DASTURLASH ASOSLARI
 
-## 11-Dars: ISTISNO HOLARLARNI BOSHQARISH (EXCEPTION HANDLING)
+# 🧩 11-DARS ISTISNO HOLARLARNI BOSHQARISH (EXCEPTION HANDLING)
 
 > [!NOTE]
 > **Eslatma:** Pythonda istisno holatlarni boshqarish dasturda yuzaga keladigan xatoliklarni to'g'ri boshqarish va dasturimizni barqaror ishlashini ta'minlash uchun muhim hisoblanadi. Bu `try`, `except`, `else`, va `finally` bloklari orqali amalga oshiriladi.
 
-### EXCEPTION HANDLING HAQIDA UMUMIY TUSHUNCHA
+## ✅ EXCEPTION HANDLING HAQIDA UMUMIY TUSHUNCHA
 Dastur bajarilishi davomida foydalanuvchidan noto‘g‘ri ma'lumot kiritilishi, fayl topilmasligi, nolga bo‘lish holati yoki boshqa xatoliklar yuz berishi mumkin. Exception Handling orqali bu xatoliklar dastur to‘xtab qolmasdan, foydalanuvchiga tushunarli tarzda xabar berib, dasturni davom ettirish imkonini beradi.
 
-### EXCEPTION HANDLING SINTAKSISI
+## ✅ EXCEPTION HANDLING SINTAKSISI
 
 ```python
 try:
@@ -21,7 +21,7 @@ finally:
     # Har doim ishlaydigan kod
 ```
 
-1. **try, except**
+## ✅ 1. **try, except**
 - `try` blokida xatolik chiqishi mumkin bo‘lgan kod yoziladi. `except` blokida aniq xatolik turi bilan uni ushlab qolamiz.
     
 ```python
