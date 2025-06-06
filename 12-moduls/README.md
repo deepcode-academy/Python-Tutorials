@@ -41,7 +41,7 @@ yuza = math.pi * radius**2
 print(f"Aylana yuzi: {yuza}")
 ```
 
-## MODULLARDAN MUAYYAN QISMLARNI IMPORT QILISH
+## ✅ MODULLARDAN MUAYYAN QISMLARNI IMPORT QILISH
 
 📌`from modul_nomi import funksiya_yoki_object` sintaksisi yordamida siz ma'lum bir moduldan faqat kerakli `funksiya` yoki `o'zgaruvchini` import qilishingiz mumkin. Bu sizga modulni to'liq import qilmasdan, faqat zaruriy qismlarini olish imkonini beradi.
 
@@ -66,82 +66,102 @@ ildiz = sqrt(son)
 # Natijani ekranga chiqaramiz
 print(f"{son} ning kvadrat ildizi: {ildiz}")
 ```
-Yuqoridagi misolda biz faqat **sqrt**(kvadrat ildizi) funksiyasini `math` modulidan import qildik.
 
-## MODULGA BOSHQA NOM BERISH
-- Modulni import qilishda unga qisqa yoki qulayroq nom berish uchun `as` operatoridan foydalanishingiz mumkin.
+## ✅ MODULGA BOSHQA NOM BERISH
+📌 Modulni import qilishda unga qisqa yoki qulayroq nom berish uchun `as` operatoridan foydalanishingiz mumkin.
+
 ```python
+# 'math' modulini 'm' degan qisqa nom bilan import qilamiz
 import math as m
 
+# Aylananing radiusini belgilaymiz
 radius = 7
+
+# Aylananing diametrini hisoblaymiz: D = 2 * π * r formulasi bo‘yicha
 diametr = 2 * m.pi * radius
+
+# Hisoblangan diametrni ekranga chiqaramiz
 print(f"Aylananing diametri: {diametr}")
 ```
-Bu yerda `math` moduli `m` nomi bilan import qilingan va kodda shu nom bilan ishlatilgan.
 
-## MODUL YARATISH
-- Modul yaratish uchun asosiy dasturimizdagi funksiyalarni yangi faylga ko'chiramiz xolos. Modulga oson murojat qilishimiz uchun, faylimiz asosiy dasturimiz bilan bitta papkada bo'lgani afzal. Bunda adashib ketmaslik uchun, loyihangizning(dasturning) asosiy faylini `main.py` deb nomlash o'rinli. 
+## ✅ MODUL YARATISH
+📌 Modul yaratish uchun asosiy dasturimizdagi funksiyalarni yangi faylga ko'chiramiz xolos. Modulga oson murojat qilishimiz uchun, faylimiz asosiy dasturimiz bilan bitta papkada bo'lishi kerak. Bunda adashib ketmaslik uchun, loyihangizning(dasturning) asosiy faylini `main.py` deb nomlash o'rinli. 
 
 ```python
-# mymodule.py
+# mymodule.py - Bu modulda funksiyalar va klasslar jamlangan
 
+# Salomlashish uchun funksiya
 def greet(name):
     """Salomlashish funktsiyasi."""
     return f"Salom, {name}!"
 
+# Ikki sonni qo‘shish funksiyasi
 def add(a, b):
     """Ikki sonni qo'shish funktsiyasi."""
     return a + b
 
+# Ikki sonni ko‘paytirish funksiyasi
 def multiply(a, b):
     """Ikki sonni ko'paytirish funktsiyasi."""
     return a * b
 
+# Shaxslarni ifodalovchi klass
 class Person:
     """Shaxs klassi."""
     
+    # Klassni ishga tushiruvchi konstruktor
     def __init__(self, name, age):
         self.name = name
         self.age = age
     
+    # Shaxs haqida tanishtiruvchi metod
     def introduce(self):
         """Shaxsni tanishtiruvchi metod."""
         return f"Men {self.name} va {self.age} yoshdaman."
 ```
 
-### MODULDAN FOYDALANISH
-- `Modul` yaratganingizdan so'ng, uni boshqa Python dasturlarida `import` qilib ishlatishingiz mumkin.
-`main.py`
-```python
-# main.py
+## ✅MODULDAN FOYDALANISH
+📌 `Modul` yaratganingizdan so'ng, uni boshqa Python dasturlarida `import` qilib ishlatishingiz mumkin.
 
+```python
+# mymodule modulini import qilamiz, undagi funksiyalar va klasslardan foydalanish uchun
 import mymodule
 
-# Funksiyalardan foydalanish
+# greet funksiyasini chaqirib, "Ali" ga salom beramiz
 print(mymodule.greet("Ali"))
+
+# add funksiyasi yordamida 5 va 3 sonlarini qo‘shamiz va natijani chiqaramiz
 print(mymodule.add(5, 3))
+
+# multiply funksiyasi yordamida 4 va 7 sonlarini ko‘paytiramiz va natijani chiqaramiz
 print(mymodule.multiply(4, 7))
 
-# Klasslardan foydalanish
+# Person klassidan yangi obyekt yaratamiz, ism va yoshni beramiz
 person = mymodule.Person("Omar", 25)
+
+# obyektning introduce metodini chaqirib, tanishtirish matnini chiqaramiz
 print(person.introduce())
 ```
-### MODULNI KENGAYTIRISH
-- Modulga qo'shimcha funksiyalar yoki klasslar qo'shishingiz mumkin. <br>
-Masalan: `mymodule.py`
+## ✅ MODULNI KENGAYTIRISH
+📌 Modulga qo'shimcha funksiyalar yoki klasslar qo'shishingiz mumkin.
+
+
 ```python
+# Ikki sondan birini ayirish funksiyasi
 def subtract(a, b):
     """Ikki sondan birini ayirish funktsiyasi."""
     return a - b
 
+# Ikki sonni bo'lish funksiyasi
 def divide(a, b):
     """Ikki sonni bo'lish funktsiyasi."""
     if b == 0:
+        # Agar bo‘luvchi 0 bo‘lsa, xatolik chiqaramiz
         raise ValueError("Bo'lish uchun 0 bilan bo'lish mumkin emas!")
     return a / b
 ```
 
-## FOYDALI MODULLAR
+## ✅ FOYDALI MODULLAR
 ### SANA VA VAQT BILAN ISHLASH UCHUN
 
 - `datetime` moduli sana va vaqt bilan ishlash uchun juda foydali. Ushbu modul quyidagi asosiy komponentlarni o'z ichiga oladi:
