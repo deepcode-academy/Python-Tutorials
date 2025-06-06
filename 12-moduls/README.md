@@ -5,6 +5,8 @@
 ### MODUL NIMA?
 Modul — bu Python fayli bo‘lib, u ichida `funksiyalar`, `classlar`, `o‘zgaruvchilar`, yoki boshqa Python kodlari saqlanadi.
 
+Modulning asosiy vazifasi — kodni bo‘laklarga ajratish, tartibli saqlash va boshqa joylarda qayta ishlatish imkonini berish.
+
 ### MODUL KERAKMI? NIMA FOYDA?
 
 - **Quyidagi sabablarga ko‘ra modul foydali:**
@@ -14,18 +16,24 @@ Modul — bu Python fayli bo‘lib, u ichida `funksiyalar`, `classlar`, `o‘zga
     - **Test qilish oson** — modulni alohida sinab ko‘rish mumkin.
 
 
-Modulning asosiy vazifasi — kodni bo‘laklarga ajratish, tartibli saqlash va boshqa joylarda qayta ishlatish imkonini berish.
 
-## MODULLARNI `import` QILISH
+
+## MODULLARNI import QILISH
 - Pythonda modullardan foydalanish uchun avvalo ularni `import` qilish kerak. Modullarni **import** qilish uchun `import` kalit so'zidan foydalaniladi.
 
 - `math` modulini `import` qilish
 ```python
+# 'math' modulini import qilamiz, bu modulda matematik funksiyalar mavjud
 import math
 
+# Aylananing radiusi 5 ga teng deb belgilaymiz
 radius = 5
-yuza = math.pi * (radius ** 2)
-print(f"Aylananing yuzasi: {yuza}")
+
+# Aylana yuzini hisoblaymiz: π * r^2 formulasi asosida
+yuza = math.pi * radius**2
+
+# Hisoblangan aylana yuzini ekranga chiqaramiz
+print(f"Aylana yuzi: {yuza}")
 ```
 Yuqoridagi misolda `math` moduli import qilinadi va undan `pi` konstantasi yordamida aylananing yuzasi hisoblanadi.
 
