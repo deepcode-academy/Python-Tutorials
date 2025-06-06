@@ -1,15 +1,20 @@
 # PYTHON DASTURLASH ASOSLARI
 
-## 11-dars Modullar
+## 12-dars Modullar
 
-## MODUL NIMA?
-Funksiyaning qulayliklaridan biri, ko'p takrorlanadigan kodlarni funksiya ichida yashirishimiz va kerak bo'lgan murojat qilishimiz mumkinligida. Maqsadimiz dasturimizni ixcham va tushunarli qilib, kelajakda o'zimiz yoki boshqalar uchun ham `toza` kod qoldrisih. Bu yo'nalishda yana bir qadam qo'yib, dasturimizni modullarga ajratimshimiz mumkin. 
+### MODUL NIMA?
+Modul — bu Python fayli bo‘lib, u ichida `funksiyalar`, `classlar`, `o‘zgaruvchilar`, yoki boshqa Python kodlari saqlanadi.
 
-Modul bu loyihamiz ichidagi alohida fayl bo'lib, dasturimiz davomida ishlatiladigan funskyalarni (va o'zgaruvchilarni) mana shu faylga joylab, ko'zdan yashirib qo'yishimiz mumkin. Bu bizga asosiy dasturimizdan chalg'imasdan kod yozish imkoniyatini beradi. 
+### MODUL KERAKMI? NIMA FOYDA?
 
-Modul va uning ichidagi funksiyalarni istalgan payt asosiy dasturimizga yuklab olishimiz, modullarni boshqa dasturchilar bilan ulashishimiz yoki kelajakda o'zimizning boshqa loyihalarimizda foydalanishimiz mumkin.
+- **Quyidagi sabablarga ko‘ra modul foydali:**
+    - **Kod takrorlanmasligi** — bir marta yozilgan kodni istalgan joyda qayta ishlatish mumkin.
+    - **Kodlarni guruhlash** — o‘xshash funksiyalar bitta faylga to‘plansa, ularni boshqarish oson bo‘ladi.
+    - **Katta dasturlarni boshqarish osonlashadi** — har bir qism alohida modul bo‘lsa, tuzilma soddalashadi.
+    - **Test qilish oson** — modulni alohida sinab ko‘rish mumkin.
 
-Umuman olganda katta dasturlar bir nech o'nlab modullardan iborat bo'lishi tabiiy hol.
+
+Modulning asosiy vazifasi — kodni bo‘laklarga ajratish, tartibli saqlash va boshqa joylarda qayta ishlatish imkonini berish.
 
 ## MODULLARNI `import` QILISH
 - Pythonda modullardan foydalanish uchun avvalo ularni `import` qilish kerak. Modullarni **import** qilish uchun `import` kalit so'zidan foydalaniladi.
