@@ -17,12 +17,16 @@
 - **Test qilish oson** — modulni alohida sinab ko‘rish mumkin.
 
 
-
-
 ## ✅ MODULLARNI import QILISH
-- Pythonda modullardan foydalanish uchun avvalo ularni `import` qilish kerak. Modullarni **import** qilish uchun `import` kalit so'zidan foydalaniladi.
+📌 Pythonda modullardan foydalanish uchun avvalo ularni `import` qilish kerak. Modullarni **import** qilish uchun `import` kalit so'zidan foydalaniladi.
 
-- `math` modulini `import` qilish
+```python
+# Dasturga tashqi yoki ichki modulni ulash (import qilish) uchun ishlatiladi
+# 'modul_nomi' o‘rniga kerakli modul nomi yoziladi (masalan: math, random, datetime va h.k.)
+import modul_nomi
+```
+
+📌 `math` modulini `import` qilish
 ```python
 # 'math' modulini import qilamiz, bu modulda matematik funksiyalar mavjud
 import math
@@ -36,28 +40,30 @@ yuza = math.pi * radius**2
 # Hisoblangan aylana yuzini ekranga chiqaramiz
 print(f"Aylana yuzi: {yuza}")
 ```
-Yuqoridagi misolda `math` moduli import qilinadi va undan `pi` konstantasi yordamida aylananing yuzasi hisoblanadi.
 
-- `import modul_nomi` sintaksisi Pythonda bir modulni `import` qilish uchun ishlatiladi. Bu sintaksis orqali siz Python modullarini skriptlaringizda yoki boshqa modullarda ishlatishingiz mumkin.
+## MODULLARDAN MUAYYAN QISMLARNI IMPORT QILISH
 
-- Sintaksisi
-```python
-import modul_nomi
-```
-`from modul_nomi import funksiya_yoki_object` sintaksisi yordamida siz ma'lum bir moduldan faqat kerakli `funksiya` yoki `o'zgaruvchini` import qilishingiz mumkin. Bu sizga modulni to'liq import qilmasdan, faqat zaruriy qismlarini olish imkonini beradi.
+📌`from modul_nomi import funksiya_yoki_object` sintaksisi yordamida siz ma'lum bir moduldan faqat kerakli `funksiya` yoki `o'zgaruvchini` import qilishingiz mumkin. Bu sizga modulni to'liq import qilmasdan, faqat zaruriy qismlarini olish imkonini beradi.
 
 ```python
+# Belgilangan modul ichidan faqat kerakli funksiya yoki obyektni import qilish uchun ishlatiladi
+# 'modul_nomi' – bu modul nomi (masalan: math, random, datetime)
+# 'funksiya_yoki_object' – modul ichidagi aniq bir funksiya, klass yoki o‘zgaruvchi nomi
 from modul_nomi import funksiya_yoki_object
 ```
+📌 `math` modulidan `sqrt` funksiyasini import qilish
 
-## MODULLARDAN MUAYYAN QIMSLARNI IMPORT QILISH
-- Agar siz faqat ma'lum bir funksiyani yoki o'zgaruvchini `import` qilishni istasangiz, `from ... import ...` sintaksisidan foydalanishingiz mumkin.
-`sqrt` funksiyasini `math` modulidan import qilish
 ```python
+# 'math' modulidan faqat 'sqrt' (kvadrat ildiz) funksiyasini import qilamiz
 from math import sqrt
 
+# Kvadrat ildizi olinadigan sonni belgilaymiz
 son = 16
+
+# Berilgan sonning kvadrat ildizini hisoblaymiz
 ildiz = sqrt(son)
+
+# Natijani ekranga chiqaramiz
 print(f"{son} ning kvadrat ildizi: {ildiz}")
 ```
 Yuqoridagi misolda biz faqat **sqrt**(kvadrat ildizi) funksiyasini `math` modulidan import qildik.
