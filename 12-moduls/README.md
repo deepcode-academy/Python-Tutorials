@@ -494,32 +494,32 @@ with open('data.json', 'w') as fayl:
 
 # AMALIYOT
 
-📌 `math` modulidan foydalanib, 10 ta sonning kvadrat ildizini hisoblovchi dastur yozing va natijalarni chiqaring.
+1. 📌 `math` modulidan foydalanib, 10 ta sonning kvadrat ildizini hisoblovchi dastur yozing va natijalarni chiqaring.
 
-📌 `random` modulidan foydalanib, 1 dan 100 gacha bo‘lgan 5 ta tasodifiy butun sonlarni ro‘yxatga joylashtiring va ularni ekranga chiqaring.
+2. 📌 `random` modulidan foydalanib, 1 dan 100 gacha bo‘lgan 5 ta tasodifiy butun sonlarni ro‘yxatga joylashtiring va ularni ekranga chiqaring.
 
-📌 `datetime` modulidan foydalanib, bugungi sanani va vaqtni formatlangan holda `YYYY-MM-DD HH:MM:SS` ko‘rinishida ekranga chiqaring.
+3. 📌 `datetime` modulidan foydalanib, bugungi sanani va vaqtni formatlangan holda `YYYY-MM-DD HH:MM:SS` ko‘rinishida ekranga chiqaring.
 
-📌 O‘zingizning kichik modul faylingizni yarating (`mycalc.py`) va unga `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` funksiyalarini yozing. Keyin ularni boshqa dasturga import qilib chaqiring.
+4. 📌 O‘zingizning kichik modul faylingizni yarating (`mycalc.py`) va unga `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` funksiyalarini yozing. Keyin ularni boshqa dasturga import qilib chaqiring.
 
-📌 `math` modulidan `pi` va `sin` funksiyalarini import qilib, 0 dan π gacha bo‘lgan 5 ta qiymat uchun sinuslarini hisoblab chiqaring.
+5. 📌 `math` modulidan `pi` va `sin` funksiyalarini import qilib, 0 dan π gacha bo‘lgan 5 ta qiymat uchun sinuslarini hisoblab chiqaring.
 
-📌 `random.choice()` funksiyasi yordamida ro‘yxatdan tasodifiy 3 ta ism tanlab, ularni ekranga chiqaring.
+6. 📌 `random.choice()` funksiyasi yordamida ro‘yxatdan tasodifiy 3 ta ism tanlab, ularni ekranga chiqaring.
 
-📌 `random.shuffle()` yordamida berilgan ro‘yxat elementlarini aralashtiring va natijani chop eting.
+7. 📌 `random.shuffle()` yordamida berilgan ro‘yxat elementlarini aralashtiring va natijani chop eting.
 
-📌 `datetime` modulidan foydalanib, foydalanuvchidan yil, oy, kun kiritishini so‘rang va shu sanani `datetime.date` obyekti sifatida saqlang.
+8. 📌 `datetime` modulidan foydalanib, foydalanuvchidan yil, oy, kun kiritishini so‘rang va shu sanani `datetime.date` obyekti sifatida saqlang.
 
-📌 Yangi modul yarating, unga `greet(name)` funksiyasini yozing, u berilgan ismga salom beradi. Modulni import qilib, turli ismlar bilan chaqiring.
+9. 📌 Yangi modul yarating, unga `greet(name)` funksiyasini yozing, u berilgan ismga salom beradi. Modulni import qilib, turli ismlar bilan chaqiring.
 
-📌 `math` modulining `ceil` va `floor` funksiyalarini import qilib, foydalanuvchi kiritgan haqiqiy son uchun ikkala qiymatni ham chiqaring.
+10. 📌 `math` modulining `ceil` va `floor` funksiyalarini import qilib, foydalanuvchi kiritgan haqiqiy son uchun ikkala qiymatni ham chiqaring.
 
-📌 O‘z modulingizda yangi funksiya yarating — `is_even(number)` — son juft yoki toqligini tekshiradi va `True` yoki `False` qaytaradi. Modulni import qilib, ro‘yxatdagi sonlarni tekshiring.
+11. 📌 O‘z modulingizda yangi funksiya yarating — `is_even(number)` — son juft yoki toqligini tekshiradi va `True` yoki `False` qaytaradi. Modulni import qilib, ro‘yxatdagi sonlarni tekshiring.
 
-📌 `random` modulidan foydalanib, 52 ta kartadan iborat ro‘yxat yarating (masalan: "Queen of Hearts", "10 of Diamonds", va hokazo), keyin tasodifiy 5 ta kartani tanlab chiqaring. (Diamonds, Hearts, Clubs, Spades)
+12. 📌 `random` modulidan foydalanib, 52 ta kartadan iborat ro‘yxat yarating (masalan: "Queen of Hearts", "10 of Diamonds", va hokazo), keyin tasodifiy 5 ta kartani tanlab chiqaring. (Diamonds, Hearts, Clubs, Spades)
 
-📌 `datetime` modulidan hozirgi vaqtni olib, uni soat, daqiqa va sekundga ajratib chiqaradigan dastur yozing.
+13. 📌 `datetime` modulidan hozirgi vaqtni olib, uni soat, daqiqa va sekundga ajratib chiqaradigan dastur yozing.
 
-📌 Modulga yangi funksiyalar qo‘shing: `factorial(n)` va `is_prime(n)`, ularni o‘zingiz yozing (modulda) va keyin asosiy dasturda chaqiring.
+14. 📌 Modulga yangi funksiyalar qo‘shing: `factorial(n)` va `is_prime(n)`, ularni o‘zingiz yozing (modulda) va keyin asosiy dasturda chaqiring.
 
-📌 `math` modulidan `pow` funksiyasini import qilib, foydalanuvchidan asosi va darajani qabul qilib, natijani hisoblang.
+15. 📌 `math` modulidan `pow` funksiyasini import qilib, foydalanuvchidan asosi va darajani qabul qilib, natijani hisoblang.
