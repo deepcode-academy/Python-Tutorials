@@ -222,6 +222,7 @@ print(math.floor(7))      # Natija: 7
 - O'yinlarda qahramonlar yoki voqealar uchun tasodifiylik yaratish uchun,
 - Testlarda tasodifiy savollar tanlash uchun,
 - Statistik tadqiqotlarda namuna olish uchun ishlatiladi.
+- Shuningdek, har xil dasturlarda tasodifiy natijalar yaratishda qo‘llaniladi.
 
 ### 1. random.randint(a, b)
 
@@ -254,4 +255,63 @@ tasodifiy_meva = random.choice(mevalar)
 
 # Tanlangan mevaning nomini ekranga chiqaramiz
 print(tasodifiy_meva)  # masalan, 'anor' yoki 'banan' chiqishi mumkin
+```
+
+### 3. random.shuffle(list)
+
+📌 List elementlarini joyini tasodifiy tarzda almashtiradi (listni o‘zgartiradi).
+
+```python
+# random modulini import qilamiz, ro'yxat elementlarini aralashtirish uchun kerak
+import random
+
+# Raqamlar ro'yxatini yaratamiz
+raqamlar = [1, 2, 3, 4, 5]
+
+# Ro'yxatdagi elementlarni tasodifiy tartibda aralashtiramiz
+random.shuffle(raqamlar)
+
+# Aralashtirilgan ro'yxatni ekranga chiqaramiz
+print(raqamlar)  # ro'yxat elementlari aralashadi, masalan, [3, 1, 5, 2, 4]
+```
+
+### [datetime moduli](https://www.w3schools.com/python/python_datetime.asp)
+
+📌 `datetime` moduli - Python kutubxonasi bo‘lib, sana va vaqt bilan ishlash uchun ishlatiladi. 
+
+### 📌 NIMA UCHUN FOYDALI?
+
+- Vaqtni hisoblash (masalan, ikki sana orasidagi farqni topish)
+- Hozirgi vaqtni olish
+- Sanalarni formatlash va ko‘rsatish
+- Muddatlarni qo‘shish yoki ayirish.
+
+### 1. datetime.date.today()
+
+📌 Hozirgi kundagi sanani qaytaradi (faqat sana, vaqt emas).
+
+```python
+# datetime modulini import qilamiz, vaqt va sana bilan ishlash uchun kerak
+import datetime
+
+# Hozirgi sanani olish uchun today() funksiyasidan foydalanamiz
+bugun = datetime.date.today()
+
+# Olingan sanani ekranga chiqaramiz, masalan: 2025-06-06
+print(bugun)  # masalan, 2025-06-06
+```
+
+### 1. datetime.datetime.now()
+
+📌 Hozirgi sanani va vaqtni to‘liq qaytaradi (soat, daqiqa, soniya bilan).
+
+```python
+# datetime modulini import qilamiz, sana va vaqt bilan ishlash uchun kerak
+import datetime
+
+# Hozirgi sana va vaqtni olish uchun now() funksiyasidan foydalanamiz
+hozir = datetime.datetime.now()
+
+# Olingan sana va vaqtni ekranga chiqaramiz, masalan: 2025-06-06 15:30:25.123456
+print(hozir)  # masalan, 2025-06-06 15:30:25.123456
 ```
