@@ -275,7 +275,7 @@ random.shuffle(raqamlar)
 print(raqamlar)  # ro'yxat elementlari aralashadi, masalan, [3, 1, 5, 2, 4]
 ```
 
-### [datetime moduli](https://www.w3schools.com/python/python_datetime.asp)
+### [datetime MODULI](https://www.w3schools.com/python/python_datetime.asp)
 
 📌 `datetime` moduli - Python kutubxonasi bo‘lib, sana va vaqt bilan ishlash uchun ishlatiladi. 
 
@@ -337,7 +337,7 @@ kelasi_sana = bugun + besh_kun
 print(kelasi_sana)  # bugun sanadan 5 kun keyingi sana chiqadi
 ```
 
-### 📌 [os moduli](https://www.w3schools.com/python/module_os.asp)
+### 📌 [os MODULI](https://www.w3schools.com/python/module_os.asp)
 
 `os moduli` — bu Python kutubxonasi bo‘lib, u orqali operatsion tizim bilan bog‘liq amallarni bajarish mumkin.
 
@@ -407,7 +407,7 @@ os.remove('old_file.txt')
 print("Fayl o'chirildi")
 ```
 
-### 📌 [json moduli](https://www.w3schools.com/python/python_json.asp)
+### 📌 [json MODULI](https://www.w3schools.com/python/python_json.asp)
 
 📌 `json moduli` — bu Python kutubxonasi bo‘lib, `JSON` formatidagi ma’lumotlar bilan ishlash uchun ishlatiladi. `JSON` — bu ma’lumotlarni yozish va uzatishda keng qo‘llaniladigan standart format.
 Web dasturlashda, `API` (Application Programming Interface) lar bilan ishlashda juda muhim.
@@ -457,3 +457,69 @@ json_satr = json.dumps(python_obj)
 # JSON formatidagi stringni ekranga chiqaramiz
 print(json_satr)  # '{"ism": "Umid", "yosh": 25}'
 ```
+
+### 3. `json.load(file)`
+
+📌 JSON faylini o‘qiydi va Python obyektiga aylantiradi.
+
+```python
+# json modulini import qilamiz, JSON fayllarni o'qish va yozish uchun kerak
+import json
+
+# 'data.json' faylini o'qish uchun ochamiz ('r' - read rejimi)
+with open('data.json', 'r') as fayl:
+    # fayldagi JSON ma'lumotlarni Python obyektiga (masalan, dictionary) o‘qiymiz
+    malumot = json.load(fayl)
+
+# Olingan ma'lumotni ekranga chiqaramiz
+print(malumot)
+```
+
+### 4. `json.dump(obj, file)`
+
+📌 Python obyektini JSON faylga yozadi.
+
+```python
+# json modulini import qilamiz, JSON formatida yozish va o'qish uchun kerak
+import json
+
+# Python dictionary yaratamiz, uni JSON formatida faylga yozamiz
+data = {'ism': 'Umid', 'yosh': 25}
+
+# 'data.json' faylini yozish uchun ochamiz ('w' - write rejimi)
+with open('data.json', 'w') as fayl:
+    # Python dictionaryni JSON formatida faylga yozamiz
+    json.dump(data, fayl)
+```
+
+# AMALIYOT
+
+📌 `math` modulidan foydalanib, 10 ta sonning kvadrat ildizini hisoblovchi dastur yozing va natijalarni chiqaring.
+
+📌 `random` modulidan foydalanib, 1 dan 100 gacha bo‘lgan 5 ta tasodifiy butun sonlarni ro‘yxatga joylashtiring va ularni ekranga chiqaring.
+
+📌 `datetime` modulidan foydalanib, bugungi sanani va vaqtni formatlangan holda `YYYY-MM-DD HH:MM:SS` ko‘rinishida ekranga chiqaring.
+
+📌 O‘zingizning kichik modul faylingizni yarating (`mycalc.py`) va unga `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` funksiyalarini yozing. Keyin ularni boshqa dasturga import qilib chaqiring.
+
+📌 `math` modulidan `pi` va `sin` funksiyalarini import qilib, 0 dan π gacha bo‘lgan 5 ta qiymat uchun sinuslarini hisoblab chiqaring.
+
+📌 `random.choice()` funksiyasi yordamida ro‘yxatdan tasodifiy 3 ta ism tanlab, ularni ekranga chiqaring.
+
+📌 `random.shuffle()` yordamida berilgan ro‘yxat elementlarini aralashtiring va natijani chop eting.
+
+📌 `datetime` modulidan foydalanib, foydalanuvchidan yil, oy, kun kiritishini so‘rang va shu sanani `datetime.date` obyekti sifatida saqlang.
+
+📌 Yangi modul yarating, unga `greet(name)` funksiyasini yozing, u berilgan ismga salom beradi. Modulni import qilib, turli ismlar bilan chaqiring.
+
+📌 `math` modulining `ceil` va `floor` funksiyalarini import qilib, foydalanuvchi kiritgan haqiqiy son uchun ikkala qiymatni ham chiqaring.
+
+📌 O‘z modulingizda yangi funksiya yarating — `is_even(number)` — son juft yoki toqligini tekshiradi va `True` yoki `False` qaytaradi. Modulni import qilib, ro‘yxatdagi sonlarni tekshiring.
+
+📌 `random` modulidan foydalanib, 52 ta kartadan iborat ro‘yxat yarating (masalan: "Queen of Hearts", "10 of Diamonds", va hokazo), keyin tasodifiy 5 ta kartani tanlab chiqaring. (Diamonds, Hearts, Clubs, Spades)
+
+📌 `datetime` modulidan hozirgi vaqtni olib, uni soat, daqiqa va sekundga ajratib chiqaradigan dastur yozing.
+
+📌 Modulga yangi funksiyalar qo‘shing: `factorial(n)` va `is_prime(n)`, ularni o‘zingiz yozing (modulda) va keyin asosiy dasturda chaqiring.
+
+📌 `math` modulidan `pow` funksiyasini import qilib, foydalanuvchidan asosi va darajani qabul qilib, natijani hisoblang.
