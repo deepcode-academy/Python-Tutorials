@@ -1,13 +1,13 @@
 # PYTHON DASTURLASH ASOSLARI
 
-## 🧩 12-dars Modullar
+# 🧩 12-dars Modullar
 
-### ✅ MODUL NIMA?
+## ✅ MODUL NIMA?
 Modul — bu Python fayli bo‘lib, u ichida `funksiyalar`, `classlar`, `o‘zgaruvchilar`, yoki boshqa Python kodlari saqlanadi.
 
 Modulning asosiy vazifasi — kodni bo‘laklarga ajratish, tartibli saqlash va boshqa joylarda qayta ishlatish imkonini berish.
 
-### ✅ MODUL KERAKMI? NIMA FOYDA?
+## ✅ MODUL KERAKMI? NIMA FOYDA?
 
 - **Quyidagi sabablarga ko‘ra modul foydali:**
     - **Kod takrorlanmasligi** — bir marta yozilgan kodni istalgan joyda qayta ishlatish mumkin.
@@ -18,7 +18,7 @@ Modulning asosiy vazifasi — kodni bo‘laklarga ajratish, tartibli saqlash va 
 
 
 
-### ✅ MODULLARNI import QILISH
+## ✅ MODULLARNI import QILISH
 - Pythonda modullardan foydalanish uchun avvalo ularni `import` qilish kerak. Modullarni **import** qilish uchun `import` kalit so'zidan foydalaniladi.
 
 - `math` modulini `import` qilish
