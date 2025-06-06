@@ -142,35 +142,35 @@ except ValueError as x:
 
 ## ✅ AMALIYOT
 
-1. Nolga bo‘lish
-    - Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalaning.
+⚠️  Nolga bo‘lish  
+- Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalaning.
 
-2. Raqamga aylantirish
-    - Foydalanuvchidan matn ko‘rinishida qiymat oling va uni `int` yoki `float` ga aylantiring. Agar foydalanuvchi harf kiritsa, xatolik chiqsin.
+⚠️  Raqamga aylantirish  
+- Foydalanuvchidan matn ko‘rinishida qiymat oling va uni `int` yoki `float` ga aylantiring. Agar foydalanuvchi harf kiritsa, xatolik chiqsin.
 
-3. Notog‘ri operator
-    - Foydalanuvchi ikkita son va bitta operator kiritsin (`+`, `-`, `*`, `/`). Operator noto‘g‘ri bo‘lsa, xatolik chiqsin.
+⚠️  Notog‘ri operator  
+- Foydalanuvchi ikkita son va bitta operator kiritsin (`+`, `-`, `*`, `/`). Operator noto‘g‘ri bo‘lsa, xatolik chiqsin.
 
-4. Manfiy sonni taqiqlash
-    - Foydalanuvchi son kiritadi. Agar son manfiy bo‘lsa, `raise` orqali `ValueError` chiqarilsin: `"Manfiy son kiritish mumkin emas!"`
+⚠️  Manfiy sonni taqiqlash  
+- Foydalanuvchi son kiritadi. Agar son manfiy bo‘lsa, `raise` orqali `ValueError` chiqarilsin: `"Manfiy son kiritish mumkin emas!"`
 
-5. Listdagi elementga murojaat
-    - Berilgan ro‘yxatdan (`list`) indeks orqali element oling. Agar noto‘g‘ri indeks kiritilsa, `IndexError` chiqsin.
+⚠️  Listdagi elementga murojaat  
+- Berilgan ro‘yxatdan (`list`) indeks orqali element oling. Agar noto‘g‘ri indeks kiritilsa, `IndexError` chiqsin.
 
-6. Lug‘atdan qiymat o‘qish
-    - Foydalanuvchi lug‘atdan `key` bo‘yicha ma’lumot olishga harakat qiladi. Agar `key` mavjud bo‘lmasa, `KeyError` chiqsin.
+⚠️  Lug‘atdan qiymat o‘qish  
+- Foydalanuvchi lug‘atdan `key` bo‘yicha ma’lumot olishga harakat qiladi. Agar `key` mavjud bo‘lmasa, `KeyError` chiqsin.
 
-7. Foydalanuvchidan parol olish
-    - Foydalanuvchi parol kiritadi. Agar parol bo‘sh bo‘lsa, `raise ValueError` bilan xatolik chiqarilsin.
+⚠️  Foydalanuvchidan parol olish  
+- Foydalanuvchi parol kiritadi. Agar parol bo‘sh bo‘lsa, `raise ValueError` bilan xatolik chiqarilsin.
 
-8. Har doim ishlaydigan kod
-    - Foydalanuvchi son kiritadi va uni `int` ga aylantirib chiqarasiz. `finally` blokida `"Dastur tugadi"` degan matn chiqsin.
+⚠️  Har doim ishlaydigan kod  
+- Foydalanuvchi son kiritadi va uni `int` ga aylantirib chiqarasiz. `finally` blokida `"Dastur tugadi"` degan matn chiqsin.
 
-9. Bir nechta xatolarni ushlash
-    - Foydalanuvchidan son kiriting va 10 ni ushbu songa bo‘ling. `ValueError` yoki `ZeroDivisionError` yuz bersa, bitta `except` bilan ushlang.
+⚠️  Bir nechta xatolarni ushlash  
+- Foydalanuvchidan son kiriting va 10 ni ushbu songa bo‘ling. `ValueError` yoki `ZeroDivisionError` yuz bersa, bitta `except` bilan ushlang.
 
-10. Funksiya orqali xatolik
-    - Funksiya yarating: son kiritsa va u 100 dan katta bo‘lsa, `raise ValueError("100 dan katta son kiritish mumkin emas")` chiqsin.
+⚠️  Funksiya orqali xatolik  
+- Funksiya yarating: son kiritsa va u 100 dan katta bo‘lsa, `raise ValueError("100 dan katta son kiritish mumkin emas")` chiqsin.
 
-11. Float sonni tekshirish
-    - Foydalanuvchi haqiqiy son kiritsin. Agar son butun bo‘lsa, `raise ValueError("Faqat haqiqiy son kiriting")` chiqsin.
+⚠️  Float sonni tekshirish  
+- Foydalanuvchi haqiqiy son kiritsin. Agar son butun bo‘lsa, `raise ValueError("Faqat haqiqiy son kiriting")` chiqsin.
