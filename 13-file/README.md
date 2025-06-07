@@ -2,7 +2,17 @@
 
 # 🧩 13-DARS FAYLLAR
 
-📌 Pythonda fayllar bilan ishlash dasturlashning muhim qismidir. Bu orqali siz ma'lumotlarni saqlash, o'qish, tahrirlash va boshqarish imkoniyatiga ega bo'lasiz.
+📌 Fayl — bu kompyuterda ma'lumotlar saqlanadigan obyekt. U matn, rasm, ovoz yoki dasturiy kod bo‘lishi mumkin. Biz dasturda aynan matnli fayllar bilan ko‘p ishlaymiz, masalan: .txt, .csv, .json fayllar.
+
+## ❓ FAYL NIMA UCHUN KERAK?
+
+📝 Ma'lumotlarni saqlash — Dastur tugagandan keyin ham ma'lumot yo‘qolmasligi uchun.
+
+🔁 Qayta ishlash — Avval yozilgan ma'lumotlarni o‘qib, tahlil qilish yoki o‘zgartirish.
+
+📤 Boshqa dasturlar bilan almashish — Fayllar orqali boshqa dasturlar bilan axborot almashiladi.
+
+📚 Katta hajmdagi ma'lumotlar — Ma'lumot bazasidan oldin oddiy fayllarda saqlanadi (masalan, .csv fayllar).
 
 ## ✅ FAYLNI OCHISH
 
