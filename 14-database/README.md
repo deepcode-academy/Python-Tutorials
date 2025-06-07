@@ -169,72 +169,93 @@ for student in students:
 conn.close()
 ```
 
-- Agar faqat bitta ma’lumot olish kerak bo‘lsa:
+📌 Agar faqat bitta ma’lumot olish kerak bo‘lsa:
 
 ```python
+# students jadvalidan name ustuni "Ali" ga teng bo‘lgan birinchi yozuvni tanlab olish
 cur.execute("SELECT * FROM students WHERE name = ?", ("Ali",))
+
+# Natijadan faqat bitta yozuvni olish (birinchi topilgan)
 student = cur.fetchone()
+
+# Topilgan yozuvni konsolga chiqarish
 print(student)
 ```
 
-**Natija:**
+### ✅ MA'LUMOTLARNI YANGILASH
 
-```shell
-(1, 'Ali', 20, 'A')
-```
-
-### Ma’lumotlarni yangilash
-
-- Ma’lumotlarni o‘zgartirish uchun `UPDATE` buyrug‘idan foydalanamiz.
+📌 Ma’lumotlarni o‘zgartirish uchun `UPDATE` buyrug‘idan foydalanamiz.
 
 ```python
+# Bazaga ulanamiz
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# Ali’ning yoshini 21 ga o‘zgartiramiz
+# students jadvalidagi name ustuni "Ali" bo‘lgan yozuvning age ustunini 21 ga o‘zgartiramiz
 cur.execute("UPDATE students SET age = ? WHERE name = ?", (21, "Ali"))
 
+# Yangilanganini bildiruvchi xabar chiqaramiz
 print("Ma’lumot yangilandi!")
 
+# O‘zgarishlarni saqlaymiz
 conn.commit()
+
+# Bazaga ulanishni yopamiz
 conn.close()
 ```
 
-### Ma’lumotlarni o‘chirish
+### ✅ MA'LUMOTLARNI O'CHIRISH
 
-- Ma’lumotlarni o‘chirish uchun `DELETE FROM` buyrug‘idan foydalanamiz.
+📌 Ma’lumotlarni o‘chirish uchun `DELETE FROM` buyrug‘idan foydalanamiz.
 
 ```python
+# Bazaga ulanamiz
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# "Ali" ismli talabani o‘chiramiz
+# students jadvalidan name ustuni "Ali" bo‘lgan yozuvni o‘chiramiz
 cur.execute("DELETE FROM students WHERE name = ?", ("Ali",))
 
+# O‘chirildi degan xabarni chiqaramiz
 print("Ma’lumot o‘chirildi!")
 
+# O‘zgarishlarni saqlaymiz
 conn.commit()
+
+# Bazaga ulanishni yopamiz
 conn.close()
 ```
 
-## Xatoliklarni ushlash
+## ✅ XATOLIKLARNI USHLASH
 
-- Ma’lumotlar bazasi bilan ishlaganda xatoliklarni ushlash muhim.
+📌 Ma’lumotlar bazasi bilan ishlaganda xatoliklarni ushlash muhim.
 
 ```python
+# try-except-finally blokida kod yozamiz — xatolik yuz berganda uni ushlab, boshqarish uchun
 try:
+    # Bazaga ulanamiz
     conn = sqlite3.connect("students.db")
+    # Cursor obyekti yaratamiz
     cur = conn.cursor()
 
+    # students jadvalidan barcha yozuvlarni olamiz
     cur.execute("SELECT * FROM students")
+    # Natijalarni list sifatida saqlaymiz
     students = cur.fetchall()
 
+    # Har bir yozuvni ekranga chiqaramiz
     for student in students:
         print(student)
 
+# Agar sqlite3 bilan bog‘liq xatolik yuz bersa, uni ushlaymiz va xabar chiqaramiz
 except sqlite3.Error as e:
     print("Xatolik yuz berdi:", e)
 
+# Nihoyat, kod tugagach (xato bo‘lsa ham yoki bo‘lmasa ham) bazaga ulanishni yopamiz
 finally:
     conn.close()
 ```
