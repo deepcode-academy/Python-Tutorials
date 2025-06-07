@@ -2,12 +2,13 @@
 
 # 🧩 14-DARS MA'LUMOTLAR BAZASI (SQLite)
 
-## SQLite va Python haqida tushuncha
+## ✅ MA'LUMOTLAR BAZASI VA PYTHON HAQIDA TUSHUNCHA
 
 > [!NOTE]
-> SQLite — bu kichik, mustaqil va yengil ma’lumotlar bazasi tizimi. U server talab qilmaydi, ya’ni barcha ma’lumotlar bitta faylda saqlanadi. Python sqlite3 moduli orqali biz SQLite bilan to‘g‘ridan-to‘g‘ri ishlashimiz mumkin.
+> SQLite — bu kichik, mustaqil va yengil ma’lumotlar bazasi tizimi. U server talab qilmaydi, ya’ni barcha ma’lumotlar bitta faylda saqlanadi. Python `sqlite3` moduli orqali biz SQLite bilan to‘g‘ridan-to‘g‘ri ishlashimiz mumkin.
 
-- SQLite’ning afzalliklari: 
+✅ SQLite AFZALLIKLARI: 
+
   - ✅ Kichik va tez ishlaydi
   - ✅ Server talab qilmaydi
   - ✅ Platformadan mustaqil
