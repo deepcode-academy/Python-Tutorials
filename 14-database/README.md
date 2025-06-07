@@ -88,73 +88,85 @@ conn.commit()
 conn.close()
 ```
 
-- `id INTEGER PRIMARY KEY AUTOINCREMENT` – har bir yozuv uchun unikal ID yaratiladi.
-- `name TEXT NOT NULL` – talabalar ismi matn ko‘rinishida bo‘ladi.
-- `age INTEGER NOT NULL` – yosh raqam ko‘rinishida bo‘ladi.
-- `grade TEXT NOT NULL` – baho matn sifatida saqlanadi.
 
-### Ma’lumot qo‘shish
+### ✅ MA'LUMOT QO'SHISH
 
-- Ma’lumot qo‘shish uchun `INSERT INTO` buyrug‘idan foydalanamiz.
+📌 Ma’lumot qo‘shish uchun `INSERT INTO` buyrug‘idan foydalanamiz.
 
 ```python
+# Bazaga ulanamiz
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# Bitta talaba qo‘shamiz
+# students jadvaliga yangi talaba ma'lumotini qo‘shamiz
+# SQL so‘rovda parametrlar o‘rnida ? ishlatiladi, bu xavfsizroq va SQL injection xavfini kamaytiradi
+# ("Ali", 20, "A") — bu parametrlar name, age va grade ustunlariga mos keladi
 cur.execute("INSERT INTO students (name, age, grade) VALUES (?, ?, ?)", ("Ali", 20, "A"))
 
+# Ma'lumot qo‘shilgani haqida xabar chiqaramiz
 print("Ma’lumot qo‘shildi!")
 
+# O‘zgarishlarni saqlaymiz
 conn.commit()
+
+# Bazaga ulanishni yopamiz
 conn.close()
 ```
 
-- Agar bir nechta ma’lumot qo‘shmoqchi bo‘lsak:
+📌 Agar bir nechta ma’lumot qo‘shmoqchi bo‘lsak:
 
 ```python
+# Bazaga ulanamiz
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# Bir nechta yozuv qo‘shish
+# Bir nechta talaba yozuvlarini ro'yxat shaklida tayyorlaymiz
 students = [
     ("Vali", 19, "B"),
     ("Hasan", 21, "A"),
     ("Shahnoza", 20, "C")
 ]
 
+# Ro'yxatdagi barcha yozuvlarni jadvalga bir vaqtning o'zida qo'shamiz
 cur.executemany("INSERT INTO students (name, age, grade) VALUES (?, ?, ?)", students)
 
+# Yozuvlar qo'shilganini bildiruvchi xabar chiqaramiz
 print("Bir nechta yozuv qo‘shildi!")
 
+# O'zgarishlarni saqlaymiz
 conn.commit()
+
+# Bazaga ulanishni yopamiz
 conn.close()
 ```
 
-### Ma’lumotlarni o‘qish
+### ✅ MA'LUMOTLARNI O'QISH
 
-- Jadvaldagi barcha ma’lumotlarni olish uchun `SELECT` buyrug‘idan foydalanamiz.
+📌 Jadvaldagi barcha ma’lumotlarni olish uchun `SELECT` buyrug‘idan foydalanamiz.
 
 ```python
+# Bazaga ulanamiz
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-cur.execute("SELECT * FROM students")  # Barcha yozuvlarni olish
-students = cur.fetchall()  # Ma’lumotlarni list ko‘rinishida olish
+# students jadvalidan barcha yozuvlarni tanlab olamiz
+cur.execute("SELECT * FROM students")  # "SELECT *" — jadvaldagi barcha ustunlar va yozuvlar
 
+# Barcha natijalarni list ko‘rinishida olamiz
+students = cur.fetchall()
+
+# Har bir talaba yozuvini alohida chiqaramiz
 for student in students:
     print(student)
 
+# Bazaga ulanishni yopamiz
 conn.close()
-```
-
-**⏩ Natija:**
-
-```shell
-(1, 'Ali', 20, 'A')
-(2, 'Vali', 19, 'B')
-(3, 'Hasan', 21, 'A')
-(4, 'Shahnoza', 20, 'C')
 ```
 
 - Agar faqat bitta ma’lumot olish kerak bo‘lsa:
