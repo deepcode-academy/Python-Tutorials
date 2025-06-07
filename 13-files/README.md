@@ -119,9 +119,9 @@ with open("file.txt", "r") as f:
 # Bu usulda faylni yopish shart emas, fayl avtomatik ravishda yopiladi.
 ```
 
-## FAYLNI YOPMASA NIMA BO'LADI?
+## ✅ FAYLNI YOPMASA NIMA BO'LADI?
 
-### 1. MA'LUMOTLAR FAYLGA YOZILMASLIGI MUMKIN (YOKI KECHIKIB YOZILISHI)
+### ✅ 1. MA'LUMOTLAR FAYLGA YOZILMASLIGI MUMKIN (YOKI KECHIKIB YOZILISHI)
 
 📌 Python faylga yozayotgan paytda ma'lumotlarni dastlab xotira buferida saqlaydi. Faylni yopsangizgina bu ma'lumotlar diskka to‘liq yoziladi.
 
@@ -136,15 +136,15 @@ f.write("Bu matn faylga yoziladi.")
 # f.close() qatori bo‘lmasa, ma'lumotlar operatsion tizimning fayl keshida qolishi ehtimoli bor
 ```
 
-### 2. FAYL BOSHQALAR UCHUN BAND BO‘LIB QOLADI
+### ✅ 2. FAYL BOSHQALAR UCHUN BAND BO‘LIB QOLADI
 
 📌 Agar siz faylni yopmasangiz, u operatsion tizim tomonidan "ochiq" deb hisoblanadi va boshqa dasturlar (yoki boshqa kod qismlari) uni o‘qiy olmaydi yoki tahrirlay olmaydi.
 
-### 3. XOTIRA RESURSLARI ORTIQCHA BAND BO‘LADI
+### ✅ 3. XOTIRA RESURSLARI ORTIQCHA BAND BO‘LADI
 
 📌 Har bir ochilgan fayl tizimda resurs (file descriptor) sifatida band qilinadi. Fayllar yopiqlmasa, bu resurslar ortadi va dastur sekinlashishi yoki xatoliklar chiqishi mumkin.
 
-### 4. MA'LUMOTLAR BUZILISHI YOKI YO‘QOLISHI MUMKIN
+### ✅ 4. MA'LUMOTLAR BUZILISHI YOKI YO‘QOLISHI MUMKIN
 
 📌 Agar yozish davomida fayl yopiqlmasa va dastur to‘satdan to‘xtasa, yozilgan ma'lumotlar saqlanmasligi yoki fayl buzilishi mumkin.
 
