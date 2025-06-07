@@ -262,13 +262,13 @@ finally:
 
 # PRACTICS
 
-### 🧩 1. Yangi jadval yaratish
+### 🧩 Yangi jadval yaratish
    - `"library.db"` nomli SQLite bazasini yarating.
    - `"books"` nomli jadval yarating (`id`, `title`, `author`, `year`).
    - PK: `id INTEGER PRIMARY KEY AUTOINCREMENT.`
    - NOT NULL: `title`, `author`, `year`.
 
-### 📚 2. Kitoblar ma’lumotlarini kiritish
+### 📚 Kitoblar ma’lumotlarini kiritish
    - `"books"` jadvaliga quyidagi ma’lumotlarni kiriting:
    - `executemany()` funksiyasidan foydalaning.
 
@@ -278,30 +278,30 @@ finally:
 | 2   | SQL for Beginners  | Alice Brown   | 2018  |
 | 3   | Data Science Guide | Michael Clark | 2021  |
 
-### 🔍 3. Barcha kitoblarni chiqarish
+### 🔍 Barcha kitoblarni chiqarish
     - `"books"` jadvalidagi barcha kitoblarni ekranga chiqaring.
     - Natija `id`, `title`, `author`, `year` formatida bo‘lsin.
 
-### 📝 4. Muallif bo‘yicha qidirish
+### 📝 Muallif bo‘yicha qidirish
     - Foydalanuvchidan **muallif nomini** so‘rang.
     - Shu muallif tomonidan yozilgan barcha kitoblarni chiqaring.
     - Agar kitob topilmasa, `"Bu muallifning kitoblari yo'q"` deb chiqaring.
 
-### 🔄 5. Kitob yilini yangilash
+### 🔄 Kitob yilini yangilash
    - `"SQL for Beginners"` kitobining chiqish yilini `2019` ga o‘zgartiring.
    - Yangilangan ma’lumotni ekranga chiqaring.
 
-### ⏳ 6. Eng eski kitobni topish
+### ⏳ Eng eski kitobni topish
     - `"books"` jadvalidan chiqish yili eng kichik bo‘lgan kitobni toping.
 
-### 📅 7. 2020-yildan keyin chiqqan kitoblarni chiqarish
+### 📅 2020-yildan keyin chiqqan kitoblarni chiqarish
    - `"books"` jadvalidan `2020` yildan keyin chiqqan kitoblarni chiqarish kodini yozing.
 
-### ❌ 8. Kitobni o‘chirish
+### ❌ Kitobni o‘chirish
    - `"Data Science Guide"` kitobini `"books"` jadvalidan o‘chiring.
    - O‘chirilganidan keyin jadvaldagi barcha kitoblarni ekranga chiqaring.
 
-### 🎓 9. Talabalar jadvallarini yaratish
+### 🎓 Talabalar jadvallarini yaratish
    - `"university.db"` bazasini yarating.
    - `"students"` jadvalini yarating:
    - `id INTEGER PRIMARY KEY AUTOINCREMENT`,
@@ -309,21 +309,21 @@ finally:
    - `age INTEGER NOT NULL`,
    - `faculty TEXT NOT NULL`.
 
-### ✏️ 10. Talabalar jadvaliga ma’lumot qo‘shish
+### ✏️ Talabalar jadvaliga ma’lumot qo‘shish
     - `"students"` jadvaliga kamida 5 ta talaba haqida ma’lumot kiriting.
 
-### 🏫 11. Fakultet bo‘yicha qidirish
+### 🏫 Fakultet bo‘yicha qidirish
     - Foydalanuvchidan fakultet nomini so‘rang.
     - Shu fakultetdagi talabalarni chiqaring.
 
-### 👶 12. Eng yosh talabani topish
+### 👶 Eng yosh talabani topish
     - `"students"` jadvalidan eng yosh talabani toping.
 
-### 🔧 13. Talabaning yoshini yangilash
+### 🔧 Talabaning yoshini yangilash
     - `"name"` ismli talabaning yoshini `21` ga o‘zgartiring.
 
-### 📊 14. Fakultet bo‘yicha talabalarni sanash
+### 📊 Fakultet bo‘yicha talabalarni sanash
     - `"students"` jadvalidagi har bir fakultet bo‘yicha nechta talaba borligini hisoblang.
 
-### 🏆 15. Eng ko‘p talabaga ega fakultetni topish
+### 🏆 Eng ko‘p talabaga ega fakultetni topish
     - `"students"` jadvalidan eng ko‘p talabaga ega bo‘lgan fakultetni aniqlang.
