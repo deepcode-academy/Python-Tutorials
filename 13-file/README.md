@@ -18,7 +18,7 @@
 
 📌 Faylni ochish uchun `open()` funksiyasidan foydalaniladi. Bu funksiya fayl nomini va rejimini qabul qiladi. `open()` funksiyasida ikkinchi parametr sifatida fayl rejimini ko'rsatishingiz mumkin:
 
-### Fayl rejimlari
+## ✅ FAYL REJIMLARI
 
 - `r` – Faylni o'qish uchun ochish. Fayl mavjud bo'lishi kerak.
 - `w` – Faylga yozish uchun ochish. Agar fayl mavjud bo'lmasa, yangi fayl yaratadi. Mavjud fayl bo'lsa, ma'lumotlarni o'chirib yuboradi.
@@ -39,7 +39,7 @@ f = open("file.txt", "a")
 f = open("file.txt", "x")
 ```
 
-# Faylni o'qish
+## ✅ FAYLNI O'QISH
 
 Fayl ichidagi ma'lumotlarni o'qish uchun bir necha usullar mavjud:
 - `read()` – Faylni to'liq o'qiydi.
@@ -64,7 +64,7 @@ print(lines)
 f.close()
 ```
 
-# Faylga yozish
+## ✅ FAYLGA YOZISH
 
 Faylga yozish uchun `write()` yoki `writelines()` metodlaridan foydalaniladi:
 - `write()` – Faylga matn yozadi.
@@ -72,19 +72,36 @@ Faylga yozish uchun `write()` yoki `writelines()` metodlaridan foydalaniladi:
 
 ```python
 # Faylga ma'lumot yozish
+
+# "file.txt" nomli faylni yozish ("w") rejimida ochyapti
 f = open("file.txt", "w")
+
+# Faylga "Hello, Python!" matnini yozadi va yangi qatordan boshlaydi
 f.write("Hello, Python!\n")
+
+# Faylga ikkinchi qatorda matn yozadi
 f.write("This is a second line.\n")
+
+# Faylni yopadi, bu majburiy — ma'lumotlar saqlanadi va fayl yopiladi
 f.close()
 
+
 # Ro'yxatni faylga yozish
+
+# Yoziladigan har bir element yangi qatordan iborat bo‘lgan ro'yxat
 lines = ["First line\n", "Second line\n", "Third line\n"]
+
+# "file.txt" nomli faylni yana yozish rejimida ochyapti (eski ma'lumot o‘chiriladi)
 f = open("file.txt", "w")
+
+# Ro'yxatdagi barcha elementlarni faylga ketma-ket yozadi
 f.writelines(lines)
+
+# Faylni yopadi
 f.close()
 ```
 
-# Faylni yopish
+## ✅ FAYLNI YOPISH
 
 Fayl bilan ish tugagandan so'ng, uni yopish kerak. Faylni yopish uchun `close()` metodidan foydalaniladi.
 ```python
