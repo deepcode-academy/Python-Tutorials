@@ -1,4 +1,6 @@
-# SQLite
+# 🐍 PYTHON DASTURLASH ASOSLARI
+
+# 🧩 14-DARS MA'LUMOTLAR BAZASI (SQLite)
 
 ## SQLite va Python haqida tushuncha
 
