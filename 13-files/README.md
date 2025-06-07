@@ -119,7 +119,7 @@ with open("file.txt", "r") as f:
 # Bu usulda faylni yopish shart emas, fayl avtomatik ravishda yopiladi.
 ```
 
-# Fayl rejimlari
+## ✅ FAYL REJIMLARI
 
 - `t` – Matn rejimi. Fayllarni matn sifatida ochadi. Bu rejim `r` va `w` bilan birga ishlatiladi. Masalan, `rt` yoki `wt`.
 - `b` – Ikkilik (`binary`) rejimi. Fayllarni ikkilik rejimda ochadi. Masalan, `rb` yoki `wb`.
@@ -135,22 +135,26 @@ with open("output.bin", "wb") as bin_file:
     bin_file.write(b"Binary data")
 ```
 
-# Fayllar bilan bog'liq ba'zi funksiyalar
+## ✅ FAYLLAR BILAN BOG'LIQ BAZI FUNKSIYALAR
 
 - `os.remove()` – **Faylni o'chirish.**
 - `os.rename()` – **Fayl nomini o'zgartirish.**
 - `os.path.exists()` – **Fayl mavjudligini tekshirish.**
 
 ```python
+# OS (Operating System) moduli — fayllar bilan ishlash, o‘chirish, nomini o‘zgartirish uchun kerak
 import os
 
-# Faylni o'chirish
+# "file.txt" nomli faylni o‘chiradi
+# Agar bu fayl mavjud bo‘lmasa, xatolik (FileNotFoundError) yuz beradi
 os.remove("file.txt")
 
-# Fayl nomini o'zgartirish
+# "old_name.txt" nomli faylni "new_name.txt" deb o‘zgartiradi
+# Agar "old_name.txt" mavjud bo‘lmasa, yoki allaqachon "new_name.txt" mavjud bo‘lsa, xatolik beradi
 os.rename("old_name.txt", "new_name.txt")
 
-# Fayl mavjudligini tekshirish
+# Fayl mavjudligini tekshiradi
+# Agar "file.txt" mavjud bo‘lsa, "File exists" chiqadi, bo‘lmasa "File not found"
 if os.path.exists("file.txt"):
     print("File exists")
 else:
