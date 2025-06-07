@@ -163,7 +163,59 @@ else:
 
 # AMALIYOT
 
-1. Yangi fayl yaratish va unga ma'lumot yozish:
-- `example.txt` deb nomlangan yangi fayl yarating va unga `"Python is fun!"` yozuvini kiriting.
-2. Fayldan ma'lumot o'qish
-- Yaratilgan fayldan yozilgan ma'lumotni o'qing va ekranga chiqarib bering.
+
+---
+
+📖 Yuqoridagi `example.txt` faylini ochib, uning ichidagi matnni to‘liq o‘qing va ekranga chiqaring.
+
+---
+
+🆕 `info.txt` nomli yangi fayl yarating va foydalanuvchidan `ism`, `familiya` va `yosh` so‘rab, faylga yozing.
+
+---
+
+🔢 `numbers.txt` nomli faylga `1` dan `10` gacha bo‘lgan sonlarni har birini yangi qatordan yozing.
+
+---
+
+✖️ `numbers.txt` faylini o‘qing va har bir qatordagi sonni ikkiga ko‘paytirib ekranga chiqaring.
+
+---
+
+➕ `append_example.txt` fayliga har safar dasturni ishga tushirganingizda `"New line"` yozuvi qo‘shilsin.
+
+---
+
+🖊️ Foydalanuvchidan `3` ta gap yozdirib oling va ularni `sentences.txt` fayliga yozing.
+
+---
+
+🔍 `sentences.txt` faylidan faqat birinchi qatorni o‘qib chiqaring va chop eting.
+
+---
+
+📏 `lines.txt` faylida `5` ta qatordan iborat matn bor deb tasavvur qiling. Har bir qatordagi belgilar sonini chiqaring.
+
+---
+
+❌ `data.txt` fayli mavjud bo‘lsa, uni o‘chiring. Mavjud emasligini tekshirib, foydalanuvchiga bildiring.
+
+---
+
+📂 `old.txt` faylini `new.txt` deb o‘zgartiring. Fayl mavjud emas bo‘lsa, `“Fayl topilmadi”` deb chiqaring.
+
+---
+
+👥 `users.txt` faylida foydalanuvchilarning ismlari bo‘lsin. Fayldan ro‘yxatni o‘qib, har bir ismni `Hello, <ism>!` shaklida ekranga chiqaring.
+
+---
+
+📝 `text.txt` fayliga inglizcha `3` gap yozing. So‘ng ushbu faylni o‘qib, har bir gapdagi so‘zlar sonini hisoblang.
+
+---
+
+🖼️ Rasmlar uchun `photo.jpg` faylini `rb` (binary read) rejimida oching va fayl hajmini (baytlarda) aniqlang.
+
+---
+
+📋 `items.txt` faylidan barcha qatorlarni ro‘yxatga o‘qing, ushbu ro‘yxatni `output.txt` fayliga nusxa ko‘chiring.
