@@ -25,46 +25,50 @@
 - **Ma’lumotlarni yangilash** va o‘chirish – Malumotlarni o‘zgartirish yoki o‘chirish.
 
 
-## SQLite bilan ishlashni boshlash
+## ✅ DATABASE BILAN ISHLASHNI BOSHLASH
 
-### Ma’lumotlar bazasiga ulanish
+### ✅ MA'LUMOTLAR BAZASIGA ULANISH
 
-- Ma’lumotlar bazasiga ulanish uchun `sqlite3.connect()` funksiyasidan foydalanamiz.
+📌 Ma’lumotlar bazasiga ulanish uchun `sqlite3.connect()` funksiyasidan foydalanamiz.
 
 ```python
+# sqlite3 modulini import qilamiz — SQLite ma'lumotlar bazasi bilan ishlash uchun kerak
 import sqlite3
 
-# students.db nomli ma’lumotlar bazasiga ulanamiz
+# students.db nomli SQLite ma'lumotlar bazasiga ulanamiz
+# Agar bunday fayl bo‘lmasa, yangi ma'lumotlar bazasi yaratiladi
 conn = sqlite3.connect("students.db")
 
-# Cursor obyekti yaratamiz
+# Cursor obyekti yaratamiz — bu orqali SQL buyruqlarini bajarish mumkin bo‘ladi
 cur = conn.cursor()
 
+# Bazaga muvaffaqiyatli ulanganimiz haqida xabar chiqaramiz
 print("Ma’lumotlar bazasiga bog‘landik!")
 
-# Ulashni yopamiz
+# Ma'lumotlar bazasi bilan ish tugagach, ulanishni yopamiz
 conn.close()
 ```
 
-**Result:**
+### ✅ JADVAL YARATISH
 
-```markdown
-Ma’lumotlar bazasiga bog‘landik!
-```
-⏩ Agar `"students.db"` bazasi mavjud bo‘lmasa, yangi fayl hosil bo‘ladi.
-
-### Jadval yaratish
-
-- Jadval yaratish uchun `CREATE TABLE` SQL buyrug‘idan foydalanamiz.
+📌 Jadval yaratish uchun `CREATE TABLE` SQL buyrug‘idan foydalanamiz.
 
 ```python
+# sqlite3 modulini import qilamiz — SQLite bilan ishlash uchun kerak
 import sqlite3
 
-# Bazaga ulanish
+# Bazaga ulanamiz ("students.db" fayl ko‘rinishida bo‘ladi)
 conn = sqlite3.connect("students.db")
+
+# Cursor obyekti yaratamiz — SQL buyruqlarini bajarish uchun kerak
 cur = conn.cursor()
 
-# Studentlar jadvalini yaratamiz
+# Studentlar jadvalini yaratamiz agar mavjud bo‘lmasa
+# Jadvalda quyidagi ustunlar bo‘ladi:
+# id - unikal identifikator, avtomatik raqamlanadi
+# name - talabaning ismi (matn, bo‘sh bo‘lishi mumkin emas)
+# age - talabaning yoshi (butun son, bo‘sh bo‘lishi mumkin emas)
+# grade - talabaning bahosi yoki kursi (matn, bo‘sh bo‘lishi mumkin emas)
 cur.execute("""
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -74,10 +78,13 @@ CREATE TABLE IF NOT EXISTS students (
 )
 """)
 
+# Jadval yaratildi degan xabarni chiqaramiz
 print("Jadval yaratildi!")
 
-# O‘zgarishlarni saqlaymiz va ulanishni yopamiz
+# O‘zgartirishlarni saqlaymiz (commit qilamiz)
 conn.commit()
+
+# Bazaga ulanishni yopamiz
 conn.close()
 ```
 
