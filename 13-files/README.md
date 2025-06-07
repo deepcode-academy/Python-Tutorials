@@ -20,10 +20,10 @@
 
 ## ✅ FAYL REJIMLARI
 
-- `r` – Faylni o'qish uchun ochish. Fayl mavjud bo'lishi kerak.
-- `w` – Faylga yozish uchun ochish. Agar fayl mavjud bo'lmasa, yangi fayl yaratadi. Mavjud fayl bo'lsa, ma'lumotlarni o'chirib yuboradi.
-- `a` – Faylga qo'shish uchun ochish. Mavjud faylga yangi ma'lumot qo'shadi, agar fayl mavjud bo'lmasa, yangi fayl yaratadi.
-- `x` – Faylni faqat yangi fayl yaratish uchun ochadi. Agar fayl allaqachon mavjud bo'lsa, xato chiqaradi.
+📌 `r` – Faylni o'qish uchun ochish. Fayl mavjud bo'lishi kerak.
+📌 `w` – Faylga yozish uchun ochish. Agar fayl mavjud bo'lmasa, yangi fayl yaratadi. Mavjud fayl bo'lsa, ma'lumotlarni o'chirib yuboradi.
+📌 `a` – Faylga qo'shish uchun ochish. Mavjud faylga yangi ma'lumot qo'shadi, agar fayl mavjud bo'lmasa, yangi fayl yaratadi.
+📌 `x` – Faylni faqat yangi fayl yaratish uchun ochadi. Agar fayl allaqachon mavjud bo'lsa, xato chiqaradi.
 
 ```python
 # Faylni o'qish uchun ochish
@@ -41,7 +41,7 @@ f = open("file.txt", "x")
 
 ## ✅ FAYLNI O'QISH
 
-Fayl ichidagi ma'lumotlarni o'qish uchun bir necha usullar mavjud:
+📌 Fayl ichidagi ma'lumotlarni o'qish uchun bir necha usullar mavjud:
 - `read()` – Faylni to'liq o'qiydi.
 - `readline()` – Fayldan bir qatorni o'qiydi.
 - `readlines()` – Fayldagi barcha qatorlarni ro'yxat sifatida o'qiydi.
@@ -66,7 +66,7 @@ f.close()
 
 ## ✅ FAYLGA YOZISH
 
-Faylga yozish uchun `write()` yoki `writelines()` metodlaridan foydalaniladi:
+📌 Faylga yozish uchun `write()` yoki `writelines()` metodlaridan foydalaniladi:
 - `write()` – Faylga matn yozadi.
 - `writelines()` – Ro'yxatdagi barcha qatorlarni faylga yozadi.
 
@@ -103,7 +103,7 @@ f.close()
 
 ## ✅ FAYLNI YOPISH
 
-Fayl bilan ish tugagandan so'ng, uni yopish kerak. Faylni yopish uchun `close()` metodidan foydalaniladi.
+📌 Fayl bilan ish tugagandan so'ng, uni yopish kerak. Faylni yopish uchun `close()` metodidan foydalaniladi.
 ```python
 f = open("file.txt", "r")
 # Fayldan o'qish jarayoni
