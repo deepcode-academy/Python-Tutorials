@@ -65,10 +65,10 @@ cur = conn.cursor()
 
 # Studentlar jadvalini yaratamiz agar mavjud bo‘lmasa
 # Jadvalda quyidagi ustunlar bo‘ladi:
-# id - unikal identifikator, avtomatik raqamlanadi
-# name - talabaning ismi (matn, bo‘sh bo‘lishi mumkin emas)
-# age - talabaning yoshi (butun son, bo‘sh bo‘lishi mumkin emas)
-# grade - talabaning bahosi yoki kursi (matn, bo‘sh bo‘lishi mumkin emas)
+# id - unikal ID, avtomatik raqamlanadi
+# name - talabaning ismi (string, bo‘sh bo‘lishi mumkin emas)
+# age - talabaning yoshi (integer, bo‘sh bo‘lishi mumkin emas)
+# grade - talabaning bahosi yoki kursi (string, bo‘sh bo‘lishi mumkin emas)
 cur.execute("""
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -124,17 +124,17 @@ conn = sqlite3.connect("students.db")
 # Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# Bir nechta talaba yozuvlarini ro'yxat shaklida tayyorlaymiz
+# Bir nechta talaba ma'lumotlarini ro'yxat shaklida tayyorlaymiz
 students = [
     ("Vali", 19, "B"),
     ("Hasan", 21, "A"),
     ("Shahnoza", 20, "C")
 ]
 
-# Ro'yxatdagi barcha yozuvlarni jadvalga bir vaqtning o'zida qo'shamiz
+# Ro'yxatdagi barcha ma'lumotlarni jadvalga bir vaqtning o'zida qo'shamiz
 cur.executemany("INSERT INTO students (name, age, grade) VALUES (?, ?, ?)", students)
 
-# Yozuvlar qo'shilganini bildiruvchi xabar chiqaramiz
+# Ma'lumotlar qo'shilganini bildiruvchi xabar chiqaramiz
 print("Bir nechta yozuv qo‘shildi!")
 
 # O'zgarishlarni saqlaymiz
@@ -155,13 +155,13 @@ conn = sqlite3.connect("students.db")
 # Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# students jadvalidan barcha yozuvlarni tanlab olamiz
-cur.execute("SELECT * FROM students")  # "SELECT *" — jadvaldagi barcha ustunlar va yozuvlar
+# students jadvalidan barcha ustunlarni tanlab olamiz
+cur.execute("SELECT * FROM students")  # "SELECT *" — jadvaldagi barcha ustunlar va qatorlar
 
 # Barcha natijalarni list ko‘rinishida olamiz
 students = cur.fetchall()
 
-# Har bir talaba yozuvini alohida chiqaramiz
+# Har bir talaba ma'lumotini alohida chiqaramiz
 for student in students:
     print(student)
 
@@ -172,10 +172,10 @@ conn.close()
 📌 Agar faqat bitta ma’lumot olish kerak bo‘lsa:
 
 ```python
-# students jadvalidan name ustuni "Ali" ga teng bo‘lgan birinchi yozuvni tanlab olish
+# students jadvalidan name ustuni "Ali" ga teng bo‘lgan birinchi qatorni tanlab olish
 cur.execute("SELECT * FROM students WHERE name = ?", ("Ali",))
 
-# Natijadan faqat bitta yozuvni olish (birinchi topilgan)
+# Natijadan faqat bitta qatorni olish (birinchi topilgan)
 student = cur.fetchone()
 
 # Topilgan yozuvni konsolga chiqarish
@@ -193,7 +193,7 @@ conn = sqlite3.connect("students.db")
 # Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# students jadvalidagi name ustuni "Ali" bo‘lgan yozuvning age ustunini 21 ga o‘zgartiramiz
+# students jadvalidagi name ustuni "Ali" bo‘lgan qatorni age ustunini 21 ga o‘zgartiramiz
 cur.execute("UPDATE students SET age = ? WHERE name = ?", (21, "Ali"))
 
 # Yangilanganini bildiruvchi xabar chiqaramiz
@@ -217,7 +217,7 @@ conn = sqlite3.connect("students.db")
 # Cursor obyekti yaratamiz
 cur = conn.cursor()
 
-# students jadvalidan name ustuni "Ali" bo‘lgan yozuvni o‘chiramiz
+# students jadvalidan name ustuni "Ali" bo‘lgan qatorni o‘chiramiz
 cur.execute("DELETE FROM students WHERE name = ?", ("Ali",))
 
 # O‘chirildi degan xabarni chiqaramiz
@@ -242,12 +242,12 @@ try:
     # Cursor obyekti yaratamiz
     cur = conn.cursor()
 
-    # students jadvalidan barcha yozuvlarni olamiz
+    # students jadvalidan barcha ustunlar va qatorlarni olamiz
     cur.execute("SELECT * FROM students")
     # Natijalarni list sifatida saqlaymiz
     students = cur.fetchall()
 
-    # Har bir yozuvni ekranga chiqaramiz
+    # Har bir ma'lumotni ekranga chiqaramiz
     for student in students:
         print(student)
 
