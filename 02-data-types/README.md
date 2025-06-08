@@ -68,17 +68,21 @@ print(first_name + " " + last_name)  # Natija: Umid G'aybullayev
 
 ```
 
-### STRING UZUNLIGINI ANIQLASH
+### ❇️ STRING UZUNLIGINI ANIQLASH
 Matnlarimizni uzunligini topish uchun `len()` funksiyasidan foydalanamiz.
 
-**Example:**
 
 ```python
+# 📌 len() funksiyasi yordamida string (matn) uzunligini aniqlaymiz
+
 text = "Hello, World!"
-length = len(text)  # 13
+
+# 📌 text o'zgaruvchisidagi matn uzunligini len() yordamida o'lchaymiz
+length = len(text)  # Natija: 13
+
+# 📌 Natijani ekranga chiqaramiz
 print(length)
 ```
-**Result:** `13`
 
 ### STRING E'LEMENTLARIGA MUROJAT QILISH
 Matnlarimiz ichidan o'zimizga kerak bo'lgan harflarni ajratib olish uchun quyidagi usuldan foydalanamiz:
