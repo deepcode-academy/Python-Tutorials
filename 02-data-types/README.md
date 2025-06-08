@@ -45,36 +45,28 @@ text = '''This is also a
 multiline string.'''
 print(text)
 ```
-### STRING USTIDA AMALLAR
-Matnlarni qo'shish uchun `+` operatoridan foydalanamiz.
+### ❇️ STRING USTIDA AMALLAR
 
-**Example:**
+📌 Matnlarni qo'shish uchun `+` operatoridan foydalanamiz.
+
 
 ```python
+# 📌 '+' operatori yordamida ikki yoki undan ortiq stringlarni birlashtirish mumkin
+
 name = "Umid"
-print("Mening ismim " + name)
-```
-**Result:** `Mening ismim Umid`
+print("Mening ismim " + name)  # Natija: Mening ismim Umid
 
-**Example:**
+# 📌 Qo‘shishda so‘zlar orasiga bo‘sh joy (space) qo‘yish kerak, aks holda ular bir-biriga yopishib qoladi
 
-```python
 first_name = "Umid"
 last_name = "G'aybullayev"
-print(first_name + last_name)
+print(first_name + last_name)  # Natija: UmidG'aybullayev (bo‘shliq yo‘q)
+
+# 📌 To‘g‘ri natija uchun so‘zlar orasiga bo‘sh joy qo‘shamiz
+
+print(first_name + " " + last_name)  # Natija: Umid G'aybullayev
+
 ```
-**Result:** `UmidG'aybullayev` <br>
-
-Yuqoridagi kodimizda ism va familiya qo'shilib qoldi, uni to'g'irlash uchun quyidagi ko'rinishda yozamiz:
-
-**Example:**
-
-```python
-ism = "Umid"
-familiya = "G'aybullayev"
-print(ism + ' ' + familiya)
-```
-**Result:** `Umid G'aybullayev`
 
 ### STRING UZUNLIGINI ANIQLASH
 Matnlarimizni uzunligini topish uchun `len()` funksiyasidan foydalanamiz.
