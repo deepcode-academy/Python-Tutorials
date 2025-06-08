@@ -3,7 +3,11 @@
 # 🧩 DATA TYPES
 
 ## ✅ MA'LUMOT TURLARI
-Python dasturlash tilida `8` ta ma'lumot turi bor, ular quyidagilar:
+
+📌 Python dasturlash tilida har bir qiymat (value) — o‘zining ma'lumot turiga (data type) ega. Bu tur qiymatga qanday ishlov berishni aniqlaydi.
+
+
+📌 Python dasturlash tilida `8` ta ma'lumot turi bor, ular quyidagilar:
 
 | Definition      | Type                               |
 |-----------------|------------------------------------|
