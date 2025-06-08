@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-## 9-dars Funksiyalar
+# 🧩 11-DARS FUNCTIONS
 
 > [!NOTE]
 > Python dasturlash tilida `funksiyalar` bu kod bo'laklarini qayta-qayta ishlatish uchun qulay vositadir. `Funksiyalar` yordamida kodni tartibli, tushunarli va takrorlanadigan qila olamiz.
