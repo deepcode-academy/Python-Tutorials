@@ -128,15 +128,20 @@ text_repeated = text * 3  # Natija: 'HelloHelloHello'
 print(text_repeated)
 ```
 
+### ❇️ F-STRING(Python 3.6+)
 
-### F-STRING(Python 3.6+)
+📌 Python 3.6 versiyasidan boshlab, string ichida o‘zgaruvchilarni (variables) va ifodalarni (expressions) to‘g‘ridan-to‘g‘ri joylashtirish uchun f-string (formatted string literal) usuli joriy etildi. Bu usul string formattingning eng qulay va tezkor usullaridan biri hisoblanadi.
 
-**Example:**
 
 ```python
+# 📌 O'zgaruvchilarni string ichida qulay tarzda qo'shish uchun f-string usulidan foydalanamiz
 ism = "Umid"
 yosh = 20
-text = f"Mening ismim {ism}, yoshim {yosh}da" #Mening ismim Umid, yoshim 20da
+
+# 📌 f-string yordamida string ichiga o'zgaruvchilarni joylashtirish
+text = f"Mening ismim {ism}, yoshim {yosh}da"  # Natija: Mening ismim Umid, yoshim 20da
+
+# 📌 Natijani ekranga chiqaramiz
 print(text)
 ```
 **Result:** `Mening ismim Umid, yoshim 20da`
