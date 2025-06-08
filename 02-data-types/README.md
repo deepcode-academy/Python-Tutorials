@@ -1,8 +1,8 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 MA'LUMOT TURLARI
+# 🧩 DATA TYPES
 
-## MA'LUMOT TURLARI
+## ✅ MA'LUMOT TURLARI
 Python dasturlash tilida `8` ta ma'lumot turi bor, ular quyidagilar:
 
 | Definition      | Type                               |
@@ -16,28 +16,27 @@ Python dasturlash tilida `8` ta ma'lumot turi bor, ular quyidagilar:
 | Binary Types    | `bytes`, `bytearray`, `memoryview` |
 | None Type       | `NoneType`                         |
 
+## ✅ STRING
 
+📌 String — bu matnli ma’lumotlarni ifodalovchi ma’lumot turi. Ya’ni, harflar, raqamlar, bo‘sh joy, belgilardan tashkil topgan qator (yoki matn).
 
-## STRING
-
-- **String(str)** - Matnli ma'lumotlarni ifodalaydi. Masalan: `"hello"`, `'world'`, `"123"`.
-
-**Example:**  
+📌 Pythonda stringlar ikki yoki uchta qo‘shtirnoq (" ") yoki tirtirnoq (' ') bilan yoziladi.
 
 ```python
-# ikkitalik qo'shtirnoqlar bilan
+# Double quotes — ikki tirnoq (" ") bilan yozilgan oddiy string
 text = "Hello world"
 print(text)
 
-# bittalik qo'shtirnoqlar bilan
+# Single quotes — bitta tirnoq (' ') bilan yozilgan oddiy string
 text = 'Hello world'
 print(text)
 
-# Ko'p qatorli stringlar uchlik qo'shtirnoqlar bilan
+# Triple double quotes — uchta ikki tirnoq (""" """) bilan yozilgan ko‘p qatorli matn (multiline string)
 text = """This is a
 multiline string."""
 print(text)
 
+# Triple single quotes — uchta bitta tirnoq (''' ''') bilan yozilgan ko‘p qatorli matn (multiline string)
 text = '''This is also a
 multiline string.'''
 print(text)
