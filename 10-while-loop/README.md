@@ -2,6 +2,7 @@
 
 # 🧩 9-DARS WHILE LOOP
 
+
 ## while loop NIMA?
 > [!NOTE]
 > `while loop` Pythonda shart bajarilgunga qadar kod blokini qayta-qayta bajarish uchun ishlatiladi. Shart `True` bo'lganida `loop` ishlashda davom etadi, `False` bo'lganda esa to'xtaydi.
