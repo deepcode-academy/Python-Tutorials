@@ -15,25 +15,33 @@
 
 **Example:**
 
-Quyidagi misolda 4 ta o'zgaruvchi yaratdik (`x`, `y`, `name` va `is_student`) va ularga har xil ma'lumot yukladik.
+📌 Quyidagi misolda 4 ta o'zgaruvchi yaratdik (`x`, `y`, `name` va `is_student`) va ularga har xil ma'lumot yukladik.
 
 ```python
-x = 5 # Butun son (int)
-y = 3.14 # Haqiqiy son (float)
-name = "Alice"  # Matn (str)
-is_student = True  # Mantiqiy qiymat (bool)
+# Butun sonni (integer) o'zgaruvchiga saqlaymiz
+x = 5
+
+# Haqiqiy sonni (float) o'zgaruvchiga saqlaymiz
+y = 3.14
+
+# Matn (string) qiymatni o'zgaruvchiga saqlaymiz
+name = "Alice"
+
+# Mantiqiy (boolean) qiymatni o'zgaruvchiga saqlaymiz
+is_student = True
+
+# x o'zgaruvchisining qiymatini chiqaramiz
 print(x)
+
+# y o'zgaruvchisining qiymatini chiqaramiz
 print(y)
+
+# name o'zgaruvchisining qiymatini chiqaramiz
 print(name)
+
+# is_student o'zgaruvchisining qiymatini chiqaramiz
 print(is_student)
 ```
-
-**Result:**
-
-`5` <br>
-`3.14` <br>
-`Alice` <br>
-`True`
 
 **Example:**
 
