@@ -144,53 +144,60 @@ text = f"Mening ismim {ism}, yoshim {yosh}da"  # Natija: Mening ismim Umid, yosh
 # 📌 Natijani ekranga chiqaramiz
 print(text)
 ```
-**Result:** `Mening ismim Umid, yoshim 20da`
 
 ### STRING METODLARI
 Python dasturlash tilida, stringlar ustida turli xil operatsiyalarni bajarish uchun bir qancha o'rnatilgan metodlar mavjud. Quyida eng ko'p qo'llaniladigan string metodlari va ularning misollari keltirilgan:
 
-1. `.upper()` - Matndagi barcha harflarni katta harfga aylantiradi.
+1. `.upper()`
 
 ```python
+# .upper() - Matndagi barcha harflarni katta harfga aylantiradi
 text = "hello"
-print(text.upper()) #HELLO
+print(text.upper())  # Natija: HELLO
 ```
-2. `.lower()` - Matndagi barcha harflarni kichik harfga aylantiradi.
+2. `.lower()`
 
 ```python
+# .lower() - Matndagi barcha harflarni kichik harfga aylantiradi
 text = "HELLO"
-print(text.lower()) #hello
+print(text.lower())  # Natija: hello
 ```
-3. `.capitalize()` - Matnning birinchi harfini katta harfga, qolganlarini kichik harfga aylantiradi.
+3. `.capitalize()`
 
 ```python
+# .capitalize() - Matnning birinchi harfini katta harfga, qolganlarini kichik harfga aylantiradi
 text = "hello world"
-print(text.capitalize()) # Hello world
+print(text.capitalize())  # Natija: Hello world
 ```
-4. `.title()` - Matndagi har bir so'zning birinchi harfini katta harfga aylantiradi.
+4. `.title()`
 
 ```python
+# .title() - Matndagi har bir so'zning birinchi harfini katta harfga aylantiradi
 text = "hello world"
-print(text.title()) # Hello World
+print(text.title())  # Natija: Hello World
 ```
 
-5. `.lstrip()` - Matnning faqat boshidagi bo'sh joylarni olib tashlaydi.
+5. `.lstrip()`
 
 ```python
+# .lstrip() - Matnning boshidagi bo'sh joylarni olib tashlaydi
 text = "    hello world    "
-print(text.lstrip()) # "hello world    "
+print(text.lstrip())  # Natija: "hello world    "
 ```
-6. `.rstrip()` - Matnning faqat oxiridagi bo'sh joylarni olib tashlaydi.
+
+6. `.rstrip()`
 
 ```python
+# .rstrip() - Matnning oxiridagi bo'sh joylarni olib tashlaydi
 text = "    hello world    "
-print(text.rstrip()) # "    hello world"
+print(text.rstrip())  # Natija: "    hello world"
 ```
-7. `.strip()` - Matnning boshida va oxiridagi bo'sh joylarni olib tashlaydi.
+7. `.strip()`
 
 ```python
+# .strip() - Matnning boshidagi va oxiridagi bo'sh joylarni olib tashlaydi
 text = "    hello world    "
-print(text.strip()) # "hello world"
+print(text.strip())  # Natija: "hello world"
 ```
 
 ## NUMBER
