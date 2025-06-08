@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-# SETS
+# 🧩 6-DARS SETS
 
 Python dasturlash tilida to'plamlar(`sets`) — bu to‘plamga qo‘shilgan elementlar faqat bir martadan saqlanadigan va tartibi ahamiyatga ega bo‘lmagan ma'lumotlar tuzilmasi. Bu ma'lumotlar tuzilmasi quyidagi asosiy xususiyatlarga ega:
 - **Noyob elementlar:** Setdagi barcha elementlar yagona va takrorlanmaydi.
