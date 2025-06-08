@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-## 8-dars While Loop
+# 🧩 9-DARS WHILE LOOP
 
 ## while loop NIMA?
 > [!NOTE]
