@@ -199,7 +199,7 @@ ISM = "Umid"
 ism_sharif = "Umid G'aybullayev"
 
 # Ikkita so‘zdan tashkil topgan o'zgaruvchi nomi, so‘zlar pastki chiziq yordamida bog‘langan
-tugilgan_yil = 1998
+tugilgan_yil = 2004
 ```
 
 ### ❇️ O'zgaruvchiga tushunarli nom bering (`y=20` emas `yosh=20`, `d="Korea"` emas `davlat = "Korea"` va hokazo)
@@ -216,14 +216,17 @@ yosh = 20
 davlat = "Korea"
 ```
 
-- Shuningdek o'zgaruvchilarga Pythonda ishlatiladigan funksiyalar va maxsus kalit so'zlarning(keywords) nomini bermang. Kalit so'zlar ro'yhatini ko'rish uchun python faylga  uyidagi kodni yozamiz:
+### ❇️ Shuningdek o'zgaruvchilarga Pythonda ishlatiladigan funksiyalar va maxsus kalit so'zlarning(keywords) nomini bermang. Kalit so'zlar ro'yhatini ko'rish uchun python faylga  uyidagi kodni yozamiz:
+
+📌 Chunki bu nomlar Python tili tomonidan maxsus ma’noga ega va ular bilan nomlash kodni buzadi yoki xato beradi.
+
 ```python
+# Python kalit so'zlarini ko'rish uchun quyidagilarni yozamiz
 import keyword
+
+# Python kalit so'zlar ro'yxatini chiqaramiz
 print(keyword.kwlist)
 ```
-Marhamat, ekraningizda Pythondagi maxsus kalit so'zlar ro'yhatini ko'ryapsiz:
-![alt text](images/keyword.png)
-
 
 
 ## MA'LUMOT TURLARI
