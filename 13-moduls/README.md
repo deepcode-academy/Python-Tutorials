@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 12-DARS MODULLAR
+# 🧩 13-DARS MODULS
 
 ## ✅ MODUL NIMA?
 📌 Modul — bu Python fayli bo‘lib, u ichida `funksiyalar`, `classlar`, `o‘zgaruvchilar`, yoki boshqa Python kodlari saqlanadi.
