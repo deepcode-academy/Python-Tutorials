@@ -1,7 +1,8 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI  
-## 🧩 UCHINCHI TOMON KUTUBXONALARI (Third-Party)
 
-Python kutubxonalari 3 guruhga bo‘linadi:
+# 🧩 UCHINCHI TOMON KUTUBXONALARI (Third-Party)
+
+📌 Python kutubxonalari 3 guruhga bo‘linadi:
 
 1. **Standart kutubxonalar** – Python bilan birga keladi.
 2. **Ikkinchi tomon kutubxonalari** – rasmiy Python jamoasi tashqarisida ishlab chiqilgan, ammo mashhur.
