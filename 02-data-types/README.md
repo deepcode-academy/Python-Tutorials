@@ -69,15 +69,18 @@ print(first_name + " " + last_name)  # Natija: Umid G'aybullayev
 ```
 
 ### ❇️ STRING UZUNLIGINI ANIQLASH
-Matnlarimizni uzunligini topish uchun `len()` funksiyasidan foydalanamiz.
+
+📌 String uzunligi — bu stringdagi belgilar (characters) soni. Belgilarga harflar, raqamlar, bo‘sh joylar (spaces) va maxsus belgilar kiradi.
+
+📌 String uzunligini topish uchun `len()` funksiyasidan foydalanamiz.
 
 
 ```python
-# 📌 len() funksiyasi yordamida string (matn) uzunligini aniqlaymiz
+# 📌 len() funksiyasi yordamida string uzunligini aniqlaymiz
 
 text = "Hello, World!"
 
-# 📌 text o'zgaruvchisidagi matn uzunligini len() yordamida o'lchaymiz
+# 📌 text o'zgaruvchisidagi string uzunligini len() yordamida o'lchaymiz
 length = len(text)  # Natija: 13
 
 # 📌 Natijani ekranga chiqaramiz
