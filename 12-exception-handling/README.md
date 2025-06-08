@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 11-DARS ISTISNO HOLARLARNI BOSHQARISH (EXCEPTION HANDLING)
+# 🧩 12-DARS EXCEPTION HANDLING
 
 > [!NOTE]
 > **Eslatma:** Pythonda istisno holatlarni boshqarish dasturda yuzaga keladigan xatoliklarni to'g'ri boshqarish va dasturimizni barqaror ishlashini ta'minlash uchun muhim hisoblanadi. Bu `try`, `except`, `else`, va `finally` bloklari orqali amalga oshiriladi.
