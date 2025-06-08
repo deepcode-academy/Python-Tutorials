@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI  
 
-# 16-dars OOP(Object-Oriented Programming)
+# 🧩 17-DARS OOP (OBJECT-ORIENTED PROGRAMMING)
 
 > [!NOTE]
 > **Object-Oriented Programming** (`OOP`) Python dasturlash tilida muhim mavzulardan biri hisoblanadi va u orqali dasturlarni modulli, qayta foydalanish mumkin bo'lgan, tuzilmaviy kodlarni yaratish mumkin. Keling, OOPning asosiy tushunchalari va amaliy misollari bilan tanishib chiqamiz.
