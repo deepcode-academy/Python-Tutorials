@@ -132,12 +132,65 @@ ism@familiya = "Valijon"
 yosh! = 18
 ```
 
+### ❌ O'zgaruvchi nomida bo'shliq (пробел) bo'lishi mumkin emas
 
-> - O'zgaruvchi nomida bo'shliq (пробел) bo'lishi mumkin emas
-> - O'zgaruvchi nomida katta-kichik harflar turlicha talqin qilinadi (`ism`, `ISM`, va `Ism` uchta turli o'zgaruvchi)
+✅ To‘g‘ri:
 
-**Q'shimcha qoidalar:**
-- O'zgaruvchi nomini kichik harflar bilan yozing.
+```python
+# O'zgaruvchi nomida pastki chiziq ishlatilgan — bu to‘g‘ri usul
+ism_familiya = "Ali Karimov"
+```
+
+❌ Noto‘g‘ri:
+
+```python
+# O'zgaruvchi nomida bo‘shliq (space) ishlatilgan — bu noto‘g‘ri
+# ❌ Python'da o'zgaruvchi nomi bo‘shliq bilan yozilmaydi
+ism familiya = "Ali Karimov"
+```
+
+### ❌ O'zgaruvchi nomida katta-kichik harflar turlicha talqin qilinadi (`ism`, `ISM`, va `Ism` uchta turli o'zgaruvchi)
+
+📌 Pythonda `ism`, `ISM` va `Ism` bu uchta alohida o‘zgaruvchi hisoblanadi.
+
+```python
+# kichik harflardan tashkil topgan o'zgaruvchi
+ism = "Ali"
+
+# hamma harflari katta bo'lgan o'zgaruvchi — bu boshqa o'zgaruvchi
+ISM = "Vali"
+
+# bosh harfi katta, qolgan kichik bo'lgan o'zgaruvchi — yana boshqa o'zgaruvchi
+Ism = "Sami"
+
+# 'ism' o'zgaruvchisining qiymatini chiqaramiz
+print(ism)  # Ali
+
+# 'ISM' o'zgaruvchisining qiymatini chiqaramiz
+print(ISM)  # Vali
+
+# 'Ism' o'zgaruvchisining qiymatini chiqaramiz
+print(Ism)  # Sami
+```
+
+## ✅ QO'SHIMCHA QOIDALAR
+
+❇️ O'zgaruvchi nomini kichik harflar bilan yozing.
+
+📌 Python kodini o‘qishda va tushunishda qulaylik uchun o‘zgaruvchilarni kichik harflar bilan yozish odatiy hisoblanadi.
+
+```python
+# To'g'ri va tavsiya qilinadigan usul — o'zgaruvchi nomi kichik harflardan iborat
+ism = "Umid"
+
+# Tavsiya qilinmaydi — bosh harf bilan boshlash kodda chalkashlik keltirib chiqarishi mumkin
+Ism = "Umid"
+
+# Tavsiya qilinmaydi — hamma harflar katta bo‘lishi ko‘pincha konstantalar uchun ishlatiladi
+ISM = "Umid"
+```
+
+
 - O'zgaruvchi nomida 2 va undan ortiq so'z qatnashsa ularning orasini pastki chiziq (`_`) bilan ajrating (`ism_sharif="Umid G'aybullayev"`) 
 - O'zgaruvchiga tushunarli nom bering (`y=20` emas `yosh=20`, `d="Korea"` emas `davlat = "Korea"` va hokazo)
 - Shuningdek o'zgaruvchilarga Pythonda ishlatiladigan funksiyalar va maxsus kalit so'zlarning(keywords) nomini bermang. Kalit so'zlar ro'yhatini ko'rish uchun python faylga  uyidagi kodni yozamiz:
