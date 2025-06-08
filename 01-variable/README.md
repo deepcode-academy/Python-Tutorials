@@ -175,7 +175,7 @@ print(Ism)  # Sami
 
 ## ✅ QO'SHIMCHA QOIDALAR
 
-❇️ O'zgaruvchi nomini kichik harflar bilan yozing.
+### ❇️ O'zgaruvchi nomini kichik harflar bilan yozing.
 
 📌 Python kodini o‘qishda va tushunishda qulaylik uchun o‘zgaruvchilarni kichik harflar bilan yozish odatiy hisoblanadi.
 
@@ -190,9 +190,32 @@ Ism = "Umid"
 ISM = "Umid"
 ```
 
+### ❇️ O'zgaruvchi nomida 2 va undan ortiq so'z qatnashsa ularning orasini pastki chiziq (`_`) bilan ajrating (`ism_sharif="Umid G'aybullayev"`) 
 
-- O'zgaruvchi nomida 2 va undan ortiq so'z qatnashsa ularning orasini pastki chiziq (`_`) bilan ajrating (`ism_sharif="Umid G'aybullayev"`) 
-- O'zgaruvchiga tushunarli nom bering (`y=20` emas `yosh=20`, `d="Korea"` emas `davlat = "Korea"` va hokazo)
+📌 Bu usul o‘zgaruvchi nomini o‘qishni osonlashtiradi va kodni yanada tushunarli qiladi.
+
+```python
+# Ikkita so‘zdan tashkil topgan o'zgaruvchi nomi, so‘zlar pastki chiziq bilan ajratilgan
+ism_sharif = "Umid G'aybullayev"
+
+# Ikkita so‘zdan tashkil topgan o'zgaruvchi nomi, so‘zlar pastki chiziq yordamida bog‘langan
+tugilgan_yil = 1998
+```
+
+### ❇️ O'zgaruvchiga tushunarli nom bering (`y=20` emas `yosh=20`, `d="Korea"` emas `davlat = "Korea"` va hokazo)
+
+📌 O‘zgaruvchi nomi uning ma’nosini ifodalashi kerak, shunda kodni o‘qish va tushunish osonlashadi.
+
+```python
+# Yomon misollar — nomlar qisqa va ma’nosiz, kodni tushunishni qiyinlashtiradi
+y = 20
+d = "Korea"
+
+# Yaxshi misollar — nomlar ma’noli va tushunarli
+yosh = 20
+davlat = "Korea"
+```
+
 - Shuningdek o'zgaruvchilarga Pythonda ishlatiladigan funksiyalar va maxsus kalit so'zlarning(keywords) nomini bermang. Kalit so'zlar ro'yhatini ko'rish uchun python faylga  uyidagi kodni yozamiz:
 ```python
 import keyword
