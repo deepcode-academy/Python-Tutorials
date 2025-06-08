@@ -103,7 +103,36 @@ sana2025 = 2025
 3dars = "Python"
 ```
 
-> - O'zgaruvchi nomida faqatgina lotin alifbosi harflari (`A-z`), raqamlar (`0-9`) va pastki chiziq (`_`) qatnashishi mumkin
+### ❌ O'zgaruvchi nomida faqatgina ingliz tili alifbosi harflari (`A-z`), raqamlar (`0-9`) va pastki chiziq (`_`) qatnashishi mumkin
+
+📌 Maxsus belgilar (`@`, `!`, `#`, `-` va boshqalar) o‘zgaruvchi nomida ishlatilmaydi.
+
+✅ To‘g‘ri:
+
+```python
+# Lotin harflari va pastki chiziq ishlatilgan — to‘g‘ri
+user_name = "Umid"
+
+# Harf va raqam ishlatilgan — to‘g‘ri
+user1 = "Ali"
+
+# Pastki chiziq bilan boshlangan nom — bu ham to‘g‘ri
+_max_score = 100
+```
+
+❌ Noto‘g‘ri:
+
+```python
+# O'zgaruvchi nomida '@' belgisi ishlatilgan — bu noto‘g‘ri
+# ❌ Maxsus belgilar (masalan: @) Python'da o'zgaruvchi nomida bo'lmasligi kerak
+ism@familiya = "Valijon"
+
+# O'zgaruvchi nomida '!' belgisi ishlatilgan — bu ham noto‘g‘ri
+# ❌ Maxsus belgilar (masalan: !) ruxsat etilmaydi
+yosh! = 18
+```
+
+
 > - O'zgaruvchi nomida bo'shliq (пробел) bo'lishi mumkin emas
 > - O'zgaruvchi nomida katta-kichik harflar turlicha talqin qilinadi (`ism`, `ISM`, va `Ism` uchta turli o'zgaruvchi)
 
