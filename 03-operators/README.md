@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-# OPERATORS
+# 🧩 3-DARS OPERATORS
 
 - Python operatorlarini quyidagi guruhlarga bo'lish mumkin:
     - Arifmetik operatorlar
