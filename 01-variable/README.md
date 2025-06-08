@@ -5,7 +5,7 @@
 >[!NOTE]
 > Python dasturlash tilida `variables` — bu ma’lumotlarni `vaqtincha saqlash` uchun ishlatiladigan `nomlangan konteynerlardir`. O‘zgaruvchilar yordamida `ma’lumotlar bilan ishlash`, `ularni saqlash` va `qayta ishlatish` qulaylashadi.
 
-## O'ZGARUVCHILAR
+## ✅ O'ZGARUVCHI NIMA?
 
 **O'zgaruvchi** - kompyuter xotirasida ma'lum bir qiymatni saqlash uchun ajratilgan joy.
 
@@ -13,7 +13,6 @@
 
 ![alt text](images/image.png)
 
-**Example:**
 
 📌 Quyidagi misolda 4 ta o'zgaruvchi yaratdik (`x`, `y`, `name` va `is_student`) va ularga har xil ma'lumot yukladik.
 
@@ -43,29 +42,67 @@ print(name)
 print(is_student)
 ```
 
-**Example:**
 
-`variable` diyilishini sababi uning qiymati istalgan payt o'zgarishi mumkin:
+📌 `variable` diyilishini sababi uning qiymati istalgan payt o'zgarishi mumkin:
 
 ```python
+# 'name' o'zgaruvchisiga dastlab 'Alisher' matnini beramiz
 name = 'Alisher'
+
+# name o'zgaruvchisining hozirgi qiymatini chiqaramiz (Alisher)
 print(name)
+
+# name o'zgaruvchisining qiymatini o'zgartiramiz, endi u 'Muhammad' bo'ladi
 name = "Muhammad"
+
+# name o'zgaruvchisining yangi qiymatini chiqaramiz (Muhammad)
 print(name)
 ```
 
-**Result:**
+## ✅ O'ZGARUVCHILARNI NOMLASH
 
-`Alisher` <br>
-`Muhammad`
+## ❗ O'zgaruvchilarga nom berishda quyidagi qoidalarga amal qiling:
 
-Yuqoridagi misolda `name` nomli o'zgaruvchiga avval `Alisher` keyin esa `Muhammad` deb qiymat berdik.
+### ❌ O'zgaruvchi nomi harf yoki pastki chiziq (`_`) bilan boshlanishi kerak
 
-### O'ZGARUVCHILARNI NOMLASH
-> [!CAUTION]
-> O'zgaruvchilarga nom berishda quyidagi qoidalarga amal qiling:
-> - O'zgaruvchi nomi harf yoki pastki chiziq (`_`) bilan boshlanishi kerak
-> - O'zgaruvchi nomi raqam bilan boshlanishi mumkin emas
+✅ To‘g‘ri:
+
+```python
+# Harflardan tashkil topgan oddiy o'zgaruvchi nomi
+ism = "Ali"
+
+# Pastki chiziq (_) bilan boshlangan o'zgaruvchi nomi
+_yosh = 25
+```
+
+❌ Noto‘g‘ri:
+
+```python
+# ❌ Son bilan boshlanmaydi
+1ism = "Ali"
+```
+
+### ❌ O'zgaruvchi nomi raqam bilan boshlanishi mumkin emas
+
+📌 Raqam faqat nomning oxirida yoki o‘rtasida ishlatilishi mumkin.
+
+✅ To‘g‘ri:
+
+```python
+# O'zgaruvchi nomi harf bilan boshlangan va raqam bilan tugagan — to'g'ri
+raqam1 = 10
+
+# O'zgaruvchi nomi harf bilan boshlangan va oxirida raqam ishlatilgan — to'g'ri
+sana2025 = 2025
+```
+
+❌ Noto‘g‘ri:
+
+```python
+# ❌ Raqam bilan boshlanmaydi
+3dars = "Python"
+```
+
 > - O'zgaruvchi nomida faqatgina lotin alifbosi harflari (`A-z`), raqamlar (`0-9`) va pastki chiziq (`_`) qatnashishi mumkin
 > - O'zgaruvchi nomida bo'shliq (пробел) bo'lishi mumkin emas
 > - O'zgaruvchi nomida katta-kichik harflar turlicha talqin qilinadi (`ism`, `ISM`, va `Ism` uchta turli o'zgaruvchi)
