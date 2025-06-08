@@ -87,24 +87,30 @@ length = len(text)  # Natija: 13
 print(length)
 ```
 
-### STRING E'LEMENTLARIGA MUROJAT QILISH
-Matnlarimiz ichidan o'zimizga kerak bo'lgan harflarni ajratib olish uchun quyidagi usuldan foydalanamiz:
+### ❇️ STRING E'LEMENTLARIGA MUROJAT QILISH
+📌 String ichidan o'zimizga kerak bo'lgan e'lementlarni ajratib olish uchun quyidagi usuldan foydalanamiz:
 
-**Example:**
 
 ```python
+# 📌 String ichidan kerakli elementlarni olish uchun indekslash (indexing) va kesish (slicing) usullaridan foydalanamiz
+
 text = "Hello world!"
-first_char = text[0] # H
-last_char = text[-1]  # '!'
-substring = text[0:5]  # 'Hello'
+
+# 📌 Birinchi e'lementni olish uchun indeks 0 dan boshlanadi
+first_char = text[0]  # Natija: 'H'
+
+# 📌 Oxirgi e'lementni olish uchun indeks sifatida -1 ishlatiladi
+last_char = text[-1]  # Natija: '!'
+
+# 📌 e'lementlarni kesib olish (substring) uchun start va stop indekslar beriladi (stop indeksi kiritilgan indeksdan oldingi belgigacha)
+substring = text[0:5]  # Natija: 'Hello' (0-indeksdan 4-indeksgacha)
+
+# 📌 Natijalarni ekranga chiqaramiz
 print(first_char)
 print(last_char)
 print(substring)
 ```
-**Result:** <br>
-`H` <br>
-`!` <br>
-`Hello`
+
 
 ### STRINGLARNI KO'PAYTIRISH
 
