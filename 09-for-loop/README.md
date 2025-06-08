@@ -1,4 +1,6 @@
-# For Loop
+# 🐍 PYTHON DASTURLASH ASOSLARI
+
+# 🧩 9-DARS FOR LOOP
 
 > [!NOTE]
 > **for** — bu takrorlovchi tsikl, ya’ni bir nechta qiymatlar ustida yurib chiqib, har bir qiymat ustida amal bajaradi.
