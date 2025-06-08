@@ -111,17 +111,23 @@ print(last_char)
 print(substring)
 ```
 
+### ❇️ STRINGLARNI KO'PAYTIRISH
 
-### STRINGLARNI KO'PAYTIRISH
-
-**Example:**
+📌 Python dasturida string ni ko‘paytirish orqali bir xil matnni takrorlash mumkin. Buning uchun `*` operatoridan foydalanamiz.
 
 ```python
+# 📌 Stringni ko‘paytirish orqali bir xil e'lementni takrorlash mumkin
+# Buning uchun '*' operatoridan foydalanamiz
+
 text = "Hello"
-text_repeated = text * 3
+
+# 📌 hello so'zini 3 marta takrorlaymiz
+text_repeated = text * 3  # Natija: 'HelloHelloHello'
+
+# 📌 Natijani ekranga chiqaramiz
 print(text_repeated)
 ```
-**Result:** `HelloHelloHello`
+
 
 ### F-STRING(Python 3.6+)
 
