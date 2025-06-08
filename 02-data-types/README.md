@@ -145,8 +145,9 @@ text = f"Mening ismim {ism}, yoshim {yosh}da"  # Natija: Mening ismim Umid, yosh
 print(text)
 ```
 
-### STRING METODLARI
-Python dasturlash tilida, stringlar ustida turli xil operatsiyalarni bajarish uchun bir qancha o'rnatilgan metodlar mavjud. Quyida eng ko'p qo'llaniladigan string metodlari va ularning misollari keltirilgan:
+### ❇️ STRING METODLARI
+
+📌 Python dasturlash tilida, stringlar ustida turli xil operatsiyalarni bajarish uchun bir qancha o'rnatilgan metodlar mavjud. Quyida eng ko'p qo'llaniladigan string metodlari va ularning misollari keltirilgan:
 
 1. `.upper()`
 
@@ -154,6 +155,13 @@ Python dasturlash tilida, stringlar ustida turli xil operatsiyalarni bajarish uc
 # .upper() - Matndagi barcha harflarni katta harfga aylantiradi
 text = "hello"
 print(text.upper())  # Natija: HELLO
+
+
+# Foydalanuvchi ismini doim katta harflarda saqlash uchun,
+# bazada bir xil ism turli holatda yozilgan bo‘lsa ham xatolik bo‘lmasin
+user_input = "umid"
+username = user_input.upper()
+print(username)  # UMID
 ```
 2. `.lower()`
 
@@ -161,6 +169,13 @@ print(text.upper())  # Natija: HELLO
 # .lower() - Matndagi barcha harflarni kichik harfga aylantiradi
 text = "HELLO"
 print(text.lower())  # Natija: hello
+
+
+# Email yoki username tekshiruvda har doim kichik harflarga o‘zgartirish kerak,
+# chunki email kichik harflarda yoziladi
+email = "User@Example.COM"
+email_normalized = email.lower()
+print(email_normalized)  # user@example.com
 ```
 3. `.capitalize()`
 
@@ -168,6 +183,12 @@ print(text.lower())  # Natija: hello
 # .capitalize() - Matnning birinchi harfini katta harfga, qolganlarini kichik harfga aylantiradi
 text = "hello world"
 print(text.capitalize())  # Natija: Hello world
+
+
+# Foydalanuvchi ismini chiroyli ko‘rsatish uchun,
+# faqat birinchi harf katta bo‘lsin
+name = "umid"
+print(name.capitalize())  # Umid
 ```
 4. `.title()`
 
@@ -175,6 +196,13 @@ print(text.capitalize())  # Natija: Hello world
 # .title() - Matndagi har bir so'zning birinchi harfini katta harfga aylantiradi
 text = "hello world"
 print(text.title())  # Natija: Hello World
+
+
+
+# Blog post yoki maqola sarlavhasini
+# har bir so‘zni bosh harfi katta bo‘lsin uchun formatlash
+title = "python dasturlash asoslari"
+print(title.title())  # Python Dasturlash Asoslari
 ```
 
 5. `.lstrip()`
@@ -198,6 +226,13 @@ print(text.rstrip())  # Natija: "    hello world"
 # .strip() - Matnning boshidagi va oxiridagi bo'sh joylarni olib tashlaydi
 text = "    hello world    "
 print(text.strip())  # Natija: "hello world"
+
+
+
+# toza ma’lumot olish maqsadida
+user_input = "   umid   "
+clean_input = user_input.strip()
+print(clean_input)  # "umid"
 ```
 
 ## NUMBER
