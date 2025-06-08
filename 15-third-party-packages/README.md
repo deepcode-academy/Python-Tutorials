@@ -1,5 +1,5 @@
-# 🧩 PYTHON DASTURLASH ASOSLARI  
-## 📦 Uchinchi tomon (Third-Party) kutubxonalari
+# 🐍 PYTHON DASTURLASH ASOSLARI  
+## 🧩 UCHINCHI TOMON KUTUBXONALARI (Third-Party)
 
 Python kutubxonalari 3 guruhga bo‘linadi:
 
