@@ -1,6 +1,6 @@
-# PYTHON DASTURLASH ASOSLARI
+# 🐍 PYTHON DASTURLASH ASOSLARI
 
-## 7-dars Shart operatorlari
+# 🧩 8-DARS IF...ELIF...ELSE..
 
 ## TARMOQLANISH
 
