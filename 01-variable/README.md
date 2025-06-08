@@ -228,6 +228,22 @@ import keyword
 print(keyword.kwlist)
 ```
 
+✅ To‘g‘ri:
+
+```python
+# To‘g‘ri misollar — kalit so'zlarni o'zgaruvchi nomining bir qismi sifatida ishlatish mumkin
+def_funksiya = 10
+for_son = 20
+```
+
+❌ Noto‘g‘ri:
+
+```python
+# Noto‘g‘ri misollar — kalit so‘zlarni o‘zgaruvchi nomi sifatida ishlatish mumkin emas
+def = 10    # ❌ 'def' kalit so'z, o'zgaruvchi sifatida ishlatilmaydi
+for = 20    # ❌ 'for' kalit so'z, o'zgaruvchi sifatida ishlatilmaydi
+```
+
 
 ## MA'LUMOT TURLARI
 Python dasturlash tilida `7` ta ma'lumot turi bor, ular quyidagilar:
