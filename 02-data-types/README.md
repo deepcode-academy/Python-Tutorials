@@ -376,6 +376,31 @@ if url.startswith("https://example.com/api/"):
     print("API so'rovi")
 ```
 
+13. `.endswith(suffix)`
+
+```python
+# 1-qator: text o'zgaruvchisiga "Hello world" matni saqlanmoqda
+text = "Hello world"
+
+# 2-qator: .endswith() metodi yordamida matn "world" bilan tugashini tekshiramiz
+print(text.endswith("world"))  # Natija: True
+
+# 3-qator: .endswith() metodi yordamida matn "Hello" bilan tugashini tekshiramiz
+print(text.endswith("Hello"))  # Natija: False
+
+
+
+
+# 1-qator: filename o'zgaruvchisiga fayl nomi saqlanmoqda
+filename = "photo.jpg"
+
+# 2-qator: agar filename ".jpg" bilan tugasa, shart bajariladi
+if filename.endswith(".jpg"):
+    # 3-qator: ekranga "Rasm fayli" deb chiqaramiz
+    print("Rasm fayli")
+```
+
+
 
 ## NUMBER
 
