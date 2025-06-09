@@ -413,8 +413,6 @@ print(text.count("hello"))  # Natija: 2
 
 ## ✅ NUMBERS
 
-### ❇️ INTEGER
-
 📌 Numbers — bu sonlarni ifodalash uchun ishlatiladigan ma'lumot turi. 
 
 📌 Pythonda asosiy 3ta number type mavjud:
@@ -423,6 +421,7 @@ print(text.count("hello"))  # Natija: 2
 - **float** — o'nlik sonlar (masalan, 3.14, -0.001, 2.0)
 - **complex** — kompleks sonlar (masalan, 2 + 3j, -1j)
 
+### ❇️ INTEGER
 
 📌 Integer ma'lumot turi butun sonlarni ifodalaydi. Bu sonlar `manfiy`, `musbat` yoki `0` bo'lishi mumkin. Integerlar cheklanmagan uzunlikka ega, ya'ni Python juda katta sonlarni ham integer sifatida saqlay oladi.
 
@@ -627,16 +626,36 @@ print("Qoldiq:", a % b)         # a ni b ga bo‘lishda qolgan qoldiq => 1.5
 print("Daraja:", a ** b)        # a ni b-darajaga ko‘tarish => 30.25
 ```
 
-# Constants
+## ✅ COMPLEX
 
-### KONSTANTA
+📌 Complex sonlar — bu ikkita qismdan iborat sonlar: haqiqiy qism (real part) va mavhum qism (imaginary part).
 
-Python dasturlash tilida "constant" deb ataladigan o'zgaruvchilar mavjud emas, lekin dasturchilar odatda o'zgaruvchilarni konstantalar sifatida ishlatishadi. Bu odatda o'zgaruvchining qiymati dastur davomida o'zgarmasligini anglatadi.
+📌 Pythonda murakkab sonlar `complex` tipida saqlanadi. Pythonda imaginary part `j` yoki `J` harfi bilan ifodalanadi (elektronika va fizikada `j` ishlatiladi, matematikada esa `i`).
+
+### ❇️ COMPLEX SON YARATISH
+
+```python
+# Kompleks son yaratamiz: real part 3, imaginary part 4j
+z1 = 3 + 4j
+
+# Kompleks sonni konsolga chiqaramiz
+print(z1)  # Natija: (3+4j)
+```
+
+## ✅ KONSTANTA
+
+📌 Python dasturlash tilida `"constant"` deb ataladigan o'zgaruvchilar mavjud emas, lekin dasturchilar odatda o'zgaruvchilarni konstantalar sifatida ishlatishadi. Bu odatda o'zgaruvchining qiymati dastur davomida o'zgarmasligini anglatadi.
 
 1. **Konstantalarni nomlash:** Konstantalarni nomlashda katta harflar ishlatiladi. Bu, dasturchiga o'zgaruvchining qiymati o'zgarmasligini anglatadi.
 
 ```python
+# Bu yerda PI nomli konstanta e'lon qilinmoqda
+# Odatda konstanta nomlari katta harflarda yoziladi
+# PI ning qiymati o‘zgarmaydi va doim 3.14159 bo‘lib qoladi
 PI = 3.14159
+
+# Bu yerda MAX_USERS nomli konstanta e'lon qilinmoqda
+# Bu maksimum foydalanuvchilar sonini bildiradi
 MAX_USERS = 100
 ```
 
@@ -644,22 +663,43 @@ MAX_USERS = 100
 
 ```python
 # constants.py
+
+# constants.py faylida o'zgarmas (konstanta) qiymatlar saqlanadi
+# Bu konstantalar boshqa fayllardan import qilib ishlatiladi
+
+# Aylana uchun PI qiymati
 PI = 3.14159
+
+# Maksimal foydalanuvchilar soni
 MAX_USERS = 100
 ```
 
 - Keyin boshqa faylda bu konstantalarni ishlatish mumkin:
 
 ```python
+# main.py
+
+# constants.py modulidagi konstantalarni import qilamiz
 import constants
 
-print(constants.PI)  # 3.14159
-print(constants.MAX_USERS)  # 100
+# PI konstantasini terminalga chiqaramiz
+print(constants.PI)  # Natija: 3.14159
+
+# MAX_USERS konstantasini terminalga chiqaramiz
+print(constants.MAX_USERS)  # Natija: 100
 ```
 
 3. Konstantalarni o'zgartirishga urinish: Python tilida konstantalarni o'zgartirish mumkin, lekin bu tavsiya etilmaydi. Agar siz konstantani o'zgartirmoqchi bo'lsangiz, bu dastur xatolarga olib kelishi mumkin.
 
 ```python
+# PI konstanta deb qaralmoqda, ya'ni doimiy qiymat sifatida ishlatiladi
 PI = 3.14159
-PI = 3.14  # Bu tavsiya etilmaydi, lekin xato emas
+
+# Ammo bu yerda PI qiymatini o'zgartirib yubordik
+# Bu sintaktik jihatdan xato emas, lekin yomon amaliyot hisoblanadi
+# Chunki dasturchilar PI o'zgarmaydi deb o'ylaydi
+PI = 3.14  # ❌ Bu tavsiya etilmaydi
+
+# Dastur davomida bu o'zgarish kutilmagan xatolarga olib kelishi mumkin
+print("PI qiymati:", PI)  # Natija: 3.14
 ```
