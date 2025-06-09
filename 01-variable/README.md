@@ -243,3 +243,178 @@ for_son = 20
 def = 10    # ❌ 'def' kalit so'z, o'zgaruvchi sifatida ishlatilmaydi
 for = 20    # ❌ 'for' kalit so'z, o'zgaruvchi sifatida ishlatilmaydi
 ```
+
+# ✅ AMALIYOT
+
+## ✅ 1-topshiriq: O‘zgaruvchilar yaratish
+
+Quyidagi qiymatlarni mos o‘zgaruvchilarga saqlang va ularni `print()` yordamida ekranga chiqaring:
+
+- Butun son: `25`
+- Haqiqiy son: `4.5`
+- Matn: `"Python"`
+- Mantiqiy qiymat: `False`
+
+**Kutilgan natija:**
+```
+25
+4.5
+Python
+False
+```
+
+---
+
+## ✅ 2-topshiriq: Qiymatni o‘zgartirish
+
+Quyidagi amallarni bajaring:
+
+- `ism` nomli o‘zgaruvchiga `"Ali"` qiymatini bering
+- So‘ng bu o‘zgaruvchiga `"Vali"` qiymatini bering
+- `print()` orqali oxirgi qiymatini chiqaring
+
+**Kutilgan natija:**
+```
+Vali
+```
+
+---
+
+## ✅ 3-topshiriq: Birdaniga bir nechta o‘zgaruvchi
+
+Quyidagi qiymatlarni bitta qatorda yozing:
+
+- `yosh = 20`
+- `ism = "Aziza"`
+- `status = True`
+
+Ularni alohida `print()` bilan chiqaring.
+
+**Kutilgan natija:**
+```
+20
+Aziza
+True
+```
+
+---
+
+## ✅ 4-topshiriq: `type()` funksiyasi
+
+Quyidagi kod orqali o‘zgaruvchilarning turini aniqlang:
+
+```python
+a = 10
+b = "salom"
+c = 3.14
+d = False
+```
+
+Har birining `type()` qiymatini ekranga chiqaring.
+
+**Kutilgan natija:**
+```
+<class 'int'>
+<class 'str'>
+<class 'float'>
+<class 'bool'>
+```
+
+---
+
+## ✅ 5-topshiriq: Foydalanuvchidan ma’lumot olish
+
+Foydalanuvchidan `ism` va `yosh` ni `input()` yordamida oling va ularni quyidagicha chiqaruvchi dastur yozing:
+
+```python
+# Misol:
+# Kirish:
+# Ismingizni kiriting: Aziza
+# Yoshingizni kiriting: 18
+
+# Chiqish:
+# Salom Aziza, siz 18 yoshdasiz.
+```
+
+---
+
+## ✅ 6-topshiriq: O‘zgaruvchi turlarini tekshirish
+
+Foydalanuvchidan quyidagi ma’lumotlarni oling:
+
+- ism (matn)
+- yosh (butun son)
+
+Keyin ularning turini `type()` yordamida chiqaring.
+
+**Kutilgan natija:**
+```
+<class 'str'>
+<class 'str'>  # Sababi input() har doim str turida bo‘ladi
+```
+
+Bonus: `int()` orqali yoshni butun songa aylantirib ko‘ring.
+
+---
+
+## ✅ 7-topshiriq: O‘zgaruvchi nomlash xatolari
+
+Quyidagi o‘zgaruvchilar to‘g‘rimi yoki noto‘g‘riligini aniqlang. Agar noto‘g‘ri bo‘lsa, to‘g‘ri shaklini yozing:
+
+```python
+1son = 5        # noto‘g‘ri
+my-name = "Ali" # noto‘g‘ri
+def = 10        # noto‘g‘ri (Python kalit so‘z)
+ism_1 = "Aziza" # to‘g‘ri
+```
+
+---
+
+## ✅ 8-topshiriq: `int()`, `float()`, `str()` funksiyalaridan foydalanish
+
+Foydalanuvchidan son oling va uni:
+
+- `int` turiga o‘tkazing
+- `float` turiga o‘tkazing
+- `str` turiga o‘tkazing
+
+Har birining `type()` ni chiqaruvchi dastur yozing.
+
+---
+
+## ✅ 9-topshiriq: Foydalanuvchining to‘liq ma’lumotini chiqarish
+
+Quyidagi ma’lumotlarni input orqali oling:
+
+- ism
+- familiya
+- yosh
+- kasb
+
+Va quyidagicha formatda chiqarilsin:
+
+```
+Ismingiz: Ali
+Familiyangiz: Karimov
+Yoshingiz: 20
+Kasbingiz: Dasturchi
+```
+
+---
+
+## ✅ 10-topshiriq: O‘zgaruvchilarni almashtirish
+
+Quyidagi o‘zgaruvchilar qiymatini bir-biri bilan almashtiring:
+
+```python
+a = 5
+b = 10
+```
+
+So‘ng yangi qiymatlarni `print()` bilan chiqaring.
+
+**Kutilgan natija:**
+```
+a = 10
+b = 5
+```
