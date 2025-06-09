@@ -703,3 +703,103 @@ PI = 3.14  # ❌ Bu tavsiya etilmaydi
 # Dastur davomida bu o'zgarish kutilmagan xatolarga olib kelishi mumkin
 print("PI qiymati:", PI)  # Natija: 3.14
 ```
+
+# ✅ AMALIYOT
+
+# 📝 Python Dasturlash Asoslari: 15ta Amaliy Topshiriq
+
+Quyidagi topshiriqlar "Data Types" mavzusidan tashkil topgan va string, integer, float, input, type casting, konstantalar kabi asosiy tushunchalarni mustahkamlashga yordam beradi. Har bir topshiriqni Python kodida yechib ko‘ring va natijasini tekshiring.
+
+---
+
+### 1. String O‘zgartirish
+
+Foydalanuvchidan ism va familiyasini input() yordamida so‘rang va ularning har birini `.capitalize()` metodi yordamida chiroyli formatda ekranga chiqaring.
+
+---
+
+### 2. String Qo‘shish
+
+Foydalanuvchidan shahar va mamlakat nomini so‘rab, ikkala qiymatni "Siz yashayotgan joy: <shahar>, <mamlakat>" ko‘rinishida ekranga chiqaruvchi dastur yozing.
+
+---
+
+### 3. String Uzunligini Topish
+
+Foydalanuvchidan sevimli kitob nomini so‘rang va bu nom nechta belgidan iborat ekanligini aniqlang.
+
+---
+
+### 4. Stringdan Belgini Ajratib Olish
+
+Foydalanuvchidan ism kiriting va uning birinchi va oxirgi harfini alohida chiqaruvchi dastur yozing.
+
+---
+
+### 5. String Ko‘paytirish
+
+Foydalanuvchidan biror so‘z kiriting va uni ekranda 5 marta ketma-ket chiqaradigan dastur yozing.
+
+---
+
+### 6. F-string orqali Formatlash
+
+Foydalanuvchidan ism va yoshini so‘rab, `f-string` yordamida "Salom, <ism>! Siz <yosh> yoshdasiz." deb chiqaring.
+
+---
+
+### 7. String Metodlari: Upper va Lower
+
+Foydalanuvchidan matn kiriting. Ushbu matnni avval to‘liq katta harflarda, keyin to‘liq kichik harflarda ekranga chiqaring.
+
+---
+
+### 8. String Replace
+
+Foydalanuvchidan telefon raqamini ("+998 90 123 45 67" ko‘rinishida) kiriting va uni barcha bo‘sh joylar va "+" belgisidan tozalab, natijasini chiqaruvchi dastur yozing.
+
+---
+
+### 9. Split va Join
+
+Foydalanuvchidan bir qator so‘zlar yozishni so‘rang. Har bir so‘zni alohida satrga chiqarib chiqing, so‘ngra ularni "-" belgisi bilan birlashtirib bitta stringga aylantirib, natijasini chiqaring.
+
+---
+
+### 10. Find va Count
+
+Foydalanuvchidan matn va unda izlanadigan so‘zni kiriting. So‘z matn ichida nechta marta uchrashini va birinchi uchrashgan indeksini aniqlang.
+
+---
+
+### 11. Startwith va Endswith
+
+Foydalanuvchidan fayl nomini kiriting. Agar fayl ".py" bilan tugasa, "Python fayli!", ".txt" bilan tugasa, "Matn fayli!" deb chiqaring.
+
+---
+
+### 12. Integer va Float Amallari
+
+Foydalanuvchidan ikkita butun son va bitta o‘nlik son kiriting. Ular ustida quyidagi amallarni bajarib, natijasini chiqaring: qo‘shish, ayirish, ko‘paytirish, bo‘lish.
+
+---
+
+### 13. Type Casting
+
+Foydalanuvchidan raqamli matn (masalan, "1234") kiriting. Uni avval int, so‘ng float va bool turiga o‘tkazib, har birining qiymati va turini ekranga chiqaring.
+
+---
+
+### 14. Konstantani Modullashtirish
+
+`constants.py` faylida PI va MAX_USERS konstantalarini aniqlang. `main.py` faylida ushbu konstantalarni import qilib, ekranga chiqaring.
+
+---
+
+### 15. Input va Yosh Hisoblash
+
+Foydalanuvchidan tug‘ilgan yilini so‘rab, uning yoshini hisoblovchi va ekranga chiqaruvchi dastur yozing.
+
+---
+
+**Yechimlarni alohida fayl yoki kod bloklarida yozing. Har bir topshiriqni mustaqil bajarish tavsiya etiladi.**
