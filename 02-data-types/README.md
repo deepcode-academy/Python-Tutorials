@@ -51,18 +51,18 @@ print(text)
 
 
 ```python
-# 📌 '+' operatori yordamida ikki yoki undan ortiq stringlarni birlashtirish mumkin
+# '+' operatori yordamida ikki yoki undan ortiq stringlarni birlashtirish mumkin
 
 name = "Umid"
 print("Mening ismim " + name)  # Natija: Mening ismim Umid
 
-# 📌 Qo‘shishda so‘zlar orasiga bo‘sh joy (space) qo‘yish kerak, aks holda ular bir-biriga yopishib qoladi
+# Qo‘shishda so‘zlar orasiga bo‘sh joy (space) qo‘yish kerak, aks holda ular bir-biriga yopishib qoladi
 
 first_name = "Umid"
 last_name = "G'aybullayev"
 print(first_name + last_name)  # Natija: UmidG'aybullayev (bo‘shliq yo‘q)
 
-# 📌 To‘g‘ri natija uchun so‘zlar orasiga bo‘sh joy qo‘shamiz
+# To‘g‘ri natija uchun so‘zlar orasiga bo‘sh joy qo‘shamiz
 
 print(first_name + " " + last_name)  # Natija: Umid G'aybullayev
 
@@ -76,14 +76,14 @@ print(first_name + " " + last_name)  # Natija: Umid G'aybullayev
 
 
 ```python
-# 📌 len() funksiyasi yordamida string uzunligini aniqlaymiz
+# len() funksiyasi yordamida string uzunligini aniqlaymiz
 
 text = "Hello, World!"
 
-# 📌 text o'zgaruvchisidagi string uzunligini len() yordamida o'lchaymiz
+# text o'zgaruvchisidagi string uzunligini len() yordamida o'lchaymiz
 length = len(text)  # Natija: 13
 
-# 📌 Natijani ekranga chiqaramiz
+# Natijani ekranga chiqaramiz
 print(length)
 ```
 
@@ -92,20 +92,20 @@ print(length)
 
 
 ```python
-# 📌 String ichidan kerakli elementlarni olish uchun indekslash (indexing) va kesish (slicing) usullaridan foydalanamiz
+# String ichidan kerakli elementlarni olish uchun indekslash (indexing) va kesish (slicing) usullaridan foydalanamiz
 
 text = "Hello world!"
 
-# 📌 Birinchi e'lementni olish uchun indeks 0 dan boshlanadi
+# Birinchi e'lementni olish uchun indeks 0 dan boshlanadi
 first_char = text[0]  # Natija: 'H'
 
-# 📌 Oxirgi e'lementni olish uchun indeks sifatida -1 ishlatiladi
+# Oxirgi e'lementni olish uchun indeks sifatida -1 ishlatiladi
 last_char = text[-1]  # Natija: '!'
 
-# 📌 e'lementlarni kesib olish (substring) uchun start va stop indekslar beriladi (stop indeksi kiritilgan indeksdan oldingi belgigacha)
+# e'lementlarni kesib olish (substring) uchun start va stop indekslar beriladi (stop indeksi kiritilgan indeksdan oldingi belgigacha)
 substring = text[0:5]  # Natija: 'Hello' (0-indeksdan 4-indeksgacha)
 
-# 📌 Natijalarni ekranga chiqaramiz
+# Natijalarni ekranga chiqaramiz
 print(first_char)
 print(last_char)
 print(substring)
@@ -116,15 +116,15 @@ print(substring)
 📌 Python dasturida string ni ko‘paytirish orqali bir xil matnni takrorlash mumkin. Buning uchun `*` operatoridan foydalanamiz.
 
 ```python
-# 📌 Stringni ko‘paytirish orqali bir xil e'lementni takrorlash mumkin
+# Stringni ko‘paytirish orqali bir xil e'lementni takrorlash mumkin
 # Buning uchun '*' operatoridan foydalanamiz
 
 text = "Hello"
 
-# 📌 hello so'zini 3 marta takrorlaymiz
+# hello so'zini 3 marta takrorlaymiz
 text_repeated = text * 3  # Natija: 'HelloHelloHello'
 
-# 📌 Natijani ekranga chiqaramiz
+# Natijani ekranga chiqaramiz
 print(text_repeated)
 ```
 
@@ -134,14 +134,14 @@ print(text_repeated)
 
 
 ```python
-# 📌 O'zgaruvchilarni string ichida qulay tarzda qo'shish uchun f-string usulidan foydalanamiz
+# O'zgaruvchilarni string ichida qulay tarzda qo'shish uchun f-string usulidan foydalanamiz
 ism = "Umid"
 yosh = 20
 
-# 📌 f-string yordamida string ichiga o'zgaruvchilarni joylashtirish
+# f-string yordamida string ichiga o'zgaruvchilarni joylashtirish
 text = f"Mening ismim {ism}, yoshim {yosh}da"  # Natija: Mening ismim Umid, yoshim 20da
 
-# 📌 Natijani ekranga chiqaramiz
+# Natijani ekranga chiqaramiz
 print(text)
 ```
 
@@ -411,19 +411,26 @@ print(text.count("hello"))  # Natija: 2
 ```
 
 
-## NUMBER
+## ✅ NUMBER
 
-- **Number** - Raqamli ma'lumot turi `2` ga bo'linadi:
-    - **Integer(int)** - Butun sonlarni ifodalaydi. Masalan: `10`, `-3`, `42`.
+📌 Numbers — bu sonlarni ifodalash uchun ishlatiladigan ma'lumot turi. 
 
-Integer ma'lumot turi butun sonlarni ifodalaydi. Bu sonlar `manfiy`, `musbat` yoki `0` bo'lishi mumkin. Integerlar cheklanmagan uzunlikka ega, ya'ni Python juda katta sonlarni ham integer sifatida saqlay oladi.
+📌 Pythonda asosiy 3ta number type mavjud:
+
+- **int** — butun sonlar (masalan, 5, -10, 100)
+- **float** — o'nlik sonlar (masalan, 3.14, -0.001, 2.0)
+- **complex** — kompleks sonlar (masalan, 2 + 3j, -1j)
+
+
+📌 Integer ma'lumot turi butun sonlarni ifodalaydi. Bu sonlar `manfiy`, `musbat` yoki `0` bo'lishi mumkin. Integerlar cheklanmagan uzunlikka ega, ya'ni Python juda katta sonlarni ham integer sifatida saqlay oladi.
 
 ```python
-x = 10
-y = -5
-z = 0
-a = 12345678901234567890
+x = 10                       # musbat butun son
+y = -5                       # manfiy butun son
+z = 0                        # nol
+a = 12345678901234567890     # juda katta butun son
 
+# Quyidagi print() funksiyalari har bir o'zgaruvchining turini ko'rsatadi
 print(type(x))  # <class 'int'>
 print(type(y))  # <class 'int'>
 print(type(z))  # <class 'int'>
