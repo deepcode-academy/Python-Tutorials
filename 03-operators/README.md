@@ -12,70 +12,44 @@
     - Identifikatsiya (Identity) operatorlari
     - Aralashtirilgan operatorlar (Mixed Operators)
 
-## ARIFMETIK OPERATORLAR
+## ✅ ARIFMETIK OPERATORLAR
 
-Python dasturlash tilida arifmetik operatorlar matematik amallarni bajarish uchun ishlatiladi.
-
-1. **Qo'shish** (`+`): Ikkita sonni qo'shish uchun ishlatiladi.
+📌 Python dasturlash tilida arifmetik operatorlar — sonlar ustida hisob-kitob qilish uchun ishlatiladigan maxsus belgilar yoki ifodalardir. Ular yordamida qo‘shish, ayirish, ko‘paytirish, bo‘lish kabi oddiy matematik amallarni bajarish mumkin.
 
 ```python
-a = 5
+# a va b o'zgaruvchilariga qiymat beramiz
+a = 10
 b = 3
-c = a + b  # c 8 ga teng bo'ladi
-print(c)
+
+# Qo‘shish amali: a + b
+yigindi = a + b
+print(yigindi)  # Natija: 13
+
+# Ayirish amali: a - b
+ayirma = a - b
+print(ayirma)  # Natija: 7
+
+# Ko‘paytirish amali: a * b
+kopaytma = a * b
+print(kopaytma)  # Natija: 30
+
+# Bo‘lish amali (natija float): a / b
+bolish = a / b
+print(bolish)  # Natija: 3.3333333333333335
+
+# Butun qismga bo‘lish: a // b (natija butun son)
+butun_qism = a // b
+print(butun_qism)  # Natija: 3
+
+# Qoldiqni topish: a % b
+qoldiq = a % b
+print(qoldiq)  # Natija: 1
+
+# Darajaga ko‘tarish: a ** b (10 ning 3-darajasi)
+daraja = a ** b
+print(daraja)  # Natija: 1000
 ```
 
-2. **Ayirish** (`-`): Ikkita sonni ayirish uchun ishlatiladi.
-```python
-a = 5
-b = 3
-c = a - b  # c 2 ga teng bo'ladi
-print(c)
-```
-
-3. **Ko'paytirish** (`*`): Ikkita sonni ko'paytirish uchun ishlatiladi.
-```python
-a = 5
-b = 3
-c = a * b  # c 15 ga teng bo'ladi
-print(c)
-```
-
-4. **Bo'lish** (`/`): Ikkita sonni bo'lish uchun ishlatiladi.
-
-```python
-a = 6
-b = 3
-c = a / b  # c 2.0 ga teng bo'ladi
-print(c)
-```
-
-5. **Butun bo'lish** (`//`): Ikkita sonni butun qismiga bo'lish uchun ishlatiladi.
-
-```python
-a = 7
-b = 3
-c = a // b  # c 2 ga teng bo'ladi
-print(c)
-```
-
-6. **Qoldiq** (`%`): Ikkita sonni bo'lgandan keyin qoldiqni topish uchun ishlatiladi.
-
-```python
-a = 7
-b = 3
-c = a % b  # c 1 ga teng bo'ladi
-print(c)
-```
-
-7. **Daraja** (`**`): Bir sonni ikkinchi son darajasiga ko'tarish uchun ishlatiladi.
-
-```python
-a = 2
-b = 3
-c = a ** b  # c 8 ga teng bo'ladi
-print(c)
-```
 
 ## TAQQOSLASH OPERATORLARI
 
