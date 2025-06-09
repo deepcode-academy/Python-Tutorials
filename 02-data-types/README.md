@@ -437,7 +437,8 @@ print(type(z))  # <class 'int'>
 print(type(a))  # <class 'int'>
 ```
 ## ✅ INTEGER USTIDA AMALLAR
-Integerlar ustida asosiy matematik amallarni bajarish mumkin:
+📌 Integerlar ustida asosiy matematik amallarni bajarish mumkin:
+
 ```python
 # Integerlar (butun sonlar) ustida bajariladigan asosiy matematik amallar
 
@@ -468,7 +469,7 @@ print(a ** b)  # 10 ** 3 = 1000
 
 ## ✅ UZUN SONLARNI KIRITISH
 
-Uzun sonlarni kiritishda, qulaylik uchun, raqamlarni pastki chiziq (`_`) yordamida guruhlash mumkin. Python - son tarkibidagi pastki chiziqlarni (`_`) inobatga olmasdan, uzun sonligicha qabul qiladi.
+📌 Uzun sonlarni kiritishda, qulaylik uchun, raqamlarni pastki chiziq (`_`) yordamida guruhlash mumkin. Python - son tarkibidagi pastki chiziqlarni (`_`) inobatga olmasdan, uzun sonligicha qabul qiladi.
 
 ```python
 # Bank hisobidagi pul miqdori (katta son)
@@ -480,7 +481,7 @@ print("Sizning hisobingizdagi mablag'", bank_hisobi, "so'm")
 
 
 ## ✅ BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
-Birdaniga bir nechta o'zgaruvchiga qiymat berish uchun o'zgaruvchilar va ularga mos qiymatlar vergul (`,`) bilan ajratiladi:
+📌 Birdaniga bir nechta o'zgaruvchiga qiymat berish uchun o'zgaruvchilar va ularga mos qiymatlar vergul (`,`) bilan ajratiladi:
 
 ```python
 # Bir nechta o'zgaruvchilarga bir qatorda qiymat berish mumkin
@@ -496,7 +497,7 @@ print("z ning qiymati:", z)  # -30
 
 ## ✅ O'ZGARUVCHI TURINI ALMASHTIRISH
 
-Python dasturlash tilida o'zgaruvchilar turini bir ma'lumot turidan boshqa ma'lumot turiga o'zgartirish jarayoni `type casting` deb ataladi.
+📌 Python dasturlash tilida o'zgaruvchilar turini bir ma'lumot turidan boshqa ma'lumot turiga o'zgartirish jarayoni `type casting` deb ataladi.
 
 
 ```python
@@ -557,17 +558,29 @@ print(bool_from_list, type(bool_from_list))                   # True <class 'boo
 ```
 
 
-### input()
-Foydalanuvchidan ma'lumot olish uchun `input()` funksiyasidan foydalanamiz:
+## ✅ INPUT
+
+📌 `input()` — bu Python dasturlash tilidagi maxsus funksiya bo‘lib, u foydalanuvchidan klaviatura orqali ma'lumot olish uchun ishlatiladi.
 
 ```python
-ism = input("Ismingizni kiriting: ")
-print(ism)
+# input() funksiyasi foydalanuvchidan ma'lumot olish uchun ishlatiladi.
+# Funksiya ichidagi matn — bu foydalanuvchiga ko'rsatiladigan savol yoki so'rov.
+
+ism = input("Ismingizni kiriting: ")  # Foydalanuvchidan ismni so'raymiz
+
+print("Salom,", ism)  # Kiritilgan ismni ekranga chiqaramiz
 ```
 
-Yuqoridagi kodda foydalanuvchidan ism kiritishini so'radik va kiritilgan ismni terminalga chiqardik.
+📌 input() har doim matn (string) ko‘rinishida qiymat oladi. Agar son kiritilishini istasak, stringni son turiga o‘zgartirish kerak.
 
-Input funksiyasidan foydalanishni o'rgandik, endi shu funksiya yordamida foydalanuvchidan son olishni o'rganamiz:
+```python
+# foydalanuvchi kiritgan matnni butun songa aylantiramiz
+yosh = int(input("Yoshingizni kiriting: "))  
+print("Sizning yoshingiz:", yosh)
+```
+
+
+
 
 ```python
 #1 foydalanuvchining tug'ilgan yilini so'raymiz
