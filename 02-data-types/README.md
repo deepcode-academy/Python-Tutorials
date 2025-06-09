@@ -436,19 +436,34 @@ print(type(y))  # <class 'int'>
 print(type(z))  # <class 'int'>
 print(type(a))  # <class 'int'>
 ```
-### INTEGER USTIDA AMALLAR
+## ✅ INTEGER USTIDA AMALLAR
 Integerlar ustida asosiy matematik amallarni bajarish mumkin:
 ```python
-a = 10
-b = 3
+# Integerlar (butun sonlar) ustida bajariladigan asosiy matematik amallar
 
-print(a + b)  # Qo'shish: 13
-print(a - b)  # Ayirish: 7
-print(a * b)  # Ko'paytirish: 30
-print(a / b)  # Bo'lish: 3.3333333333333335
-print(a // b) # Butun qismini olish: 3
-print(a % b)  # Qoldiqni olish: 1
-print(a ** b) # Darajaga ko'tarish: 1000
+a = 10  # Birinchi butun son
+b = 3   # Ikkinchi butun son
+
+# Qo'shish: ikkita sonni qo'shadi, natija 13 bo'ladi
+print(a + b)  # 10 + 3 = 13
+
+# Ayirish: birinchi sondan ikkinchi sonni ayiradi, natija 7 bo'ladi
+print(a - b)  # 10 - 3 = 7
+
+# Ko'paytirish: ikkita sonni ko'paytiradi, natija 30 bo'ladi
+print(a * b)  # 10 * 3 = 30
+
+# Bo'lish: birinchi sonni ikkinchi songa bo'ladi, natija float (kasr) turida chiqadi
+print(a / b)  # 10 / 3 ≈ 3.3333333333333335
+
+# Butun qismini olish: bo'linmaning faqat butun qismini oladi, o'nlik qismi tashlanadi
+print(a // b)  # 10 // 3 = 3
+
+# Qoldiqni olish: bo'linmaning qoldig'ini hisoblaydi (modulus)
+print(a % b)  # 10 % 3 = 1
+
+# Darajaga ko'tarish: birinchi sonni ikkinchi son darajasiga ko'taradi
+print(a ** b)  # 10 ** 3 = 1000
 ```
 
 ### UZUN SONLARNI KIRITISH
