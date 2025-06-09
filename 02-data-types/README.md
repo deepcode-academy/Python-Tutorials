@@ -277,6 +277,8 @@ print(text.split('o'))
 
 
 
+
+
 # 1-qator: "qidiruv" nomli o'zgaruvchiga foydalanuvchi yozgan matn saqlanadi
 qidiruv = "telefon kompyuter printer"
 
@@ -289,6 +291,35 @@ for text in sozlar:
     # 4-qator: har bir so'z ekranga chiqariladi
     print("Qidirilmoqda:", text)
 ```
+
+10. `.join(iterable)`
+
+```python
+# 1-qator: 3 ta so'zdan iborat ro'yxat yaratiladi
+words = ['Hello', 'world', 'Python']
+
+# 2-qator: ' '.join(words) ro'yxatdagi so'zlarni bo'sh joy bilan birlashtiradi
+print(' '.join(words))  # Natija: Hello world Python
+
+# 3-qator: '-'.join(words) so'zlarni "-" bilan birlashtiradi
+print('-'.join(words))  # Natija: Hello-world-Python
+
+
+
+
+
+# 1-qator: 'kodlar' nomli ro'yxat yaratilmoqda,
+# ichida 3 ta element - matn ko'rinishidagi kodlar bor
+kodlar = ['AB12', 'CD34', 'EF56']
+
+# 2-qator: '-'.join(kodlar) yordamida ro'yxat elementlari orasiga 
+# chiziqcha ("-") qo'yib, ularni bitta matnga birlashtiramiz
+parol = '-'.join(kodlar)
+
+# 3-qator: natijani ekranga chiqaramiz
+print("Yangi parol:", parol)
+```
+
 
 ## NUMBER
 
