@@ -235,6 +235,32 @@ clean_input = user_input.strip()
 print(clean_input)  # "umid"
 ```
 
+8. `.replace(old, new)`
+
+```python
+# 1-qator: "matn" nomli o'zgaruvchiga biror matn qiymatini beramiz
+matn = "Salom dunyo"
+
+# 2-qator: "matn"dagi "dunyo" so'zini "Umid" so'ziga almashtiramiz.
+# replace() metodi eski so'zni yangi so'z bilan almashtirib, natijani "yangi_matn" ga saqlaydi
+yangi_matn = matn.replace("dunyo", "Umid")
+
+# 3-qator: Yangi hosil bo'lgan matnni ekranga chiqaramiz
+print(yangi_matn)
+
+
+# 1-qator: "raqam" o'zgaruvchisiga telefon raqamini matn ko'rinishida beramiz
+raqam = "+998 90 123 45 67"
+
+# 2-qator: 
+# .replace(" ", "") - bu yerda barcha bo'sh joylar (" ") olib tashlanadi
+# .replace("+", "") - bu yerda "+" belgisi olib tashlanadi
+raqam = raqam.replace(" ", "").replace("+", "")
+
+# 3-qator: Tozalangan raqamni ekranga chiqaramiz
+print(raqam)
+```
+
 ## NUMBER
 
 - **Number** - Raqamli ma'lumot turi `2` ga bo'linadi:
