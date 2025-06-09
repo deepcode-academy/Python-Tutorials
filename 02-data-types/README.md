@@ -580,15 +580,20 @@ print("Sizning yoshingiz:", yosh)
 ```
 
 
-
-
 ```python
-#1 foydalanuvchining tug'ilgan yilini so'raymiz
+# 1. Foydalanuvchidan tug'ilgan yilini so'raymiz
 t_yil = input("Tug'ilgan yilingizni kiriting: ")
-#2 foydalanuvchi yoshini xisoblaymiz
-yosh = 2020 - t_yil # 
-#3 foydalanuvchi yoshini konsolga chiqaramiz
-print("Siz " + yosh + " yoshda ekansiz")
+
+# 2. input() funksiyasi har doim matn (string) ko'rinishida ma'lumot beradi,
+# shuning uchun uni butun son (integer) ga o'tkazamiz
+t_yil = int(t_yil)
+
+# 3. Yilni hozirgi yil bilan solishtirib, yoshni hisoblaymiz
+hozirgi_yil = 2025
+yosh = hozirgi_yil - t_yil
+
+# 4. Natijani ekranga chiqaramiz
+print("Siz " + str(yosh) + " yoshda ekansiz.")
 ```
 
 - **Floating Point(float)** - O'nlik sonlarni ifodalaydi. Masalan: `3.14`, `-2.7`,` 0.99`.
