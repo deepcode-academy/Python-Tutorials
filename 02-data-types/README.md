@@ -411,7 +411,7 @@ print(text.count("hello"))  # Natija: 2
 ```
 
 
-## ✅ NUMBER
+## ✅ NUMBERS
 
 ### ❇️ INTEGER
 
@@ -438,7 +438,7 @@ print(type(y))  # <class 'int'>
 print(type(z))  # <class 'int'>
 print(type(a))  # <class 'int'>
 ```
-## ✅ INTEGER USTIDA AMALLAR
+### ✅ INTEGER USTIDA AMALLAR
 📌 Integerlar ustida asosiy matematik amallarni bajarish mumkin:
 
 ```python
@@ -469,7 +469,7 @@ print(a % b)  # 10 % 3 = 1
 print(a ** b)  # 10 ** 3 = 1000
 ```
 
-## ✅ UZUN SONLARNI KIRITISH
+### ✅ UZUN SONLARNI KIRITISH
 
 📌 Uzun sonlarni kiritishda, qulaylik uchun, raqamlarni pastki chiziq (`_`) yordamida guruhlash mumkin. Python - son tarkibidagi pastki chiziqlarni (`_`) inobatga olmasdan, uzun sonligicha qabul qiladi.
 
@@ -482,7 +482,7 @@ print("Sizning hisobingizdagi mablag'", bank_hisobi, "so'm")
 ```
 
 
-## ✅ BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
+### ✅ BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
 📌 Birdaniga bir nechta o'zgaruvchiga qiymat berish uchun o'zgaruvchilar va ularga mos qiymatlar vergul (`,`) bilan ajratiladi:
 
 ```python
@@ -497,7 +497,7 @@ print("y ning qiymati:", y)  # -7.25
 print("z ning qiymati:", z)  # -30
 ```
 
-## ✅ O'ZGARUVCHI TURINI ALMASHTIRISH
+### ✅ O'ZGARUVCHI TURINI ALMASHTIRISH
 
 📌 Python dasturlash tilida o'zgaruvchilar turini bir ma'lumot turidan boshqa ma'lumot turiga o'zgartirish jarayoni `type casting` deb ataladi.
 
@@ -560,7 +560,7 @@ print(bool_from_list, type(bool_from_list))                   # True <class 'boo
 ```
 
 
-## ✅ INPUT
+### ✅ INPUT
 
 📌 `input()` — bu Python dasturlash tilidagi maxsus funksiya bo‘lib, u foydalanuvchidan klaviatura orqali ma'lumot olish uchun ishlatiladi.
 
