@@ -466,79 +466,96 @@ print(a % b)  # 10 % 3 = 1
 print(a ** b)  # 10 ** 3 = 1000
 ```
 
-### UZUN SONLARNI KIRITISH
+## ✅ UZUN SONLARNI KIRITISH
+
 Uzun sonlarni kiritishda, qulaylik uchun, raqamlarni pastki chiziq (`_`) yordamida guruhlash mumkin. Python - son tarkibidagi pastki chiziqlarni (`_`) inobatga olmasdan, uzun sonligicha qabul qiladi.
 
 ```python
-aholi_soni = 7_594_000_000 # o'qishga qulay bo'lishi uchun shunaqa ko'rinishda yozdik
-print("Yer sharida", aholi_soni, "ga yaqin odam yashaydi")
+# Bank hisobidagi pul miqdori (katta son)
+bank_hisobi = 1_250_000_000  # 1 milliard 250 million so'm
+
+print("Sizning hisobingizdagi mablag'", bank_hisobi, "so'm")
+# Chiqarish: Sizning hisobingizdagi mablag' 1250000000 so'm
 ```
 
 
-### BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
+## ✅ BIR NECHTA O'ZGARUVCHIGA QIYMAT BERISH
 Birdaniga bir nechta o'zgaruvchiga qiymat berish uchun o'zgaruvchilar va ularga mos qiymatlar vergul (`,`) bilan ajratiladi:
+
 ```python
+# Bir nechta o'zgaruvchilarga bir qatorda qiymat berish mumkin
+
+# x ga 10 (integer), y ga -7.25 (float), z ga -30 (integer) qiymatlari bir vaqtning o'zida berildi
 x, y, z = 10, -7.25, -30
+
+# Natijalarni chiqaramiz
+print("x ning qiymati:", x)  # 10
+print("y ning qiymati:", y)  # -7.25
+print("z ning qiymati:", z)  # -30
 ```
 
-### O'ZGARUVCHI TURINI ALMASHTIRISH
+## ✅ O'ZGARUVCHI TURINI ALMASHTIRISH
 
 Python dasturlash tilida o'zgaruvchilar turini bir ma'lumot turidan boshqa ma'lumot turiga o'zgartirish jarayoni `type casting` deb ataladi.
 
-#### integerdan floatga o'zgartirish
 
 ```python
-x = 10
-y = float(x)  # 10.0
+# Type casting misollari — qiymatlarni o'zgaruvchilarga saqlash va ularni turini tekshirish
 
-print(type(y))  # <class 'float'>
-print(y)        # 10.0
+# 1. int() — float va stringdan int ga o'tish
+float_son = 3.7
+int_from_float = int(float_son)          # 3.7 dan 3 ga (kasr qismi tashlanadi)
+
+string_son = "25"
+int_from_string = int(string_son)        # "25" matnidan 25 (int) hosil bo'ladi
+
+# 2. float() — int va stringdan float ga o'tish
+int_son = 10
+float_from_int = float(int_son)          # 10 dan 10.0 ga
+
+string_float = "3.14"
+float_from_string = float(string_float)  # "3.14" matnidan 3.14 hosil bo'ladi
+
+# 3. str() — har qanday qiymatni stringga aylantirish
+int_num = 123
+str_from_int = str(int_num)               # int 123 -> string "123"
+
+float_num = 3.14
+str_from_float = str(float_num)           # float 3.14 -> string "3.14"
+
+bool_val = True
+str_from_bool = str(bool_val)             # True -> "True"
+
+# 4. bool() — qiymatni True yoki False ga aylantirish
+bool_from_one = bool(1)                   # 1 -> True
+bool_from_zero = bool(0)                  # 0 -> False
+
+bool_from_empty_str = bool("")            # bo'sh string -> False
+bool_from_nonempty_str = bool("Hello")   # bo'sh bo'lmagan string -> True
+
+bool_from_empty_list = bool([])           # bo'sh ro'yxat -> False
+bool_from_list = bool([1, 2, 3])          # bo'sh bo'lmagan ro'yxat -> True
+
+# Natijalarni chiqaramiz
+
+print(int_from_float, type(int_from_float))         # 3 <class 'int'>
+print(int_from_string, type(int_from_string))       # 25 <class 'int'>
+
+print(float_from_int, type(float_from_int))         # 10.0 <class 'float'>
+print(float_from_string, type(float_from_string))   # 3.14 <class 'float'>
+
+print(str_from_int, type(str_from_int))             # '123' <class 'str'>
+print(str_from_float, type(str_from_float))         # '3.14' <class 'str'>
+print(str_from_bool, type(str_from_bool))           # 'True' <class 'str'>
+
+print(bool_from_one, type(bool_from_one))           # True <class 'bool'>
+print(bool_from_zero, type(bool_from_zero))         # False <class 'bool'>
+print(bool_from_empty_str, type(bool_from_empty_str))       # False <class 'bool'>
+print(bool_from_nonempty_str, type(bool_from_nonempty_str)) # True <class 'bool'>
+print(bool_from_empty_list, type(bool_from_empty_list))     # False <class 'bool'>
+print(bool_from_list, type(bool_from_list))                   # True <class 'bool'>
 ```
 
-#### floatdan integerga o'zgartirish
-> [!NOTE]
-> Floatni Integerga o'zgartirishda kasr qismini olib tashlaydi.
-
-```python
-x = 3.14
-y = int(x)  # 3
-
-print(type(y))  # <class 'int'>
-print(y)        # 3
-```
-
-#### stringdan integerga o'zgartirish
-
-> [!CAUTION]
-> stringni integerga o'zgartirish uchun string faqat `raqamlarni` o'z ichiga olishi kerak.
-
-```python
-s = "123"
-x = int(s)  # 123
-
-print(type(x))  # <class 'int'>
-print(x)        # 123
-```
-
-#### integerdan stringga o'zgartirish
-
-```python
-x = 123
-s = str(x)  # "123"
-
-print(type(s))  # <class 'str'>
-print(s)        # "123"
-```
-
-#### floatdan stringga o'zgartirish
-
-```python
-x = 3.14
-s = str(x)  # "3.14"
-
-print(type(s))  # <class 'str'>
-print(s)        # "3.14"
-```
 
 ### input()
 Foydalanuvchidan ma'lumot olish uchun `input()` funksiyasidan foydalanamiz:
