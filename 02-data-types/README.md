@@ -612,6 +612,20 @@ diametr = 2 * radius  # diametrni hisoblaymiz (radiusning 2 barobariga teng)
 print("Aylana uzunligi ", pi * diametr, " ga teng.")
 ```
 
+### ❇️ FLOAT USTIDA AMALLAR
+
+```python
+a = 5.5    # a o'zgaruvchisiga 5.5 (float) qiymat berildi
+b = 2.0    # b o'zgaruvchisiga 2.0 (float) qiymat berildi
+
+print("Qo‘shish:", a + b)       # a va b ni qo‘shish => 7.5
+print("Ayirish:", a - b)        # a dan b ni ayirish => 3.5
+print("Ko‘paytirish:", a * b)   # a va b ni ko‘paytirish => 11.0
+print("Bo‘lish:", a / b)        # a ni b ga bo‘lish (haqiqiy bo‘lish) => 2.75
+print("Butun qismga bo‘lish:", a // b)  # a ni b ga bo‘lish va butun qismni olish => 2.0
+print("Qoldiq:", a % b)         # a ni b ga bo‘lishda qolgan qoldiq => 1.5
+print("Daraja:", a ** b)        # a ni b-darajaga ko‘tarish => 30.25
+```
 
 # Constants
 
