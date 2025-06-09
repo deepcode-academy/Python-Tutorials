@@ -400,6 +400,15 @@ if filename.endswith(".jpg"):
     print("Rasm fayli")
 ```
 
+14. `.count(substring)`
+
+```python
+# 1-qator: text o'zgaruvchisiga "hello hello world" matni saqlanmoqda
+text = "hello hello world"
+
+# 2-qator: .count() metodi yordamida matnda "hello" so'zi necha marta takrorlanganini hisoblaymiz
+print(text.count("hello"))  # Natija: 2
+```
 
 
 ## NUMBER
