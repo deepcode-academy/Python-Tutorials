@@ -413,6 +413,8 @@ print(text.count("hello"))  # Natija: 2
 
 ## ✅ NUMBER
 
+### ❇️ INTEGER
+
 📌 Numbers — bu sonlarni ifodalash uchun ishlatiladigan ma'lumot turi. 
 
 📌 Pythonda asosiy 3ta number type mavjud:
@@ -596,16 +598,18 @@ yosh = hozirgi_yil - t_yil
 print("Siz " + str(yosh) + " yoshda ekansiz.")
 ```
 
-- **Floating Point(float)** - O'nlik sonlarni ifodalaydi. Masalan: `3.14`, `-2.7`,` 0.99`.
+### ❇️ FLOAT
 
-> [!NOTE]
-> Pythonda o'nlik sonlar `floating point numbers` yoki qisqa qilib `floats` deyiladi. Ingliz tilida o'nlik sonlarni yozishda vergul (`,`) emas nuqta (`.`) belgisi ishlatiladi, va bu nuqta sonning katta kichikligiga qarab joyi o'zgargani uchun `"floating"` deyiladi.
+📌 Pythonda o'nlik sonlar `floating point numbers` yoki qisqa qilib `floats` deyiladi. Ingliz tilida o'nlik sonlarni yozishda vergul (`,`) emas nuqta (`.`) belgisi ishlatiladi, va bu nuqta sonning katta kichikligiga qarab joyi o'zgargani uchun `"floating"` deyiladi.
+
 
 ```python
-pi = 3.14159 # o'nlik son (float)
-radius = 10  # butun son (integer)
-diametr = 2*radius
-print("Aylana uzunligi ", pi*diametr, " ga teng.")
+pi = 3.14159       # o'nlik son, ya'ni float turidagi o'zgaruvchi
+radius = 10        # butun son, ya'ni int turidagi o'zgaruvchi
+diametr = 2 * radius  # diametrni hisoblaymiz (radiusning 2 barobariga teng)
+
+# aylana uzunligini hisoblab, natijani chiqaramiz
+print("Aylana uzunligi ", pi * diametr, " ga teng.")
 ```
 
 
