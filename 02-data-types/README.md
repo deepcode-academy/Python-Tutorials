@@ -261,6 +261,35 @@ raqam = raqam.replace(" ", "").replace("+", "")
 print(raqam)
 ```
 
+9. `.split(separator)`
+
+```python
+# 1-qator: "text" o'zgaruvchisiga matn berilgan
+text = "Hello world Python"
+
+# 2-qator: .split() metodi bo'sh joy (" ") bo'yicha matnni bo'lib, ro'yxatga aylantiradi
+print(text.split())  
+# Natija: ['Hello', 'world', 'Python']
+
+# 3-qator: .split('o') metodi "o" harfi bo'yicha bo'lib ro'yxatga aylantiradi
+print(text.split('o'))  
+# Natija: ['Hell', ' w', 'rld Pyth', 'n']
+
+
+
+# 1-qator: "qidiruv" nomli o'zgaruvchiga foydalanuvchi yozgan matn saqlanadi
+qidiruv = "telefon kompyuter printer"
+
+# 2-qator: .split() metodi yordamida matn bo'sh joy bo'yicha bo'linadi
+# Natijada ['telefon', 'kompyuter', 'printer'] degan ro'yxat (list) hosil bo'ladi
+sozlar = qidiruv.split()
+
+# 3-qator: ro'yxatdagi har bir so'z ustida aylanish (for loop) boshlanadi
+for text in sozlar:
+    # 4-qator: har bir so'z ekranga chiqariladi
+    print("Qidirilmoqda:", text)
+```
+
 ## NUMBER
 
 - **Number** - Raqamli ma'lumot turi `2` ga bo'linadi:
