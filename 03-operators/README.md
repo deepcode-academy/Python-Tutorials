@@ -50,63 +50,57 @@ daraja = a ** b
 print(daraja)  # Natija: 1000
 ```
 
+## ✅ TAQQOSLASH OPERATORLARI
 
-## TAQQOSLASH OPERATORLARI
-
-Python dasturlash tilida `solishtirish` operatorlari ikki qiymatni `taqqoslash` uchun ishlatiladi.
-
-1. **Teng** (`==`): Ikkita qiymat tengligini tekshiradi.
+📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni solishtirish uchun ishlatiladi va natijada True yoki False qiymatini qaytaradi. Ular asosan shartlarni tekshirishda ishlatiladi.
 
 ```python
-a = 5
-b = 3
-result = (a == b)  # result False ga teng bo'ladi
-print(result)
-```
+# 1. Tenglik operatori (==)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a va b tengligini tekshiramiz
+# 5 soni 3 ga teng emas, shuning uchun natija False bo'ladi
+result = (a == b)
+print(result)  # Natija: False
 
-2. **Teng emas** (`!=`): Ikkita qiymat teng emasligini tekshiradi.
+# 2. Teng emas operatori (!=)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a va b teng emasligini tekshiramiz
+# 5 va 3 teng emas, shuning uchun natija True bo'ladi
+result = (a != b)
+print(result)  # Natija: True
 
-```python
-a = 5
-b = 3
-result = (a != b)  # result True ga teng bo'ladi
-print(result)
-```
+# 3. Katta operatori (>)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a b dan katta ekanligini tekshiramiz
+# 5 soni 3 dan katta, shuning uchun natija True bo'ladi
+result = (a > b)
+print(result)  # Natija: True
 
-3. **Katta** (`>`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta ekanligini tekshiradi.
+# 4. Kichik operatori (<)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a b dan kichik ekanligini tekshiramiz
+# 5 soni 3 dan kichik emas, shuning uchun natija False bo'ladi
+result = (a < b)
+print(result)  # Natija: False
 
-```python
-a = 5
-b = 3
-result = (a > b)  # result True ga teng bo'ladi
-print(result)
-```
+# 5. Katta yoki teng operatori (>=)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a b dan katta yoki teng ekanligini tekshiramiz
+# 5 soni 3 dan katta, shuning uchun natija True bo'ladi
+result = (a >= b)
+print(result)  # Natija: True
 
-4. **Kichik** (`<`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik ekanligini tekshiradi.
-
-```python
-a = 5
-b = 3
-result = (a < b)  # result False ga teng bo'ladi
-print(result)
-```
-
-5. **Katta yoki teng** (`>=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta yoki teng ekanligini tekshiradi.
-
-```python
-a = 5
-b = 3
-result = (a >= b)  # result True ga teng bo'ladi
-print(result)
-```
-
-6. **Kichik yoki teng** (`<=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik yoki teng ekanligini tekshiradi.
-
-```python
-a = 5
-b = 3
-result = (a <= b)  # result False ga teng bo'ladi
-print(result)
+# 6. Kichik yoki teng operatori (<=)
+a = 5   # a ga 5 qiymatini beramiz
+b = 3   # b ga 3 qiymatini beramiz
+# a b dan kichik yoki teng ekanligini tekshiramiz
+# 5 soni 3 dan kichik emas, shuning uchun natija False bo'ladi
+result =
 ```
 
 ## MANTIQIY OPERATORLAR
