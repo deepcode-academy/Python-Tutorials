@@ -320,6 +320,38 @@ parol = '-'.join(kodlar)
 print("Yangi parol:", parol)
 ```
 
+11. `.find(substring)`
+
+```python
+# 1-qator: text o'zgaruvchisiga "Hello world" matni saqlanmoqda
+text = "Hello world"
+
+# 2-qator: .find() metodi yordamida "world" so'zining text ichidagi 
+# boshlanish indeksini topamiz. Agar topilsa, indeks qaytariladi
+print(text.find("world"))  # Natija: 6
+
+# 3-qator: .find() metodi yordamida "Python" so'zining indeksini izlaymiz,
+# lekin matnda yo'q, shuning uchun -1 qaytariladi
+print(text.find("Python")) # Natija: -1
+
+
+
+
+# 1-qator: url o'zgaruvchisiga URL matni saqlanmoqda
+url = "https://example.com/page?id=123"
+
+# 2-qator: url ichidan "id=" matnining indeksini topamiz
+pos = url.find("id=")
+
+# 3-qator: agar "id=" topilgan bo'lsa (indeks -1 emas)
+if pos != -1:
+    # 4-qator: identifikatorni "id=" dan keyingi qismdan ajratib olamiz
+    # pos+3 degani "id=" so'zidan keyingi belgidan boshlab olish
+    identifikator = url[pos+3:]
+    # 5-qator: ekranga chiqaramiz
+    print("ID:", identifikator)
+```
+
 
 ## NUMBER
 
