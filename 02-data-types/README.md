@@ -352,6 +352,30 @@ if pos != -1:
     print("ID:", identifikator)
 ```
 
+12. `.startswith(prefix)`
+
+```python
+# 1-qator: text o'zgaruvchisiga "Hello world" matni saqlanmoqda
+text = "Hello world"
+
+# 2-qator: .startswith() metodi yordamida matn "Hello" bilan boshlanishini tekshiramiz
+print(text.startswith("Hello"))  # Natija: True
+
+# 3-qator: .startswith() metodi yordamida matn "world" bilan boshlanishini tekshiramiz
+print(text.startswith("world"))  # Natija: False
+
+
+
+
+# 1-qator: url o'zgaruvchisiga URL manzili saqlanmoqda
+url = "https://example.com/api/user"
+
+# 2-qator: url matni "https://example.com/api/" bilan boshlanishini tekshiramiz
+if url.startswith("https://example.com/api/"):
+    # 3-qator: agar to'g'ri bo'lsa, "API so'rovi" deb chiqaramiz
+    print("API so'rovi")
+```
+
 
 ## NUMBER
 
