@@ -54,60 +54,26 @@ print(daraja)  # Natija: 1000
 
 📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni solishtirish uchun ishlatiladi va natijada True yoki False qiymatini qaytaradi. Ular asosan shartlarni tekshirishda ishlatiladi.
 
+###  1. TENGMI OPERATORI (==)
+
 ```python
-# 1. Tenglik operatori (==)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a va b tengligini tekshiramiz
-# 5 soni 3 ga teng emas, shuning uchun natija False bo'ladi
-result = (a == b)
+a = 5          # a o'zgaruvchisiga 5 qiymatini beramiz
+b = 3          # b o'zgaruvchisiga 3 qiymatini beramiz
+# a va b tengmi? (5 == 3) — False, chunki 5 va 3 teng emas
+result = (a == b)  
 print(result)  # Natija: False
-
-# 2. Teng emas operatori (!=)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a va b teng emasligini tekshiramiz
-# 5 va 3 teng emas, shuning uchun natija True bo'ladi
-result = (a != b)
-print(result)  # Natija: True
-
-# 3. Katta operatori (>)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a b dan katta ekanligini tekshiramiz
-# 5 soni 3 dan katta, shuning uchun natija True bo'ladi
-result = (a > b)
-print(result)  # Natija: True
-
-# 4. Kichik operatori (<)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a b dan kichik ekanligini tekshiramiz
-# 5 soni 3 dan kichik emas, shuning uchun natija False bo'ladi
-result = (a < b)
-print(result)  # Natija: False
-
-# 5. Katta yoki teng operatori (>=)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a b dan katta yoki teng ekanligini tekshiramiz
-# 5 soni 3 dan katta, shuning uchun natija True bo'ladi
-result = (a >= b)
-print(result)  # Natija: True
-
-# 6. Kichik yoki teng operatori (<=)
-a = 5   # a ga 5 qiymatini beramiz
-b = 3   # b ga 3 qiymatini beramiz
-# a b dan kichik yoki teng ekanligini tekshiramiz
-# 5 soni 3 dan kichik emas, shuning uchun natija False bo'ladi
-result =
 ```
+
+
+
 
 ## MANTIQIY OPERATORLAR
 
-Python dasturlash tilida mantiqiy operatorlar mantiqiy qiymatlarni (`True` yoki `False`) birlashtirish yoki taqqoslash uchun ishlatiladi.
+📌 Python dasturlash tilida mantiqiy operatorlar (logical operators) shartlarni solishtirishda ishlatiladi va ular **True** yoki **False** qiymatlar bilan ishlaydi. Ular bir nechta shartlarni birlashtirish yoki tahlil qilish uchun qoʻllaniladi.
 
-1. **va** (`and`): Ikkala shart ham `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
+1. and
+
+📌 Bu operator ikkala shart True boʻlsa, True qaytaradi.
 
 ```python
 a = True
