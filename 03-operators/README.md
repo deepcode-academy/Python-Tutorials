@@ -54,7 +54,7 @@ print(daraja)  # Natija: 1000
 
 📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni solishtirish uchun ishlatiladi va natijada True yoki False qiymatini qaytaradi. Ular asosan shartlarni tekshirishda ishlatiladi.
 
-###  1. TENGMI OPERATORI (==)
+### ❇️ TENGMI OPERATORI (==)
 
 ```python
 a = 5          # a o'zgaruvchisiga 5 qiymatini beramiz
