@@ -246,9 +246,11 @@ for = 20    # ❌ 'for' kalit so'z, o'zgaruvchi sifatida ishlatilmaydi
 
 # ✅ AMALIYOT
 
-1. ✅ 1-topshiriq:
+### 1. ✅ 1-topshiriq:
 Quyidagi qiymatlarni o‘zgaruvchilarga yuklang va print() orqali ekranga chiqaring:
 - ismingiz
 - yoshingiz
 - sevimli soningiz
 - talaba ekanligingiz (True yoki False)
+
+2. 
