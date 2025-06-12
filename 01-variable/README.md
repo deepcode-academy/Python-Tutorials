@@ -253,12 +253,16 @@ Quyidagi qiymatlarni o‘zgaruvchilarga yuklang va print() orqali ekranga chiqar
 - sevimli soningiz
 - talaba ekanligingiz (True yoki False)
 
+---
+
 ### ✅ 2-topshiriq:
 - Quyidagi ma’lumotlar uchun mos o‘zgaruvchilar yarating:
     - kitob_nomi → “Sariq devni minib”
     - muallif → “Xudoyberdi To‘xtaboyev”
     - sahifalar_soni → 185
     - Ularni print() yordamida chiqarib bering.
+
+---
 
 ### ✅ 3-topshiriq:
 - Quyidagi noto‘g‘ri o‘zgaruvchi nomlarini to‘g‘rilang:
@@ -269,6 +273,8 @@ ism familiya = "Ali Karimov"
 davlat@ = "Uzbekistan"
 ```
 
+---
+
 ### ✅ 4-topshiriq:
 - Quyidagi qiymatlarni saqlovchi o‘zgaruvchilarni yarating va print() bilan ularning turini (type()) chiqaring:
     - yosh = 25
@@ -276,11 +282,15 @@ davlat@ = "Uzbekistan"
     - ism = "Dilshod"
     - is_student = False
 
+---
+
 ### ✅ 5-topshiriq:
 - Quyidagi kodni yozing:
     - name o‘zgaruvchisi yarating va unga ism kiriting.
     - Keyin, uning qiymatini boshqa ism bilan almashtiring.
     - Har ikkala holatda qiymatni ekranga chiqaring.
+
+---
 
 ### ✅ 6-topshiriq:
 - Quyidagi noto‘g‘ri o‘zgaruvchilarni aniqlang va nega xato ekanligini yozing:
@@ -291,19 +301,27 @@ def = "funksiya"
 yosh! = 20
 ```
 
+---
+
 ### ✅ 7-topshiriq:
 - Quyidagi ikkita o‘zgaruvchini yarating:
     - ism = "Jamshid"
     - ISM = "Anvar"
     - Ularning ikkalasini print() bilan chiqaring va nima sababdan ikkala qiymat chiqayotganini tushuntiring.
 
+---
+
 ### ✅ 8-topshiriq:
 - O‘zgaruvchi nomlarida pastki chiziq (_) ishlatish kerak bo‘lgan 3 ta misol yozing. Masalan: foydalanuvchi_ismi, kitob_soni, manzil_nomi
+
+---
 
 ### ✅ 9-topshiriq:
 - Tushunarli va tushunarsiz o‘zgaruvchi nomlariga 3 tadan misol yozing:
     - Yaxshi: yosh, davlat, kitob_nomi
     - Yomon: x, d, n1
+
+---
 
 ### ✅ 10-topshiriq:
 - Quyidagi kodni to‘g‘ri ko‘rinishga keltiring:
@@ -313,6 +331,8 @@ user name = "Ali"
 yosh@ = 20
 ```
 
+---
+
 ### ✅ 11-topshiriq:
 - Quyidagi o‘zgaruvchilarni yarating va print() yordamida ularni chiqarib bering:
     - kitob_nomi = "Yulduzli tunlar"
@@ -320,9 +340,12 @@ yosh@ = 20
     - narx = 37000
     - mavjud = True
 
+---
+
 ### ✅ 12-topshiriq:
 - Kalit so‘zlar ro‘yxatini ko‘rsatadigan kod yozing va uni bajaring. Kod natijasida ekranda Python kalit so‘zlari chiqishi kerak.
 
+---
 
 ### ✅ 13-topshiriq:
 - Quyidagi kodni tahlil qiling. Nima sababdan xatolik borligini tushuntiring:
@@ -331,12 +354,16 @@ import = "data"
 True = 1
 ```
 
+---
+
 ### ✅ 14-topshiriq:
 - O‘zgaruvchilarni quyidagi ma’nolarga qarab yarating:
     - Foydalanuvchining ismi
     - Parol
     - Email manzili
     - Tug‘ilgan yili
+
+---
 
 ### ✅ 15-topshiriq:
 - Quyidagi qiymatlar uchun mos o‘zgaruvchilar yarating va ularni print() yordamida chiqarib, bir satrda type() funksiyasi bilan ularning turlarini ham ko‘rsating:
