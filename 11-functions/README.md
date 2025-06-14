@@ -8,9 +8,16 @@
 ## FUNKSIYALARNI YARATISH VA CHAQIRISH
 Pythonda funksiyani `def` kalit so'zi yordamida yaratamiz. Funksiya quyidagi tuzilishga ega:
 ```python
-def funksiya_nomi(parametrlar):
-    # Funksiya tanasi (bu yerda kod yoziladi)
-    return qaytadigan_qiymat
+# Funksiya yaratish uchun 'def' kalit so‘zi yoziladi
+# function_name — bu funksiya nomi (odatda ingliz tilida bo‘ladi)
+# (parameters) — bu parametrlar, ya’ni funksiyaga uzatiladigan qiymatlar
+def function_name(parameters):
+
+    # Bu yerga funksiyaning tanasi yoziladi, ya’ni bajariladigan kodlar
+    # Istalgancha kod yozish mumkin
+
+    # return — bu funksiya natijasini qaytaradi (agar kerak bo‘lsa)
+    return value
 ```
 ### Oddiy funksiya
 - Bu funksiya ikkita sonni qo'shib, natijani qaytaradi:
