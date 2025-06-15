@@ -22,13 +22,22 @@ def function_name(parameters):
 ### Oddiy funksiya
 - Bu funksiya ikkita sonni qo'shib, natijani qaytaradi:
 ```python
-def yigindini_xisobla(a, b):
-    natija = a + b
-    return natija
+# add_numbers — bu funksiyaning nomi
+# a va b — bu parametrlar, ya’ni kiruvchi sonlar
+def add_numbers(a, b):
 
-# Funksiyani chaqirish
-son = yigindini_xisobla(3, 5)
-print(son)  # Natija: 8
+    # a va b ning yig'indisini result o‘zgaruvchisiga saqlaymiz
+    result = a + b
+
+    # result qiymatini funksiyadan tashqariga qaytaramiz
+    return result
+
+# Funksiyani chaqiramiz, unga 3 va 5 sonlarini uzatamiz
+# Natijani sum_result o‘zgaruvchisiga saqlaymiz
+sum_result = add_numbers(3, 5)
+
+# Natijani ekranga chiqaramiz (8 chiqadi)
+print(sum_result)  # Output: 8
 ```
 ### PARAMETR VA ARGUMENTLAR
 - Parametrlar
