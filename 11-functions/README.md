@@ -43,12 +43,19 @@ print(sum_result)  # Output: 8
 - Parametrlar
     - `Parametrlar` – bu funksiyani yaratishda unga o'tkaziladigan o'zgaruvchilar. `Parametrlar` funksiya tanasida ishlatiladigan qiymatlarni belgilaydi. Ular funksiyani chaqirganda haqiqiy qiymatlar bilan almashtiriladi.
 ```python
-def kvadratni_hisobla(son):
-    return son ** 2
+# square_number — funksiyaning nomi (inglizcha)
+# number — bu parametr, funksiyaga uzatiladigan son
+def square_number(number):
 
-# Bu yerda 'son' parametr bo'lib, qiymat bilan to'ldiriladi.
-natija = kvadratni_hisobla(5)
-print(natija)  # Natija: 25
+    # number ning kvadrati hisoblanadi va darhol qaytariladi
+    return number ** 2
+
+# square_number funksiyasini chaqiryapmiz va 5 ni uzatyapmiz
+# Natija 'result' o‘zgaruvchisiga saqlanadi
+result = square_number(5)
+
+# Natijani ekranga chiqaramiz (25 chiqadi)
+print(result)  # Natija: 25
 ```
 - Argumentlar
     - `Argumentlar` – bu funksiyani chaqirganda `parametrlar` uchun beriladigan haqiqiy qiymatlar. Ular funksiyaga ma'lum bir qiymatlarni berish uchun ishlatiladi.
