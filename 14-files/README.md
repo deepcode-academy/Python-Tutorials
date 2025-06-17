@@ -21,8 +21,11 @@
 ## ✅ FAYL REJIMLARI
 
 📌 `r` – Faylni o'qish uchun ochish. Fayl mavjud bo'lishi kerak.
+
 📌 `w` – Faylga yozish uchun ochish. Agar fayl mavjud bo'lmasa, yangi fayl yaratadi. Mavjud fayl bo'lsa, ma'lumotlarni o'chirib yuboradi.
+
 📌 `a` – Faylga qo'shish uchun ochish. Mavjud faylga yangi ma'lumot qo'shadi, agar fayl mavjud bo'lmasa, yangi fayl yaratadi.
+
 📌 `x` – Faylni faqat yangi fayl yaratish uchun ochadi. Agar fayl allaqachon mavjud bo'lsa, xato chiqaradi.
 
 ```python
