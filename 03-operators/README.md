@@ -229,22 +229,33 @@ result = not a  # result False ga teng bo'ladi
 print(result)  # Natija: False
 ```
 
-Quyidagi misolda mantiqiy operatorlar qanday ishlashini ko'rishimiz mumkin:
+📌 Quyidagi misolda mantiqiy operatorlar qanday ishlashini ko'rishimiz mumkin:
 
 ```python
-x = 5
-y = 10
-z = 5
+# 'a' o'zgaruvchisiga 8 soni berilmoqda
+a = 8
 
-# and operatori
-result = (x == z) and (y > x)  # result True ga teng bo'ladi, chunki ikkala shart ham True
+# 'b' o'zgaruvchisiga 12 soni berilmoqda
+b = 12
 
-# or operatori
-result = (x == z) or (y < x)  # result True ga teng bo'ladi, chunki birinchi shart True
+# 'c' o'zgaruvchisiga 8 soni berilmoqda
+c = 8
 
-# not operatori
-result = not (x == z)  # result False ga teng bo'ladi, chunki x va z teng
+# 'd' o'zgaruvchisiga 15 soni berilmoqda
+d = 15
+
+# AND operatorlari bilan uchta shart tekshirilmoqda:
+# (a == c) → 8 == 8 → True
+# (b > a) → 12 > 8 → True
+# (d % 5 == 0) → 15 % 5 == 0 → 0 == 0 → True
+# AND operatori bilan bog‘langan barcha shartlar True bo‘lsa, umumiy natija ham True bo'ladi
+result = (a == c) and (b > a) and (d % 5 == 0)
+# True: chunki a va c teng, b a dan katta, d esa 5 ga bo'linadi
+
+# Natijani ekranga chiqaramiz
+print(result)  # True
 ```
+
 ## BITWISE(BITLI) OPERATORLAR
 Python tilida **bitwise** (`bitli`) operatorlar sonlarning bitlari ustida to'g'ridan-to'g'ri amallarni bajaradi. Bu operatorlar ikkita sonning **binary** (`ikkilik`) shakldagi bitlari bilan ishlaydi.
 1. **AND**(`&`)<br>
