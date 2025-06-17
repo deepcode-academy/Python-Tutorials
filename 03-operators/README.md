@@ -256,6 +256,98 @@ result = (a == c) and (b > a) and (d % 5 == 0)
 print(result)  # True
 ```
 
+```python
+# 'x' o'zgaruvchisiga 3 soni berilmoqda
+x = 3
+
+# 'y' o'zgaruvchisiga 7 soni berilmoqda
+y = 7
+
+# 'z' o'zgaruvchisiga 10 soni berilmoqda
+z = 10
+
+# OR operatorlari bilan uchta shart tekshirilmoqda:
+# (x > y) → 3 > 7 → False
+# (z == 10) → 10 == 10 → True
+# (y < 5) → 7 < 5 → False
+# OR operatorida hech bo‘lmaganda bitta shart True bo‘lsa, umumiy natija True bo‘ladi
+result = (x > y) or (z == 10) or (y < 5)
+# True: chunki faqat (z == 10) sharti True
+
+# Natijani ekranga chiqaramiz
+print(result)  # True
+```
+
+```python
+# 'a' o'zgaruvchisiga 4 soni berilmoqda
+a = 4
+
+# 'b' o'zgaruvchisiga 9 soni berilmoqda
+b = 9
+
+# Quyidagi ifodada birinchi navbatda AND operatori ishlaydi:
+# (a < b) → 4 < 9 → True
+# (b < 10) → 9 < 10 → True
+# Demak: (a < b) and (b < 10) → True and True → True
+
+# NOT operatori esa ifodani inkor qiladi: not True → False
+result = not ((a < b) and (b < 10))
+# (a < b) and (b < 10) → True, lekin not uni False qiladi
+
+# Natijani ekranga chiqaramiz
+print(result)  # False
+```
+
+```python
+# 'x' o'zgaruvchisiga 6 soni berilmoqda
+x = 6
+
+# 'y' o'zgaruvchisiga 12 soni berilmoqda
+y = 12
+
+# 'z' o'zgaruvchisiga 6 soni berilmoqda
+z = 6
+
+# Butun ifoda ikki qismdan iborat:
+# 1-qism: (x == z or y < 10)
+#    (x == z) → 6 == 6 → True
+#    (y < 10) → 12 < 10 → False
+#    OR operatori bor, shuning uchun hech bo‘lmaganda bitta shart True bo‘lsa, natija: True
+
+# 2-qism: not (y % 2 != 0)
+#    (y % 2 != 0) → 12 % 2 → 0 → 0 != 0 → False
+#    not False → True
+
+# Yakuniy ifoda:
+# True and True → natija: True
+result = (x == z or y < 10) and not (y % 2 != 0)
+
+# Natijani ekranga chiqaramiz
+print(result)  # True
+```
+
+```python
+# 'is_logged_in' — foydalanuvchi tizimga kirganmi? → True (ha, kirgan)
+is_logged_in = True
+
+# 'is_admin' — foydalanuvchi adminmi? → False (yo‘q, admin emas)
+is_admin = False
+
+# 'has_permission' — foydalanuvchining kerakli ruxsatlari bormi? → True (ha, bor)
+has_permission = True
+
+# Yakuniy mantiqiy ifoda:
+# Foydalanuvchi tizimga kirgan bo‘lishi kerak (is_logged_in → True)
+# Ruxsati bo‘lishi kerak (has_permission → True)
+# Va admin bo‘lmasligi kerak (not is_admin → not False → True)
+
+# Shartlar: True and True and True → natija: True
+result = is_logged_in and has_permission and not is_admin
+
+# Natijani ekranga chiqaramiz
+print(result)  # True
+```
+
 ## BITWISE(BITLI) OPERATORLAR
 Python tilida **bitwise** (`bitli`) operatorlar sonlarning bitlari ustida to'g'ridan-to'g'ri amallarni bajaradi. Bu operatorlar ikkita sonning **binary** (`ikkilik`) shakldagi bitlari bilan ishlaydi.
 1. **AND**(`&`)<br>
