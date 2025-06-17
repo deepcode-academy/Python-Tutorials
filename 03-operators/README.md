@@ -54,7 +54,7 @@ print(daraja)  # Natija: 1000
 
 📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni taqqoslash uchun ishlatiladi. Ular natijada `True` yoki `False` (ya'ni mantiqiy qiymat) qaytaradi.
 
-### 1. ✅ Teng (==)
+### 1. ✅ Teng ==
 
 Ikkita qiymat teng bo‘lsa, `True`, aks holda `False` qaytaradi.
 
@@ -73,7 +73,7 @@ result = (a == b)  # False, chunki 5 ≠ 3
 print(result)  # Natija: False
 ```
 
-### 2. ❌ Teng emas (!=)
+### 2. ❌ Teng emas !=
 
 📌 Qiymatlar bir-biriga teng bo‘lmasa, `True` qaytaradi.
 
@@ -92,31 +92,61 @@ result = (a != b)  # True, chunki 5 ≠ 3
 print(result)  # Natija: True
 ```
 
-3. **Katta** (`>`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta ekanligini tekshiradi.
+### 3. ✅ Katta >
+
+📌 Chap tomondagi qiymat o‘ng tomondagidan katta bo‘lsa, `True`.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a > b)  # result True ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' > 'b' sharti natijasi berilyapti
+# Bu yerda 5 > 3 bo'lgani uchun natija True bo'ladi
+result = (a > b)  # True, chunki 5 > 3
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: True
 ```
 
-4. **Kichik** (`<`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik ekanligini tekshiradi.
+### 4. ✅ Kichik <
+
+📌 Chap tomondagi qiymat o‘ng tomondagidan kichik bo‘lsa, `True`.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a < b)  # result False ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' < 'b' (ya'ni 5 < 3) sharti tekshirilmoqda
+# Bu shart noto‘g‘ri, chunki 5 kichik emas 3 dan — natija: False
+result = (a < b)  # False, chunki 5 < 3 emas
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: False
 ```
 
-5. **Katta yoki teng** (`>=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta yoki teng ekanligini tekshiradi.
+5. Katta yoki teng >=
+
+📌 Agar chap tomondagi qiymat katta yoki teng bo‘lsa, `True`.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a >= b)  # result True ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' >= 'b' (ya'ni 5 katta yoki teng 3) sharti tekshirilmoqda
+# Bu shart to‘g‘ri, chunki 5 katta 3 dan — natija: True
+result = (a >= b)  # True, chunki 5 >= 3
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: True
 ```
 
 6. **Kichik yoki teng** (`<=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik yoki teng ekanligini tekshiradi.
