@@ -130,7 +130,7 @@ result = (a < b)  # False, chunki 5 < 3 emas
 print(result)  # Natija: False
 ```
 
-5. Katta yoki teng >=
+### 5. ✅ Katta yoki teng >=
 
 📌 Agar chap tomondagi qiymat katta yoki teng bo‘lsa, `True`.
 
@@ -149,13 +149,23 @@ result = (a >= b)  # True, chunki 5 >= 3
 print(result)  # Natija: True
 ```
 
-6. **Kichik yoki teng** (`<=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik yoki teng ekanligini tekshiradi.
+### 6. ✅ Kichik yoki teng (<=)
+
+📌 Agar chap tomondagi qiymat kichik yoki teng bo‘lsa, `True`.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a <= b)  # result False ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' <= 'b' (ya'ni 5 kichik yoki teng 3) sharti tekshirilmoqda
+# Bu shart noto‘g‘ri, chunki 5 kichik emas va 5 teng ham emas 3 ga — natija: False
+result = (a <= b)  # False, chunki 5 <= 3 emas
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: False
 ```
 
 
