@@ -177,10 +177,19 @@ print(result)  # Natija: False
 📌 Bu operator ikkala shart True boʻlsa, True qaytaradi.
 
 ```python
+# 'a' o'zgaruvchisiga True (rost) qiymati berilmoqda
 a = True
+
+# 'b' o'zgaruvchisiga False (yolg'on) qiymati berilmoqda
 b = False
+
+# 'result' o'zgaruvchisiga 'a and b' mantiqiy ifodasi natijasi berilmoqda
+# AND operatori ikkala qiymat ham True bo'lsa, True qaytaradi. Aks holda False.
+# Bu yerda: True and False → natija: False
 result = a and b  # result False ga teng bo'ladi
-print(result)
+
+# 'result' ni ekranga chiqaramiz
+print(result)  # Natija: False
 ```
 
 2. **yoki** (`or`): Hech bo'lmaganda bitta shart `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
