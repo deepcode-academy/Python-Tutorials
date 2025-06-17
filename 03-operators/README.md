@@ -52,16 +52,62 @@ print(daraja)  # Natija: 1000
 
 ## ✅ TAQQOSLASH OPERATORLARI
 
-📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni solishtirish uchun ishlatiladi va natijada True yoki False qiymatini qaytaradi. Ular asosan shartlarni tekshirishda ishlatiladi.
+## TAQQOSLASH OPERATORLARI
 
-### ❇️ TENGMI OPERATORI (==)
+Python dasturlash tilida `solishtirish` operatorlari ikki qiymatni `taqqoslash` uchun ishlatiladi.
+
+1. **Teng** (`==`): Ikkita qiymat tengligini tekshiradi.
 
 ```python
-a = 5          # a o'zgaruvchisiga 5 qiymatini beramiz
-b = 3          # b o'zgaruvchisiga 3 qiymatini beramiz
-# a va b tengmi? (5 == 3) — False, chunki 5 va 3 teng emas
-result = (a == b)  
-print(result)  # Natija: False
+a = 5
+b = 3
+result = (a == b)  # result False ga teng bo'ladi
+print(result)
+```
+
+2. **Teng emas** (`!=`): Ikkita qiymat teng emasligini tekshiradi.
+
+```python
+a = 5
+b = 3
+result = (a != b)  # result True ga teng bo'ladi
+print(result)
+```
+
+3. **Katta** (`>`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta ekanligini tekshiradi.
+
+```python
+a = 5
+b = 3
+result = (a > b)  # result True ga teng bo'ladi
+print(result)
+```
+
+4. **Kichik** (`<`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik ekanligini tekshiradi.
+
+```python
+a = 5
+b = 3
+result = (a < b)  # result False ga teng bo'ladi
+print(result)
+```
+
+5. **Katta yoki teng** (`>=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta yoki teng ekanligini tekshiradi.
+
+```python
+a = 5
+b = 3
+result = (a >= b)  # result True ga teng bo'ladi
+print(result)
+```
+
+6. **Kichik yoki teng** (`<=`): Chap tomondagi qiymat o'ng tomondagi qiymatdan kichik yoki teng ekanligini tekshiradi.
+
+```python
+a = 5
+b = 3
+result = (a <= b)  # result False ga teng bo'ladi
+print(result)
 ```
 
 
