@@ -195,10 +195,19 @@ print(result)  # Natija: False
 2. **yoki** (`or`): Hech bo'lmaganda bitta shart `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
 
 ```python
+# 'a' o'zgaruvchisiga True (rost) qiymati berilyapti
 a = True
+
+# 'b' o'zgaruvchisiga False (yolg'on) qiymati berilyapti
 b = False
+
+# 'result' o'zgaruvchisiga 'a or b' mantiqiy ifodasi natijasi berilyapti
+# OR operatori ikkala qiymatdan hech bo'lmaganda bittasi True bo'lsa, True qaytaradi
+# Bu yerda: True or False → natija: True
 result = a or b  # result True ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: True
 ```
 
 3. **emas** (`not`): Shartning mantiqiy qiymatini teskariga o'zgartiradi (`True` bo'lsa `False`ga, `False` bo'lsa `True`ga).
