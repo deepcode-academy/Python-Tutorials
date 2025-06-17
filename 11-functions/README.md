@@ -178,11 +178,11 @@ Bu yerda `lambda x: len(x)` uzunligi bo'yicha mevalarni tartiblaydi.
 def tashqi_funksiya(karrali):
     return lambda x: x * karrali
 
-ikki_barak = tashqi_funksiya(2)
-uch_barak = tashqi_funksiya(3)
+ikki = tashqi_funksiya(2)
+uch = tashqi_funksiya(3)
 
-print(ikki_barak(5))  # Natija: 10
-print(uch_barak(5))  # Natija: 15
+print(ikki(5))  # Natija: 10
+print(uch(5))  # Natija: 15
 ```
 Yuqorida `tashqi_funksiya` funksiya ichida `lambda` funksiyani qaytaradi va bu `lambda` funksiyasi karrali sonni hisoblaydi.
 
