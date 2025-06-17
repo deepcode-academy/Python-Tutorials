@@ -52,26 +52,44 @@ print(daraja)  # Natija: 1000
 
 ## ✅ TAQQOSLASH OPERATORLARI
 
-## TAQQOSLASH OPERATORLARI
+📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni taqqoslash uchun ishlatiladi. Ular natijada `True` yoki `False` (ya'ni mantiqiy qiymat) qaytaradi.
 
-Python dasturlash tilida `solishtirish` operatorlari ikki qiymatni `taqqoslash` uchun ishlatiladi.
+### 1. ✅ Teng (==)
 
-1. **Teng** (`==`): Ikkita qiymat tengligini tekshiradi.
+Ikkita qiymat teng bo‘lsa, `True`, aks holda `False` qaytaradi.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a == b)  # result False ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' va 'b' tengmi degan shart natijasi berilyapti
+# Bu yerda 5 == 3 bo'lmagani uchun natija False bo'ladi
+result = (a == b)  # False, chunki 5 ≠ 3
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: False
 ```
 
-2. **Teng emas** (`!=`): Ikkita qiymat teng emasligini tekshiradi.
+### 2. ❌ Teng emas (!=)
+
+📌 Qiymatlar bir-biriga teng bo‘lmasa, `True` qaytaradi.
 
 ```python
+# 'a' o'zgaruvchisiga 5 soni berilyapti
 a = 5
+
+# 'b' o'zgaruvchisiga 3 soni berilyapti
 b = 3
-result = (a != b)  # result True ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisiga 'a' va 'b' teng emasmi degan shart natijasi berilyapti
+# Bu yerda 5 != 3 bo'lgani uchun natija True bo'ladi
+result = (a != b)  # True, chunki 5 ≠ 3
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: True
 ```
 
 3. **Katta** (`>`): Chap tomondagi qiymat o'ng tomondagi qiymatdan katta ekanligini tekshiradi.
