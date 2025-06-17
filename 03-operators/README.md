@@ -172,7 +172,7 @@ print(result)  # Natija: False
 
 📌 Python dasturlash tilida mantiqiy operatorlar (logical operators) shartlarni solishtirishda ishlatiladi va ular **True** yoki **False** qiymatlar bilan ishlaydi. Ular bir nechta shartlarni birlashtirish yoki tahlil qilish uchun qoʻllaniladi.
 
-1. and
+### 1. and
 
 📌 Bu operator ikkala shart True boʻlsa, True qaytaradi.
 
@@ -192,7 +192,7 @@ result = a and b  # result False ga teng bo'ladi
 print(result)  # Natija: False
 ```
 
-2. **yoki** (`or`): Hech bo'lmaganda bitta shart `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
+### 2. **yoki** (`or`): Hech bo'lmaganda bitta shart `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
 
 ```python
 # 'a' o'zgaruvchisiga True (rost) qiymati berilyapti
@@ -210,12 +210,19 @@ result = a or b  # result True ga teng bo'ladi
 print(result)  # Natija: True
 ```
 
-3. **emas** (`not`): Shartning mantiqiy qiymatini teskariga o'zgartiradi (`True` bo'lsa `False`ga, `False` bo'lsa `True`ga).
+### 3. **emas** (`not`): Shartning mantiqiy qiymatini teskariga o'zgartiradi (`True` bo'lsa `False`ga, `False` bo'lsa `True`ga).
 
 ```python
+# 'a' o'zgaruvchisiga True (rost) qiymati berilyapti
 a = True
+
+# 'result' o'zgaruvchisiga 'not a' ifodasi natijasi berilmoqda
+# NOT operatori qiymatni teskarisiga o'zgartiradi: True → False, False → True
+# Bu yerda: not True → False
 result = not a  # result False ga teng bo'ladi
-print(result)
+
+# 'result' o'zgaruvchisini ekranga chiqaramiz
+print(result)  # Natija: False
 ```
 
 Quyidagi misolda mantiqiy operatorlar qanday ishlashini ko'rishimiz mumkin:
