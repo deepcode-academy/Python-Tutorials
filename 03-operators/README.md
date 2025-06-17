@@ -168,10 +168,7 @@ result = (a <= b)  # False, chunki 5 <= 3 emas
 print(result)  # Natija: False
 ```
 
-
-
-
-## MANTIQIY OPERATORLAR
+## ✅ MANTIQIY OPERATORLAR
 
 📌 Python dasturlash tilida mantiqiy operatorlar (logical operators) shartlarni solishtirishda ishlatiladi va ular **True** yoki **False** qiymatlar bilan ishlaydi. Ular bir nechta shartlarni birlashtirish yoki tahlil qilish uchun qoʻllaniladi.
 
