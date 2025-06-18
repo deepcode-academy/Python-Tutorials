@@ -172,7 +172,7 @@ print(result)  # Natija: False
 
 📌 Python dasturlash tilida mantiqiy operatorlar (logical operators) shartlarni solishtirishda ishlatiladi va ular **True** yoki **False** qiymatlar bilan ishlaydi. Ular bir nechta shartlarni birlashtirish yoki tahlil qilish uchun qoʻllaniladi.
 
-### 1. ❇️ and
+### 1. ❇️ AND
 
 📌 Bu operator ikkala shart True boʻlsa, `True` qaytaradi.
 
@@ -192,7 +192,7 @@ result = a and b  # result False ga teng bo'ladi
 print(result)  # Natija: False
 ```
 
-### 2. ❇️ or 
+### 2. ❇️ OR
 
 📌 Hech bo'lmaganda bitta shart `True` bo'lsa, natija `True` bo'ladi, aks holda `False`.
 
@@ -212,7 +212,7 @@ result = a or b  # result True ga teng bo'ladi
 print(result)  # Natija: True
 ```
 
-### 3. ❇️ not 
+### 3. ❇️ NOT
 
 📌 Shartning mantiqiy qiymatini teskariga o'zgartiradi (`True` bo'lsa `False`ga, `False` bo'lsa `True`ga).
 
