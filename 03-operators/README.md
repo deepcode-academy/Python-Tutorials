@@ -348,48 +348,64 @@ result = is_logged_in and has_permission and not is_admin
 print(result)  # True
 ```
 
-## BITWISE(BITLI) OPERATORLAR
-Python tilida **bitwise** (`bitli`) operatorlar sonlarning bitlari ustida to'g'ridan-to'g'ri amallarni bajaradi. Bu operatorlar ikkita sonning **binary** (`ikkilik`) shakldagi bitlari bilan ishlaydi.
-1. **AND**(`&`)<br>
-- Bu operator ikkala sonning mos bitlarini `AND` amali bilan solishtiradi. Ikkala bit ham `1` bo'lsa, natija `1`, aks holda `0`.
+## ✅ BITWISE(BITLI) OPERATORLAR
+
+📌 Python tilida **bitwise** (`bitli`) operatorlar sonlarning bitlari ustida to'g'ridan-to'g'ri amallarni bajaradi. Bu operatorlar ikkita sonning **binary** (`ikkilik`) shakldagi bitlari bilan ishlaydi.
+
+
+### ❇️  AND (`&`)
+
+📌 Bu operator ikkala sonning mos bitlarini `AND` amali bilan solishtiradi. Ikkala bit ham `1` bo'lsa, natija `1`, aks holda `0`.
 ```python
 a = 5  # 0101
 b = 3  # 0011
 natija = a & b  # 0001 (1)
 print(natija)
 ```
-2. **OR**(`|`)<br>
-- Bu operator ikkala sonning mos bitlarini `OR` amali bilan solishtiradi. Kamida bitta bit `1` bo'lsa, natija `1`, aks holda `0`.
+### ❇️ OR (`|`)
+
+📌 Bu operator ikkala sonning mos bitlarini `OR` amali bilan solishtiradi. Kamida bitta bit `1` bo'lsa, natija `1`, aks holda `0`.
+
 ```python
 a = 5  # 0101
 b = 3  # 0011
 natija = a | b  # 0111 (7)
 print(natija)
 ```
-3. **XOR**(`^`)<br>
-- Bu operator ikkala sonning mos bitlarini `XOR` amali bilan solishtiradi. Agar bitta bit `1`, ikkinchisi `0` bo'lsa, natija `1`, aks holda `0`.
+### ❇️ XOR (`^`)
+
+📌 Bu operator ikkala sonning mos bitlarini `XOR` amali bilan solishtiradi. Agar bitta bit `1`, ikkinchisi `0` bo'lsa, natija `1`, aks holda `0`.
+
 ```python
 a = 5  # 0101
 b = 3  # 0011
 natija = a ^ b  # 0110 (6)
 print(natija)
 ```
-4. **NOT**(`~`)<br>
-- Bu operator bitlarning qarama-qarshi qiymatini qaytaradi. `0` ni `1` ga, `1` ni `0` ga o'zgartiradi. Python tilida `~x = -x-1` deb qabul qilinadi.
+
+### ❇️ NOT (`~`)
+
+📌  Bu operator bitlarning qarama-qarshi qiymatini qaytaradi. `0` ni `1` ga, `1` ni `0` ga o'zgartiradi. Python tilida `~x = -x-1` deb qabul qilinadi.
+
 ```python
 a = 5  # 0101
 natija = ~a  # -(0101 + 1) = -0110 (-6)
 print(natija)
 ```
-5. **Chapga siljitish**(`<<`)<br>
-- Bu operator bitlarni chapga siljitadi va o'ng tomonga `0` qo'shadi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga ko'paytiradi.
+### ❇️ LEFT SHIFT (`<<`)
+
+📌 Bu operator bitlarni chapga siljitadi va o'ng tomonga `0` qo'shadi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga ko'paytiradi.
+
 ```python
 a = 5  # 0101
 natija = a << 1  # 1010 (10)
 print(natija)
 ```
-6. **O'ngga siljitish**(`>>`) <br>
-- Bu operator bitlarni o'ngga siljitadi va chap tomonga `0` yoki sonning ishorasi (`positive`/`negative sign`) qo'yiladi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga kamaytiradi.
+
+### ❇️ RIGHT SHIFT (`>>`)
+
+📌 Bu operator bitlarni o'ngga siljitadi va chap tomonga `0` yoki sonning ishorasi (`positive`/`negative sign`) qo'yiladi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga kamaytiradi.
+
 ```python
 a = 5  # 0101
 natija = a >> 1  # 0010 (2)
