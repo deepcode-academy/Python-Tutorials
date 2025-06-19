@@ -86,18 +86,18 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 ## ✅ PYTHON VERSIYALARI JADVALI
 
-| Versiya     | Chiqqan sana    | Asosiy yangiliklar                    |
-|-------------|-----------------|---------------------------------------|
-| Python 1.0  | 1991-yil        | Birinchi rasmiy nashr                 |
-| Python 2.0  | 2000-yil        | Unicode, GC, List comprehensions      |
-| Python 3.0  | 2008-yil        | Unicode, yangi sintaksis              |
-| Python 3.5  | 2015-yil        | async/await, type hinting             |
-| Python 3.6  | 2016-yil        | f-strings                             |
-| Python 3.9  | 2020-yil        | Yangi to‘plamlar funksiyalari         |
-| Python 3.10 | 2021-yil        | match-case pattern matching           |
-| Python 3.11 | 2022-yil        | Katta tezlik (50% gacha yaxshilangan) |
-| Python 3.12 | 2023-yil        | Yaxshilangan profiling, diagnostics   |
-| Python 3.13 | 2024-yil (beta) | Tezlik va sintaktik yaxshilanishlar   |
+| Versiya     | Chiqqan sana    | Asosiy yangiliklar                      |
+|-------------|-----------------|-----------------------------------------|
+| Python 1.0  | 1991-yil        | Birinchi rasmiy nashr                   |
+| Python 2.0  | 2000-yil        | Unicode, GC, List comprehensions        |
+| Python 3.0  | 2008-yil        | Unicode, yangi sintaksis                |
+| Python 3.5  | 2015-yil        | `async/await`, `type hinting`           |
+| Python 3.6  | 2016-yil        | `f-strings`                             |
+| Python 3.9  | 2020-yil        | Yangi to‘plamlar funksiyalari           |
+| Python 3.10 | 2021-yil        | `match-case` pattern matching           |
+| Python 3.11 | 2022-yil        | Katta tezlik (50% gacha yaxshilangan)   |
+| Python 3.12 | 2023-yil        | Yaxshilangan profiling, diagnostics     |
+| Python 3.13 | 2024-yil (beta) | Tezlik va sintaktik yaxshilanishlar     |
 
 ### Pythonning asosiy xususiyatlari:
 
