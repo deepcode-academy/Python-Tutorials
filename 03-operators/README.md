@@ -54,7 +54,7 @@ print(daraja)  # Natija: 1000
 
 📌 Python dasturlash tilida taqqoslash operatorlari (comparison operators) — ikki qiymatni taqqoslash uchun ishlatiladi. Ular natijada `True` yoki `False` (ya'ni mantiqiy qiymat) qaytaradi.
 
-### 1. ❇️ Teng ==
+### 1. ❇️ TENGMI ==
 
 Ikkita qiymat teng bo‘lsa, `True`, aks holda `False` qaytaradi.
 
@@ -73,7 +73,7 @@ result = (a == b)  # False, chunki 5 ≠ 3
 print(result)  # Natija: False
 ```
 
-### 2. ❇️ Teng emas !=
+### 2. ❇️ TENG EMAS !=
 
 📌 Qiymatlar bir-biriga teng bo‘lmasa, `True` qaytaradi.
 
@@ -92,7 +92,7 @@ result = (a != b)  # True, chunki 5 ≠ 3
 print(result)  # Natija: True
 ```
 
-### 3. ❇️ Katta >
+### 3. ❇️ KATTA >
 
 📌 Chap tomondagi qiymat o‘ng tomondagidan katta bo‘lsa, `True`.
 
@@ -111,7 +111,7 @@ result = (a > b)  # True, chunki 5 > 3
 print(result)  # Natija: True
 ```
 
-### 4. ❇️ Kichik <
+### 4. ❇️ KICHIK <
 
 📌 Chap tomondagi qiymat o‘ng tomondagidan kichik bo‘lsa, `True`.
 
@@ -130,7 +130,7 @@ result = (a < b)  # False, chunki 5 < 3 emas
 print(result)  # Natija: False
 ```
 
-### 5. ❇️ Katta yoki teng >=
+### 5. ❇️ KATTA YOKI TENG >=
 
 📌 Agar chap tomondagi qiymat katta yoki teng bo‘lsa, `True`.
 
@@ -149,7 +149,7 @@ result = (a >= b)  # True, chunki 5 >= 3
 print(result)  # Natija: True
 ```
 
-### 6. ❇️ Kichik yoki teng (<=)
+### 6. ❇️ KICHIK YOKI TENG (<=)
 
 📌 Agar chap tomondagi qiymat kichik yoki teng bo‘lsa, `True`.
 
