@@ -60,10 +60,10 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 ### ❇️ PYTHON 1.0 - 1991-YIL 20-FEVRAL
 
 📌 Python ilk rasmiy versiyasi:
-- 📌 Funksiya, shart operatorlari (`if`, `else`, `elif`)
-- 📌 `while`, `for`, `break`, `continue` operatorlari
-- 📌 Ma'lumot turlari: `str`, `list`, `dict`, `tuple`
-- 📌 `exception handling (try-except)` mavjud edi
+- Funksiya, shart operatorlari (`if`, `else`, `elif`)
+- `while`, `for`, `break`, `continue` operatorlari
+- Ma'lumot turlari: `str`, `list`, `dict`, `tuple`
+- `exception handling (try-except)` mavjud edi
 
 
 ### Pythonning asosiy xususiyatlari:
