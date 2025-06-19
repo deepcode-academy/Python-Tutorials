@@ -356,6 +356,7 @@ print(result)  # True
 ### ❇️  AND (`&`)
 
 📌 Bu operator ikkala sonning mos bitlarini `AND` amali bilan solishtiradi. Ikkala bit ham `1` bo'lsa, natija `1`, aks holda `0`.
+
 ```python
 # a o'zgaruvchiga 5 soni berilmoqda
 # 5 ning ikkilik (binary) ko'rinishi: 0101
