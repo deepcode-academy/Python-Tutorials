@@ -11,7 +11,7 @@
 ```python
 print("Salom, dunyo!")  # Ekranga matn chiqarish
 ```
-📍 Bu buyruqni har kim tushunadi. Ammo past darajadagi tillarda xuddi shu ishni qilish juda murakkab bo‘ladi.
+📌 Bu buyruqni har kim tushunadi. Ammo past darajadagi tillarda xuddi shu ishni qilish juda murakkab bo‘ladi.
 
 📌 Yuqori darajadagi tillarning afzalliklari:
 
@@ -49,7 +49,21 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 ## ✅ PYTHON TARIXIY BOSQICHLARI
 
+### ❇️ PYTHON LOYIHASI BOSHLANISHI - 1989-YIL DEKABR
 
+📌 Guido dam olish vaqtida yangi til yozishga kirishadi.
+
+📌 Maqsadi: ABC dasturlash tilining (CWI tomonidan yaratilgan) soddaligi va foydaliligini yaxshilash.
+
+📌 Unga fayl va istalgan tizimga bog‘lanish (file handling & OS interfacing) imkoniyatlari qo‘shmoqchi bo‘ladi.
+
+### ❇️ PYTHON 1.0 - 1991-YIL 20-FEVRAL
+
+📌 Python ilk rasmiy versiyasi:
+- 📌 Funksiya, shart operatorlari (`if`, `else`, `elif`)
+- 📌 `while`, `for`, `break`, `continue` operatorlari
+- 📌 Ma'lumot turlari: `str`, `list`, `dict`, `tuple`
+- 📌 `exception handling (try-except)` mavjud edi
 
 
 ### Pythonning asosiy xususiyatlari:
