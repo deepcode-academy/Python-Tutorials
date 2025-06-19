@@ -431,8 +431,22 @@ print(natija)
 📌  Bu operator bitlarning qarama-qarshi qiymatini qaytaradi. `0` ni `1` ga, `1` ni `0` ga o'zgartiradi. Python tilida `~x = -x-1` deb qabul qilinadi.
 
 ```python
-a = 5  # 0101
-natija = ~a  # -(0101 + 1) = -0110 (-6)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# bitwise NOT (~) operatori a ustida qo'llanilmoqda
+# ~a bu bitlarning inkori (teskari qiymati) degani
+# Python tilida bu quyidagicha ishlaydi: ~x = -x - 1
+# ~5 = -5 - 1 = -6
+
+# Yoki binary orqali tushuntirsak:
+# 5  ->  0000 0101
+# ~5 ->  1111 1010  (ya'ni 2 ning komplementi orqali -6 bo'ladi)
+natija = ~a
+
+# natijani ekranga chiqaramiz
+# natija: -6
 print(natija)
 ```
 ### ❇️ LEFT SHIFT (`<<`)
@@ -440,8 +454,19 @@ print(natija)
 📌 Bu operator bitlarni chapga siljitadi va o'ng tomonga `0` qo'shadi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga ko'paytiradi.
 
 ```python
-a = 5  # 0101
-natija = a << 1  # 1010 (10)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# a << 1 bu bitlarni 1 pozitsiyaga chapga siljitish degani
+# 0101 (5) chapga 1 ta siljisa: 1010 bo'ladi
+# bu 10 lik sanoq sistemasida 10 ga teng
+# Har bir chapga siljitish qiymatni 2 ga ko'paytiradi:
+# 5 << 1 = 5 * 2 = 10
+natija = a << 1
+
+# natijani ekranga chiqaramiz
+# natija: 10
 print(natija)
 ```
 
@@ -450,8 +475,19 @@ print(natija)
 📌 Bu operator bitlarni o'ngga siljitadi va chap tomonga `0` yoki sonning ishorasi (`positive`/`negative sign`) qo'yiladi. Har bir siljitish operatsiyasi bitlarning qiymatini `2` ga kamaytiradi.
 
 ```python
-a = 5  # 0101
-natija = a >> 1  # 0010 (2)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# a >> 1 bu bitlarni 1 pozitsiyaga o'ngga siljitish degani
+# 0101 (5) o'ngga 1 ta siljisa: 0010 bo'ladi
+# bu 10 lik sanoq sistemasida 2 ga teng
+# Har bir o'ngga siljitish qiymatni 2 ga kamaytiradi:
+# 5 >> 1 = 5 // 2 = 2
+natija = a >> 1
+
+# natijani ekranga chiqaramiz
+# natija: 2
 print(natija)
 ```
 7. EXTRA EXAMPLES 
