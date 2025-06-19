@@ -102,22 +102,22 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 ## ✅ PYTHONNING ASOSIY XUSUSIYATLARI
 
-📌 Oson yoziladi va tushuniladi
+**📌 Oson yoziladi va tushuniladi**
 - Python sintaksisi oddiy va inson tiliga o‘xshash. Shu sababli uni yangi o‘rganayotganlar tez tushunadi va kod yozishni oson o‘rganadi.
 
-📌 Qatorma-qator bajariladi
+**📌 Qatorma-qator bajariladi**
 - Python — interpreted til. Kodlar yuqoridan pastga qarab birma-bir bajariladi. Har bir qatordagi buyruq navbati bilan bajariladi.
 
-📌 Turli operatsion tizimlarda ishlaydi
+**📌 Turli operatsion tizimlarda ishlaydi**
 - Python dasturlari Windows, MacOS va Linux tizimlarida bir xil ishlaydi. Hech qanday alohida sozlashlarsiz ko‘p platformalarda foydalanish mumkin.
 
-📌 Ko‘plab tayyor kutubxonalar mavjud
+**📌 Ko‘plab tayyor kutubxonalar mavjud**
 - Python juda katta kutubxonalar to‘plamiga ega. Ular yordamida murakkab matematik, grafik, internet, ma’lumotlar bilan bog‘liq ishlar tez va oson bajariladi.
 
-📌 Obyektga yo‘naltirilgan dasturlash tili
+**📌 Obyektga yo‘naltirilgan dasturlash tili**
 - Python yirik va murakkab dasturlarni modullarga bo‘lib yozishga imkon beradi. Bu dasturlarni boshqarishni va ularni rivojlantirishni osonlashtiradi.
 
-📌 Boshqa dasturlash tillari bilan birga ishlay oladi
+**📌 Boshqa dasturlash tillari bilan birga ishlay oladi**
 - Python boshqa tillar — masalan, C, C++, Java yoki HTML bilan integratsiya qilib ishlatilishi mumkin. Bu uni yanada kuchli va moslashuvchan qiladi.
 
 ## ✅ Python qanday ishlaydi?
