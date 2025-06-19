@@ -99,22 +99,28 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 | Python 3.12 | 2023-yil        | Yaxshilangan profiling, diagnostics     |
 | Python 3.13 | 2024-yil (beta) | Tezlik va sintaktik yaxshilanishlar     |
 
-### Pythonning asosiy xususiyatlari:
 
-- **Simple and Readable Syntax:** Pythonning sintaksisi boshqa dasturlash tillariga qaraganda `osonroq` va `tushunarliroq`, shuning uchun yangi boshlovchilar uchun juda qulay.
+## ✅ PYTHONNING ASOSIY XUSUSIYATLARI
 
-- **Interpreted Language:** Python interpretator tili hisoblanadi, ya'ni kod `qatorma-qator` bajariladi. Bu xatoliklarni tezda topishga yordam beradi va dasturlashni qulaylashtiradi.
+📌 Oson yoziladi va tushuniladi
+- Python sintaksisi oddiy va inson tiliga o‘xshash. Shu sababli uni yangi o‘rganayotganlar tez tushunadi va kod yozishni oson o‘rganadi.
 
-- **Cross-Platform:** Python ko‘pgina operatsion tizimlarda ishlaydi, masalan, `Windows`, `MacOS`, va `Linux`.
+📌 Qatorma-qator bajariladi
+- Python — interpreted til. Kodlar yuqoridan pastga qarab birma-bir bajariladi. Har bir qatordagi buyruq navbati bilan bajariladi.
 
-- **Extensive Library Collections:** Python o'zining boy standart kutubxonasi va modullari bilan ko'plab vazifalarni bajarishga imkon beradi, shu jumladan, `development`, `data analysis`, `machine learning` va boshqalar.
+📌 Turli operatsion tizimlarda ishlaydi
+- Python dasturlari Windows, MacOS va Linux tizimlarida bir xil ishlaydi. Hech qanday alohida sozlashlarsiz ko‘p platformalarda foydalanish mumkin.
 
-- **Object-Oriented Programming:** Python `OOP`ni qo'llab-quvvatlaydi. Bu katta dasturlarni modullarga ajratib, ularni mustaqil ravishda ishlashini osonlashtiradi.
+📌 Ko‘plab tayyor kutubxonalar mavjud
+- Python juda katta kutubxonalar to‘plamiga ega. Ular yordamida murakkab matematik, grafik, internet, ma’lumotlar bilan bog‘liq ishlar tez va oson bajariladi.
 
-- **Flexible and Extensible:** Pythonni boshqa tillar bilan birlashtirish yoki maxsus kutubxonalar orqali kengaytirish mumkin.
+📌 Obyektga yo‘naltirilgan dasturlash tili
+- Python yirik va murakkab dasturlarni modullarga bo‘lib yozishga imkon beradi. Bu dasturlarni boshqarishni va ularni rivojlantirishni osonlashtiradi.
 
+📌 Boshqa dasturlash tillari bilan birga ishlay oladi
+- Python boshqa tillar — masalan, C, C++, Java yoki HTML bilan integratsiya qilib ishlatilishi mumkin. Bu uni yanada kuchli va moslashuvchan qiladi.
 
-### Python qanday ishlaydi?
+## ✅ Python qanday ishlaydi?
 
 - **Code Writing**: Dastlab Python kodini `.py` fayl ko'rinishida yozasiz.
 - **Interpreter Runs**: Python interpretatori ushbu kodni o’qib, uni mashina tushunadigan `baytlarga` o‘zgartiradi. Bu jarayonda kod `qatorma-qator` tahlil qilinadi va ishlatiladi.
