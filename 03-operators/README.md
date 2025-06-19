@@ -405,9 +405,24 @@ print(natija)
 📌 Bu operator ikkala sonning mos bitlarini `XOR` amali bilan solishtiradi. Agar bitta bit `1`, ikkinchisi `0` bo'lsa, natija `1`, aks holda `0`.
 
 ```python
-a = 5  # 0101
-b = 3  # 0011
-natija = a ^ b  # 0110 (6)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# b o'zgaruvchiga 3 soni berilmoqda
+# 3 ning ikkilik (binary) ko'rinishi: 0011
+b = 3
+
+# a va b ustida bitwise XOR (^) operatori bajarilmoqda
+# a: 0101
+# b: 0011
+#    ----
+# ^  0110   --> faqat bitta bit 1 bo'lsa (ya'ni faqat 1 yoki faqat 0 bo'lsa), natija 1 bo'ladi
+#             agar ikkala bit bir xil bo‘lsa (0-0 yoki 1-1) natija 0 bo‘ladi
+natija = a ^ b
+
+# natijani ekranga chiqaramiz
+# 0110 bu 10lik sanoq sistemasida 6 ga teng
 print(natija)
 ```
 
