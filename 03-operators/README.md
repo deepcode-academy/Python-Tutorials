@@ -357,9 +357,23 @@ print(result)  # True
 
 📌 Bu operator ikkala sonning mos bitlarini `AND` amali bilan solishtiradi. Ikkala bit ham `1` bo'lsa, natija `1`, aks holda `0`.
 ```python
-a = 5  # 0101
-b = 3  # 0011
-natija = a & b  # 0001 (1)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# b o'zgaruvchiga 3 soni berilmoqda
+# 3 ning ikkilik (binary) ko'rinishi: 0011
+b = 3
+
+# a va b o'zgaruvchilari ustida bitwise AND (&) amali bajarilmoqda
+# a: 0101
+# b: 0011
+#    ----
+# &  0001   --> faqat ikkala bit ham 1 bo'lgan joyda natija 1 bo'ladi
+natija = a & b
+
+# natijani ekranga chiqaramiz
+# 0001 bu 10lik sanoq sistemasida 1 ga teng
 print(natija)
 ```
 ### ❇️ OR (`|`)
@@ -367,9 +381,23 @@ print(natija)
 📌 Bu operator ikkala sonning mos bitlarini `OR` amali bilan solishtiradi. Kamida bitta bit `1` bo'lsa, natija `1`, aks holda `0`.
 
 ```python
-a = 5  # 0101
-b = 3  # 0011
-natija = a | b  # 0111 (7)
+# a o'zgaruvchiga 5 soni berilmoqda
+# 5 ning ikkilik (binary) ko'rinishi: 0101
+a = 5
+
+# b o'zgaruvchiga 3 soni berilmoqda
+# 3 ning ikkilik (binary) ko'rinishi: 0011
+b = 3
+
+# a va b ustida bitwise OR (|) operatori bajarilmoqda
+# a: 0101
+# b: 0011
+#    ----
+# |  0111   --> har ikkala bitdan hech bo'lmaganda biri 1 bo'lsa, natijada 1 bo'ladi
+natija = a | b
+
+# natijani ekranga chiqaramiz
+# 0111 bu 10lik sanoq sistemasida 7 ga teng
 print(natija)
 ```
 ### ❇️ XOR (`^`)
@@ -411,7 +439,7 @@ a = 5  # 0101
 natija = a >> 1  # 0010 (2)
 print(natija)
 ```
-7. Qo'shimcha misollar <br>
+7. EXTRA EXAMPLES 
 - `AND`, `OR`, `XOR` **operatorlari bilan:**
 ```python
 a = 12  # 1100
