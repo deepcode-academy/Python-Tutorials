@@ -6,7 +6,7 @@
 
 📌 **High-Level Programming Language**: bu inson o‘qishi va tushunishi oson bo‘lgan dasturlash tili degani. Kompyuterlar past darajadagi tillarda ishlaydi (masalan: Assembly, Machine Code), ammo bu tillar inson uchun tushunish qiyin.
 
-🟢 Python esa odam tiliga yaqin bo‘lib yoziladi:
+✳️ Python esa odam tiliga yaqin bo‘lib yoziladi:
 
 ```python
 print("Salom, dunyo!")  # Ekranga matn chiqarish
@@ -22,7 +22,7 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 📌 **General-Purpose Programming Language**: bu har xil dasturlarni yaratish uchun ishlatiladigan dasturlash tili.
 
-🟢 Python yordamida quyidagilarni qilish mumkin:
+✳️ Python yordamida quyidagilarni qilish mumkin:
 
 - 🌐 Web dasturlar (Django, Flask)
 - 🤖 Sun'iy intellekt (AI, ML)
@@ -40,7 +40,7 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 ## ✅ PYTHON TARIXI
 
-🧑‍💻 Python asoschisi: Guido van Rossum
+✳️ Python asoschisi: Guido van Rossum
 
 - Guido van Rossum — Gollandiyalik dasturchi.
 - 1980-yillarda CWI (Centrum Wiskunde & Informatica) – Gollandiyadagi ilmiy markazda ishlagan.
@@ -59,7 +59,7 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 
 ### ❇️ PYTHON 1.0 - 1991-YIL 20-FEVRAL
 
-📌 Python ilk rasmiy versiyasi:
+✳️ Python ilk rasmiy versiyasi:
 - Funksiya, shart operatorlari (`if`, `else`, `elif`)
 - `while`, `for`, `break`, `continue` operatorlari
 - Ma'lumot turlari: `str`, `list`, `dict`, `tuple`
