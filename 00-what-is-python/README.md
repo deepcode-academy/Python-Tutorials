@@ -120,7 +120,9 @@ print("Salom, dunyo!")  # Ekranga matn chiqarish
 **📌 Boshqa dasturlash tillari bilan birga ishlay oladi**
 - Python boshqa tillar — masalan, C, C++, Java yoki HTML bilan integratsiya qilib ishlatilishi mumkin. Bu uni yanada kuchli va moslashuvchan qiladi.
 
-## ✅ Python qanday ishlaydi?
+## ✅ PYTHON QANDAY ISHLAYDI
+
+
 
 - **Code Writing**: Dastlab Python kodini `.py` fayl ko'rinishida yozasiz.
 - **Interpreter Runs**: Python interpretatori ushbu kodni o’qib, uni mashina tushunadigan `baytlarga` o‘zgartiradi. Bu jarayonda kod `qatorma-qator` tahlil qilinadi va ishlatiladi.
