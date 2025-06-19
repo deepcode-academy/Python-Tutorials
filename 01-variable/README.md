@@ -2,8 +2,7 @@
 
 # 🧩 01-DARS VARIABLES
 
->[!NOTE]
-> Python dasturlash tilida `variables` — bu ma’lumotlarni `vaqtincha saqlash` uchun ishlatiladigan `nomlangan konteynerlardir`. O‘zgaruvchilar yordamida `ma’lumotlar bilan ishlash`, `ularni saqlash` va `qayta ishlatish` qulaylashadi.
+📌 Python dasturlash tilida o‘zgaruvchi (variable) — bu kompyuterda ma’lumotni vaqtincha saqlab turadigan nomlangan joy. Bu joyga biz har qanday ma’lumotni (masalan, matn, son) joylashtirishimiz mumkin. Keyin bu nom orqali o‘sha ma’lumotdan foydalanish, o‘zgartirish yoki hisoblash osonlashadi. O‘zgaruvchilar bizga dastur ichida ma’lumot bilan ishlashni tartibli va qulay qiladi. Har safar ma’lumotni qayta yozmasdan, nomini chaqirib ishlatishimiz mumkin.
 
 ## ✅ O'ZGARUVCHI NIMA?
 
