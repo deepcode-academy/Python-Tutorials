@@ -350,7 +350,7 @@ print(result)  # True
 
 ## ✅ BITWISE(BITLI) OPERATORLAR
 
-📌 Python tilida **bitwise** (`bitli`) operatorlar sonlarning bitlari ustida to'g'ridan-to'g'ri amallarni bajaradi. Bu operatorlar ikkita sonning **binary** (`ikkilik`) shakldagi bitlari bilan ishlaydi.
+📌 Bitwise operatorlar — bu sonlar ustida 0 va 1 lar bilan ishlaydigan maxsus amallar. Kompyuter har bir sonni ichida faqat 0 va 1 larda saqlaydi (buni ikkilik son deyiladi). Bitwise operatorlar ana shu 0 va 1 larni solishtirib hisob-kitob qiladi.
 
 
 ### ❇️  AND (`&`)
