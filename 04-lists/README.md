@@ -17,6 +17,15 @@
 
 ✳️ O‘zgartirish mumkin (ya'ni listdagi ma’lumotlarni qo‘shish, o‘chirish, almashtirish mumkin)
 
+## ✅ QACHON ISHLATILADI?
+
+✳️ Ko‘p sonli ma’lumotlarni tartib bilan saqlash kerak bo‘lsa
+
+✳️ Ma’lumotlar ustida takrorlash, filtrlash, yoki saralash kerak bo‘lsa
+
+✳️ Bir nechta qiymatni bitta o‘zgaruvchida saqlash orqali kodni soddalashtirish kerak bo‘lsa
+
+
 
 ### LIST YARATISH
 
