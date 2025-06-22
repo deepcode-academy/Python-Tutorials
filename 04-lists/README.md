@@ -583,7 +583,7 @@ print(f"Ro'yxatdagi eng kichik qiymat: {min_value}")
 
 ## ✅ range()
 
-Bu funktsiya yordamida biz ma'lum oraliqdagi sonlar ketma-ketligini yaratishimiz mumkin. 
+📌 Bu funktsiya yordamida biz ma'lum oraliqdagi sonlar ketma-ketligini yaratishimiz mumkin. 
 `list()` funktsiyasi yordamida esa bu oraliqni ro'yxat shaklida saqlab olamiz:
 
 ```python
@@ -630,9 +630,7 @@ print(kamayuvchi)
 ```
 
 
-## AMALIYOT
-
-# 🐍 Python Lists — Amaliy Topshiriqlar
+## ✅ AMALIYOT
 
 Quyidagi 15 ta topshiriq orqali `list` mavzusini mustahkamlaysiz. Har bir mashqni alohida bajaring va natijani `print()` yordamida terminalda ko‘ring.
 
