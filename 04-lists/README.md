@@ -400,6 +400,36 @@ print(merged_list)  # [1, 2, 3, 4, 5, 6]
 
 📌 Bu usulda ikkinchi list elementlari birinchi listga qo‘shiladi va birinchi ro‘yxat o‘zgartiriladi.
 
+```python
+# 1-chi list
+list1 = [1, 2, 3]
+
+# 2-chi list
+list2 = [4, 5, 6]
+
+# += operatori list2 dagi elementlarni list1 ga alohida-alohida qo‘shadi
+list1 += list2
+
+# Natijaviy list1 ni ekranga chiqaramiz
+print(list1)  # [1, 2, 3, 4, 5, 6]
+```
+
+### ✳️ .extend()
+
+```python
+# 1-chi list
+list1 = [1, 2, 3]
+
+# 2-chi list
+list2 = [4, 5, 6]
+
+# extend() metodi list2 dagi barcha elementlarni list1 ga alohida-alohida qo‘shadi
+list1.extend(list2)
+
+# Natijaviy list1 ni ekranga chiqaramiz
+print(list1)  # [1, 2, 3, 4, 5, 6]
+```
+
 
 ### RO'YHAT ICHIDAGI RO'YHAT
 
