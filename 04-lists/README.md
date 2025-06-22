@@ -320,13 +320,13 @@ print("Asl ro‘yxat:", my_list)        # [3, 1, 4, 1, 5, 9]
 ### ✳️ .sort(reverse=True)
 
 ```python
-# Boshlang'ich ro'yxat: aralash sonlar mavjud
+# Boshlang'ich list: aralash sonlar mavjud
 my_list = [3, 1, 4, 1, 5, 9]
 
-# sort() metodi orqali ro'yxatni kamayish tartibida tartiblaymiz
+# sort() metodi orqali listni kamayish tartibida tartiblaymiz
 my_list.sort(reverse=True)
 
-# Tartiblangan ro'yxatni ekranga chiqaramiz
+# Tartiblangan listni ekranga chiqaramiz
 print(my_list)  # [9, 5, 4, 3, 1, 1]
 ```
 
@@ -334,14 +334,14 @@ print(my_list)  # [9, 5, 4, 3, 1, 1]
 ### ✳️ sorted(..., reverse=True)
 
 ```python
-# Boshlang'ich ro'yxat: aralash sonlar mavjud
+# Boshlang'ich list: aralash sonlar mavjud
 my_list = [3, 1, 4, 1, 5, 9]
 
-# sorted() funksiyasi ro'yxatni kamayish tartibida tartiblaydi va yangi ro'yxat qaytaradi
+# sorted() funksiyasi listni kamayish tartibida tartiblaydi va yangi list qaytaradi
 sorted_list = sorted(my_list, reverse=True)
 
-# Teskari tartiblangan yangi ro'yxatni chiqaramiz
-print("Teskari ro‘yxat:", sorted_list)  # [9, 5, 4, 3, 1, 1]
+# Teskari tartiblangan yangi listni chiqaramiz
+print("Teskari list:", sorted_list)  # [9, 5, 4, 3, 1, 1]
 ```
 
 ## ✅ QO'SHIMCHA PARAMETR
@@ -349,13 +349,13 @@ print("Teskari ro‘yxat:", sorted_list)  # [9, 5, 4, 3, 1, 1]
 ### ✳️ KEY
 
 ```python
-# Ismlar ro'yxati: har xil uzunlikdagi so'zlardan iborat
+# Ismlar listi: har xil uzunlikdagi so'zlardan iborat
 names = ['Ali', 'Muhammad', 'Zafar', 'Islom']
 
-# sort() metodi va key=len parametri yordamida ro'yxatni so'z uzunligi bo'yicha o'sish tartibida saralaymiz
+# sort() metodi va key=len parametri yordamida listni so'z uzunligi bo'yicha o'sish tartibida saralaymiz
 names.sort(key=len)
 
-# Saralangan ro'yxatni chiqaramiz
+# Saralangan listni chiqaramiz
 print(names)  # ['Ali', 'Zafar', 'Islom', 'Muhammad']
 ```
 
@@ -366,54 +366,40 @@ print(names)  # ['Ali', 'Zafar', 'Islom', 'Muhammad']
 📌 Ba'zida ro‘yxatdagi elementlarni teskari tartibda ko‘rsatish kerak bo‘ladi — ya'ni oxirgi element birinchi, birinchi element esa oxirgi bo‘ladi.
 
 ```python
-# Boshlang'ich ro'yxat: 1 dan 5 gacha bo'lgan sonlar
+# Boshlang'ich list: 1 dan 5 gacha bo'lgan sonlar
 my_list = [1, 2, 3, 4, 5]
 
-# reverse() metodi ro'yxat elementlarini teskari tartibda joylashtiradi
+# reverse() metodi list elementlarini teskari tartibda joylashtiradi
 my_list.reverse()
 
-# Teskari tartibga keltirilgan ro'yxatni ekranga chiqaramiz
+# Teskari tartibga keltirilgan listni ekranga chiqaramiz
 print(my_list)  # [5, 4, 3, 2, 1]
 ```
 
-### RO'YHATNI BIRLASHTIRISH
+## ✅ LISTNI BIRLASHTIRISH
 
-Pythonda ro'yhatlarni birlashtirishni bir nechta usullari bor. Quyida ularga misollar ko'ramiz:
+### ✳️ +
 
-Birinchi usuli `+` operatori bilan birlashtirish:
+📌 Bu usulda ikkita listni qo‘shib, yangi bitta list hosil qilamiz.
 
 ```python
+# 1-chi list
 list1 = [1, 2, 3]
+
+# 2-chi list
 list2 = [4, 5, 6]
+
+# + operatori yordamida ikkala listni birlashtiramiz
 merged_list = list1 + list2
-print(merged_list)
+
+# Yangi birlashtirilgan listni chiqaramiz
+print(merged_list)  # [1, 2, 3, 4, 5, 6]
 ```
 
-**Natija:** `[1, 2, 3, 4, 5, 6]`
+### ✳️ +=
 
-`.extend()` metodi bilan birlashtirish:
+📌 Bu usulda ikkinchi list elementlari birinchi listga qo‘shiladi va birinchi ro‘yxat o‘zgartiriladi.
 
-```python
-list1 = [1, 2, 3]
-list2 = [4, 5, 6]
-list1.extend(list2)
-print(list1)
-```
-
-**Natija:** `[1, 2, 3, 4, 5, 6]`
-
-`itertools.chain()` yordamida:
-
-```python
-import itertools
-
-list1 = [1, 2, 3]
-list2 = [4, 5, 6]
-combined_list = list(itertools.chain(list1, list2))
-print(combined_list)
-```
-
-**Natija:** `[1, 2, 3, 4, 5, 6]`
 
 ### RO'YHAT ICHIDAGI RO'YHAT
 
