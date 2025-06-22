@@ -100,49 +100,47 @@ print(fruits[::2])   # ['olma', 'gilos']
 print(fruits[::-1])  # ['shaftoli', 'gilos', 'banan', 'olma']
 ```
 
-## ✅ FINDING THE LENGTH OF A LIST
+## ✅ LISTDAGI E'LEMENTLAR SONINI TOPISH
 
 📌List uzunligi degani — list ichida nechta element (ya'ni qiymat) borligini bildiradi. Pythonda bu uzunlikni `len()` funksiyasi yordamida topamiz.
 
 ```python
-# companies listini ichida nechta element borligini hisoblash
+# Bu yerda bizda 5 ta kompaniya bor
 companies = ['Google', 'Microsoft', 'Amazon', 'Tesla', 'Apple']
+
+# len(companies) — bu companies listida nechta element borligini hisoblaydi
 print(len(companies))
 ``` 
 
-### RO'YHATGA E'LEMENT QO'SHISH
+## ✅ LISTGA E'LEMENT QO'SHISH
 
-1. `.append(x)` - listning oxiriga e'lement qo'shadi.
+### ✳️ .append(x)
 
-Sintaksis:
+📌 list oxiriga bitta element qo‘shadi.
 
-```python
-list_nomi.append(x)
-```
-- **list_nomi** — siz ishlatayotgan list
-- **x** — siz qo‘shmoqchi bo‘lgan 1ta e'lement (son, matn, list, tuple, va h.k.)
 
 ```python
+# Dastlab avtomobillar ro'yxatini yaratamiz
 cars = ['Nexia', 'Cobalt']
+
+# Ro'yxat oxiriga yangi element 'Malibu' ni qo‘shamiz
 cars.append('Malibu')
-print(cars)
-```
-**Natija:** <br>
-```shell
-['Nexia', 'Cobalt', 'Malibu']
+
+# Yangilangan ro'yxatni ekranga chiqaramiz
+print(cars)  # ['Nexia', 'Cobalt', 'Malibu']
 ```
 
-- Oddiy `.append()` faqat bitta element qo'shadi, lekin agar siz bir nechta e'lement qo'shmoqchi bo'lsangiz, u e'lement emas, balki **list** sifatida qo'shiladi.
+📌 `.append()` faqat bitta element qo‘shadi. Agar bir nechta element qo‘shmoqchi bo‘lsangiz, ularni list ko‘rinishida beriladi va list ichiga yana bir list qo‘shiladi:
 
 ```python
-# ko'proq e'lement qo'shmoqchi bo'lsak [] qavs ichida yozishimiz kerak
+# Dastlab 3 ta sondan iborat ro'yxat yaratamiz
 my_list = [1, 2, 3]
+
+# Ro'yxat oxiriga [4, 5] ro'yxatini bitta element sifatida qo‘shamiz (ichki ro'yxat bo'ladi)
 my_list.append([4, 5])
-print(my_list)
-```
-**Natija:** <br>
-```shell
-[1, 2, 3, [4, 5]]
+
+# Natijaviy ro'yxatni ekranga chiqaramiz
+print(my_list)  # [1, 2, 3, [4, 5]]
 ```
 
 - **Bir nechta element qo'shish** `.extend()`
