@@ -143,42 +143,50 @@ my_list.append([4, 5])
 print(my_list)  # [1, 2, 3, [4, 5]]
 ```
 
-- **Bir nechta element qo'shish** `.extend()`
+### ✳️ .extend()
+
+📌 bir nechta elementni alohida-alohida qo‘shadi.
 
 ```python
+# Boshlang'ich ro'yxat: 1, 2, 3 sonlari mavjud
 my_list = [1, 2, 3]
+
+# extend() metodi orqali [4, 5] ro'yxatining elementlarini alohida-alohida qo‘shamiz
 my_list.extend([4, 5])
-print("extend() natijasi:", my_list) # Bu ro'yxatning elementlarini alohida qo'shadi
+
+# Natijaviy ro'yxatni chiqaramiz
+print("extend() natijasi:", my_list)  # Bu ro'yxatning elementlarini alohida qo'shadi
 ```
 
-**Natija:** <br>
+### ✳️ .insert(i, x)
 
-```shell
-extend() natijasi: [1, 2, 3, 4, 5]
-```
-
-- **Belgilangan joyga element qo'shish:** `.insert()`
+📌 list ichidagi istalgan joyga bitta element qo‘shadi
 
 ```python
+# Dastlab 1, 2, 3 sonlaridan iborat ro'yxat yaratamiz
 my_list = [1, 2, 3]
-my_list.insert(2, 99)  # 2-pozitsiyaga 99 ni qo'shish
-print(my_list)
-```
-**Natija:**
-```shell
-[1, 2, 99, 3]
+
+# 2-pozitsiyaga (ya'ni 3-element o'rniga) 99 sonini qo‘shamiz
+my_list.insert(2, 99)
+
+# Natijaviy ro'yxatni ekranga chiqaramiz
+print(my_list)  # [1, 2, 99, 3]
 ```
 
-- `+=` **operatori yordamida ro'yxatga qo'shish**
-    - Siz ro'yxatga boshqa ro'yxatni qo'shish uchun `+=` operatoridan ham foydalanishingiz mumkin:
+### ✳️ += 
+
+📌 listga boshqa listni qo‘shadi
+
+
 ```python
+# Boshlang'ich ro'yxat: 1, 2, 3
 my_list = [1, 2, 3]
+
+# += operatori yordamida [4, 5] ro'yxatini my_list ga kengaytiramiz (xuddi extend() kabi ishlaydi)
 my_list += [4, 5]
-print(my_list)
-```
-**Natija:**
-```shell
-[1, 2, 3, 4, 5]
+
+# Natijaviy ro'yxatni chiqaramiz
+print(my_list)  # [1, 2, 3, 4, 5]
 ```
 
 ### E'LEMENTLARNI O'CHIRISH
