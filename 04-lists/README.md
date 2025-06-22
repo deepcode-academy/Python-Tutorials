@@ -39,7 +39,7 @@ empty_list = []
 
 ## ✅ LIST ELEMENTLARIGA MUROJAT QILISH
 
-### 1. INDEX ORQALI MUROJAT QILISH
+### ✳️ INDEX ORQALI MUROJAT QILISH
 
 📌 Listdagi har bir element o‘zining indeks raqami bilan tartiblanadi. Pythonda indekslash `0` dan boshlanadi.
 
@@ -54,7 +54,7 @@ print(fruits[0])  # 'olma'
 print(fruits[2])  # 'gilos'
 ```
 
-### 2. NEGATIVE INDEXING
+### ✳️ NEGATIVE INDEXING
 
 📌 Pythonda oxirgi elementga manfiy indekslar yordamida murojaat qilinadi.
 
@@ -69,7 +69,7 @@ print(fruits[-1])  # 'shaftoli'
 print(fruits[-2])  # 'gilos'
 ```
 
-### 3. SLICING
+### ✳️ SLICING
 
 📌 Listning ma’lum qismini olish uchun slicing ishlatiladi: `list[start:stop]`
 
@@ -87,13 +87,17 @@ print(fruits[:2])   # ['olma', 'banan']
 print(fruits[2:])   # ['gilos', 'shaftoli']
 ```
 
-4.  Slicing with Step (Access Every N-th Element)
+### ✳️ SLICING WITH STEP
 
 ```python
+# Mevalar ro'yxatini yaratamiz
 fruits = ['olma', 'banan', 'gilos', 'shaftoli']
 
-print(fruits[::2])   # ['apple', 'cherry']  (every 2nd element)
-print(fruits[::-1])  # ['peach', 'cherry', 'banana', 'apple']  (reversed list)
+# Har 2-elementdan birini olamiz: 0, 2-indeksdagilar (ya'ni 1-element, 3-element)
+print(fruits[::2])   # ['olma', 'gilos']
+
+# Ro'yxatni teskari tartibda chiqaramiz
+print(fruits[::-1])  # ['shaftoli', 'gilos', 'banan', 'olma']
 ```
 
 ### FINDING THE LENGTH OF A LIST
