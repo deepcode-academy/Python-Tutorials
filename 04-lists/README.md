@@ -517,7 +517,7 @@ print(multi_dimensional_list)
 ```
 
 
-### RO'YHATDA E'LEMENT BORLIGINI TEKSHIRISH
+## ✅ RO'YHATDA E'LEMENT BORLIGINI TEKSHIRISH
 
 📌 Pythonda list ichida ma’lum bir e'lement bor yoki yo‘qligini tekshirish uchun `in` operatoridan foydalaniladi.
 
@@ -532,117 +532,216 @@ print(3 in my_list)  # True
 print(6 in my_list)  # False
 ```
 
-### QO'SHIMCHA FUNKSIYALAR
+## ✅ QO'SHIMCHA FUNKSIYALAR
 
 Python dasturlash tilida ro'yxatlar bilan ishlashda quyidagi funksiyalar yordamida ro'yxatdagi elementlarni `qo'shish`, `maksimal` va `minimal` qiymatlarni topish mumkin:
 
-`sum()` **funksiyasi:** Ro'yxatdagi barcha sonlarning yig'indisini qaytaradi.
+### ✳️ sum()
+
+📌 listdagi sonlar yig‘indisini hisoblaydi
 
 ```python
+# Oddiy sonlardan iborat list
 my_list = [10, 20, 30, 40, 50]
-# Ro'yxatdagi elementlar yig'indisini hisoblash
+
+# sum() funksiyasi listdagi barcha elementlarning yig'indisini hisoblaydi
 sum_of_list = sum(my_list)
+
+# Natijani chiqaramiz
 print(f"Ro'yxatdagi elementlar yig'indisi: {sum_of_list}")
 ```
 
-`max()` **funksiyasi:** Ro'yxatdagi eng katta qiymatni qaytaradi.
+### ✳️ max()
+
+📌 Listdagi eng katta qiymatni qaytaradi.
 
 ```python
-# Ro'yxatdagi eng katta qiymatni topish
+# Sonlardan iborat list
+my_list = [10, 20, 30, 40, 50]
+
+# max() funksiyasi listdagi eng katta qiymatni qaytaradi
 max_value = max(my_list)
+
+# Natijani ekranga chiqaramiz
 print(f"Ro'yxatdagi eng katta qiymat: {max_value}")
 ```
 
-`min()` **funksiyasi:** Ro'yxatdagi eng kichik qiymatni qaytaradi.
+### ✳️ min()
+
+📌 Listdagi eng kichik qiymatni qaytaradi.
 
 ```python
-# Ro'yxatdagi eng kichik qiymatni topish
+# Sonlardan iborat list
+my_list = [10, 20, 30, 40, 50]
+
+# min() funksiyasi listdagi eng kichik qiymatni qaytaradi
 min_value = min(my_list)
+
+# Natijani ekranga chiqaramiz
 print(f"Ro'yxatdagi eng kichik qiymat: {min_value}")
 ```
 
-### `.range()` FUNKSIYASI
+## ✅ range()
 
 Bu funktsiya yordamida biz ma'lum oraliqdagi sonlar ketma-ketligini yaratishimiz mumkin. 
 `list()` funktsiyasi yordamida esa bu oraliqni ro'yxat shaklida saqlab olamiz:
 
 ```python
-sonlar = list(range(0,10)) # 
+# 0 dan 9 gacha bo‘lgan sonlar ro‘yhatini yaratamiz
+sonlar = list(range(0, 10))
+
+# Natijani ekranga chiqaramiz
 print(sonlar)
 ```
-**Natija:** `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
-
-Yuqoridagi misolda `range(0,10)` funktsiyasi 0 dan 9 gacha sonlar ketma-ketligini shakllantirdi, `list(range(0,9))` esa bu ketma-ketlikni ro'yxatga aylantirdi.
 
 > [!CAUTION]
-> Diqqat! E'tibor qiling 
-`range()` funktsiyasi ikkinchi indeksdan bitta avval to'xtaydi.
+> range(a, b) funksiyasi doim `a` dan boshlanadi, `b` dan bitta oldin to‘xtaydi.
 
-`range()` yordamida qadamni ham berishimiz mumkin:
+### ✳️ STEP
 
 ```python
-juft_sonlar = list(range(0,20,2)) # 0 dan 20 gacha 2 qadam bilan
-toq_sonlar = list(range(1,20,2))  # 1 dan 20 gacha 2 qadam bilan
+# 0 dan 20 gacha (20 kirmaydi), har 2 qadam bilan — juft sonlar
+juft_sonlar = list(range(0, 20, 2))
+
+# 1 dan 20 gacha (20 kirmaydi), har 2 qadam bilan — toq sonlar
+toq_sonlar = list(range(1, 20, 2))
+
+# Juft sonlarni ekranga chiqaramiz
 print("Juft sonlar: ", juft_sonlar)
+
+# Toq sonlarni ekranga chiqaramiz
 print("Toq sonlar: ", toq_sonlar)
 ```
-**Natija:**
-**Juft sonlar:** `[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]`
-**Toq sonlar:** `[1, 3, 5, 7, 9, 11, 13, 15, 17, 19] `
+
 
 > [!NOTE]
-> Agar sonlar ketma-ketligi `0` dan boshlansa, `range()` funktsiyasida yakuniy indeksni ko'rsatish kifoya. Misol uchun `range(0,10)` emas `range(10)` deb yozsak ham bo'laveradi.
+> Agar siz `0` dan boshlamoqchi bo‘lsangiz, `range(10)` deb yozish yetarli:
+
+### NEGATIVE STEP
+
+📌 Agar siz kamayib boruvchi sonlar ketma-ketligini istasangiz, `step` qiymatini manfiy qiling:
+
+```python
+# 10 dan 1 gacha kamayuvchi sonlar ro'yxatini yaratamiz
+kamayuvchi = list(range(10, 0, -1))
+
+# Natijani ekranga chiqaramiz
+print(kamayuvchi)
+```
 
 
 ## AMALIYOT
-1. **Ro'yhat yaratish va elementga murojat qilish.**
-    - Quyidagi elementlarga ega bo'lgan ro'yxatni yarating: `'olma'`, `'banan'`, `'gilos'`, `'xurmo'`, `'anjir'`.
-    - Ro'yxatning `ikkinchi` va `to'rtinchi` elementlarini oling va ularni terminalga chiqaring.
 
-2. **Ro'yxatni o'zgartirish.**
-    - `1` dan `5` gacha bo'lgan sonlar ro'yxatini yarating.
-    - Ro'yxatdagi `uchinchi` elementni `10` ga almashtiring va yangilangan ro'yxatni terminalga chiqaring.
+# 🐍 Python Lists — Amaliy Topshiriqlar
 
-3. **Element qo'shish va o'chirish.**
-    - Bo'sh ro'yxat yarating.
-    - Ro'yxatga `'dog'`, `'cat'` va `'chicken'` elementlarini qo'shing.
-    - Ro'yxatdan `'cat'` ni `o'chiring` va natijani terminalga chiqaring.
+Quyidagi 15 ta topshiriq orqali `list` mavzusini mustahkamlaysiz. Har bir mashqni alohida bajaring va natijani `print()` yordamida terminalda ko‘ring.
 
-4. **Ro'yxat uzunligini topish.**
-    - Quyidagi elementlarga ega ro'yxat yarating: `'red'`, `'green'`, `'blue'`, `'yellow'`, `'purple'`.
-    - Ro'yxatning `uzunligini` toping va terminalga chiqaring.
+---
 
-5. **Ro'yxatlarni birlashtirish.**
-    - Quyidagi ikkita ro'yxatni yarating:
-        - Ro'yxat1: `['a', 'b', 'c']`
-        - Ro'yxat2: `['d', 'e', 'f']`
-    - Ikkala ro'yxatni birlashtiring va natijani terminalga chiqaring.
+## 1. Ro'yxat yaratish va elementga murojaat qilish
 
-6. **Elementning mavjudligini tekshirish.**
-    - Quyidagi ro'yxatni yarating: `['mashina', 'avtobus', 'velosiped', 'poyezd']`
-    - Ro'yxatda `'avtobus'` bor-yo'qligini tekshiring va natijani terminalga chiqaring `(True/False)`.
+- Quyidagi elementlarga ega bo‘lgan ro'yxatni yarating: `'olma'`, `'banan'`, `'gilos'`, `'xurmo'`, `'anjir'`.
+- Ro'yxatning **ikkinchi** va **to‘rtinchi** elementlarini terminalga chiqaring.
 
-7. **Ro'yxatni saralash.**
-    - Quyidagi sonlardan iborat ro'yxat yarating: `[3, 1, 4, 2, 5]`.
-    - Ro'yxatni `o'sish` tartibida saralang va natijani terminalga chiqaring.
+---
 
-8. **Ro'yxatdagi elementlarni teskari tartibda Terminalga chiqarish.**
-    - Quyidagi ro'yxatni yarating: `[10, 20, 30, 40, 50]`.
-    - Ro'yxatni `teskari` tartibda terminalga chiqaring (`reverse`).
+## 2. Ro'yxatni o‘zgartirish
 
-9. **Ro'yxatni tozalash.**
-    - Quyidagi ro'yxatni yarating: `['kitob', 'qalam', 'daftar', 'sumka']`.
-    - Ro'yxatni tozalang (`hamma elementlarni o'chiring`) va bo'sh ro'yxatni terminalga chiqaring.
+- `1` dan `5` gacha bo‘lgan sonlar ro'yxatini yarating.
+- Ro'yxatdagi **uchinchi** elementni `10` ga almashtiring va natijani chiqaring.
 
-10. **Ro'yxat elementlarini ko'paytirish.**
-    - Ro'yxat yarating: `[1, 2, 3]`.
-    - Ro'yxat elementlarini `4` marta ko'paytiring va natijani terminalga chiqaring.
+---
 
-11. **Minimal va Maksimal qiymatni topish.**
-    - Quyidagi ro'yxatni yarating: `[25, 17, 9, 50, 33]`.
-    - Ro'yxatdagi `eng kichik` va `eng katta` qiymatni toping va terminalga chiqaring.
+## 3. Element qo‘shish va o‘chirish
 
-12. **Ro'yxatni Nusxalash.**
-    - Quyidagi ro'yxatni yarating: `[100, 200, 300, 400, 500]`.
-    - Ushbu ro'yxatdan `nusxa` ko'chiring va `yangi` ro'yxatni qaytaring.
+- Bo‘sh ro'yxat yarating.
+- Ro'yxatga `'dog'`, `'cat'`, `'chicken'` elementlarini qo‘shing.
+- `'cat'` elementini o‘chirib, ro'yxatni chiqaring.
 
+---
+
+## 4. Ro'yxat uzunligini topish
+
+- Ro'yxat: `'red'`, `'green'`, `'blue'`, `'yellow'`, `'purple'`.
+- Ro'yxatning uzunligini hisoblab, terminalga chiqaring.
+
+---
+
+## 5. Ro'yxatlarni birlashtirish
+
+- Ikkita ro'yxat yarating:
+  - `['a', 'b', 'c']`
+  - `['d', 'e', 'f']`
+- Ularni birlashtirib, yangi ro'yxatni terminalga chiqaring.
+
+---
+
+## 6. Element mavjudligini tekshirish
+
+- Ro'yxat: `['mashina', 'avtobus', 'velosiped', 'poyezd']`
+- `'avtobus'` ro'yxatda bormi? Tekshirib natijani (`True` yoki `False`) chiqaring.
+
+---
+
+## 7. Ro'yxatni saralash
+
+- Ro'yxat: `[3, 1, 4, 2, 5]`
+- O'sish tartibida saralang va natijani chiqaring.
+
+---
+
+## 8. Teskari tartibda chiqarish
+
+- Ro'yxat: `[10, 20, 30, 40, 50]`
+- `.reverse()` metodi yordamida ro'yxatni teskari chiqarish.
+
+---
+
+## 9. Ro'yxatni tozalash
+
+- Ro'yxat: `['kitob', 'qalam', 'daftar', 'sumka']`
+- `.clear()` yordamida barcha elementlarni o‘chirib, natijani chiqaring.
+
+---
+
+## 10. Ro'yxatni ko‘paytirish
+
+- Ro'yxat: `[1, 2, 3]`
+- Ro'yxatni `4` marta ko‘paytirib, yangi ro'yxatni terminalga chiqaring.
+
+---
+
+## 11. Minimal va maksimal qiymatni topish
+
+- Ro'yxat: `[25, 17, 9, 50, 33]`
+- `min()` va `max()` funksiyalari yordamida eng kichik va eng katta qiymatlarni toping.
+
+---
+
+## 12. Ro'yxatni nusxalash
+
+- Ro'yxat: `[100, 200, 300, 400, 500]`
+- Nusxa ko‘chiring (`copy()`) va yangi ro'yxatni chiqarib ko‘rsating.
+
+---
+
+## 13. Ro'yxatdagi elementlar yig‘indisi
+
+- Ro'yxat: `[2, 4, 6, 8, 10]`
+- `sum()` funksiyasi orqali yig‘indini hisoblang va natijani chiqaring.
+
+---
+
+## 14. Slicing va step ishlatish
+
+- Ro'yxat: `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+- Har ikkinchi elementni ajratib olib, yangi ro'yxat hosil qiling.
+
+---
+
+## 15. Multi-dimensional listdan element olish
+
+- Ro'yxat: `[[1, 2], [3, 4], [5, 6]]`
+- Ikkinchi ichki ro'yxatdagi ikkinchi elementni (`4`) terminalga chiqaring.
+
+---
