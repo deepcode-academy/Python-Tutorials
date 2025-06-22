@@ -276,36 +276,43 @@ my_list.clear()
 print(my_list)  # []
 ```
 
-### RO'YHATNI SARALASH
+## ✅ LISTNI SARALASH
 
-Ro'yhatni saralash uchun `.sort()` metodidan foydalanamiz. `.sort()` metodi ro'yhatimiz raqamlardan iborat bo'lsa o'sib borish tartibida saralaydi, agar ro'yhatimiz stringdan(harflardan) tashkil topgan bo'lsa alifbo tartibida saralaydi.
+📌 Python dasturlash tilida listdagi elementlarni tartiblash uchun ikkita asosiy vosita mavjud: `.sort()` metodi va `sorted()` funksiyasi. Ularning ikkalasi ham listni tartiblash uchun ishlatiladi, lekin ular orasida muhim farqlar bor. Tartiblashda raqamlar o'sib borish tartibida, matnlar esa alifbo tartibida tartiblanadi.
 
-Pythonda ro'yxatlar bilan ishlashda `sort()` va `sorted() `metodlari mavjud bo'lib, ularning farqlari quyidagicha:
 
-#### `.sort()` metodi
-- `sort()` metodi ro'yxatni o'zida o'zgartiradi (`in-place`). Bu metod chaqirilganda asl ro'yxat o'zgartiriladi va yangi ro'yxat yaratilmaydi.
 
-- sort() metodi faqat ro'yxatlar (lists) uchun mavjud.
+### ✳️ .sort()
+
+📌 `.sort()` — bu listning o‘ziga tegishli metod bo‘lib, u faqat listlar bilan ishlaydi. Agar siz `.sort()` metodini ishlatsangiz, u listning o‘zini tartiblaydi, ya’ni listdagi e'lementlar joyida o‘zgaradi. Boshqacha aytganda, bu metod listni o‘zgartiradi va tartiblangan yangi list yaratmaydi. Misol uchun, sizda bir list bo‘lsa va `.sort()` desangiz, o‘sha list tartiblanadi va avvalgi tartibi yo‘qoladi. Shuning uchun, agar sizga asl list kerak bo‘lsa, `.sort()`ni ishlatishdan oldin ehtiyot bo‘lish kerak, chunki u listni butunlay o‘zgartirib yuboradi. Bu metod hech qanday natija qaytarmaydi, ya’ni `None` degan qiymatni qaytaradi.
 
 ```python
-my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+# Boshlang'ich ro'yxat: aralash tartibda sonlar mavjud
+my_list = [3, 1, 4, 1, 5, 9, 2]
+
+# sort() metodi ro'yxatni o'sish tartibida (kichikdan kattaga) saralaydi
 my_list.sort()
-print(my_list)
+
+# Tartiblangan ro'yxatni ekranga chiqaramiz
+print(my_list)  # [1, 1, 2, 3, 4, 5, 9]
 ```
 
-#### `.sorted()` funksiyasi
+### ✳️ .sorted()
 
-- `sorted()` funksiyasi asl ro'yxatni o'zgartirmaydi, balki saralangan elementlardan yangi ro'yxat yaratadi va qaytaradi.
-
-- `sorted()` funksiyasi ro'yxat (`lists`) dan tashqari boshqa iteralanadigan (`iterable`) obyektlar bilan ham ishlashi mumkin, masalan, qatorlar (`tuples`), lug'atlar (`dictionaries`), va hokazo.
-
-- `sorted()` funksiyasi saralangan yangi ro'yxatni qaytaradi.
+📌 `sorted()` esa funksiyadir. Bu funksiya faqat `list` emas, balki boshqa turdagi ma’lumotlar bilan ham ishlay oladi — masalan, `string`, `tuple` va boshqa tartiblangan ma’lumot turlari bilan. `sorted()` funksiyasining eng katta afzalligi — u mavjud listni o‘zgartirmaydi. U asl listga tegmaydi, balki yangi tartiblangan listni qaytaradi. Bu esa sizga asl ma’lumotni saqlab qolgan holda, tartiblangan nusxasi bilan ishlash imkonini beradi. Agar sizga vaqtincha tartiblangan natija kerak bo‘lsa yoki original listni o‘zgartirmasdan ishlashni xohlasangiz, `sorted()` funksiyasi aynan sizga mos keladi.
 
 ```python
+# Boshlang'ich ro'yxat: aralash tartibdagi sonlar
 my_list = [3, 1, 4, 1, 5, 9]
+
+# sorted() funksiyasi yangi tartiblangan ro'yxat yaratadi, asl ro'yxat o'zgarmaydi
 sorted_list = sorted(my_list)
-print(sorted_list)  # [1, 1, 3, 4, 5, 9]
-print(my_list)      # [3, 1, 4, 1, 5, 9]
+
+# Yangi (saralangan) ro'yxatni chiqaramiz
+print("Yangi ro‘yxat:", sorted_list)  # [1, 1, 3, 4, 5, 9]
+
+# Asl ro'yxat o'zgarishsiz qolganini ko'rsatamiz
+print("Asl ro‘yxat:", my_list)        # [3, 1, 4, 1, 5, 9]
 ```
 
 #### Qo'shimcha parametrlar
