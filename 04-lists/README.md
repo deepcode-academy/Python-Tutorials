@@ -27,29 +27,30 @@
 
 
 
-### LIST YARATISH
+## ✅ LIST YARATISH
 
 ```python
-# elementlar bilan list yaratish
+# Bir nechta elementli list
 my_list = [10, "DeepCode", True, 3.14]
-print(my_list)
-```
 
-```python
-# bo'sh list yaratish
+# Bo‘sh list
 empty_list = []
 ```
 
-### LIST ELEMENTLARIGA MUROJAT QILISH
+## ✅ LIST ELEMENTLARIGA MUROJAT QILISH
 
 1. Indeks orqali murojaat qilish
 
-Listdagi har bir element o‘zining indeks raqami bilan tartiblanadi. Pythonda indekslash `0` dan boshlanadi.
+📌 Listdagi har bir element o‘zining indeks raqami bilan tartiblanadi. Pythonda indekslash `0` dan boshlanadi.
 
 ```python
+# Mevalar ro'yxatini yaratamiz
 fruits = ['olma', 'banan', 'gilos', 'shaftoli']
 
+# Ro'yxatdagi birinchi elementni (0-indeks) ekranga chiqaramiz
 print(fruits[0])  # 'olma'
+
+# Ro'yxatdagi uchinchi elementni (2-indeks) ekranga chiqaramiz
 print(fruits[2])  # 'gilos'
 ```
 
