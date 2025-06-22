@@ -1,12 +1,11 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 RO'YHATLAR (LISTS)
+# 🧩 LISTS
 
 
-## PYTHONDA LISTS BILAN ISHLASH
+## ✅ PYTHONDA LISTSLAR BILAN ISHLASH
 
-> [!NOTE]
-> **List** - bu Pythondagi eng ko‘p ishlatiladigan ma’lumot turi bo‘lib, bir nechta qiymatlarni bitta o‘zgaruvchida saqlashga yordam beradi.
+📌 LIST — bu bir nechta ma'lumotlarni bitta o‘zgaruvchida **navbatma-navbat** saqlash uchun ishlatiladigan ma'lumot turi.
 
 ### LIST YARATISH
 
