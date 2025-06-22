@@ -363,6 +363,8 @@ print(names)  # ['Ali', 'Zafar', 'Islom', 'Muhammad']
 
 ## ✅ LISTNI TESKARIGA O'ZGARTIRISH
 
+### ✳️ .reverse()
+
 📌 Ba'zida ro‘yxatdagi elementlarni teskari tartibda ko‘rsatish kerak bo‘ladi — ya'ni oxirgi element birinchi, birinchi element esa oxirgi bo‘ladi.
 
 ```python
@@ -431,26 +433,37 @@ print(list1)  # [1, 2, 3, 4, 5, 6]
 ```
 
 
-### RO'YHAT ICHIDAGI RO'YHAT
+## ✅ MULTI DEMENSIONAL LIST
 
-Pythonda ro'yxatlar ichidagi ro'yxatlar, ya'ni `ko'p o'lchovli ro'yxatlar` yaratish va ulardan foydalanish juda oddiy. Quyida bunday ro'yxatlar bilan qanday ishlashni ko'rsatib beraman.
+📌 Pythonda list ichiga yana boshqa list joylash mumkin. Bu holat **multi dimensional list** deb ataladi (inglizchasiga o‘xshab "2D list" ham deyiladi).
 
 ```python
+# Bu multi-dimensional list (ya'ni list of lists) — har bir element o'z ichida yana bir list saqlaydi
 multi_dimensional_list = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [1, 2, 3],   # 0-index: birinchi inner list
+    [4, 5, 6],   # 1-index: ikkinchi inner list
+    [7, 8, 9]    # 2-index: uchinchi inner list
 ]
 ```
 
-#### Elementlarga murojaat qilish
+### ✳️ E'LEMENTLARGA MUROJAT QILISH
 
 Ro'yxat ichidagi ro'yxatdagi elementlarga indekslar yordamida murojaat qilish mumkin.
 
 ```python
-print(multi_dimensional_list[0][2])  # 3
+# List of lists (ya'ni list ichidagi list)
+matrix = [
+    [1, 2, 3],   # 0-index row
+    [4, 5, 6],   # 1-index row
+    [7, 8, 9]    # 2-index row
+]
+
+# Faqat bitta row'ni (masalan: 1-chi row) chiqaramiz
+print("1-chi row:", matrix[1])  # [4, 5, 6]
+
+# Endi shu row ichidan bitta elementni chiqaramiz (masalan: 2-chi element)
+print("1-chi rowdagi 2-chi element:", matrix[1][1])  # 5
 ```
-Yuqoridagi kodda `0` indexda turgan ro'yhatni tanlab oldim va tanlangan ro'yhatning ichidagi `2` indexda turgan elementga murojat qildim.
 
 Ro'yxatlar ichidagi ro'yxatlarga yangi ro'yxat qo'shish mumkin:
 
