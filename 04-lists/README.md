@@ -39,7 +39,7 @@ empty_list = []
 
 ## ✅ LIST ELEMENTLARIGA MUROJAT QILISH
 
-1. Indeks orqali murojaat qilish
+### 1. INDEX ORQALI MUROJAT QILISH
 
 📌 Listdagi har bir element o‘zining indeks raqami bilan tartiblanadi. Pythonda indekslash `0` dan boshlanadi.
 
@@ -54,27 +54,36 @@ print(fruits[0])  # 'olma'
 print(fruits[2])  # 'gilos'
 ```
 
-2. Negative Indexing
+### 2. NEGATIVE INDEXING
 
-Pythonda oxirgi elementga manfiy indekslar yordamida murojaat qilinadi.
+📌 Pythonda oxirgi elementga manfiy indekslar yordamida murojaat qilinadi.
 
 ```python
+# Mevalar ro'yxatini yaratamiz
 fruits = ['olma', 'banan', 'gilos', 'shaftoli']
 
+# Ro'yxatdagi oxirgi elementni (manfiy indeks -1) ekranga chiqaramiz
 print(fruits[-1])  # 'shaftoli'
+
+# Ro'yxatdagi oxiridan ikkinchi elementni (manfiy indeks -2) ekranga chiqaramiz
 print(fruits[-2])  # 'gilos'
 ```
-`-1` — oxirgi element, `-2` — oxirgi elementdan oldingisi va hokazo.
 
-3. Slicing
+### 3. SLICING
 
-Listning ma’lum qismini olish uchun slicing ishlatiladi: `list[start:stop]`
+📌 Listning ma’lum qismini olish uchun slicing ishlatiladi: `list[start:stop]`
 
 ```python
+# Mevalar ro'yxatini yaratamiz
 fruits = ['olma', 'banan', 'gilos', 'shaftoli']
 
+# Indeks 1 dan boshlab 3 gacha bo'lgan elementlarni olish (3-indeks kirmaydi)
 print(fruits[1:3])  # ['banan', 'gilos']
+
+# Boshlanishi avtomatik 0 deb olinadi, 0 dan 2 gacha bo'lgan elementlar (2-indeks kirmaydi)
 print(fruits[:2])   # ['olma', 'banan']
+
+# Indeks 2 dan boshlab oxirigacha bo'lgan elementlarni olish
 print(fruits[2:])   # ['gilos', 'shaftoli']
 ```
 
