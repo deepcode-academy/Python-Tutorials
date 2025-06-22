@@ -452,10 +452,10 @@ Ro'yxat ichidagi ro'yxatdagi elementlarga indekslar yordamida murojaat qilish mu
 
 ```python
 # List of lists (ya'ni list ichidagi list)
-matrix = [
-    [1, 2, 3],   # 0-index row
-    [4, 5, 6],   # 1-index row
-    [7, 8, 9]    # 2-index row
+multi_dimensional_list = [
+    [1, 2, 3],   # 0-index: birinchi inner list
+    [4, 5, 6],   # 1-index: ikkinchi inner list
+    [7, 8, 9]    # 2-index: uchinchi inner list
 ]
 
 # Faqat bitta row'ni (masalan: 1-chi row) chiqaramiz
@@ -465,44 +465,73 @@ print("1-chi row:", matrix[1])  # [4, 5, 6]
 print("1-chi rowdagi 2-chi element:", matrix[1][1])  # 5
 ```
 
-Ro'yxatlar ichidagi ro'yxatlarga yangi ro'yxat qo'shish mumkin:
+### ✳️ E'LEMENT QO'SHISH
 
 ```python
+# List of lists (multi-dimensional list)
+multi_dimensional_list = [
+    [1, 2, 3],   # 0-index: birinchi ichki list (row)
+    [4, 5, 6],   # 1-index: ikkinchi ichki list (row)
+    [7, 8, 9]    # 2-index: uchinchi ichki list (row)
+]
+
+# append() metodi yordamida butun bir yangi ichki list (row) qo‘shiladi
 multi_dimensional_list.append([10, 11, 12])
+
+# Yangi list'ni ekranga chiqaramiz
 print(multi_dimensional_list)
 ```
 
-Ro'yhat ichidagi ro'yhatlarni o'zgartirish mumkin:
+### ✳️ E'LEMENT O'ZGARTIRISH
 
 ```python
+# Boshlang'ich list of lists (multi-dimensional list)
+multi_dimensional_list = [
+    [1, 2, 3],   # 0-index
+    [4, 5, 6],   # 1-index
+    [7, 8, 9]    # 2-index
+]
+
+# 0-indexdagi ichki listni yangisi bilan almashtiramiz
 multi_dimensional_list[0] = [13, 14, 15]
+
+# Natijani chiqaramiz
 print(multi_dimensional_list)
 ```
 
-Ma'lum bir ichki ro'yxat elementini o'zgartirish mumkin:
+### ✳️ ICHKI E'LEMENTNI O'ZGARTIRISH
 
 ```python
+# Multi-dimensional list (list ichida listlar)
+multi_dimensional_list = [
+    [1, 2, 3],   # 0-index row
+    [4, 5, 6],   # 1-index row
+    [7, 8, 9]    # 2-index row
+]
+
+# 1-index row (ya'ni [4, 5, 6]) dagi 1-index elementni (ya'ni 5) 99 bilan almashtiramiz
 multi_dimensional_list[1][1] = 99
+
+# Natijani chiqaramiz
 print(multi_dimensional_list)
 ```
 
-### RO'YHATNI KO'PAYTIRISH
-
-```python
-my_list = [1, 2, 3]
-multiplied_list = my_list * 3
-print(multiplied_list)
-```
 
 ### RO'YHATDA E'LEMENT BORLIGINI TEKSHIRISH
 
-Python'da ro'yxat ichida element borligini tekshirish uchun `in` operatoridan foydalanish mumkin. Bu operator juda sodda va qulay bo'lib, ro'yxat ichida ma'lum bir elementning mavjudligini aniqlash imkonini beradi.
+📌 Pythonda list ichida ma’lum bir e'lement bor yoki yo‘qligini tekshirish uchun `in` operatoridan foydalaniladi.
 
 ```python
+# Oddiy list
 my_list = [1, 2, 3, 4, 5]
+
+# 3 elementi my_list ichida mavjudmi? → Ha, shuning uchun natija: True
 print(3 in my_list)  # True
+
+# 6 elementi my_list ichida mavjudmi? → Yo‘q, shuning uchun natija: False
 print(6 in my_list)  # False
 ```
+
 ### QO'SHIMCHA FUNKSIYALAR
 
 Python dasturlash tilida ro'yxatlar bilan ishlashda quyidagi funksiyalar yordamida ro'yxatdagi elementlarni `qo'shish`, `maksimal` va `minimal` qiymatlarni topish mumkin:
