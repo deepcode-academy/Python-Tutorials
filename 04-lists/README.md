@@ -355,6 +355,21 @@ my_list.reverse()
 print(my_list)
 ```
 
+## ✅ QO'SHIMCHA PARAMETR
+
+### ✳️ KEY
+
+```python
+# Ismlar ro'yxati: har xil uzunlikdagi so'zlardan iborat
+names = ['Ali', 'Muhammad', 'Zafar', 'Islom']
+
+# sort() metodi va key=len parametri yordamida ro'yxatni so'z uzunligi bo'yicha o'sish tartibida saralaymiz
+names.sort(key=len)
+
+# Saralangan ro'yxatni chiqaramiz
+print(names)  # ['Ali', 'Zafar', 'Islom', 'Muhammad']
+```
+
 ### RO'YHATNI BIRLASHTIRISH
 
 Pythonda ro'yhatlarni birlashtirishni bir nechta usullari bor. Quyida ularga misollar ko'ramiz:
