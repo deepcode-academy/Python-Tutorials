@@ -100,9 +100,9 @@ print(fruits[::2])   # ['olma', 'gilos']
 print(fruits[::-1])  # ['shaftoli', 'gilos', 'banan', 'olma']
 ```
 
-### FINDING THE LENGTH OF A LIST
+## ✅ FINDING THE LENGTH OF A LIST
 
-List uzunligi — bu list ichidagi elementlar soni. Pythonda list uzunligini aniqlash uchun `len()` funksiyasi ishlatiladi.
+📌List uzunligi degani — list ichida nechta element (ya'ni qiymat) borligini bildiradi. Pythonda bu uzunlikni `len()` funksiyasi yordamida topamiz.
 
 ```python
 # companies listini ichida nechta element borligini hisoblash
