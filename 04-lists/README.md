@@ -189,33 +189,52 @@ my_list += [4, 5]
 print(my_list)  # [1, 2, 3, 4, 5]
 ```
 
-### E'LEMENTLARNI O'CHIRISH
+## ✅ E'LEMENTLARNI O'CHIRISH
 
-- **Belgilangan elementni o'chirish:** `.remove()`
-    - Bu usul ro'yxatdan kiritilgan qiymatga teng bo'lgan birinchi uchragan elementni o'chiradi.
+### ✳️ .remove(x)
+
+📌 list ichida siz ko‘rsatgan qiymatga teng bo‘lgan birinchi elementni o‘chiradi.
+
 
 ```python
+# Dastlabki list: bir nechta sonlar mavjud, jumladan ikki marta 3 soni
 my_list = [1, 2, 3, 4, 3, 5]
-my_list.remove(3)  # Ro'yxatdan birinchi 3 ni o'chiradi
-print(my_list)
-```
-**Natija:** <br>
-```shell
-[1, 2, 4, 3, 5]
+
+# remove() metodi listdan **birinchi uchragan** 3 ni o'chiradi
+my_list.remove(3)
+
+# Yangilangan listni ekranga chiqaramiz
+print(my_list)  # [1, 2, 4, 3, 5]
 ```
 
-- **Oxirgi elementni o'chirish:** `.pop()`
+### ✳️ .pop()
+
+📌 Agar `.pop()` funksiyasiga hech narsa bermasangiz, oxirgi elementni o‘chiradi.
 
 ```python
+# Dastlabki ro'yxatni yaratamiz
+my_list = [10, 20, 30, 40, 50]
+
+# pop() metodi ro'yxatning oxirgi elementini (50) o'chirib tashlaydi
 my_list.pop()
-print(my_list)
+
+# Yangilangan ro'yxatni ekranga chiqaramiz
+print(my_list)  # [10, 20, 30, 40]
 ```
 
-- **Indeks bo'yicha elementni o'chirish:** `.pop(index)`
+### ✳️ .pop(i)
+
+📌  Aniq indexdagi elementni o‘chiradi
 
 ```python
-my_list.pop(0)  # Birinchi elementni o'chirish
-print(my_list)
+# Boshlang'ich ro'yxat: 10, 20, 30, 40
+my_list = [10, 20, 30, 40]
+
+# pop(1) metodi ro'yxatdagi 1-indeksdagi elementni (ya'ni 20 ni) o'chiradi
+my_list.pop(1)
+
+# Yangilangan ro'yxatni ekranga chiqaramiz
+print(my_list)  # [10, 30, 40]
 ```
 
 ### RO'YHATNI TOZALASH
