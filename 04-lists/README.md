@@ -237,13 +237,43 @@ my_list.pop(1)
 print(my_list)  # [10, 30, 40]
 ```
 
-### RO'YHATNI TOZALASH
+### ✳️ del
 
-Ro'yhatni tozalash uchun `.clear()` metodidan foydalanamiz.
+📌 Istalgan element yoki butun listni o‘chiradi
 
 ```python
+# Boshlang'ich ro'yxat: 4 ta harf mavjud
+my_list = ['a', 'b', 'c', 'd']
+
+# del operatori yordamida ro'yxatdagi 2-indeksdagi element ('c') ni o‘chiramiz
+del my_list[2]
+
+# Ro'yxat yangilanadi: endi ['a', 'b', 'd'] bo'ladi
+print("1-element o‘chirilgan ro‘yhat:", my_list)  # ['a', 'b', 'd']
+
+# Ro'yxatni qaytadan yaratamiz
+my_list = ['a', 'b', 'c', 'd']
+
+# del operatori yordamida butun ro'yxatni (ya'ni my_list o'zgaruvchisini) o‘chiramiz
+del my_list
+
+# Bu yerda my_list endi mavjud emas, agar pastda print(my_list) desangiz — xatolik (NameError) chiqadi
+# print(my_list)  # ❌ NameError: name 'my_list' is not defined
+```
+
+## ✅ LISTNI TOZALASH
+
+📌 Agar list ichidagi hamma elementlarni o‘chirib, uni bo‘sh holatga keltirmoqchi bo‘lsangiz, `.clear()` metodidan foydalaniladi.
+
+```python
+# Boshlang'ich ro'yxat: 1 dan 5 gacha sonlar mavjud
+my_list = [1, 2, 3, 4, 5]
+
+# clear() metodi ro'yxatdagi barcha elementlarni o‘chiradi (lekin ro'yxatning o‘zi qoladi, bo‘sh holatda)
 my_list.clear()
-print(my_list)
+
+# Bo‘sh ro'yxatni ekranga chiqaramiz
+print(my_list)  # []
 ```
 
 ### RO'YHATNI SARALASH
