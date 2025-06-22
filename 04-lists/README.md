@@ -315,27 +315,33 @@ print("Yangi ro‘yxat:", sorted_list)  # [1, 1, 3, 4, 5, 9]
 print("Asl ro‘yxat:", my_list)        # [3, 1, 4, 1, 5, 9]
 ```
 
-#### Qo'shimcha parametrlar
+## ✅ TESKARI TARTIBDA SARALASH
 
-- `key` parametri: Elementlarni solishtirish uchun qo'shimcha funksiyani belgilash imkonini beradi.
-
-- `reverse` parametri: Saralash tartibini belgilaydi (True bo'lsa, teskari tartibda saralanadi).
-
-`.sort()` metodi bilan
+### ✳️ .sort(reverse=True)
 
 ```python
+# Boshlang'ich ro'yxat: aralash sonlar mavjud
 my_list = [3, 1, 4, 1, 5, 9]
+
+# sort() metodi orqali ro'yxatni kamayish tartibida tartiblaymiz
 my_list.sort(reverse=True)
+
+# Tartiblangan ro'yxatni ekranga chiqaramiz
 print(my_list)  # [9, 5, 4, 3, 1, 1]
 ```
 
-`.sorted()` funksiyasi bilan
+
+### ✳️ sorted(..., reverse=True)
 
 ```python
+# Boshlang'ich ro'yxat: aralash sonlar mavjud
 my_list = [3, 1, 4, 1, 5, 9]
+
+# sorted() funksiyasi ro'yxatni kamayish tartibida tartiblaydi va yangi ro'yxat qaytaradi
 sorted_list = sorted(my_list, reverse=True)
-print(sorted_list)  # [9, 5, 4, 3, 1, 1]
-print(my_list)      # [3, 1, 4, 1, 5, 9]
+
+# Teskari tartiblangan yangi ro'yxatni chiqaramiz
+print("Teskari ro‘yxat:", sorted_list)  # [9, 5, 4, 3, 1, 1]
 ```
 
 
