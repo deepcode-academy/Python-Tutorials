@@ -344,17 +344,6 @@ sorted_list = sorted(my_list, reverse=True)
 print("Teskari ro‘yxat:", sorted_list)  # [9, 5, 4, 3, 1, 1]
 ```
 
-
-### RO'YHATNI TESKARIGA O'ZGARTIRISH
-
-Ba'zida ro'yxatni aylantirish (boshini oxiriga, oxirini boshiga) talab qilinishi mumkin. Buning uchun 
-`.reverse()` metodidan foydalanamiz.
-
-```python
-my_list.reverse()
-print(my_list)
-```
-
 ## ✅ QO'SHIMCHA PARAMETR
 
 ### ✳️ KEY
@@ -368,6 +357,23 @@ names.sort(key=len)
 
 # Saralangan ro'yxatni chiqaramiz
 print(names)  # ['Ali', 'Zafar', 'Islom', 'Muhammad']
+```
+
+
+
+## ✅ LISTNI TESKARIGA O'ZGARTIRISH
+
+📌 Ba'zida ro‘yxatdagi elementlarni teskari tartibda ko‘rsatish kerak bo‘ladi — ya'ni oxirgi element birinchi, birinchi element esa oxirgi bo‘ladi.
+
+```python
+# Boshlang'ich ro'yxat: 1 dan 5 gacha bo'lgan sonlar
+my_list = [1, 2, 3, 4, 5]
+
+# reverse() metodi ro'yxat elementlarini teskari tartibda joylashtiradi
+my_list.reverse()
+
+# Teskari tartibga keltirilgan ro'yxatni ekranga chiqaramiz
+print(my_list)  # [5, 4, 3, 2, 1]
 ```
 
 ### RO'YHATNI BIRLASHTIRISH
