@@ -7,6 +7,17 @@
 
 📌 LIST — bu bir nechta ma'lumotlarni bitta o‘zgaruvchida **navbatma-navbat** saqlash uchun ishlatiladigan ma'lumot turi.
 
+## ✅ LISTNING ASOSIY XUSUSIYATLARI
+
+✳️ Bir nechta qiymatni bitta joyda saqlaydi
+
+✳️ Har bir qiymatning tartib raqami (index) bo‘ladi (0 dan boshlanadi)
+
+✳️ Istalgan turdagi ma’lumotlar (son, matn, True/False) saqlanishi mumkin
+
+✳️ O‘zgartirish mumkin (ya'ni listdagi ma’lumotlarni qo‘shish, o‘chirish, almashtirish mumkin)
+
+
 ### LIST YARATISH
 
 ```python
