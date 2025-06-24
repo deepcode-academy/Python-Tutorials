@@ -3,7 +3,7 @@
 # 🧩 5-DARS TUPLES
 
 
-Qatorlar (`tuples`) Pythonda `o'zgarmas` ma'lumot tuzilmasi bo'lib, ularni bir marta yaratgandan keyin o'zgartirib bo'lmaydi. Ular ro'yxatlar (`lists`) ga o'xshash, lekin qatorlar bir marta yaratib olingandan keyin o'zgartirilmaydi, ya'ni ularga yangi element qo'shib bo'lmaydi, mavjud elementlarni o'chirib bo'lmaydi yoki o'zgartirib bo'lmaydi. Qatorlar ko'pincha o'zgarmas ma'lumotlar to'plamini saqlash uchun ishlatiladi.
+📌 Tuple — bu Pythonda bir nechta ma’lumotni bitta o‘zgaruvchida saqlash uchun ishlatiladigan o‘zgarmas tuzilma. U dumaloq qavs ichida yoziladi va elementlar vergul bilan ajratiladi. Tuple yaratilgach, uning ichidagi qiymatlarni o‘zgartirib, o‘chirib yoki yangisini qo‘shib bo‘lmaydi. Undagi ma’lumotlar tartib bilan saqlanadi va indeks orqali chaqiriladi. Tuple listga o‘xshaydi, lekin o‘zgarmasligi bilan farq qiladi. U dasturda tezroq ishlaydi va kamroq xotira egallaydi. O‘zgarmas ma’lumotlarni xavfsiz saqlash uchun tuple juda qulay.
 
 ### TUPLE YARATISH
 
