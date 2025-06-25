@@ -52,42 +52,39 @@ my_set.discard(10)  # Xatolik yo'q, set o'zgarishsiz qoladi
 print(my_set)  # Natija: {1, 2, 4, 5}
 ```
 
+## ✅ SET OPERATSIYALARI
 
-
-### TO'PLAM OPERATSIYALARI
-
-To'plamlarda `.intersection()` metodi ikki yoki undan ortiq to'plamlar(sets) o'rtasida umumiy bo'lgan elementlarni aniqlash uchun ishlatiladi. Bu metodda natija sifatida barcha berilgan to'plamlarda mavjud bo'lgan e'lementlar qaytariladi.
-
-Python dasturlash tilida **to'plamlar**(`sets`) ni kesishishini amalga oshirish uchun bir nechta usullar mavjud:
-1. **`&` operatori:** Kesishish amali uchun maxsus operator.
-2. **`.intersection()` metodi:** Bir yoki bir nechta setlar bilan kesishish amalga oshiriladi.
-
-- `&` operatori orqali ikkita to'plamni tanlab olamiz:
 ```python
+# Ikki set yaratamiz
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
 
-intersection_set = set1 & set2
-print(intersection_set)  # Natija: {3, 4}
-```
-- `.intersection()` metodi:
-```python
-set1 = {1, 2, 3, 4}
-set2 = {3, 4, 5, 6}
-print(set1.intersection(set2))  # {3, 4}
-```
-1-qatorda `set1` nomli to'plam yaratdik. <br>
-2-qatorda `set2` nomli to'plam yaratdik. <br>
-3-qatorda `set1` nomli to'plam uchun `.intersection()` metodiga `set2` nomli to'plamni berdik. Shunda ikkala to'plam ichida bir xil bo'lgan elementlarni chiqaradi.
+# Umumiy elementlarni topamiz (& operatori bilan)
+intersection_result = set1 & set2  # Faqat umumiy elementlar
+print(intersection_result)  # Natija: {3, 4}
 
-- Agar kesishish bo'sh to'plam(set) bilan amalga oshirilsa, natija har doim bo'sh to'plam(set) bo'ladi:
+# intersection() metodi bilan
+print(set1.intersection(set2))  # Natija: {3, 4}
+```
+
+📌 Agar intersection bo‘sh set bilan ishlatilsa, natija ham bo‘sh bo‘ladi.
+
+- Intersection faqat ikkala setda bir vaqtda mavjud bo‘lgan elementlarni qaytaradi.
+    - `set1` da: `{1, 2, 3, 4}`
+    - `empty_set` da: hech narsa yo‘q → `{}`
+    - Demak, ikkala setda mavjud bo‘lgan hech qanday element yo‘q.
+    - Shuning uchun natija — bo‘sh set: `set()`
+
 ```python
 set1 = {1, 2, 3, 4}
 empty_set = set()
 
-intersection_set = set1 & empty_set
-print(intersection_set)  # Natija: set()
+result = set1 & empty_set  # Bo'sh set bilan kesishish
+print(result)  # Natija: set()
 ```
+
+
+
 
 - To'plamlarda `.difference()` metodi bir setdagi elementlarni boshqa setdagi elementlardan chiqarib tashlash uchun ishlatiladi. Natijada birinchi setda bor, lekin ikkinchi (yoki ko'proq) setda yo'q bo'lgan elementlar qaytariladi.
 
