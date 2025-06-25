@@ -5,25 +5,16 @@
 
 📌 Tuple — bu Pythonda bir nechta ma’lumotni bitta o‘zgaruvchida saqlash uchun ishlatiladigan o‘zgarmas tuzilma. U dumaloq qavs ichida yoziladi va elementlar vergul bilan ajratiladi. Tuple yaratilgach, uning ichidagi qiymatlarni o‘zgartirib, o‘chirib yoki yangisini qo‘shib bo‘lmaydi. Undagi ma’lumotlar tartib bilan saqlanadi va indeks orqali chaqiriladi. Tuple listga o‘xshaydi, lekin o‘zgarmasligi bilan farq qiladi. U dasturda tezroq ishlaydi va kamroq xotira egallaydi. O‘zgarmas ma’lumotlarni xavfsiz saqlash uchun tuple juda qulay.
 
-### TUPLE YARATISH
+## ✅ TUPLE YARATISH
 
 ```python
-# Oddiy tuple yaratish
-my_tuple = (1, 2, 3)
-print(my_tuple)  # (1, 2, 3)
+# Uchta meva nomini o‘z ichiga olgan tuple yaratamiz
+fruits = ("apple", "banana", "cherry")
 
-# list dan tuple yaratish
-another_tuple = tuple([4, 5, 6])
-print(another_tuple)  # (4, 5, 6)
-
-# bo'sh tuple yaratish
-empty_tuple = ()
-print(empty_tuple)  # ()
-
-# bitta elementli tuple yaratish uchun vergul qo'yish kerak
-single_element_tuple = (1,)
-print(single_element_tuple)  # (1,)
+# fruits tuple ichidagi barcha elementlarni ekranga chiqaramiz
+print(fruits)
 ```
+
 
 ### TUPLE XUSUSIYATLARI
 - **O'zgarmasligi (Immutable):** `Tuple` yaratilgandan so'ng, uning elementlarini `o'zgartirib` yoki `o'chirib` bo'lmaydi.
