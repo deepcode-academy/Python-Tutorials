@@ -92,9 +92,7 @@ print(my_tuple[-1])  # 50
     - Tupleni takrorlash
 
 
-### ❇️ TUPLELARNI BIRLASHTIRISH
-
-#### ✳️ + OPERATORI
+### ✳️ + OPERATORI
 
 📌 Bu usulda ikkita tuple birga qo‘shiladi va yangi tuple hosil bo‘ladi. Asl tuplelar o‘zgarmaydi.
 
@@ -114,7 +112,7 @@ print(new_tuple)  # (1, 2, 3, 4)
 
 ❗ Yuqorida `tuple1` va `tuple2` o‘zgarmagan holda qoladi, faqat `+` orqali ularning qiymatlari birga qo‘shilib, `new_tuple` degan yangi tuple yaratiladi.
 
-#### ✳️ TAKRORLASH
+### ✳️ TAKRORLASH
 
 📌 Agar bir tuple ni o‘zini o‘ziga birlashtirmoqchi bo‘lsangiz, uni yana o‘zi bilan `+` orqali birlashtirasiz.
 
@@ -129,12 +127,18 @@ result = tuple1 + tuple1
 print(result)  # (1, 2, 3, 1, 2, 3)
 ```
 
-#### TUPLENI BOSHQA MALUMOT TURLARI BILAN BIRLASHTIRISH
+### ❇️ TUPLENI KO'PAYTIRISH (TAKRORLASH)
 
-2. Tupleni ko‘paytirish:
+📌 Tuple o‘zgarmas bo‘lsa ham, uni bir nechta marta takrorlab yangi tuple yaratish mumkin. Buning uchun `*` operatoridan foydalaniladi.
+
 ```python
+# Bitta elementdan iborat tuple yaratilmoqda
 tuple1 = ("hello",)
+
+# Bu tuple 3 marta takrorlanmoqda
 new_tuple = tuple1 * 3
+
+# Natijada yangi tuple hosil bo‘ladi
 print(new_tuple)  # ('hello', 'hello', 'hello')
 ```
 
