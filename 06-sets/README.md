@@ -14,18 +14,25 @@ my_set = set()
 my_set = {1, 2, 3, 4, 5}
 ```
 
-### TO'PLAM(SET)GA E'LEMENT QO'SHISH
-- To'plamga yangi e'lement qo'shish uchun `.add(value)` metodidan foydalaniladi:
-```python
-my_set.add(5)
-print(my_set)  # {1, 2, 3, 4, 5}
-```
-**Natija:** `{1, 2, 3, 4, 5}`
+## ✅ SETGA E'LEMENT QO'SHISH
 
-- To'plamga ko'proq e'lement qo'shish uchun `.update(values)` metodidan foydalanamiz:
+- To'plamga yangi e'lement qo'shish uchun `.add(value)` metodidan foydalaniladi:
+
 ```python
-my_set.update([6, 7, 8])
-print(my_set)  # {1, 2, 4, 5, 6, 7, 8}
+# Set yaratamiz
+my_set = {1, 2, 3}
+
+# Yangi element qo'shamiz
+my_set.add(4)  # 4 element sifatida qo'shiladi
+print(my_set)  # Natija: {1, 2, 3, 4}
+
+# Takroriy element qo'shilsa, set o'zgarmaydi
+my_set.add(3)  # 3 allaqachon mavjud, shuning uchun set o'zgarmaydi
+print(my_set)  # Natija: {1, 2, 3, 4}
+
+# Bir nechta element qo'shamiz
+my_set.update([5, 6, 7])  # 5, 6, 7 elementlari qo'shildi
+print(my_set)  # Natija: {1, 2, 3, 4, 5, 6, 7}
 ```
 
 ### TO'PLAM(SET)DAN E'LEMENT O'CHIRISH
