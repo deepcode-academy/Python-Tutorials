@@ -54,6 +54,10 @@ print(my_set)  # Natija: {1, 2, 4, 5}
 
 ## ✅ SET OPERATSIYALARI
 
+### ❇️ .intersection()
+
+📌 intersection — bu ikki yoki undan ortiq to‘plamdagi umumiy elementlarni topadi. Ya’ni, faqat har ikki setda mavjud bo‘lgan elementlargina natijaga olinadi. Agar biror element faqat bir setda bo‘lsa, u intersectionga kirmaydi. Bu amal orqali “ikkalasi orasida qanday o‘xshashlik bor?” degan savolga javob topiladi.
+
 ```python
 # Ikki set yaratamiz
 set1 = {1, 2, 3, 4}
@@ -83,59 +87,43 @@ result = set1 & empty_set  # Bo'sh set bilan kesishish
 print(result)  # Natija: set()
 ```
 
+### ❇️ .difference()
 
-
-
-- To'plamlarda `.difference()` metodi bir setdagi elementlarni boshqa setdagi elementlardan chiqarib tashlash uchun ishlatiladi. Natijada birinchi setda bor, lekin ikkinchi (yoki ko'proq) setda yo'q bo'lgan elementlar qaytariladi.
-
-Python dasturlash tilida setlar farqini topish oshirish uchun bir nechta usullar mavjud:
-
-- **`-` operatori:** .difference() metodi uchun maxsus operator.
+📌 difference esa farqni topadi. Bu amal birinchi setdagi, lekin ikkinchi setda yo‘q bo‘lgan elementlarni ajratib beradi. Bunda faqat birinchi setga xos elementlar natijaga olinadi, umumiy yoki ikkinchisida mavjud bo‘lganlar olinmaydi. Bu orqali “menda bor, unda yo‘q” degan mantiqqa asoslangan natija olinadi.
 
 ```python
+# Ikkita set yaratamiz
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
 
-difference_set = set1 - set2
-print(difference_set)  # Natija: {1, 2}
+# set1 dan set2 farqi (ya'ni, set1 dagi, ammo set2 da yo'q elementlar)
+diff_result = set1 - set2
+print(diff_result)  # Natija: {1, 2}
+
+# difference() metodi bilan
+print(set1.difference(set2))  # Natija: {1, 2}
 ```
 
-- **`difference()` metodi:** Bir yoki bir nechta to'plamlar(set) farqlarini tekshiradi.
+
+### ❇️ .union()
+
+📌 union esa barcha elementlarni birlashtiradi. Ya’ni, har ikki setdagi barcha elementlar bitta setga yig‘iladi va takrorlanmas holda saqlanadi. Union orqali “ikkovining jamlanmasi” olinadi. Bu amal barcha mavjud ma’lumotlarni umumlashtirish, birlashtirish uchun ishlatiladi.
+
+
 
 ```python
-set1 = {1, 2, 3, 4}
-set2 = {3, 4, 5, 6}
-
-difference_set = set1.difference(set2)
-print(difference_set)  # Natija: {1, 2}
-```
-
-- To'plamlarda `.union()` (**birlashtirish**) metodi ikki yoki undan ortiq to'plamlarning barcha elementlarini yagona to'plamda birlashtirish uchun ishlatiladi. Natijada barcha to'plamlardan elementlar qaytariladi, takroriy elementlar faqat bitta marta saqlanadi.
-
-Python dasturlash tilida to'plamlarni birlashtirilishini amalga oshirish uchun bir nechta usullar mavjud:
-
-- **`|` operatori:** Birlashtirish amali uchun maxsus operator.
-
-```python
+# Ikkita set yaratamiz
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 
-union_set = set1 | set2
-print(union_set)  # Natija: {1, 2, 3, 4, 5}
+# Barcha elementlarni birlashtiramiz (takroriylar olib tashlanadi)
+union_result = set1 | set2
+print(union_result)  # Natija: {1, 2, 3, 4, 5}
+
+# union() metodi bilan
+print(set1.union(set2))  # Natija: {1, 2, 3, 4, 5}
 ```
 
-- **`.union()` metodi:** Bir yoki bir nechta to'plamlarni birlashtiradi.
-
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-union_set = set1.union(set2)
-print(union_set)  # Natija: {1, 2, 3, 4, 5}
-```
-
-> [!NOTE]
-> Birlashtirilgan to'plamda har bir element faqat bir marta bo‘ladi, ya'ni takroriy elementlar olib tashlanadi.
 
 ## AMALIYOT
 - `my_list = [1, 2, 2, 3, 4, 4, 5]` <br>
