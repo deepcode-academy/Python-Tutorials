@@ -94,7 +94,7 @@ print(my_tuple[-1])  # 50
 
 ### ❇️ TUPLELARNI BIRLASHTIRISH
 
-#### ✳️ TUPLELARNI BIRLASHTIRISH (+ OPERATORI)
+#### ✳️ + OPERATORI
 
 📌 Bu usulda ikkita tuple birga qo‘shiladi va yangi tuple hosil bo‘ladi. Asl tuplelar o‘zgarmaydi.
 
@@ -110,6 +110,23 @@ new_tuple = tuple1 + tuple2
 
 # Natijani chiqaramiz
 print(new_tuple)  # (1, 2, 3, 4)
+```
+
+❗ Yuqorida `tuple1` va `tuple2` o‘zgarmagan holda qoladi, faqat `+` orqali ularning qiymatlari birga qo‘shilib, `new_tuple` degan yangi tuple yaratiladi.
+
+#### ✳️ TAKRORLASH
+
+📌 Agar bir tuple ni o‘zini o‘ziga birlashtirmoqchi bo‘lsangiz, uni yana o‘zi bilan `+` orqali birlashtirasiz.
+
+```python
+# Asl tuple
+tuple1 = (1, 2, 3)
+
+# O‘z-o‘ziga birlashtirish (ikki marta yozilgan bo‘ladi)
+result = tuple1 + tuple1
+
+# Natijani chiqaramiz
+print(result)  # (1, 2, 3, 1, 2, 3)
 ```
 
 #### TUPLENI BOSHQA MALUMOT TURLARI BILAN BIRLASHTIRISH
