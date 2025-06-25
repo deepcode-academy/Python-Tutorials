@@ -142,12 +142,15 @@ new_tuple = tuple1 * 3
 print(new_tuple)  # ('hello', 'hello', 'hello')
 ```
 
-### TUPLE UZUNLIGINI ANIQLASH
+### ❇️ TUPLE UZUNLIGINI ANIQLASH
 
-`Tuple`dagi elementlar sonini aniqlash uchun `len()` funksiyasidan foydalaniladi:
+📌 Tuple ichida nechta element borligini bilish uchun `len()` funksiyasidan foydalaniladi. Bu funksiya tuple uzunligini, ya’ni elementlar sonini qaytaradi.
 
 ```python
+# 5 ta elementdan iborat tuple yaratilmoqda
 my_tuple = (1, 2, 3, 4, 5)
+
+# len() funksiyasi tuple ichidagi elementlar sonini hisoblaydi
 print(len(my_tuple))  # 5
 ```
 
