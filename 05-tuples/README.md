@@ -19,10 +19,6 @@
 📌 **O‘zgarmaydigan ma’lumotlar uchun qulay:** Agar sizda haftaning kunlari, oylar nomi, davlatlar ro‘yxati kabi o‘zgarmas ma’lumotlar bo‘lsa, tuple juda foydali bo‘ladi.
 
 
-## ✅ TUPLENING AFZALLIKLARI
-- **O‘zgarmasligi:** Tupleni `himoyalangan` yoki `o‘zgartirilmas` ma’lumotlar saqlash uchun ishlatish mumkin.
-- **Tezligi:** Tuplelar ro‘yxatlarga qaraganda `tezroq` ishlovchi ma'lumot turi hisoblanadi.
-
 ### TUPLE VA LIST FARQI
 
 |Feature|Tuple|List|
