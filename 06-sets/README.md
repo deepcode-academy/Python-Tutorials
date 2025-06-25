@@ -4,7 +4,7 @@
 
 📌 Set — bu noyob (takrorlanmaydigan) elementlar dan tashkil topgan, tartibsiz va indekssiz ma’lumot turi.
 
-### TO'PLAM(SET) YARATISH
+## ✅ SET YARATISH
 
 ```python
 # Bo'sh set yaratish
