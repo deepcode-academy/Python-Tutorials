@@ -84,8 +84,13 @@ print(my_tuple[-1])  # 50
 ```
 
 ### TUPLE USTIDA AMALLAR
-> [!NOTE]
-> Tuple o'zgarmas bo'lganligi sababli, uni `o'zgartirib bo'lmaydi`. Lekin uni boshqa `tuple`lar bilan `birlashtirish` yoki `takrorlash` mumkin.
+
+📌 Tuple — bu o‘zgarmas ma’lumot turi. Ya’ni, yaratilgach, uning ichidagi qiymatlarni o‘zgartirib, o‘chirib yoki yangisini qo‘shib bo‘lmaydi.
+
+- 📌 Lekin, siz tuple bilan ikkita amalni bemalol bajara olasiz:
+    - Tuplelarni birlashtirish
+    - Tupleni takrorlash
+
 
 1. Tuplelarni birlashtirish:
     - Tuple'lar o'zgarmas (`immutable`) ma'lumot turi bo'lganligi uchun birlashtirish jarayonida asl `tuple`lar o'zgarmaydi. Yangi tuple yaratiladi.
