@@ -222,7 +222,7 @@ my_tuple = (1, 2, 2, 3, 2)
 print(my_tuple.count(2))  # 3
 ```
 
-####  ✳️.index()
+#### ✳️ .index()
 
 📌 Bu metod tuple ichida berilgan qiymat qayerda turganini aniqlaydi, ya’ni indeks raqamini qaytaradi.
 
@@ -234,77 +234,136 @@ my_tuple = (1, 2, 3, 2, 4)
 print(my_tuple.index(2))  # 1
 ```
 
-> [!NOTE]
-> Agar Tuple ga o'zgartirish talab qilinsa, yagona yo'li o'zgarmas ro'yxatni `list()` funksiyasi yordamida `List` (oddiy ro'yxat) ko'rinishiga keltirib olish, o'zgarishlarni bajarsih va qaytarib `tuple()` funktsiyasi yordamida o'zgarmas ro'yxatga o'tkazish mumkin:
+
+# ✅ AMALIYOT
+
+### ✅ 1-topshiriq:  
+Quyidagi 3 ta hayvon nomidan iborat `animals` degan tuple yarating va ekranga chiqaring:  
+- `"quyon"`, `"mushuk"`, `"it"`
+
+---
+
+### ✅ 2-topshiriq:  
+Faqat `"apple"` qiymatidan iborat tuple yarating.  
+- Vergul qo‘yilmasa, bu oddiy `string` bo‘lib qoladi. To‘g‘ri tuple yarating.
+
+---
+
+### ✅ 3-topshiriq:  
+Quyidagi tupledagi ikkinchi elementni ekranga chiqaring:
 
 ```python
-toys = ('bus','car','bear','dino','snake','lizard') # o'zgarmas ro'yxat
-toys = list(toys) # o'zgarmas ro'yxatni oddiy ro'yxatga (List) aylantiramiz
-# Ro'yxatga o'zgartirishlar kiritamiz
-toys.append('dragon')
-toys.remove('bus')
-toys[1] = 'mcqueen'
-toys = tuple(toys) # Ro'yxatni qaytadan o'zgarmas ro'yxatga (Tuple) aylantiramiz
-print(toys)
+colors = ("red", "green", "blue")
 ```
 
-# AMALIYOT
+---
 
-1. **Tuple yaratish va qiymatlarni chiqarish.**
-    ```python
-    # 1. Quyidagi tuple'ni yarating va har bir elementini ekranga chiqaring.
-    my_tuple = (10, 20, 30, 40, 50)
-    ```
-    **Natija:**
-    ```shell
-    (10, 20, 30, 40, 50)
-    ```
-2. **Tuple elementlariga indeks orqali murojaat qilish.**
-    ```python
-    # 2. Quyidagi tuple'dan birinchi va oxirgi elementni ekranga chiqaring.
-    my_tuple = ('apple', 'banana', 'cherry', 'date', 'elderberry')
-    ```
-    **Natija:**
-    ```shell
-    Birinchi element: apple
-    Oxirgi element: elderberry
-    ```
-3. **Tuple’larni birlashtirish.**
-    ```python
-    # 3. Ikkita tuple'ni birlashtirib, yangi tuple yarating.
-    tuple1 = (1, 2, 3)
-    tuple2 = (4, 5, 6)
-    ```
-    **Natija:**
-    ```shell
-    (1, 2, 3, 4, 5, 6)
-    ```
+### ✅ 4-topshiriq:  
+Quyidagi tupledan oxirgi elementni `-1` indeks yordamida chiqaring:
 
-4. **Tuple uzunligini aniqlash.**
-    ```python
-    # 4. Quyidagi tuple'ning uzunligini aniqlang.
-    my_tuple = ('cat', 'dog', 'rabbit', 'parrot')
-    ```
-    **Natija:**
-    ```shell
-    4
-    ```
+```python
+numbers = (5, 10, 15, 20)
+```
 
-5. **Tuple ichidagi elementlarning qiymatini sanash.**
-    ```python
-    # 5. Tuple ichida necha marta 'apple' so‘zi mavjudligini aniqlang.
-    fruits = ('apple', 'banana', 'cherry', 'apple', 'apple', 'banana')
-    ```
-    **Natija:**
-    ```shell
-    3
-    ```
-6. **Tuple ichida qiymat mavjudligini tekshirish.**
-    ```python
-    # 6. Tuple ichida 'banana' bor-yo‘qligini tekshiring.
-    fruits = ('apple', 'banana', 'cherry')
-    ```
-    **Natija:**
-    ```shell
-    True
-    ```
+---
+
+### ✅ 5-topshiriq:  
+Quyidagi ikki tupleni `+` operatori yordamida birlashtiring va yangi `result` nomli tuple yarating:
+
+```python
+a = (1, 2)
+b = (3, 4)
+```
+
+---
+
+### ✅ 6-topshiriq:  
+Quyidagi tuple 3 marta takrorlab `new_tuple` degan yangi tuple yarating:
+
+```python
+word = ("Hi",)
+```
+
+---
+
+### ✅ 7-topshiriq:  
+Quyidagi tuple ichida nechta element borligini `len()` yordamida aniqlang:
+
+```python
+digits = (1, 2, 3, 4, 5, 6)
+```
+
+---
+
+### ✅ 8-topshiriq:  
+Quyidagi tupleda `"banana"` bor yoki yo‘qligini `in` operatori yordamida tekshirib chiqaring:
+
+```python
+fruits = ("apple", "banana", "cherry")
+```
+
+---
+
+### ✅ 9-topshiriq:  
+Quyidagi tupledagi qiymatlarni alohida 3 ta o‘zgaruvchiga ajrating (`unpacking` qiling):
+
+```python
+person = ("Ali", 25, "Toshkent")
+```
+
+---
+
+### ✅ 10-topshiriq:  
+Quyidagi nested tupledan 90 sonini alohida olib ekranga chiqaring:
+
+```python
+student = ("Ali", 20, (85, 90, 95))
+```
+
+---
+
+### ✅ 11-topshiriq:  
+Quyidagi tupleda `2` soni nechta marta qatnashganini `.count()` yordamida aniqlang:
+
+```python
+data = (1, 2, 3, 2, 4, 2)
+```
+
+---
+
+### ✅ 12-topshiriq:  
+Quyidagi tupleda `3` soni birinchi marta qaysi indeksda turganini `.index()` yordamida aniqlang:
+
+```python
+nums = (5, 3, 7, 3, 9)
+```
+
+---
+
+### ✅ 13-topshiriq:  
+Quyidagi kodda tuple emas, string yaratilgan. Uni tuzatib, haqiqiy tuple holatiga keltiring:
+
+```python
+item = ("book")
+```
+
+---
+
+### ✅ 14-topshiriq:  
+Quyidagi tupledan `"Python"` so‘zini indeks yordamida ajratib oling:
+
+```python
+langs = ("C++", "Python", "Java")
+```
+
+---
+
+### ✅ 15-topshiriq:  
+Quyidagi ikki tupleni `+` operatori yordamida birlashtiring va `new_tuple` nomli yangi tuplega saqlang:
+
+```python
+tuple1 = ("a", "b")
+tuple2 = ("c", "d", "e")
+```
+
+---
