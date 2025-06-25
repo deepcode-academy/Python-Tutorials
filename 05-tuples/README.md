@@ -184,12 +184,30 @@ print(fruit2)  # 'banana'
 print(fruit3)  # 'cherry'
 ```
 
-### TUPLE ICHIDA TUPLE
-- Tuple ichida yana boshqa tuplelar saqlanishi mumkin:
+### ❇️ NESTED TUPLE
+
+📌 Tuple ichida yana boshqa tuple ham saqlanishi mumkin. Bunga **ichma-ich** tuple yoki **nested tuple** deyiladi.
+
+
 ```python
-nested_tuple = (1, 2, (3, 4), 5)
-print(nested_tuple[2])  # (3, 4)
+# Bu yerda talaba haqida ma'lumotlar saqlanmoqda:
+# ism, yosh, va baholar (baholar alohida tuple ichida)
+student = ("Ali", 20, (85, 90, 95))
+
+# Indeks 0 — ismni beradi
+print(student[0])  # Ali
+
+# Indeks 1 — yoshni beradi
+print(student[1])  # 20
+
+# Indeks 2 — baholar joylashgan ichki tuple
+print(student[2])  # (85, 90, 95)
+
+# Ichki tuple ichidagi ikkinchi bahoni olish
+print(student[2][1])  # 90
 ```
+
+
 ### TUPLE BILAN ISHLASHDA FOYDALI FUNKSIYALAR
 1. `.count():` Tuple ichida biror qiymat necha marta takrorlanganini aniqlaydi.
 ```python
