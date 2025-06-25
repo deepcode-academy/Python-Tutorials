@@ -34,29 +34,25 @@ my_set.update([5, 6, 7])  # 5, 6, 7 elementlari qo'shildi
 print(my_set)  # Natija: {1, 2, 3, 4, 5, 6, 7}
 ```
 
-### TO'PLAM(SET)DAN E'LEMENT O'CHIRISH
-- To'plamdan e'lement o'lib tashlash uchun `.remove(value)` metodidan foydalaniladi:
-```python
-my_set.remove(3)
-print(my_set)  # {1, 2, 4, 5}
-```
-
-**Natija:** `{1, 2, 4, 5}`
-
-- Agar to'plamda e'lement mavjud bo'lmasa, `.remove(value)` xato beradi, `.discard(value)` xato bermaydi:
+## ✅ SETDAN E'LEMENT O'CHIRISH
 
 ```python
-my_set.remove(7)
-print(my_set)  # {1, 2, 4, 5}
+# Set yaratamiz
+my_set = {1, 2, 3, 4, 5}
+
+# Ma'lum bir elementni o'chiramiz
+my_set.remove(3)  # 3 elementi o'chiriladi
+print(my_set)  # Natija: {1, 2, 4, 5}
+
+# remove() bilan mavjud bo'lmagan elementni o'chirsak xatolik bo'ladi
+# my_set.remove(10)  # KeyError: 10
+
+# discard() bilan element mavjud bo'lmasa ham xatolik bo'lmaydi
+my_set.discard(10)  # Xatolik yo'q, set o'zgarishsiz qoladi
+print(my_set)  # Natija: {1, 2, 4, 5}
 ```
 
-**Natija:** `KeyError: 7` 
 
-```python
-my_set.discard(7)
-print(my_set)  # {1, 2, 4, 5}
-```
-**Natija:** `{1, 2, 3, 4, 5`
 
 ### TO'PLAM OPERATSIYALARI
 
