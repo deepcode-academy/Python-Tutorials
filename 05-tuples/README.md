@@ -154,18 +154,31 @@ my_tuple = (1, 2, 3, 4, 5)
 print(len(my_tuple))  # 5
 ```
 
-### TUPLEDA `in` OPERATORI
-- Biror qiymat tupleda bor yoki yo‘qligini `in` operatori yordamida tekshirish mumkin:
+### ❇️ in OPERATORI
+
+📌 in operatori yordamida biror qiymat tuple ichida bor yoki yo‘qligini tekshirish mumkin. Natija True yoki False ko‘rinishida chiqadi.
+
 ```python
+# Mevalar saqlangan tuple yaratilmoqda
 my_tuple = ("apple", "banana", "cherry")
+
+# "banana" tuple ichida bormi? degan savolga javob tekshirilmoqda
 print("banana" in my_tuple)  # True
 ```
 
-### TUPLENI QIYMATLARGA AJRATISH(`Unpacking`)
-- Tuplening barcha qiymatlarini o‘zgaruvchilarga ajratib olish mumkin:
+### ❇️ TUPLENI QIYMATLARGA AJRATISH(`Unpacking`)
+
+📌 Tuple ichidagi har bir qiymatni alohida o‘zgaruvchiga ajratib olish mumkin. Bunga Pythonda `unpacking` deyiladi.
+
+
 ```python
+# 3 ta meva nomidan iborat tuple yaratilmoqda
 my_tuple = ("apple", "banana", "cherry")
+
+# Tuple ichidagi har bir qiymat alohida o‘zgaruvchiga ajratilmoqda
 (fruit1, fruit2, fruit3) = my_tuple
+
+# Har bir o‘zgaruvchidagi qiymat ekranga chiqariladi
 print(fruit1)  # 'apple'
 print(fruit2)  # 'banana'
 print(fruit3)  # 'cherry'
