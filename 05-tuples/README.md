@@ -208,16 +208,29 @@ print(student[2][1])  # 90
 ```
 
 
-### TUPLE BILAN ISHLASHDA FOYDALI FUNKSIYALAR
-1. `.count():` Tuple ichida biror qiymat necha marta takrorlanganini aniqlaydi.
+### ❇️ TUPLE BILAN ISHLASHDA FOYDALI METODLAR
+
+#### ✳️ .count()
+
+📌 Bu funksiya siz bergan qiymatni tuple ichida qidiradi va nechta marta borligini sanaydi. Agar qiymat topilmasa, 0 qaytaradi.
+
 ```python
-my_tuple = (1, 2, 2, 3)
-print(my_tuple.count(2))  # 2
+# Bir nechta takrorlanuvchi sonlardan iborat tuple
+my_tuple = (1, 2, 2, 3, 2)
+
+# 2 soni tuple ichida necha marta borligini hisoblaydi
+print(my_tuple.count(2))  # 3
 ```
 
-2. `.index():` Tuple ichida berilgan qiymatning indeksini topadi.
+####  ✳️.index()
+
+📌 Bu metod tuple ichida berilgan qiymat qayerda turganini aniqlaydi, ya’ni indeks raqamini qaytaradi.
+
 ```python
-my_tuple = (1, 2, 3)
+# Elementlar ketma-ketligi
+my_tuple = (1, 2, 3, 2, 4)
+
+# 2 soni birinchi bo‘lib qayerda uchraganini topadi (indeks 1)
 print(my_tuple.index(2))  # 1
 ```
 
