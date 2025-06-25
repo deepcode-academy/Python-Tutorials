@@ -83,32 +83,34 @@ print(my_tuple[2])  # 30
 print(my_tuple[-1])  # 50
 ```
 
-### TUPLE USTIDA AMALLAR
+## ✅ TUPLE USTIDA AMALLAR
 
 📌 Tuple — bu o‘zgarmas ma’lumot turi. Ya’ni, yaratilgach, uning ichidagi qiymatlarni o‘zgartirib, o‘chirib yoki yangisini qo‘shib bo‘lmaydi.
 
-- 📌 Lekin, siz tuple bilan ikkita amalni bemalol bajara olasiz:
+- Lekin, siz tuple bilan ikkita amalni bemalol bajara olasiz:
     - Tuplelarni birlashtirish
     - Tupleni takrorlash
 
 
-1. Tuplelarni birlashtirish:
-    - Tuple'lar o'zgarmas (`immutable`) ma'lumot turi bo'lganligi uchun birlashtirish jarayonida asl `tuple`lar o'zgarmaydi. Yangi tuple yaratiladi.
+### ❇️ TUPLELARNI BIRLASHTIRISH
 
-    ```python
-    tuple1 = (1, 2)
-    tuple2 = (3, 4)
-    new_tuple = tuple1 + tuple2
-    print(new_tuple)  # (1, 2, 3, 4)
-    ```
-    - Agar siz bir tupleni o'z-o'ziga birlashtirishni xohlasangiz, yana bir tuple qo'shib berishingiz kerak bo'ladi.
-    ```python
-    tuple1 = (1, 2, 3)
+#### ✳️ TUPLELARNI BIRLASHTIRISH (+ OPERATORI)
 
-    # tuple1 ni o'z-o'zidan ikki marta birlashtirish
-    result = tuple1 + tuple1
-    print(result)
-    ```
+📌 Bu usulda ikkita tuple birga qo‘shiladi va yangi tuple hosil bo‘ladi. Asl tuplelar o‘zgarmaydi.
+
+```python
+# Birinchi tuple
+tuple1 = (1, 2)
+
+# Ikkinchi tuple
+tuple2 = (3, 4)
+
+# Ikkalasini birlashtiramiz va yangi tuple hosil qilamiz
+new_tuple = tuple1 + tuple2
+
+# Natijani chiqaramiz
+print(new_tuple)  # (1, 2, 3, 4)
+```
 
 #### TUPLENI BOSHQA MALUMOT TURLARI BILAN BIRLASHTIRISH
 
