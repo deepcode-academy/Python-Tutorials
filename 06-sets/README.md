@@ -16,7 +16,6 @@ my_set = {1, 2, 3, 4, 5}
 
 ## ✅ SETGA E'LEMENT QO'SHISH
 
-- To'plamga yangi e'lement qo'shish uchun `.add(value)` metodidan foydalaniladi:
 
 ```python
 # Set yaratamiz
