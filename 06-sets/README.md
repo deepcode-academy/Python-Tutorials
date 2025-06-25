@@ -124,6 +124,44 @@ print(union_result)  # Natija: {1, 2, 3, 4, 5}
 print(set1.union(set2))  # Natija: {1, 2, 3, 4, 5}
 ```
 
+## ✅ FROZENSET
+
+- frozenset nima?
+    - frozenset — bu **o‘zgarmas set** turidir. Ya’ni:
+    - Oddiy **set** bilan bir xil ishlaydi, lekin uni yaratgandan so‘ng o‘zgartirib bo‘lmaydi.
+    - Ichiga noyob elementlar saqlanadi.
+    - **Tartibsiz** va **indekssiz**.
+    - Undan **.add()**, **.remove()** kabi metodlar ishlamaydi, chunki u o‘zgartirilmaydi.
+
+## ✅ FROZENSET YARATISH
+
+```python
+# Oddiy ro'yxat yaratamiz
+my_list = [1, 2, 3, 4, 5]
+
+# Ro'yxatdan frozenset yaratamiz
+my_frozen_set = frozenset(my_list)
+
+print(my_frozen_set)  # Natija: frozenset({1, 2, 3, 4, 5})
+```
+
+## ✅ FROZENSETDA .intersection() va .union() .difference()
+
+```python
+a = frozenset([1, 2, 3])
+b = frozenset([2, 3, 4])
+
+# intersection
+print(a & b)  # Natija: frozenset({2, 3})
+
+# union
+print(a | b)  # Natija: frozenset({1, 2, 3, 4})
+
+# difference
+print(a - b)  # Natija: frozenset({1})
+```
+
+
 
 ## AMALIYOT
 - `my_list = [1, 2, 2, 3, 4, 4, 5]` <br>
