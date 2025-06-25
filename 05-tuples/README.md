@@ -27,6 +27,16 @@ single_fruit = ("apple",)
 
 # Bitta elementli tuple ni ekranga chiqaramiz
 print(single_fruit)
+
+
+
+# ❌ Bu tuple emas (string bo‘lib qoladi)
+
+# Bu yerda vergul yo‘q, shuning uchun bu oddiy string bo‘ladi
+not_a_tuple = ("apple")
+
+# O‘zgaruvchi turi (type) ni tekshiramiz
+print(type(not_a_tuple))  # <class 'str'>
 ```
 
 
