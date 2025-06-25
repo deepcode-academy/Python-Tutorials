@@ -7,6 +7,9 @@
 
 ## ✅ TUPLE YARATISH
 
+
+### ❇️ ODDIY TUPLE YARATISH
+
 ```python
 # Uchta meva nomini o‘z ichiga olgan tuple yaratamiz
 fruits = ("apple", "banana", "cherry")
@@ -14,6 +17,18 @@ fruits = ("apple", "banana", "cherry")
 # fruits tuple ichidagi barcha elementlarni ekranga chiqaramiz
 print(fruits)
 ```
+
+### ❇️ BITTA E'LEMENTLI TUPLE YARATISH
+
+```python
+# Faqat bitta elementdan iborat tuple yaratamiz
+# E’tibor bering, oxirida vergul qo‘yilishi shart
+single_fruit = ("apple",)
+
+# Bitta elementli tuple ni ekranga chiqaramiz
+print(single_fruit)
+```
+
 
 
 ### TUPLE XUSUSIYATLARI
