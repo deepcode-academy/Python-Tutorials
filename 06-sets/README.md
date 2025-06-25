@@ -163,4 +163,121 @@ print(a - b)  # Natija: frozenset({1})
 
 
 
-## ✅ AMALIYOT
+# ✅ AMALIYOT
+
+## ✅ 1-topshiriq:  
+Bo‘sh `set` yarating va unga `10`, `20`, `30` qiymatlarini ketma-ket qo‘shing.  
+- `add()` metodidan foydalaning.  
+- Yakuniy setni ekranga chiqaring.
+
+---
+
+## ✅ 2-topshiriq:  
+Quyidagi elementlardan iborat `my_set` yarating:  
+`{1, 2, 2, 3, 3, 3, 4}`  
+- Ekranga chiqarilgan setda faqat **noyob** qiymatlar qoladi.
+
+---
+
+## ✅ 3-topshiriq:  
+Set yarating: `{5, 10, 15, 20}`  
+- `remove()` metodidan foydalanib, `15` sonini o‘chiring.  
+- So‘ng setni chop eting.
+
+---
+
+## ✅ 4-topshiriq:  
+Set yarating: `{100, 200, 300}`  
+- `discard()` yordamida `400` ni o‘chirishga harakat qiling.  
+- Xatolik bo‘lmasligiga e’tibor bering. Natijani chop eting.
+
+---
+
+## ✅ 5-topshiriq:  
+Ikki set yarating:  
+```python
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+```  
+- Ularning kesishmasini `&` operatori yordamida toping.  
+- Natijani `intersection_result` nomli o‘zgaruvchiga saqlang.
+
+---
+
+## ✅ 6-topshiriq:  
+Yuqoridagi `a` va `b` setlari ustida `.intersection()` metodini ishlatib, umumiy elementlarni chiqaring.
+
+---
+
+## ✅ 7-topshiriq:  
+Setlar:  
+```python
+x = {10, 20, 30}
+y = {30, 40, 50}
+```  
+- `difference()` metodidan foydalanib, `x` setida bor-u, `y` da yo‘q elementlarni toping.
+
+---
+
+## ✅ 8-topshiriq:  
+Setlar:  
+```python
+x = {10, 20, 30}
+y = {30, 40, 50}
+```  
+- `x - y` amali bilan farqni toping. Natijani ekranga chiqaring.
+
+---
+
+## ✅ 9-topshiriq:  
+Quyidagi ikki set ustida birlashtirish (`union`) amalini bajaring:  
+```python
+a = {"python", "java"}
+b = {"c++", "java", "go"}
+```  
+- Natijada faqat noyob qiymatlar chiqishi kerak.
+
+---
+
+## ✅ 10-topshiriq:  
+Set yarating va `update()` metodi orqali `[100, 200, 300]` ro‘yxatidagi qiymatlarni qo‘shing.
+
+---
+
+## ✅ 11-topshiriq:  
+Setni quyidagicha yarating:  
+```python
+my_set = {1, 2, 3}
+```  
+- `add()` metodi orqali yana `3` ni qo‘shishga urinib ko‘ring.  
+- Set o‘zgarmasligiga ishonch hosil qiling.
+
+---
+
+## ✅ 12-topshiriq:  
+`frozenset` yarating: `[1, 2, 3, 4]` ro‘yxatidan foydalaning.  
+- Ekranga chiqaring.
+
+---
+
+## ✅ 13-topshiriq:  
+Quyidagi ikki `frozenset` ustida `intersection` bajaring:  
+```python
+a = frozenset([1, 2, 3])
+b = frozenset([2, 3, 4])
+```  
+- Natijani ekranga chiqaring.
+
+---
+
+## ✅ 14-topshiriq:  
+Yuqoridagi `a` va `b` ustida `union` va `difference` amallarini bajaring.  
+- Har bir natijani alohida chiqarib bering.
+
+---
+
+## ✅ 15-topshiriq:  
+Set yaratib, unga `True`, `False`, `1`, `0` qiymatlarini joylang.  
+- Ekranga chiqaring va natijani tushuntiring (setda nechta element chiqdi?).
+
+---
