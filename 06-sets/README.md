@@ -163,18 +163,4 @@ print(a - b)  # Natija: frozenset({1})
 
 
 
-## AMALIYOT
-- `my_list = [1, 2, 2, 3, 4, 4, 5]` <br>
-Berilgan listdagi takroriy elementlarni olib tashlab, yangi to'plam yarating.
-- `set1 = {1, 2, 3, 4}` <br>
-`set2 = {3, 4, 5, 6}` <br>
-Ikki to'plamdan umumiy elementlarni toping.
-- `set1 = {1, 2, 3, 4}` <br>
-`set2 = {3, 4, 5, 6}` <br>
-Birinchi to'plamda mavjud, ikkinchi to'plamda mavjud bo'lmagan elementlarni aniqlang.
-- `set1 = {1, 2, 3, 4}` <br>
-`set2 = {3, 4, 5, 6}` <br>
-`set3 = {5, 6, 7, 8}` <br>
-Uchta to'plamdan umumiy bo'lmagan elementlarni aniqlang.
-- `my_set = {5, 2, 9, 1, 7}` <br>
-Berilgan to'plamning eng kichik va eng katta elementlarini toping.
+## ✅ AMALIYOT
