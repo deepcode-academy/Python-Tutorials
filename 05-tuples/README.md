@@ -19,7 +19,7 @@
 📌 **O‘zgarmaydigan ma’lumotlar uchun qulay:** Agar sizda haftaning kunlari, oylar nomi, davlatlar ro‘yxati kabi o‘zgarmas ma’lumotlar bo‘lsa, tuple juda foydali bo‘ladi.
 
 
-### TUPLE VA LIST FARQI
+## ✅ TUPLE VA LIST FARQI
 
 |Feature|Tuple|List|
 |-------|-----|----|
@@ -65,17 +65,22 @@ not_a_tuple = ("apple")
 print(type(not_a_tuple))  # <class 'str'>
 ```
 
+## ✅ TUPLE E'LEMENTLARIGA MUROJAT QILISH
 
-
-### TUPLE E'LEMENTLARIGA MUROJAT QILISH
-
-`Tuple` elementlariga ham `list`larga o'xshab indeks orqali murojaat qilish mumkin. Indekslar `0` dan boshlanadi:
+📌 Tuple ichidagi har bir element tartib bilan joylashgan va ularga **indekslar** orqali murojaat qilish mumkin. Hisoblash **0** dan boshlanadi, ya’ni birinchi elementning indeksi **0** bo‘ladi. Bu xuddi listdagi kabi ishlaydi.
 
 ```python
+# Bu yerda 5 ta elementdan iborat tuple yaratilmoqda
 my_tuple = (10, 20, 30, 40, 50)
+
+# [0] — bu birinchi elementga murojaat, indeks 0 dan boshlanadi
 print(my_tuple[0])  # 10
+
+# [2] — bu uchinchi elementga murojaat (0 - 1 - 2), qiymati 30
 print(my_tuple[2])  # 30
-print(my_tuple[-1]) # 50 (oxirgi element)
+
+# [-1] — bu oxirgi elementga murojaat, -1 doimo oxirgi elementni bildiradi
+print(my_tuple[-1])  # 50
 ```
 
 ### TUPLE USTIDA AMALLAR
