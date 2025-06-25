@@ -5,6 +5,29 @@
 
 📌 Tuple — bu Pythonda bir nechta ma’lumotni bitta o‘zgaruvchida saqlash uchun ishlatiladigan o‘zgarmas tuzilma. U dumaloq qavs ichida yoziladi va elementlar vergul bilan ajratiladi. Tuple yaratilgach, uning ichidagi qiymatlarni o‘zgartirib, o‘chirib yoki yangisini qo‘shib bo‘lmaydi. Undagi ma’lumotlar tartib bilan saqlanadi va indeks orqali chaqiriladi. Tuple listga o‘xshaydi, lekin o‘zgarmasligi bilan farq qiladi. U dasturda tezroq ishlaydi va kamroq xotira egallaydi. O‘zgarmas ma’lumotlarni xavfsiz saqlash uchun tuple juda qulay.
 
+
+## ✅ TUPLE XUSUSIYATLARI
+
+- **O'zgarmasligi (Immutable):** `Tuple` yaratilgandan so'ng, uning elementlarini `o'zgartirib` yoki `o'chirib` bo'lmaydi.
+- **Tartiblanganligi:** `Tuple` ichidagi elementlar `tartiblangan` holda saqlanadi.
+- **Qayta ishlash:** `Tuple` ichidagi ma'lumotlar o'z tartibini saqlaydi va turli xil ma'lumot turlarini saqlashi mumkin (masalan, `number`, `string` va boshqalar).
+
+## ✅ TUPLENING AFZALLIKLARI
+- **O‘zgarmasligi:** Tupleni `himoyalangan` yoki `o‘zgartirilmas` ma’lumotlar saqlash uchun ishlatish mumkin.
+- **Tezligi:** Tuplelar ro‘yxatlarga qaraganda `tezroq` ishlovchi ma'lumot turi hisoblanadi.
+
+### TUPLE VA LIST FARQI
+
+|Feature|Tuple|List|
+|-------|-----|----|
+|O'zgarishi mumkinmi?|Yo'q(**immutable**)|Ha(**mutable**)|
+|Tezligi|Tezroq|Sekinroq|
+|Qavs turi|**()**|**[]**|
+|Xotira sarfi|Kamroq|Ko'proq|
+|Qo'llanilish holati|O'zgarmas ma'lumotlar uchun|O'zgaruvchi ma'lumotlar uchun|
+
+
+
 ## ✅ TUPLE YARATISH
 
 
@@ -40,25 +63,6 @@ print(type(not_a_tuple))  # <class 'str'>
 ```
 
 
-
-### TUPLE XUSUSIYATLARI
-- **O'zgarmasligi (Immutable):** `Tuple` yaratilgandan so'ng, uning elementlarini `o'zgartirib` yoki `o'chirib` bo'lmaydi.
-- **Tartiblanganligi:** `Tuple` ichidagi elementlar `tartiblangan` holda saqlanadi.
-- **Qayta ishlash:** `Tuple` ichidagi ma'lumotlar o'z tartibini saqlaydi va turli xil ma'lumot turlarini saqlashi mumkin (masalan, `number`, `string` va boshqalar).
-
-### TUPLENING AFZALLIKLARI
-- **O‘zgarmasligi:** Tupleni `himoyalangan` yoki `o‘zgartirilmas` ma’lumotlar saqlash uchun ishlatish mumkin.
-- **Tezligi:** Tuplelar ro‘yxatlarga qaraganda `tezroq` ishlovchi ma'lumot turi hisoblanadi.
-
-### TUPLE VA LIST FARQI
-
-|Feature|Tuple|List|
-|-------|-----|----|
-|O'zgarishi mumkinmi?|Yo'q(**immutable**)|Ha(**mutable**)|
-|Tezligi|Tezroq|Sekinroq|
-|Qavs turi|**()**|**[]**|
-|Xotira sarfi|Kamroq|Ko'proq|
-|Qo'llanilish holati|O'zgarmas ma'lumotlar uchun|O'zgaruvchi ma'lumotlar uchun|
 
 ### TUPLE E'LEMENTLARIGA MUROJAT QILISH
 
