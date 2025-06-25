@@ -8,9 +8,16 @@
 
 ## ✅ TUPLE XUSUSIYATLARI
 
-- **O'zgarmasligi (Immutable):** `Tuple` yaratilgandan so'ng, uning elementlarini `o'zgartirib` yoki `o'chirib` bo'lmaydi.
-- **Tartiblanganligi:** `Tuple` ichidagi elementlar `tartiblangan` holda saqlanadi.
-- **Qayta ishlash:** `Tuple` ichidagi ma'lumotlar o'z tartibini saqlaydi va turli xil ma'lumot turlarini saqlashi mumkin (masalan, `number`, `string` va boshqalar).
+- **O‘zgarmaydi:** Tuple yaratilgandan keyin uning ichidagi ma’lumotlarni o‘zgartirib bo‘lmaydi. Masalan, yangi element qo‘shib yoki mavjudini o‘chirib bo‘lmaydi. Bu degani — tuple ichidagi ma’lumotlar doim bir xil bo‘lib qoladi.
+
+- **Tartibli:** Tuple ichida ma’lumotlar tartib bilan saqlanadi. Har bir element o‘z o‘rniga ega. Siz bu o‘rinni raqam bilan chaqirishingiz mumkin (masalan: birinchi element, ikkinchi element va hokazo).
+
+- **Har xil turdagi ma’lumot bo‘lishi mumkin:** Tuple ichida sonlar, matnlar, True/False qiymatlar yoki boshqa turdagi ma’lumotlar aralash bo‘lishi mumkin. Bularni bir joyda saqlash imkonini beradi.
+
+- **Tez ishlaydi:** Tuple — kompyuter uchun engil va tez tuzilma. Dastur ishlaganda tuplelar ro‘yxatlarga qaraganda tezroq ishlaydi va kam xotira ishlatadi.
+
+- **O‘zgarmaydigan ma’lumotlar uchun qulay:** Agar sizda haftaning kunlari, oylar nomi, davlatlar ro‘yxati kabi o‘zgarmas ma’lumotlar bo‘lsa, tuple juda foydali bo‘ladi.
+
 
 ## ✅ TUPLENING AFZALLIKLARI
 - **O‘zgarmasligi:** Tupleni `himoyalangan` yoki `o‘zgartirilmas` ma’lumotlar saqlash uchun ishlatish mumkin.
