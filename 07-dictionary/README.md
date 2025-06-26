@@ -50,11 +50,28 @@ student_info["is_student"] = True
 print(student_info)
 ```
 
-- Lug'atni yangilash:
+## ✅ DICTIONARYNI YANGILASH
+
 ```python
-my_dict['age'] = 26
-print(my_dict)
-# {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'alice@example.com'}
+# Talaba haqida ma'lumotlarni saqlovchi dictionary yaratilmoqda
+student_profile = {
+    "full_name": "Azizbek Tursunov",
+    "age": 19,
+    "faculty": "Computer Science",
+    "is_active": True
+}
+
+# "age" kalitiga yangi yosh qiymati berilmoqda (19 dan 20 ga yangilanmoqda)
+student_profile["age"] = 20
+
+# "faculty" kalitidagi qiymat o‘zgartirilmoqda (Computer Science dan Data Science ga)
+student_profile["faculty"] = "Data Science"
+
+# "is_active" kalitidagi qiymat yangilanmoqda (True dan False ga)
+student_profile["is_active"] = False
+
+# Natija ekranga chiqarilmoqda
+print(student_profile)
 ```
 - Lug'at ichidagi e'lementlarni o'chirish uchun `del` funksiyasidan foydalanamiz:
 ```python
