@@ -50,7 +50,7 @@ student_info["is_student"] = True
 print(student_info)
 ```
 
-## ✅ DICTIONARYNI YANGILASH
+## ✅ E'LEMENTLARNI YANGILASH
 
 ```python
 # Talaba haqida ma'lumotlarni saqlovchi dictionary yaratilmoqda
@@ -73,11 +73,24 @@ student_profile["is_active"] = False
 # Natija ekranga chiqarilmoqda
 print(student_profile)
 ```
+
+## ✅ E'LEMENT O'CHIRISH
+
 - Lug'at ichidagi e'lementlarni o'chirish uchun `del` funksiyasidan foydalanamiz:
 ```python
-del my_dict['email']
-print(my_dict)
-# {'name': 'Alice', 'age': 26, 'city': 'New York'}
+# Kitob haqida ma'lumotlar saqlanayotgan dictionary yaratilmoqda
+book_info = {
+    "title": "Python Basics",
+    "author": "John Smith",
+    "year": 2021,
+    "price": 150000
+}
+
+# "price" kalitidagi element dictionary dan o‘chirilmoqda
+del book_info["price"]
+
+# Natija ekranga chiqarilmoqda
+print(book_info)
 ```
 - Lug'atdagi e'lementlarni o'chirish uchun `.pop()` metodidan ham foydalansak bo'ladi:
 ```python
