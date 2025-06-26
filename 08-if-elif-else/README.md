@@ -12,7 +12,7 @@
 
 ## ✅ IF
 
-`if` operatori birinchi bo'lib shartni tekshiradi va agar shart bajarilsafaqat tegishli blokdagi kodlar bajariladi.
+📌 Python dasturlash tilida `if` operatori **shartni tekshirish** uchun ishlatiladi. Ya'ni, agar biror shart **True** bo‘lsa, unga tegishli kodlar bajariladi. Agar shart **False** bo‘lsa, kod bajarilmaydi.
 
 
 ```python
@@ -42,70 +42,73 @@ if len(password) > 8:
     print("Your password is strong")  # Kuchli parol haqida xabar
 ```
 
-## `else` OPERATORI
+## ✅ ELSE
 
 ![alt text](images/if-else.png)
 
-Agar `if` sharti bajarilmasa, `else` blokidagi kod bajariladi.
+📌 Python dasturlash tilida `else` operatori `if` dan keyin yoziladi. Agar `if` dagi **False** bo;lsa, else ichidagi kodlar bajariladi.
 
-**Sintaksis:**
-```python
-if shart:
-    # Bu yerda shart bajarilganda bajariladigan kodlar
-else:
-    # Bu yerda shart bajarilmaganda bajariladigan kodlar
-```
-Quyidagi misolda `x` o'zgaruvchisiga berilgan qiymat `5` dan katta ekanligini tekshirdik. Agar shart `True` bo'lsa, terminalga `x` `5` dan katta degan so'z chiqadi. Aks xolda `x` `5` dan kichik yoki teng degan so'z chiqadi:
-```python
-x = 3
 
-if x > 5:
-    print("x 5 dan katta")
+```python
+# Foydalanuvchi shakarmi tanladi (ha yoki yo'q)
+wants_sugar = True  
+
+# Agar foydalanuvchi shakar istasa
+if wants_sugar:
+    print("Adding sugar to your coffee")  # Qahvaga shakar qo‘shiladi
 else:
-    print("x 5 dan kichik yoki teng")
+    print("Preparing your coffee without sugar")  # Shakarsiz qahva tayyorlanadi
 ```
 
-Quyidagi misolda foydalanuvchidan yoshini kiritishi so'raladi, kiritilgan yosh `18` dan katta bo'lsa yoki `18` ga teng bo'lsa ovoz berish huquqi beriladi. Aks xolda `18`dan kichik bo'lsa ovoz bera olmaysiz degan so'z chiqadi.
 ```python
-age = input('Enter your age:')
-if int(age) >= 18:
-    print("You're eligible to vote.")
-else:
-    print("You're not eligible to vote.")
-```
-### LIST BILAN ISHLASH:
-- Listning bo'sh yoki to'la ekanligini tekshirish:
-```python
-my_list = [1, 2, 3]
+# Telefon quvvati foizda
+battery_percentage = 15  
 
-if my_list:  # Ro'yxat bo'sh bo'lmasa
-    print("Ro'yxat to'la")
+# Agar quvvat 20 dan kam bo‘lsa, ogohlantirish chiqariladi
+if battery_percentage < 20:
+    print("Battery is low. Please charge your phone.")  # Quvvat kamligi haqida ogohlantirish
 else:
-    print("Ro'yxat bo'sh")
+    print("Battery level is sufficient.")  # Quvvat yetarli
 ```
-- Listda e'lement mavjud ekanligini tekshirish
-```python
-my_list = [1, 2, 3, 4, 5]
-# Element mavjudligini tekshirish
-if 3 in my_list:
-    print("3 ro'yxatda mavjud")
-else:
-    print("3 ro'yxatda mavjud emas")
 
-# Ro'yxat uzunligini tekshirish
-if len(my_list) > 5:
-    print("Ro'yxatdagi elementlar soni 5 dan ko'p")
+```python
+# Talabaning olgan bahosi
+exam_score = 72  
+
+# Agar baho 60 yoki undan yuqori bo‘lsa, imtihondan o‘tgan hisoblanadi
+if exam_score >= 60:
+    print("You passed the exam!")  # O‘tdi degan xabar
 else:
-    print("Ro'yxatdagi elementlar soni 5 yoki undan kam")
+    print("You failed the exam.")  # Yiqildi degan xabar
 ```
-- Bir nechta shartni tekshirish:
-```python
-my_list = [1, 2, 3, 4, 5]
 
-if len(my_list) > 3 and 2 in my_list:  # Ro'yxat uzunligi 3 dan katta va 2 elementi mavjud bo'lsa
-    print("Ro'yxatda 3 dan ortiq element va 2 elementi mavjud")
+## ✅ LIST BILAN ISHLASH
+
+```python
+# Xaridor savatidagi mahsulotlar ro'yxati
+shopping_cart = ["bread", "sugar", "apple"]
+
+# Agar savatda kamida bitta mahsulot bo‘lsa
+if shopping_cart:
+    print("The cart has items")  # Savatda mahsulot borligi haqida xabar
 else:
-    print("Shartlar bajarilmadi")
+    print("The cart is empty")  # Savat bo‘shligi haqida xabar
+
+
+
+# Agar savatda 'sugar' bo‘lsa
+if "sugar" in shopping_cart:
+    print("Sugar is in the cart")  # Shakar mavjudligi haqida xabar
+else:
+    print("Sugar is not in the cart")  # Shakar yo‘qligi haqida xabar
+
+
+
+# Agar savatda 5 ta yoki undan ko‘p mahsulot bo‘lsa, bepul yetkazib berish
+if len(shopping_cart) >= 5:
+    print("Free delivery available")  # Bepul yetkazib berish
+else:
+    print("Delivery charges apply")  # Pullik yetkazib berish
 ```
 
 ### TUPLE BILAN ISHLASH:
