@@ -4,7 +4,7 @@
 
 ## LUG'AT(DICTIONARY) NIMA?
 
-Python dasturlash tilida **lug'at**(`dictionary`) — `kalit-qiymat` juftliklarini saqlash uchun mo'ljallangan ma'lumotlar tuzilmasidir. `Lug'atlar` kalitlar yordamida ma'lumotlarga kirishni ta'minlaydi va ular tartibsiz, o'zgaruvchan (`mutable`) va takrorlanmas (`unique`) kalitlardan iborat bo'ladi.
+📌 Python dasturlash tilida dictionary — bu kalit-qiymat (key-value) juftliklarini saqlovchi ma’lumotlar turidir. Har bir kalit yagona bo‘ladi va unga mos qiymat bo‘ladi. Dictionary ma’lumotlar `{}` qavslar ichida yoziladi va har bir kalit bilan qiymat `:` bilan ajratiladi. Bu ma'lumot turi ma’lumotlarni tartibli saqlash, oson topish va boshqarish uchun ishlatiladi.
 
 ### LUG'ATLARNING ASOSIY XUSUSIYATLARI
 1. **Kalitlar va qiymatlar:**
