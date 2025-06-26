@@ -348,19 +348,37 @@ else:
 ```
 
 
-## SHART OPERATORLARINI ICHMA-ICH JOYLASH (Nested Conditions)
-Shart operatorlarini bir-birining ichiga joylashtirish orqali murakkabroq mantiqiy holatlar yaratish mumkin.
+## ✅ NESTED CONDITIONS
+
+📌 Shart operatorlarini bir-birining ichiga joylashtirish orqali murakkabroq mantiqiy holatlar yaratish mumkin.
+
+
+🎯 Foydalanuvchi login kiritadi, agar mavjud bo‘lsa, yoshi tekshiriladi. Faqat voyaga yetganlarga ruxsat.
+
 
 ```python
-x = 8
+# Foydalanuvchi nomi (sistemaga kirishga urinayotgan)
+username = "umid"
 
-if x > 5:
-    if x < 10:
-        print("x 5 dan katta va 10 dan kichik")
+# Foydalanuvchilar ro'yxati (username: age)
+users = {
+    "umid": 21,
+    "ali": 17
+}
+
+# Avvalo foydalanuvchi ro'yxatda bormi – tekshiramiz
+if username in users:
+    age = users[username]  # Username bo‘yicha yoshni olamiz
+
+    # Agar foydalanuvchi 18 yoki undan katta bo‘lsa – ruxsat beriladi
+    if age >= 18:
+        print(f"{username.title()} is allowed to access the system.")  # Ruxsat berildi
+
+    # Agar foydalanuvchi voyaga yetmagan bo‘lsa – ruxsat berilmaydi
     else:
-        print("x 10 dan katta yoki teng")
+        print(f"{username.title()} is underage. Access denied.")  # Ruxsat yo‘q
 else:
-    print("x 5 dan kichik yoki teng")
+    print("User not found in the system.")  # Bunday foydalanuvchi yo‘q
 ```
 
 - Ko'p darajali ichma-ich shart operatorlari:
