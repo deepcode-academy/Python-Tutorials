@@ -76,7 +76,10 @@ print(student_profile)
 
 ## ✅ E'LEMENT O'CHIRISH
 
-- Lug'at ichidagi e'lementlarni o'chirish uchun `del` funksiyasidan foydalanamiz:
+### ❇️ DEL
+
+📌 Lug'at ichidagi e'lementlarni o'chirish uchun `del` funksiyasidan foydalanamiz.
+
 ```python
 # Kitob haqida ma'lumotlar saqlanayotgan dictionary yaratilmoqda
 book_info = {
@@ -92,11 +95,28 @@ del book_info["price"]
 # Natija ekranga chiqarilmoqda
 print(book_info)
 ```
-- Lug'atdagi e'lementlarni o'chirish uchun `.pop()` metodidan ham foydalansak bo'ladi:
+
+### ❇️ .pop()
+
+📌 Lug'atdagi e'lementlarni o'chirish uchun `.pop()` metodidan ham foydalansak bo'ladi.
+
 ```python
-age = my_dict.pop('age')
-print(age)  # 26
-print(my_dict)  # {'name': 'Alice', 'city': 'New York'}
+# Telefon ma'lumotlari saqlanayotgan dictionary yaratilmoqda
+phone_details = {
+    "brand": "Samsung",
+    "model": "Galaxy S21",
+    "storage": "128GB",
+    "price": 900
+}
+
+# "storage" kalitli element .pop() orqali o‘chirilmoqda va qiymati o'zgaruvchiga saqlanmoqda
+removed_value = phone_details.pop("storage")
+
+# O‘chirilgan qiymat ekranga chiqarilmoqda
+print("Removed:", removed_value)
+
+# Yangilangan dictionary ekranga chiqarilmoqda
+print(phone_details)
 ```
 
 ### E'LEMENTLARNI KO'RISH
