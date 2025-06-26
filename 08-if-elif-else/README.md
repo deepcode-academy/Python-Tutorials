@@ -508,24 +508,135 @@ else:
 ```
 
 
-## AMALIYOT
+# ✅ AMALIYOT
 
-- Sonning musbat, manfiy yoki nol ekanligini aniqlash.
-    - Foydalanuvchi kiritgan sonning musbat, manfiy yoki nol ekanligini aniqlaydigan dastur yozing.
-- Talabaning bahosini aniqlash:
-    - Talabaning o'rtacha bahosi asosida uning bahosini aniqlaydigan dastur yozing. Shartlar quyidagicha bo'lsin:
-        - 90 va undan yuqori: "A"
-        - 80 va undan yuqori: "B"
-        - 70 va undan yuqori: "C"
-        - 60 va undan yuqori: "D"
-        - 60 dan past: "F"
-- Yilning faslini aniqlash:
-    - Foydalanuvchi kiritgan oy raqami asosida qaysi fasl ekanligini aniqlaydigan dastur yozing:
-        - 12, 1, 2 - Qish
-        - 3, 4, 5 - Bahor
-        - 6, 7, 8 - Yoz
-        - 9, 10, 11 - Kuz
-- Foydalanuvchi login tizimi:
-    - Foydalanuvchi login va parol kiritadi, va tizim ularning to'g'ri yoki noto'g'ri ekanligini tekshiradi. Agar login "admin" va parol "1234" bo'lsa, tizimga kirish muvaffaqiyatli bo'ladi, aks holda xato xabarini chiqaradi.
-- Sonning juft yoki toq ekanligini aniqlash.
-    - Foydalanuvchi kiritgan sonning juft yoki toq ekanligini aniqlaydigan dastur yozing.
+## ✅ 1-topshiriq:  
+Foydalanuvchidan yoshini so‘rang. Agar 18 dan kichik bo‘lsa `"Voyaga yetmagan"`, 18 yoki undan katta bo‘lsa `"Voyaga yetgan"` deb chiqaring.
+
+---
+
+## ✅ 2-topshiriq:  
+Quyidagi o‘zgaruvchi berilgan:  
+```python
+score = 87
+```
+Agar score 90 va undan yuqori bo‘lsa `"A"`, 80-89 oralig‘ida bo‘lsa `"B"`, 70-79 oralig‘ida bo‘lsa `"C"`, boshqacha bo‘lsa `"D"` baho chiqaring.
+
+---
+
+## ✅ 3-topshiriq:  
+Quyidagi o‘zgaruvchi berilgan:  
+```python
+is_raining = True
+```
+Agar is_raining True bo‘lsa `"Soyabon oling"`, aks holda `"Yomg‘ir yo‘q"` deb chiqaring.
+
+---
+
+## ✅ 4-topshiriq:  
+Quyidagi ro‘yxat berilgan:  
+```python
+fruits = ["olma", "banan", "gilos"]
+```
+Agar ro‘yxatda `"banan"` bo‘lsa `"Banan bor"`, bo‘lmasa `"Banan yo‘q"` deb chiqaring.
+
+---
+
+## ✅ 5-topshiriq:  
+Ro‘yxatda kamida 5 ta element bo‘lsa `"Ro‘yxat to‘la"`, aks holda `"Ro‘yxat qisqa"` deb chiqaring:  
+```python
+nums = [1, 4, 7, 10]
+```
+
+---
+
+## ✅ 6-topshiriq:  
+Tuple berilgan:  
+```python
+location = (41.2, 69.1)
+```
+Agar location bo‘sh bo‘lmasa `"Joylashuv aniqlangan"`, bo‘sh bo‘lsa `"Joylashuv yo‘q"` deb chiqaring.
+
+---
+
+## ✅ 7-topshiriq:  
+Set berilgan:  
+```python
+active_ids = {1, 2, 3}
+```
+Agar 2-ID setda mavjud bo‘lsa `"2-ID mavjud"`, bo‘lmasa `"2-ID yo‘q"` deb chiqaring.
+
+---
+
+## ✅ 8-topshiriq:  
+Quyidagi dictionary berilgan:  
+```python
+profile = {"name": "Alim", "age": 15}
+```
+Agar age 18 yoki undan katta bo‘lsa `"Voyaga yetgan"`, aks holda `"Voyaga yetmagan"` deb chiqaring.
+
+---
+
+## ✅ 9-topshiriq:  
+Quyidagi o‘zgaruvchilar berilgan:  
+```python
+is_logged_in = True
+is_admin = False
+```
+Agar foydalanuvchi tizimga kirgan va admin bo‘lsa `"Admin panelga xush kelibsiz"`, faqat tizimga kirgan bo‘lsa `"Foydalanuvchi paneli"`, har ikkisi ham False bo‘lsa `"Kirish talab qilinadi"`.
+
+---
+
+## ✅ 10-topshiriq:  
+Quyidagi kodni if...elif...else bilan yozing:  
+`temp` o‘zgaruvchisi bo‘yicha:  
+- 0 dan past `"Muzlab qolgan"`  
+- 0-15 oralig‘ida `"Salqin"`  
+- 16-30 oralig‘ida `"Me'yoriy"`  
+- 30 dan yuqori `"Issiq"`  
+```python
+temp = 23
+```
+
+---
+
+## ✅ 11-topshiriq:  
+Ro‘yxatda `"python"` va `"sql"` bo‘lsa `"Ikkalasi ham bor"`, faqat bittasi bo‘lsa `"Bittasi bor"`, ikkalasi ham bo‘lmasa `"Ikkalasi ham yo‘q"` deb chiqaring:  
+```python
+skills = ["html", "python", "css"]
+```
+
+---
+
+## ✅ 12-topshiriq:  
+Foydalanuvchi parol kiritadi. Agar parol uzunligi 10 dan katta bo‘lsa `"Kuchli parol"`, 6-10 oralig‘ida bo‘lsa `"O‘rtacha parol"`, 6 dan kam bo‘lsa `"Juda qisqa"`.
+
+---
+
+## ✅ 13-topshiriq:  
+Quyidagi dictionary berilgan:  
+```python
+user = {"username": "nargiza", "active": True, "role": "student"}
+```
+Agar user active va roli "teacher" bo‘lsa `"Yangi kurs yarata oladi"`, active va roli "student" bo‘lsa `"Faqat kursga yozila oladi"`, aks holda `"Ruxsat yo‘q"`.
+
+---
+
+## ✅ 14-topshiriq:  
+Quyidagi o‘zgaruvchilar berilgan:  
+```python
+speed = 7.2
+is_connected = True
+```
+Agar is_connected False bo‘lsa `"Internet yo‘q"`, else if speed < 1 bo‘lsa `"Eng past sifat"`, speed < 5 bo‘lsa `"O‘rtacha sifat"`, else `"Yuqori sifat"`.
+
+---
+
+## ✅ 15-topshiriq:  
+Quyidagi dictionarylar orqali avtomobil ijarasi uchun quyidagilarni tekshiring:  
+- "registered": True  
+- "has_license": True  
+- "age": 19  
+Agar hammasi to‘g‘ri bo‘lsa `"Ijaraga ruxsat"`, aks holda qaysi shart bajarilmaganini chiqaring.
+
+---
