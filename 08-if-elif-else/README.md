@@ -84,6 +84,8 @@ else:
 
 ## ✅ LIST BILAN ISHLASH
 
+📌 Onlayn do‘konda foydalanuvchi savatida kamida 1 mahsulot borligini va maxsus mahsulot bor-yo‘qligini tekshirish:
+
 ```python
 # Xaridor savatidagi mahsulotlar ro'yxati
 shopping_cart = ["bread", "sugar", "apple"]
@@ -111,71 +113,57 @@ else:
     print("Delivery charges apply")  # Pullik yetkazib berish
 ```
 
-### TUPLE BILAN ISHLASH:
-- Tupleni bo'sh yoki to'la ekanligini tekshirish:
+## ✅ TUPLE BILAN ISHLASH
+
+📌 Foydalanuvchining geolokatsiyasi asosida joylashuvni aniqlash
+
 ```python
-my_tuple = (1, 2, 3)
+# User location coordinates as a tuple (latitude, longitude)
+user_location = (41.2995, 69.2401)  # Coordinates of Tashkent
 
-if my_tuple:  # Tuple bo'sh bo'lmasa
-    print("Tuple to'la")
+# Check if location data is available (tuple is not empty)
+if user_location:
+    print("Location detected")  # Joylashuv mavjud
 else:
-    print("Tuple bo'sh")
-```
-- Tuple ichida e'lement mavjudligini tekshirish:
-```python
-my_tuple = (10, 20, 30, 40, 50)
+    print("Location not available")  # Joylashuv topilmadi
 
-# Element mavjudligini tekshirish
-if 20 in my_tuple:
-    print("20 tuplda mavjud")
+# Check if latitude is within the range of Uzbekistan
+if 41.0 <= user_location[0] <= 42.0:
+    print("User is located in Uzbekistan")  # Foydalanuvchi O‘zbekistonda
 else:
-    print("20 tuplda mavjud emas")
-
-# Tuple uzunligini tekshirish
-if len(my_tuple) == 5:
-    print("Tupledagi elementlar soni 5 ta")
-else:
-    print("Tupledagi elementlar soni 5 ta emas")
-```
-- Bir nechta shartni tekshirish
-```python
-my_tuple = (1, 2, 3, 4, 5)
-
-if len(my_tuple) > 3 and 2 in my_tuple:  # Tuple uzunligi 3 dan katta va 2 elementi mavjud bo'lsa
-    print("Tuple-da 3 dan ortiq element va 2 elementi mavjud")
-else:
-    print("Shartlar bajarilmadi")
+    print("User is outside of Uzbekistan")  # Foydalanuvchi boshqa joyda
 ```
 
-### SET BILAN ISHLASH:
-- Setning bo'sh yoki to'la ekanligini tekshirish:
-```python
-my_set = {1, 2, 3}
 
-if my_set:  # Set bo'sh bo'lmasa
-    print("Set to'la")
-else:
-    print("Set bo'sh")
-```
-- E'lement mavjud ekanligini tekshirish:
-```python
-my_set = {100, 200, 300, 400}
+## ✅ SET BILAN ISHLASH
 
-# Element mavjudligini tekshirish
-if 300 in my_set:
-    print("300 setda mavjud")
-else:
-    print("300 setda mavjud emas")
-```
-- Bir nechta shartni tekshirish:
-```python
-my_set = {1, 2, 3, 4, 5}
+📌  Saytga kirgan foydalanuvchilar `ID` raqamlari setda saqlanadi, va admin ularni tekshiradi.
 
-if len(my_set) > 3 and 2 in my_set:  # Set uzunligi 3 dan katta va 2 elementi mavjud bo'lsa
-    print("Setda 3 dan ortiq element va 2 elementi mavjud")
+```python
+# Bugun saytga kirgan foydalanuvchilarning ID raqamlari (takrorlanmaydi)
+active_user_ids = {101, 202, 303, 404}
+
+# Agar kamida bitta foydalanuvchi saytga kirgan bo‘lsa
+if active_user_ids:
+    print("Bugun saytga foydalanuvchilar kirgan")  # Foydalanuvchilar bor
+
+# Aks holda, hech kim kirmagan bo‘ladi
 else:
-    print("Shartlar bajarilmadi")
+    print("Hali hech kim saytga kirmagan")  # Set bo‘sh
+
+# Agar 202-ID foydalanuvchi kirgan bo‘lsa
+if 202 in active_user_ids:
+    print("202-ID foydalanuvchi tizimga kirgan")  # Shu ID topildi
+else:
+    print("202-ID foydalanuvchi hali kirmagan")  # Shu ID yo‘q
+
+# Bugun kirgan foydalanuvchilar soni 100 dan oshgan bo‘lsa
+if len(active_user_ids) > 100:
+    print("Yuqori aktivlik")  # Juda ko‘p foydalanuvchi
+else:
+    print("Oddiy kun")  # Odatdagi foydalanuvchi soni
 ```
+
 
 ### DICTIONARY BILAN ISHLASH:
 - Dictionary bo'sh yoki to'la ekanligini tekshirish:
