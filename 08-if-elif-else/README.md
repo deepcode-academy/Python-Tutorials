@@ -441,37 +441,72 @@ else:
 ```
 
 
-- Ko'p darajali ichma-ich shart operatorlari:
-```python
-x = 10
-y = 20
-z = 30
+## ✅ MULTIPLE LEVELS OF NESTED CONDITIONAL STATEMENTS
 
-if x > 5:  # Birinchi darajadagi shart
-    if y > 15:  # Ikkinchi darajadagi shart
-        if z > 25:  # Uchinchi darajadagi shart
-            print("x 5 dan katta, y 15 dan katta, va z 25 dan katta")
+🎯 Ma'lumotlar bazasida foydalanuvchi ro‘yxatdan o‘tganmi, email tasdiqlanganmi va yoshi to‘liqmi — shu tartibda tekshiriladi:
+
+```python
+# Foydalanuvchining ro‘yxatdan o‘tganligi, email holati va yoshi
+user = {
+    "username": "umid",
+    "registered": True,         # Foydalanuvchi ro'yxatdan o'tganmi?
+    "email_verified": True,     # Email tasdiqlanganmi?
+    "age": 19                   # Foydalanuvchi yoshi
+}
+
+# 1. Avval foydalanuvchi ro‘yxatdan o‘tganligini tekshiramiz
+if user["registered"]:
+
+    # 2. Email tasdiqlanganligini tekshiramiz
+    if user["email_verified"]:
+
+        # 3. Yoshi 18 yoki undan katta bo‘lsa – to‘liq ruxsat beriladi
+        if user["age"] >= 18:
+            print("Full access granted to the system.")  # To‘liq ruxsat
+
         else:
-            print("x 5 dan katta, y 15 dan katta, lekin z 25 dan kichik yoki teng")
+            print("Access denied. You must be at least 18 years old.")  # Yoshi yetmaydi
+
     else:
-        print("x 5 dan katta, lekin y 15 dan kichik yoki teng")
+        print("Email not verified. Please verify your email first.")  # Email tasdiqlanmagan
+
 else:
-    print("x 5 dan kichik yoki teng")
+    print("You are not registered. Please sign up first.")  # Ro‘yxatdan o‘tmagan
 ```
 
-- Ichma-ich shart operatorlari bilan foydalanuvchi `login`, `parol`ini tekshirish:
+🎯 Avtomobil ijarasi faqat quyidagi shartlar bajarilganda mumkin:
+
+- Foydalanuvchi ro‘yxatdan o‘tgan
+- Haydovchilik guvohnomasi mavjud
+- Yoshi 21 dan katta
+
 ```python
-username = "admin"
-password = "1234"
+# User data: registration, license availability, and age
+user = {
+    "registered": True,       # Foydalanuvchi ro‘yxatdan o‘tganmi?
+    "has_license": True,      # Haydovchilik guvohnomasi bormi?
+    "age": 25                 # Foydalanuvchining yoshi
+}
 
-if username == "admin":  # Birinchi darajadagi shart
-    if password == "1234":  # Ikkinchi darajadagi shart
-        print("Tizimga kirdingiz!")
+# 1. Foydalanuvchi ro‘yxatdan o‘tgan bo‘lishi kerak
+if user["registered"]:
+
+    # 2. Haydovchilik guvohnomasi mavjud bo‘lishi kerak
+    if user["has_license"]:
+
+        # 3. Yoshi 21 dan katta yoki teng bo‘lishi kerak
+        if user["age"] >= 21:
+            print("Car rental approved.")  # Ijaraga ruxsat berildi
+        else:
+            print("You must be at least 21 years old to rent a car.")  # Yoshi yetmaydi
+
     else:
-        print("Noto'g'ri parol!")
+        print("You must have a valid driver’s license.")  # Guvohnoma yo‘q
+
 else:
-    print("Noto'g'ri foydalanuvchi nomi!")
+    print("Please register before renting a car.")  # Ro‘yxatdan o‘tmagan
 ```
+
 
 ## AMALIYOT
 
