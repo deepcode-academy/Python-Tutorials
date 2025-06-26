@@ -84,7 +84,7 @@ else:
 
 ## ✅ LIST BILAN ISHLASH
 
-📌 Onlayn do‘konda foydalanuvchi savatida kamida 1 mahsulot borligini va maxsus mahsulot bor-yo‘qligini tekshirish:
+🎯 Onlayn do‘konda foydalanuvchi savatida kamida 1 mahsulot borligini va maxsus mahsulot bor-yo‘qligini tekshirish:
 
 ```python
 # Xaridor savatidagi mahsulotlar ro'yxati
@@ -115,7 +115,7 @@ else:
 
 ## ✅ TUPLE BILAN ISHLASH
 
-📌 Foydalanuvchining geolokatsiyasi asosida joylashuvni aniqlash
+🎯 Foydalanuvchining geolokatsiyasi asosida joylashuvni aniqlash
 
 ```python
 # Foydalanuvchining geografik joylashuvi (kenglik, uzunlik)
@@ -139,7 +139,7 @@ else:
 
 ## ✅ SET BILAN ISHLASH
 
-📌  Saytga kirgan foydalanuvchilar `ID` raqamlari setda saqlanadi, va admin ularni tekshiradi.
+🎯  Saytga kirgan foydalanuvchilar `ID` raqamlari setda saqlanadi, va admin ularni tekshiradi.
 
 ```python
 # Bugun saytga kirgan foydalanuvchilarning ID raqamlari (takrorlanmaydi)
@@ -171,7 +171,7 @@ else:
 
 ## ✅ DICTIONARY BILAN ISHLASH:
 
-📌 Foydalanuvchi registratsiya qilganda u haqidagi ma’lumotlar dictionaryda saqlanadi.
+🎯 Foydalanuvchi registratsiya qilganda u haqidagi ma’lumotlar dictionaryda saqlanadi.
 
 ```python
 # Dictionary: foydalanuvchining asosiy profili
@@ -220,7 +220,7 @@ else:
 `elif` — bu else if degan so‘zning qisqargan ko‘rinishi. U **bir nechta shartlarni ketma-ket tekshirish** uchun ishlatiladi. Agar `if` sharti **False** bo'lsa, `elif` sharti tekshiriladi.
 
 
-📌 Smart uydagi HVAC tizimi xonadagi haroratga qarab qaror qabul qiladi.
+🎯 Smart uydagi HVAC tizimi xonadagi haroratga qarab qaror qabul qiladi.
 
 ```python
 # Current room temperature in Celsius
@@ -239,7 +239,7 @@ else:
     print("Temperature is optimal, no action needed")  # Hech qanday tizim yoqilmaydi
 ```
 
-📌 Onlayn do‘konda har bir buyurtmaning holatini aniqlash uchun ishlatiladi.
+🎯 Onlayn do‘konda har bir buyurtmaning holatini aniqlash uchun ishlatiladi.
 
 ```python
 # Order status (current stage of delivery process)
@@ -267,26 +267,86 @@ else:
 ```
 
 
-## SHARTLARNI ZANJIR ORQALI ULASH (`and`, `or`, `not`)
+## ✅ BIR NECHTA SHARTLARNI  BIRGA ISHLATISH
 
-Siz shartlarni birgalikda ishlatishingiz mumkin, bu orqali bir nechta shartlarni birga tekshirish mumkin.
-- `and`: Ikkala shart ham to'g'ri bo'lsa, shart bajariladi.
-- `or`: Har qanday bir shart to'g'ri bo'lsa, shart bajariladi.
-- `not`: Shartning qiymatini teskariga o'zgartiradi.
+🎯 Login tizimi – foydalanuvchini tekshirish. Foydalanuvchi login va parolni to‘g‘ri kiritganmi, tekshiramiz.
 
 ```python
-x = 7
-y = 10
+# Foydalanuvchi kiritgan login va parol
+entered_username = "umid"
+entered_password = "python123"
 
-if x > 5 and y > 5:
-    print("x va y har ikkalasi ham 5 dan katta")
-    
-if x > 5 or y < 5:
-    print("yoki x 5 dan katta yoki y 5 dan kichik")
+# To‘g‘ri login va parol kiritilgan bo‘lsa
+if entered_username == "umid" and entered_password == "python123":
+    print("Welcome, Umid!")  # Xush kelibsiz!
 
-if not (x > 10):
-    print("x 10 dan katta emas")
+# Login to‘g‘ri, lekin parol noto‘g‘ri bo‘lsa
+elif entered_username == "umid" and entered_password != "python123":
+    print("Incorrect password")  # Parol xato
+
+# Parol to‘g‘ri, lekin login noto‘g‘ri bo‘lsa
+elif entered_username != "umid" and entered_password == "python123":
+    print("Incorrect username")  # Login xato
+
+# Ikkalasi ham noto‘g‘ri bo‘lsa
+else:
+    print("Incorrect username and password")  # Ikkalasi ham xato
 ```
+
+🎯 Ob-havo ilovasi – kiyim tavsiyasi. Foydalanuvchiga havo haroratiga qarab tavsiya beriladi.
+
+```python
+# Ob-havo holati: havo harorati va yomg‘ir yog‘yaptimi yo‘qmi
+temperature = 32  # Havo harorati (°C)
+is_raining = False  # Yomg‘ir yog‘ayotgan bo‘lsa True, aks holda False
+
+# Juda sovuq bo‘lsa (0°C yoki undan past)
+if temperature <= 0:
+    print("It is very cold. Wear warm clothes.")  # Qalin kiyim tavsiya qilinadi
+
+# Salqin bo‘lsa (1°C dan 15°C gacha)
+elif temperature <= 15:
+    print("It's cool outside. A light jacket is recommended.")  # Yengil kurtka kiying
+
+# Juda issiq yoki yomg‘irli bo‘lsa
+elif temperature >= 30 or is_raining:
+    print("Hot or rainy weather – wear light clothes and carry an umbrella.")  # Soyabon va yengil kiyim
+
+# Ob-havo normal bo‘lsa
+else:
+    print("The weather is normal. Regular clothes are fine.")  # Oddiy kiyim yetarli
+```
+
+🎯 Internet tezligiga qarab videoning sifat darajasi belgilanadi.
+
+```python
+# Foydalanuvchi internetga ulanmagan bo‘lsa, bu True/False qiymatni bildiradi
+is_connected = True
+
+# Internet tezligi (Mbit/s)
+internet_speed = 2.5
+
+# Agar internetga ulanmagan bo‘lsa
+if not is_connected:
+    print("Not connected to the internet")  # Internet yo‘q
+
+# Juda past tezlikda
+elif internet_speed < 1:
+    print("Video quality: 144p (very low)")  # Juda past sifat
+
+# O‘rtacha past tezlikda
+elif internet_speed < 3:
+    print("Video quality: 360p (low)")  # Past sifat
+
+# O‘rta tezlikda
+elif internet_speed < 6:
+    print("Video quality: 720p (medium)")  # O‘rtacha sifat
+
+# Yuqori tezlikda
+else:
+    print("Video quality: 1080p (high)")  # Yuqori sifat
+```
+
 
 ## SHART OPERATORLARINI ICHMA-ICH JOYLASH (Nested Conditions)
 Shart operatorlarini bir-birining ichiga joylashtirish orqali murakkabroq mantiqiy holatlar yaratish mumkin.
