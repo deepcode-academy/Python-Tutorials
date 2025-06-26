@@ -169,49 +169,47 @@ else:
 ```
 
 
-### DICTIONARY BILAN ISHLASH:
-- Dictionary bo'sh yoki to'la ekanligini tekshirish:
+## ✅ DICTIONARY BILAN ISHLASH:
+
+📌 Foydalanuvchi registratsiya qilganda u haqidagi ma’lumotlar dictionaryda saqlanadi.
+
 ```python
-my_dict = {"name": "Alice", "age": 25}
+# Dictionary: foydalanuvchining asosiy profili
+user_profile = {
+    "name": "Umid",
+    "email": "umid@example.com",
+    "age": 23
+}
 
-if my_dict:  # Dictionary bo'sh bo'lmasa
-    print("Dictionary to'la")
+# Agar foydalanuvchiga oid ma'lumotlar mavjud bo‘lsa
+if user_profile:
+    print("User profile data is available")  # Ma'lumotlar bor
 else:
-    print("Dictionary bo'sh")
-```
-- E'lement mavjud ekanligini tekshirish:
-```python
-my_dict = {'a': 1, 'b': 2, 'c': 3}
+    print("No user data found")  # Ma'lumotlar yo‘q
 
-# Kalit mavjudligini tekshirish
-if 'b' in my_dict:
-    print("'b' kaliti lug'atda mavjud")
-else:
-    print("'b' kaliti lug'atda mavjud emas")
 
-# Qiymat mavjudligini tekshirish
-if 2 in my_dict.values():
-    print("2 qiymati lug'atda mavjud")
-else:
-    print("2 qiymati lug'atda mavjud emas")
-```
-- Bir nechta shartni tekshirish:
-```python
-my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 
-if "age" in my_dict and my_dict["age"] > 20:  # "age" kaliti mavjud va qiymati 20 dan katta bo'lsa
-    print("Yoshi 20 dan katta")
+# Agar email kaliti mavjud bo‘lsa
+if "email" in user_profile:
+    print("Email is provided")  # Email mavjud
 else:
-    print("Shart bajarilmadi")
-```
-- Dictionary uzunligini tekshirish:
-```python
-my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+    print("Email is missing")  # Email kiritilmagan
 
-if len(my_dict) > 2:  # Dictionaryda 2 dan ortiq kalit mavjud bo'lsa
-    print("Dictionaryda 2 dan ortiq kalit mavjud")
+
+
+# Agar foydalanuvchi yoshi 18 yoki undan katta bo‘lsa
+if user_profile.get("age", 0) >= 18:
+    print("User is an adult")  # Voyaga yetgan
 else:
-    print("Dictionaryda 2 yoki undan kam kalit mavjud")
+    print("User is a minor")  # Voyaga yetmagan
+
+
+
+# Profil to‘liq deb hisoblanadi, agar kamida 3 ta kalit bo‘lsa
+if len(user_profile) >= 3:
+    print("Profile is complete")  # To‘liq profil
+else:
+    print("Profile is incomplete")  # To‘liq bo‘lmagan profil
 ```
 
 
