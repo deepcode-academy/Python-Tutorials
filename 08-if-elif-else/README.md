@@ -4,32 +4,42 @@
 
 ## TARMOQLANISH
 
-Shu vaqtgacha yozgan dasturlarimizga e'tibor bersangiz, dasturimiz yuqoridan pastga qarab qatorma-qator bajarilib keldi. Bu chiziqli dastur deyiladi. Voqelikda esa aksar dasturlar ma'lum bir shart bajarilishi (yoki bajarilmaganiga) ko'ra kodning bir qismidan boshqa qismiga "sakrab" o'tishi tabiiy hol. Dasturlashda bu `tarmoqlanish` deb ataladi. 
+📌 Shu vaqtgacha yozgan dasturlarimizga e'tibor bersangiz, dasturimiz yuqoridan pastga qarab qatorma-qator bajarilib keldi. Bu chiziqli dastur deyiladi. Ammo ba'zida shartga qarab kodning bir qismidan boshqa qismiga o'tish zarur bo'ladi. Bunday holat `"tarmoqlanish"` deb ataladi. 
 
 ![alt text](images/flowchart.png)
 
-Python dasturlash tilida shart operatorlari (`conditional statements`) dasturda turli vaziyatlarga qarab turli amallarni bajarishga imkon beradi.
+📌 Python dasturlash tilida shart operatorlari (`conditional statements`) dasturda turli vaziyatlarga qarab turli amallarni bajarishga imkon beradi.
 
-## `if` OPERATORI
-`if` operatori birinchi bo'lib shartni tekshiradi va agar shart bajarilsa, keyingi blokdagi kodni bajaradi.
+## ✅ IF
 
-**Sintaksis:**
+`if` operatori birinchi bo'lib shartni tekshiradi va agar shart bajarilsafaqat tegishli blokdagi kodlar bajariladi.
+
+
 ```python
-if shart:
-    # Bu yerda shart bajarilganda bajariladigan kodlar
+# Bankdagi hisobdagi pul miqdori
+account_balance = 1500  
+
+# Agar balans 1000 dan katta bo‘lsa, foydalanuvchi pul yechishi mumkin
+if account_balance > 1000:
+    print("You can withdraw money")  # Foydalanuvchiga ruxsat beriladi
 ```
-Quyidagi misolda `x` o'zgaruvchisiga berilgan qiymat `5` dan katta ekanligini tekshirdik, agar shart `True` bo'lsa terminalga `x 5 dan katta` degan so'z chiqadi:
+
 ```python
-x = 10
-if x > 5:
-    print("x 5 dan katta")
+# Foydalanuvchining savatidagi umumiy mahsulot narxi
+total_price = 250  
+
+# Agar narx 200 dan katta bo‘lsa, bepul yetkazib berish taklif qilinadi
+if total_price > 200:
+    print("You qualify for free shipping")  # Bepul yetkazib berish haqida xabar
 ```
 
-Quyidagi misolda foydalanuvchidan yoshini kiritishi so'raladi, kiritilgan yosh `18` dan katta bo'lsa yoki `18` ga teng bo'lsa ovoz berish huquqi beriladi:
 ```python
-age = input('Enter your age:')
-if int(age) >= 18:
-    print("You're eligible to vote.")
+# Foydalanuvchi kiritgan parol
+password = "mysecurepass"  
+
+# Agar parol uzunligi 8 belgidan ko‘p bo‘lsa, kuchli parol deb baholanadi
+if len(password) > 8:
+    print("Your password is strong")  # Kuchli parol haqida xabar
 ```
 
 ## `else` OPERATORI
