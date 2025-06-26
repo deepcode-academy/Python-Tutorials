@@ -410,6 +410,36 @@ else:
     print("Invalid transaction type.")  # Noma'lum amal
 ```
 
+🎯 Agar foydalanuvchi o‘qituvchi bo‘lsa, yangi kurs yarata oladi. Talaba bo‘lsa, faqat yozilishi mumkin.
+
+```python
+# Foydalanuvchining ma'lumotlari (ismi, roli, holati)
+user = {
+    "name": "Umid",
+    "role": "student",     # "student" yoki "teacher"
+    "active": True         # Foydalanuvchi faolligi
+}
+
+# Agar foydalanuvchi faollashtirilgan bo‘lsa
+if user["active"]:
+    
+    # Agar foydalanuvchi o‘qituvchi bo‘lsa
+    if user["role"] == "teacher":
+        print("You can create a new course.")  # Yangi kurs yaratish huquqi bor
+
+    # Agar foydalanuvchi talaba bo‘lsa
+    elif user["role"] == "student":
+        print("You can enroll in a course.")  # Kursga yozilish huquqi bor
+
+    # Boshqa noma'lum rollar uchun
+    else:
+        print("Your role is not recognized.")  # Rol noto‘g‘ri yoki mavjud emas
+
+# Agar foydalanuvchi faollashtirilmagan bo‘lsa
+else:
+    print("User is not active.")  # Foydalanuvchi faol emas
+```
+
 
 - Ko'p darajali ichma-ich shart operatorlari:
 ```python
