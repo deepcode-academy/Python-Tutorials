@@ -6,8 +6,6 @@
 
 📌 Python dasturlash tilida dictionary — bu kalit-qiymat (key-value) juftliklarini saqlovchi ma’lumotlar turidir. Har bir kalit yagona bo‘ladi va unga mos qiymat bo‘ladi. Dictionary ma’lumotlar `{}` qavslar ichida yoziladi va har bir kalit bilan qiymat `:` bilan ajratiladi. Bu ma'lumot turi ma’lumotlarni tartibli saqlash, oson topish va boshqarish uchun ishlatiladi.
 
-
-
 ## ✅ DICTIONARY YARATISH
 
 ### ❇️ BO'SH DICTIONARY YARATISH
@@ -28,13 +26,28 @@ user_info = {
 }
 ```
 
-### LUG'ATLARNI BOSHQARISH
+## ✅ DICTIONARYGA E'LEMENT QO'SHISH
 
-- Lug'atga element qo'shish uchun o'zgaruvchi nomidan kn `[]` qavs ochib ichiga kalit(key) ni beramiz, undan keyin qo'shmoqchi bo'lgan qiymat(value)imizni beramiz.
+📌 Dictionaryga e'lement qo'shish uchun o'zgaruvchi nomidan kn `[]` qavs ochib ichiga keyni beramiz, undan keyin qo'shmoqchi bo'lgan value yani qiymatni beramiz.
+
 ```python
-my_dict['email'] = 'alice@example.com'
-print(my_dict)
-# {'name': 'Alice', 'age': 25, 'city': 'New York', 'email': 'alice@example.com'}
+# Bo'sh dictionary yaratilyapti
+student_info = {}
+
+# Dictionary ga yangi kalit-qiymat juftligi qo‘shilmoqda: ism
+student_info["name"] = "Umid"
+
+# Dictionary ga yangi kalit-qiymat juftligi qo‘shilmoqda: yosh
+student_info["age"] = 20
+
+# Dictionary ga yangi kalit-qiymat juftligi qo‘shilmoqda: kurs
+student_info["course"] = "Python Programming"
+
+# Dictionary ga yangi kalit-qiymat juftligi qo‘shilmoqda: talabalik holati
+student_info["is_student"] = True
+
+# Natijani ekranga chiqarish
+print(student_info)
 ```
 
 - Lug'atni yangilash:
