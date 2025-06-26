@@ -173,25 +173,52 @@ items = user_info.items()
 print(items)
 ```
 
-### LUG'ATLARNI BOSHQARISH
 
-- Lug'atni tozalash uchun `.clear()` metodidan foydalanamiz:
+## ✅ FOYDALI METODLAR
+
+### ❇️ GET
+
+📌 Kalit bo'yicha qiymatni oladi. Kalit mavjud bo'lmasa, `None` qaytaradi.
+
 ```python
-my_dict.clear()
-print(my_dict)  # {}
+# Avtomobil haqida ma'lumotlar saqlanmoqda
+car_info = {
+    "brand": "Chevrolet",
+    "model": "Malibu",
+    "year": 2022
+}
+
+# "model" kaliti orqali qiymat olinmoqda, agar mavjud bo‘lsa — shu qiymat qaytadi
+car_model = car_info.get("model", "Not Found")
+print("Model:", car_model)  # Natija: Malibu
+
+# "color" degan kalit mavjud emas, shuning uchun "Not Found" qiymati qaytadi
+car_color = car_info.get("color", "Not Found")
+print("Color:", car_color)  # Natija: Not Found
 ```
-- Lug'atni nusxalash uchun `.copy()` metodidan foydalanamiz:
+### ❇️ UPDATE
+
+📌 Dictionaryga yangi ma'lumot qo'shish yoki yangilash uchun ishlatiladi.
+
 ```python
-new_dict = my_dict.copy()
-print(new_dict)
+# Talaba haqida dastlabki ma'lumotlar saqlanmoqda
+student_info = {
+    "name": "Diyor",
+    "age": 18,
+    "course": "Python"
+}
+
+# update() metodi yordamida yangi ma'lumotlar qo‘shilmoqda yoki mavjudlari yangilanmoqda
+student_info.update({
+    "age": 19,                # age mavjud edi — yangilanmoqda
+    "course": "Django",       # course mavjud edi — yangilanmoqda
+    "is_active": True         # yangi kalit — qo‘shilmoqda
+})
+
+# Natijani ekranga chiqarish
+print(student_info)
 ```
 
-### LUG'ATLARDA FOYDALI METODLAR
-- **`.get()` metodi:** Kalit bo'yicha qiymatni olish (kalit mavjud bo'lmasa, `None` qaytaradi).
-```python
-name = my_dict.get('name', 'Not Found')
-print(name)  # 'Alice'
-```
 - **`.setdefault()` metodi:** Kalit mavjud bo'lmasa, qiymat qo'shadi va qaytaradi.
 ```python
 country = my_dict.setdefault('country', 'USA')
