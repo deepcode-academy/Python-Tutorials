@@ -118,20 +118,22 @@ else:
 📌 Foydalanuvchining geolokatsiyasi asosida joylashuvni aniqlash
 
 ```python
-# User location coordinates as a tuple (latitude, longitude)
-user_location = (41.2995, 69.2401)  # Coordinates of Tashkent
+# Foydalanuvchining geografik joylashuvi (kenglik, uzunlik)
+user_location = (41.2995, 69.2401)  # Toshkent koordinatalari
 
-# Check if location data is available (tuple is not empty)
+# Agar joylashuv ma'lum bo‘lsa (ya'ni tuple bo‘sh bo‘lmasa)
 if user_location:
-    print("Location detected")  # Joylashuv mavjud
+    print("Location detected")  # Joylashuv aniqlandi
 else:
     print("Location not available")  # Joylashuv topilmadi
 
-# Check if latitude is within the range of Uzbekistan
+
+
+# Foydalanuvchi O'zbekiston hududida joylashganmi – kenglik bo‘yicha tekshiramiz
 if 41.0 <= user_location[0] <= 42.0:
     print("User is located in Uzbekistan")  # Foydalanuvchi O‘zbekistonda
 else:
-    print("User is outside of Uzbekistan")  # Foydalanuvchi boshqa joyda
+    print("User is outside of Uzbekistan")  # Foydalanuvchi boshqa mamlakatda
 ```
 
 
@@ -150,6 +152,8 @@ if active_user_ids:
 # Aks holda, hech kim kirmagan bo‘ladi
 else:
     print("Hali hech kim saytga kirmagan")  # Set bo‘sh
+
+
 
 # Agar 202-ID foydalanuvchi kirgan bo‘lsa
 if 202 in active_user_ids:
