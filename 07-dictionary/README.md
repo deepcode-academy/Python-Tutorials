@@ -96,7 +96,7 @@ del book_info["price"]
 print(book_info)
 ```
 
-### ❇️ .pop()
+### ❇️ POP
 
 📌 Lug'atdagi e'lementlarni o'chirish uchun `.pop()` metodidan ham foydalansak bo'ladi.
 
@@ -119,21 +119,58 @@ print("Removed:", removed_value)
 print(phone_details)
 ```
 
-### E'LEMENTLARNI KO'RISH
-- Kalitlarni olish:
+## ✅ E'LEMENTLARGA MUROJAT QILISH
+
+### ❇️ KEYS
+
+📌 Kalitlarni olish.
+
 ```python
-keys = my_dict.keys()
-print(keys)  # dict_keys(['name', 'city'])
+# Foydalanuvchi haqida ma'lumot saqlanmoqda
+user_info = {
+    "name": "Alice",
+    "city": "New York"
+}
+
+# Barcha kalitlar (key) alohida olinmoqda
+keys = user_info.keys()
+
+# Kalitlar ekranga chiqarilmoqda
+print(keys)
 ```
-- Qiymatlarni olish:
+
+### ❇️ VALUES
+
+📌 Qiymatlarni olish.
+
 ```python
-values = my_dict.values()
-print(values)  # dict_values(['Alice', 'New York'])
+# Foydalanuvchi haqida ma'lumot saqlanmoqda
+user_info = {
+    "name": "Alice",
+    "city": "New York"
+}
+
+# Barcha qiymatlar (value) alohida olinmoqda
+values = user_info.values()
+
+# Qiymatlar ekranga chiqarilmoqda
+print(values)
 ```
-- Kalit-qiymat juftliklarini olish:
+### ❇️ ITEMS
+
+📌 Kalit-qiymat juftliklarini olish:
 ```python
-items = my_dict.items()
-print(items)  # dict_items([('name', 'Alice'), ('city', 'New York')])
+# Foydalanuvchi haqida ma'lumot saqlanmoqda
+user_info = {
+    "name": "Alice",
+    "city": "New York"
+}
+
+# Barcha kalit-qiymat juftliklari alohida olinmoqda
+items = user_info.items()
+
+# Juftliklar ekranga chiqarilmoqda
+print(items)
 ```
 
 ### LUG'ATLARNI BOSHQARISH
