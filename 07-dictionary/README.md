@@ -264,56 +264,131 @@ print("Phone:", phone)
 print("Updated user_info:", user_info)
 ```
 
-## AMALIYOT
+# ✅ AMALIYOT
 
-- otam (onam, akam, ukam, va hokazo) degan lug'at yarating va lug'atga shu inson haqida kamida 3 ta m'alumot kiriting (ismi, tu'gilgan yili, shahri, manzili va hokazo). Lug'atdagi ma'lumotni matn shaklida konsolga chiqaring: `Otamning ismi Mavlutdin, 1954-yilda, Samarqand viloyatida tug'ilgan`
+## ✅ 1-topshiriq:  
+Bo‘sh dictionary yarating va unga quyidagi kalit-qiymatlarni qo‘shing:  
+- `"name"`: `"John"`  
+- `"age"`: `25`  
+- `"city"`: `"Tashkent"`  
+So‘ng dictionaryni ekranga chiqaring.
 
-- Oila a'zolaringizning sevimli taomlari lug'atini tuzing. Lug'atda kamida 5 ta ism-taom jufltigi bo'lsin. Kamida uch kishining sevimli taomini konsolga chiqaring: `Alining sevimli taomi osh`
+---
 
-- Berilgan `student` lug'atidagi age kalitining qiymatini `1` ga oshiring va yangi `grade` kalit-qiymat juftligini qo'shing.
+## ✅ 2-topshiriq:  
+Quyidagi dictionary berilgan:  
 ```python
-student = {
-    'name': 'Alice',
-    'age': 21,
-    'major': 'Mathematics'
+person = {"name": "Ali", "age": 30, "job": "Engineer"}
+```  
+Undagi `"age"` qiymatini `31` ga yangilang va dictionaryni chop eting.
 
-    # student = {'name': 'Alice', 'age': 22, 'major': 'Mathematics', 'grade': 'A'}
-}
+---
+
+## ✅ 3-topshiriq:  
+Yuqoridagi `person` dictionarydan `"job"` elementini `del` yordamida o‘chiring.  
+Keyin dictionaryni ekranga chiqarib ko‘ring.
+
+---
+
+## ✅ 4-topshiriq:  
+Quyidagi dictionarydan `.pop()` metodi yordamida `"model"` kalitli elementni olib tashlang:  
+```python
+car = {"brand": "BMW", "model": "X5", "year": 2020}
+```  
+O‘chirilgan qiymatni va yangilangan dictionaryni ekranga chiqaring.
+
+---
+
+## ✅ 5-topshiriq:  
+Bo‘sh dictionary yarating va `setdefault()` yordamida quyidagi elementlarni qo‘shing:  
+- `"username"`: `"coder123"`  
+- `"email"`: `"coder@example.com"`  
+Agar `"email"` mavjud bo‘lsa, uni yangilamasin.
+
+---
+
+## ✅ 6-topshiriq:  
+Quyidagi dictionarydan `.popitem()` yordamida oxirgi elementni o‘chirib tashlang:  
+```python
+movie = {"title": "Inception", "director": "Nolan", "year": 2010}
+```  
+O‘chirilgan element va yangilangan dictionaryni chop eting.
+
+---
+
+## ✅ 7-topshiriq:  
+Quyidagi dictionary berilgan:  
+```python
+student = {"name": "Ziyoda", "course": "Python", "age": 21}
+```  
+`update()` yordamida quyidagicha o‘zgartiring:  
+- `"course"`: `"Django"`  
+- `"is_active"`: `True`  
+So‘ng natijani chop eting.
+
+---
+
+## ✅ 8-topshiriq:  
+Quyidagi dictionarydan `get()` yordamida `"email"` va `"phone"` qiymatlarini ajrating:  
+```python
+user = {"username": "umiddev", "email": "umid@example.com"}
+```  
+Agar `"phone"` mavjud bo‘lmasa, `"No number"` qiymatini qaytaring.
+
+---
+
+## ✅ 9-topshiriq:  
+Quyidagi dictionaryda `keys()`, `values()`, `items()` metodlaridan foydalanib ularni alohida chop eting:  
+```python
+laptop = {"brand": "Lenovo", "ram": "16GB", "ssd": "512GB"}
 ```
 
-- Berilgan `employee` lug'atidan `department` kalitini o'chiring va yangi lug'atni chop eting.
-```python
-employee = {
-    'name': 'John',
-    'age': 30,
-    'position': 'Manager',
-    'department': 'Sales'
+---
 
-    # employee = {'name': 'John', 'age': 30, 'position': 'Manager'}
-}
+## ✅ 10-topshiriq:  
+Quyidagi dictionary berilgan:  
+```python
+book = {"title": "Python 101", "author": "Alex", "pages": 300}
+```  
+Agar `"pages"` kaliti mavjud bo‘lsa — yangilang, mavjud bo‘lmasa — `250` qiymatini qo‘shing.
+
+---
+
+## ✅ 11-topshiriq:  
+Quyidagi dictionaryda `"price"` mavjudligini tekshirib ko‘ring va mavjud bo‘lsa — `del` yordamida o‘chirib tashlang:  
+```python
+product = {"name": "Mouse", "brand": "Logitech", "price": 150000}
 ```
 
-- `grades` lug'atidagi barcha qiymatlarning yig'indisini hisoblang va natijani chop eting.
-```python
-grades = {
-    'Math': 90,
-    'Science': 85,
-    'English': 92,
-    'History': 88
+---
 
-    # Yig'indi: 355
-}
+## ✅ 12-topshiriq:  
+Quyidagi ikkita dictionaryni `update()` yordamida birlashtiring:  
+```python
+a = {"a": 1, "b": 2}
+b = {"b": 3, "c": 4}
+```  
+Natijada `a` dictionaryni yangilang va chop eting.
+
+---
+
+## ✅ 13-topshiriq:  
+Quyidagi dictionaryga `"skills"` degan yangi kalit qo‘shing va qiymat sifatida `["Python", "SQL"]` ro‘yxatini bering.
+
+---
+
+## ✅ 14-topshiriq:  
+Quyidagi dictionaryda `"status"` kaliti mavjud emas.  
+`setdefault()` yordamida `"active"` qiymatini qo‘shing:  
+```python
+account = {"username": "admin"}
 ```
 
-- `scores` lug'atidagi `eng kichik` va `eng katta` qiymatlarni toping va ularni chop eting.
-```python
-scores = {
-    'player1': 35,
-    'player2': 42,
-    'player3': 28,
-    'player4': 50
+---
 
-    # Eng kichik qiymat: 28
-    # Eng katta qiymat: 50
-}
-```
+## ✅ 15-topshiriq:  
+Quyidagi dictionarydagi barcha kalit va qiymatlarni alohida ro‘yxatlarga ajrating:  
+```python
+info = {"x": 10, "y": 20, "z": 30}
+```  
+Kalitlar `keys_list` nomli ro‘yxatga, qiymatlar esa `values_list` nomli ro‘yxatga saqlansin.
