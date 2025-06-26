@@ -2,40 +2,29 @@
 
 # 🧩 7-DARS DICTIONARY
 
-## LUG'AT(DICTIONARY) NIMA?
+## ✅ DICTIONARY NIMA?
 
 📌 Python dasturlash tilida dictionary — bu kalit-qiymat (key-value) juftliklarini saqlovchi ma’lumotlar turidir. Har bir kalit yagona bo‘ladi va unga mos qiymat bo‘ladi. Dictionary ma’lumotlar `{}` qavslar ichida yoziladi va har bir kalit bilan qiymat `:` bilan ajratiladi. Bu ma'lumot turi ma’lumotlarni tartibli saqlash, oson topish va boshqarish uchun ishlatiladi.
 
-### LUG'ATLARNING ASOSIY XUSUSIYATLARI
-1. **Kalitlar va qiymatlar:**
-    - Kalitlar (`keys`) va qiymatlar (`values`) juftliklar sifatida saqlanadi. Kalitlar unikal(`takrorlanmas`) bo'lishi kerak.
-2. **Tartibsizlik:**
-    - Python 3.7 va undan keyingi versiyalarida lug'atlar saqlash tartibini saqlaydi, lekin avvalgi versiyalarda tartibni saqlash kafolatlanmagan.
-3. **O'zgaruvchanlik:**
-    - Lug'atlar o'zgaruvchan bo'lib, yangi kalit-qiymat juftliklarini qo'shish, mavjudlarini o'zgartirish va o'chirish mumkin.
-4. **Unikal Kalitlar:**
-    - Har bir kalit faqat bir marta mavjud bo'lishi mumkin. Agar yangi kalit qo'shsangiz yoki mavjud kalitni yangilasangiz, eski qiymat yangisi bilan o'zgartiriladi.
 
-### LUG'AT SINTAKSISI
+
+## ✅ DICTIONARY YARATISH
+
+### ❇️ BO'SH DICTIONARY YARATISH
 
 ```python
-dict_name = {
-    'key':'value'
-}
+# Bo'sh dictionary yaratish
+user_info = {}
 ```
 
-### LUG'AT YARATISH
-- Bo'sh lug'at yaratish:
-```python
-my_dict = {}
-```
+### ❇️ E'LEMENTLAR BILAN DICTIONARY YARATISH
 
-- Elementlar bilan lug'at yaratish:
 ```python
-my_dict = {
-    'name': 'Alice',
-    'age': 30,
-    'city': 'New York'
+# Kalit-qiymatlar bilan dictionary yaratish
+user_info = {
+    'name': 'Alice',         # Foydalanuvchining ismi
+    'age': 30,               # Foydalanuvchining yoshi
+    'city': 'New York'       # Foydalanuvchining shahri
 }
 ```
 
