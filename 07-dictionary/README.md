@@ -219,11 +219,49 @@ student_info.update({
 print(student_info)
 ```
 
-- **`.setdefault()` metodi:** Kalit mavjud bo'lmasa, qiymat qo'shadi va qaytaradi.
+### ❇️ POPINTEM
+
+📌 Dictionarydan oxirgi qo‘shilgan kalit-qiymat juftligini olib tashlaydi va o‘sha juftlikni qaytaradi.
+
 ```python
-country = my_dict.setdefault('country', 'USA')
-print(country)  # 'USA'
-print(my_dict)  # {'name': 'Alice', 'city': 'New York', 'country': 'USA'}
+# Mehmon haqida ma'lumotlar saqlanmoqda
+guest_info = {
+    "name": "Javlon",
+    "room": 305,
+    "nights": 3
+}
+
+# Oxirgi qo‘shilgan kalit-qiymat juftligi dictionary dan o‘chirilmoqda
+removed_item = guest_info.popitem()
+
+# O‘chirilgan juftlik (tuple shaklida) ekranga chiqarilmoqda
+print("Removed:", removed_item)
+
+# Yangilangan dictionary ekranga chiqarilmoqda
+print("Updated:", guest_info)
+```
+
+### ❇️ SETDEFAULT
+
+📌 Kalit mavjud bo'lmasa, qiymat qo'shadi va qaytaradi.
+
+```python
+# Foydalanuvchi haqida boshlang‘ich ma’lumotlar
+user_info = {
+    "username": "umiddev",
+    "email": "umid@example.com"
+}
+
+# "email" kaliti mavjud bo‘lgani uchun mavjud qiymatni qaytaradi
+email = user_info.setdefault("email", "default@example.com")
+print("Email:", email)
+
+# "phone" kaliti yo‘q edi, shuning uchun u yaratilib, berilgan qiymat qo‘shiladi
+phone = user_info.setdefault("phone", "+998901234567")
+print("Phone:", phone)
+
+# Yangilangan dictionary ekranga chiqarilmoqda
+print("Updated user_info:", user_info)
 ```
 
 ## AMALIYOT
