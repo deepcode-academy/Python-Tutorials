@@ -213,89 +213,58 @@ else:
 ```
 
 
-## `elif` OPERATORI
+## ✅ ELIF
 
 ![alt text](images/elif.png)
 
-`elif` (**else if**) operatori ko'p shartlarni ketma-ket tekshirish uchun ishlatiladi. Agar birinchi shart `if` bajarilmasa, `elif` sharti tekshiriladi. Agar hech qaysi shart bajarilmasa, `else` bloki bajariladi.
+`elif` — bu else if degan so‘zning qisqargan ko‘rinishi. U **bir nechta shartlarni ketma-ket tekshirish** uchun ishlatiladi. Agar `if` sharti **False** bo'lsa, `elif` sharti tekshiriladi.
 
-**Sintaksis:**
-```python
-if shart1:
-    # Bu yerda shart1 bajarilganda bajariladigan kodlar
-elif shart2:
-    # Bu yerda shart2 bajarilganda bajariladigan kodlar
-else:
-    # Bu yerda hech qaysi shart bajarilmaganda bajariladigan kodlar
-```
-Quyidagi misolda `x` o'zgaruvchisiga berilgan qiymat `10` dan katta ekanligini tekshirdik. Agar shart `True` bo'lsa, terminalga `x` `10` dan katta degan so'z chiqadi. Aksxolda agar `x` `5` dan katta bo'lsa `5` dan katta lekin `10` dan kichik yoki teng degna so'z chiqadi, aks xolda x `5` dan kichik yoki teng degan so'z chiqadi:
-```python
-x = 7
 
-if x > 10:
-    print("x 10 dan katta")
-elif x > 5:
-    print("x 5 dan katta lekin 10 dan kichik yoki teng")
-else:
-    print("x 5 dan kichik yoki teng")
-```
+📌 Smart uydagi HVAC tizimi xonadagi haroratga qarab qaror qabul qiladi.
 
 ```python
-my_list = [1, 2, 3, 4, 5]
+# Current room temperature in Celsius
+room_temperature = 28  # Xona harorati, Celsiy bo‘yicha
 
-if len(my_list) == 0:
-    print("Ro'yxat bo'sh")
-elif len(my_list) > 0 and len(my_list) <= 3:
-    print("Ro'yxatda 3 yoki undan kam element bor")
+# Agar xona juda sovuq bo‘lsa (18°C dan past)
+if room_temperature < 18:
+    print("Heating system should be turned ON")  # Isitish tizimi yoqiladi
+
+# Agar xona juda issiq bo‘lsa (26°C dan yuqori)
+elif room_temperature > 26:
+    print("Cooling system should be turned ON")  # Sovutish tizimi yoqiladi
+
+# Aks holda, harorat me'yorda
 else:
-    print("Ro'yxatda 3 dan ortiq element bor")
+    print("Temperature is optimal, no action needed")  # Hech qanday tizim yoqilmaydi
 ```
+
+📌 Onlayn do‘konda har bir buyurtmaning holatini aniqlash uchun ishlatiladi.
 
 ```python
-my_tuple = (1, 2, 3, 4, 5)
+# Order status (current stage of delivery process)
+order_status = "shipped"  # "yuborilgan" degani
 
-if len(my_tuple) == 0:
-    print("Tuple bo'sh")
-elif len(my_tuple) > 0 and len(my_tuple) <= 3:
-    print("Tuple-da 3 yoki undan kam element bor")
+# Agar buyurtma qabul qilingan bo‘lsa
+if order_status == "received":
+    print("Your order has been received and will be prepared soon.")  # Buyurtma qabul qilindi
+
+# Agar tayyorlanayotgan bo‘lsa
+elif order_status == "preparing":
+    print("Your order is currently being prepared.")  # Tayyorlanmoqda
+
+# Agar yuborilgan bo‘lsa
+elif order_status == "shipped":
+    print("Your order has been shipped.")  # Yo‘lga chiqdi
+
+# Agar yetkazilgan bo‘lsa
+elif order_status == "delivered":
+    print("Your order has been delivered.")  # Yetkazildi
+
+# Nomalum holatlar uchun
 else:
-    print("Tuple-da 3 dan ortiq element bor")
+    print("Unknown order status.")  # Noma'lum status
 ```
-
-```python
-my_set = {1, 2, 3, 4, 5}
-
-if len(my_set) == 0:
-    print("Set bo'sh")
-elif len(my_set) > 0 and len(my_set) <= 3:
-    print("Setda 3 yoki undan kam element bor")
-else:
-    print("Setda 3 dan ortiq element bor")
-```
-- Ikkita to'plamni solishtirish:
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-if set1 == set2:  # Ikkala set bir xil bo'lsa
-    print("Setlar teng")
-elif set1 & set2:  # Ikkala setda umumiy elementlar bo'lsa
-    print("Setlarda umumiy elementlar mavjud")
-else:
-    print("Setlarda umumiy elementlar yo'q")
-```
-
-```python
-my_dict = {"name": "Alice", "age": 25}
-
-if "name" not in my_dict:
-    print("Ism kiritilmagan")
-elif my_dict["age"] < 18:
-    print("Yosh kichikroq")
-else:
-    print("Ism va yosh mos")
-```
-
 
 
 ## SHARTLARNI ZANJIR ORQALI ULASH (`and`, `or`, `not`)
