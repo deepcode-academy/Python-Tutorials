@@ -381,6 +381,36 @@ else:
     print("User not found in the system.")  # Bunday foydalanuvchi yo‘q
 ```
 
+🎯 Foydalanuvchi balansiga qarab faqat ruxsat etilgan tranzaksiyani bajarish mumkin.
+
+```python
+# User's current balance
+balance = 500_000  # 500 ming so‘m
+
+# Transaction type: "withdraw" (yechish) yoki "deposit" (kiritish)
+transaction_type = "withdraw"
+
+# Transaction amount (so‘mda)
+amount = 300_000
+
+# Agar foydalanuvchi pul yechmoqchi bo‘lsa
+if transaction_type == "withdraw":
+    # Mablag' yetarlimi? Yechishga ruxsat beriladi
+    if balance >= amount:
+        print(f"{amount} so'm has been successfully withdrawn.")  # Pul yechildi
+    else:
+        print("Insufficient balance.")  # Pul yetarli emas
+
+# Agar foydalanuvchi balansga pul kiritmoqchi bo‘lsa
+elif transaction_type == "deposit":
+    print(f"{amount} so'm has been added to your balance.")  # Pul kiritildi
+
+# Aks holda, tranzaksiya turi noto‘g‘ri
+else:
+    print("Invalid transaction type.")  # Noma'lum amal
+```
+
+
 - Ko'p darajali ichma-ich shart operatorlari:
 ```python
 x = 10
