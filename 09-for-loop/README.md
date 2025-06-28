@@ -129,16 +129,37 @@ print("Odd numbers:", odd_numbers)
 
 📌 Python dasturlash tilida `range()` funksiyasi ketma-ket sonlar qatorini yaratish uchun ishlatiladi. Bu funksiya odatda `for` loop bilan birga ishlatiladi va bizga ma’lum bir sonlar oralig‘ida takrorlash (aylanib chiqish) imkonini beradi.
 
+
+🎯 Oddiy **range()** ishlatilishi
+
 ```python
+# 0 dan 4 gacha (5 kirmaydi)
 for i in range(5):
     print(i)
 ```
-Bu yerda `range(5)` qatori `0` dan `4` gacha bo'lgan raqamlarni o'z ichiga oladi.
 
-- Juft sonlarni hisoblash
+🎯 Belgilangan oraliqdagi qiymatlar
+
 ```python
+# 3 dan 8 gacha bo'lgan sonlarni chiqaramiz
+for i in range(3, 9):
+    print(i)
+```
+
+🎯 Step bilan yurish
+
+```python
+# 0 dan 10 gacha bo'lgan juft sonlarni chiqaramiz (2 qadam bilan)
 for index in range(0, 11, 2):
     print(index)
+```
+
+🎯 Orqaga qarab sanash
+
+```python
+# 10 dan 1 gacha orqaga qarab
+for i in range(10, 0, -1):
+    print(i)
 ```
 
 ### DICTIONARY BILAN ISHLASH
