@@ -134,3 +134,114 @@ while num < 5:
 ```
 
 # ✅ AMALIYOT
+
+# ✅ WHILE LOOP AMALIYOT
+
+## ✅ 1-topshiriq:
+Foydalanuvchi kiritgan natural son uchun 1 dan shu songacha bo‘lgan sonlar yig‘indisini while loop orqali hisoblang.
+
+---
+
+## ✅ 2-topshiriq:
+Quyidagi ro‘yxatda nechta elementda eng kamida 2 ta unli harf borligini aniqlang (while loopdan foydalaning):
+```python
+words = ["apple", "sky", "queue", "book", "cry"]
+```
+
+---
+
+## ✅ 3-topshiriq:
+Ro‘yxatda eng katta va eng kichik sonning farqini while loop yordamida toping:
+```python
+numbers = [7, 12, -3, 8, 0, 15]
+```
+
+---
+
+## ✅ 4-topshiriq:
+Foydalanuvchi 10 ta son kiritadi. While loop orqali faqat musbat va toq sonlarni yangi ro‘yxatga yozing.
+
+---
+
+## ✅ 5-topshiriq:
+Quyidagi ro‘yxatdagi har bir so‘zning birinchi va oxirgi harfini birlashtirib yangi ro‘yxat hosil qiling (while loop bilan):
+```python
+words = ["python", "apple", "code", "loop"]
+# natija: ["pn", "ae", "ce", "lp"]
+```
+
+---
+
+## ✅ 6-topshiriq:
+Ro‘yxatdan faqat 3 ga va 5 ga bo‘linadigan sonlarni ajratib, ularning o‘rtacha qiymatini while loopda hisoblang:
+```python
+nums = [5, 9, 15, 20, 22, 30, 35]
+```
+
+---
+
+## ✅ 7-topshiriq:
+Foydalanuvchi matn kiritadi. While loop yordamida matndagi raqamlarni topib, ularni son sifatida yig‘indisini hisoblang.
+> Masalan: "salom12dunyo3" => natija: 15
+
+---
+
+## ✅ 8-topshiriq:
+Berilgan ro‘yxatdan elementlarning indekslari juft bo‘lganlarini while loop bilan alohida ro‘yxatga chiqarib bering:
+```python
+fruits = ["olma", "banan", "gilos", "anor", "nok", "shaftoli"]
+```
+
+---
+
+## ✅ 9-topshiriq:
+Ro‘yxatda ketma-ket 2 marta uchraydigan elementlarni while loop yordamida aniqlang:
+```python
+items = [1, 2, 2, 3, 4, 4, 4, 5]
+# natija: 2, 4
+```
+
+---
+
+## ✅ 10-topshiriq:
+Foydalanuvchi kiritgan matndan while loop yordamida faqat bosh harflarni ajratib, bitta string qilib chiqaring.
+> Masalan: "Salom DunYo" => "SDY"
+
+---
+
+## ✅ 11-topshiriq:
+Quyidagi ro‘yxatdan palindrom (teskari o‘qilganda ham bir xil) so‘zlarni while loop bilan ajratib chiqaring:
+```python
+words = ["anna", "python", "level", "loop", "radar"]
+```
+
+---
+
+## ✅ 12-topshiriq:
+While loop yordamida 100 dan kichik Fibonacci sonlarini ro‘yxatga yig‘ing.
+
+---
+
+## ✅ 13-topshiriq:
+Ro‘yxatda nechta elementda harflar soni raqamlar sonidan ko‘p ekanini while loop yordamida hisoblang:
+```python
+elements = ["abc123", "hello", "42", "py2025", "test"]
+```
+
+---
+
+## ✅ 14-topshiriq:
+Ro‘yxatdagi sonlardan har birining raqamlari yig‘indisini while loop bilan hisoblab, yangi ro‘yxatga joylang:
+```python
+nums = [12, 305, 47, 88]
+# natija: [3, 8, 11, 16]
+```
+
+---
+
+## ✅ 15-topshiriq:
+Ro‘yxatdagi elementlardan faqat birinchi harfi har doim katta, qolganlari kichik bo‘lgan yangi ro‘yxatni while loop orqali yarating:
+```python
+names = ["aNVAR", "mUROD", "dILSHOD"]
+# natija: ["Anvar", "Murod", "Dilshod"]
+```
