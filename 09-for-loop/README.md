@@ -267,21 +267,72 @@ else:
     print("Xatolik yuz berdi.")
 ```
 
-### SETS BILAN ISHLASH
-To'plamlar ham takrorlanadigan obyekt bo'lib, ularda tartiblanmagan elementlar mavjud.
-```python
-numbers = {1, 2, 3, 4, 5}
+## ✅ SETS BILAN ISHLASH
 
-for num in numbers:
-    print(num)
-```
+🎯 Foydalanuvchi kirgan sahifalarni yagona ro‘yxatga olish
 
 ```python
-mevalar = {"olma", "banan", "uzum"}
+# Sahifalar bo'yicha foydalanuvchi harakati (ba'zilari takrorlangan)
+visited_pages = ["home", "about", "contact", "home", "products", "contact"]
 
-for meva in mevalar:
-    print(meva)
+# Takrorlangan sahifalarni set orqali avtomatik chiqarib tashlaymiz
+unique_pages = set(visited_pages)
+
+print("Foydalanuvchi kirgan noyob sahifalar:")
+for page in unique_pages:
+    print(page)
 ```
+
+🎯 Email ro'yxatlaridagi dublikatlarni olib tashlash
+
+```python
+# Ro'yxatda takrorlanuvchi email manzillar bor
+emails = [
+    "ali@example.com",
+    "sara@example.com",
+    "ali@example.com",
+    "jamshid@example.com",
+    "sara@example.com"
+]
+
+# set yordamida faqat noyob email manzillarni olamiz
+unique_emails = set(emails)
+
+print("Yagona email manzillar:")
+for email in unique_emails:
+    print(email)
+```
+
+🎯 Ikkita foydalanuvchi orasidagi umumiy do‘stlarni topish
+
+```python
+# Foydalanuvchilarning do'stlari
+friends_1 = {"Ali", "Sara", "Lola", "Bekzod"}
+friends_2 = {"Lola", "Sardor", "Ali", "Diyor"}
+
+# Umumiy do'stlar: kesishma (intersection)
+common_friends = friends_1 & friends_2
+
+print("Umumiy do'stlar:")
+print(common_friends)
+```
+
+🎯 Ro‘yxatdan o‘tgan foydalanuvchilar va online foydalanuvchilar orasidagi farq
+
+```python
+# Ro'yxatdan o‘tgan foydalanuvchilar
+registered_users = {"ali", "sara", "diyor", "nigora"}
+
+# Hozir online bo'lgan foydalanuvchilar
+online_users = {"ali", "sardor"}
+
+# Faqat ro'yxatdan o‘tgan, lekin online bo'lmaganlar
+offline_users = registered_users - online_users
+
+print("Hozir offline foydalanuvchilar:")
+print(offline_users)
+```
+
 ### TUPLE BILAN ISHLASH
 - Tuplelar ham ro'yxatlarga o'xshash, lekin o'zgarmas tuzilma bo'lib, ularning elementlari ustidan tsikl ishlatish mumkin.
 ```python
