@@ -656,105 +656,111 @@ for user in users:
 
 # ✅ AMALIYOT
 
-# ✅ AMALIYOT: For Loop
-
 ## ✅ 1-topshiriq:
-1 dan 10 gacha bo‘lgan sonlarni for loop yordamida ekranga chiqaring.
+Foydalanuvchi kiritgan natural son uchun 1 dan shu songacha bo‘lgan sonlar yig‘indisini for loop orqali hisoblang.
 
 ---
 
 ## ✅ 2-topshiriq:
-Ro‘yxatda berilgan mevalarni har birini yangi qatordan chiqaring:
+Quyidagi ro‘yxatda nechta elementda eng kamida 2 ta unli harf borligini aniqlang:
 ```python
-fruits = ["olma", "banan", "gilos", "shaftoli"]
+words = ["apple", "sky", "queue", "book", "cry"]
 ```
 
 ---
 
 ## ✅ 3-topshiriq:
-for loop yordamida 1 dan 20 gacha bo‘lgan juft sonlarni ekranga chiqaring.
+Ro‘yxatda eng katta va eng kichik sonning farqini toping:
+```python
+numbers = [7, 12, -3, 8, 0, 15]
+```
 
 ---
 
 ## ✅ 4-topshiriq:
-Foydalanuvchi 5 ta ism kiritadi. for loop yordamida ularni ro‘yxatga qo‘shing va ekranga chiqaring.
+Foydalanuvchi 10 ta son kiritadi. For loop orqali faqat musbat va toq sonlarni yangi ro‘yxatga yozing.
 
 ---
 
 ## ✅ 5-topshiriq:
-Ro‘yxatda berilgan sonlarning kvadratlarini yangi ro‘yxatga joylang:
+Quyidagi ro‘yxatdagi har bir so‘zning birinchi va oxirgi harfini birlashtirib yangi ro‘yxat hosil qiling:
 ```python
-nums = [2, 4, 6, 8]
+words = ["python", "apple", "code", "loop"]
+# natija: ["pn", "ae", "ce", "lp"]
 ```
 
 ---
 
 ## ✅ 6-topshiriq:
-100 dan 110 gacha bo‘lgan sonlarni for loop yordamida ekranga chiqarib, ularning yig‘indisini hisoblang.
-
----
-
-## ✅ 7-topshiriq:
-for loop yordamida berilgan matndagi har bir harfni alohida qatordan chiqaring:
+Ro‘yxatdan faqat 3 ga va 5 ga bo‘linadigan sonlarni ajratib, ularning o‘rtacha qiymatini hisoblang:
 ```python
-text = "python"
+nums = [5, 9, 15, 20, 22, 30, 35]
 ```
 
 ---
 
+## ✅ 7-topshiriq:
+Foydalanuvchi matn kiritadi. Matndagi raqamlarni topib, ularni son sifatida yig‘indisini hisoblang.
+> Masalan: "salom12dunyo3" => natija: 15
+
+---
+
 ## ✅ 8-topshiriq:
-Ro‘yxatda nechta manfiy son borligini for loop yordamida hisoblang:
+Berilgan ro‘yxatdan elementlarning indekslari juft bo‘lganlarini alohida ro‘yxatga chiqarib bering:
 ```python
-numbers = [3, -5, 8, 0, -2, 7, -1]
+fruits = ["olma", "banan", "gilos", "anor", "nok", "shaftoli"]
 ```
 
 ---
 
 ## ✅ 9-topshiriq:
-Ro‘yxatda berilgan ismlarning uzunligi 5 dan ko‘p bo‘lsa, ularni ekranga chiqaring:
+Ro‘yxatda ketma-ket 2 marta uchraydigan elementlarni aniqlang:
 ```python
-names = ["Anvar", "Murod", "Dilshod", "Iroda", "Sardor"]
+items = [1, 2, 2, 3, 4, 4, 4, 5]
+# natija: 2, 4
 ```
 
 ---
 
 ## ✅ 10-topshiriq:
-1 dan 10 gacha bo‘lgan sonlarning faktorialini for loop yordamida hisoblang va ekranga chiqaring.
+Foydalanuvchi kiritgan matndan faqat bosh harflarni ajratib, bitta string qilib chiqaring.
+> Masalan: "Salom DunYo" => "SDY"
 
 ---
 
 ## ✅ 11-topshiriq:
-Ro‘yxatda berilgan matnlardan nechtasi 'a' harfi bilan boshlanishini for loop yordamida aniqlang:
+Quyidagi ro‘yxatdan palindrom (teskari o‘qilganda ham bir xil) so‘zlarni ajratib chiqaring:
 ```python
-words = ["apple", "banana", "avocado", "grape", "apricot"]
+words = ["anna", "python", "level", "loop", "radar"]
 ```
 
 ---
 
 ## ✅ 12-topshiriq:
-for loop yordamida 1 dan 50 gacha bo‘lgan sonlar ichidan faqat 3 ga bo‘linadiganlarini ekranga chiqaring.
+for loop yordamida 100 dan kichik Fibonacci sonlarini ro‘yxatga yig‘ing.
 
 ---
 
 ## ✅ 13-topshiriq:
-for loop yordamida berilgan ro‘yxatdagi har bir sonni 2 ga ko‘paytiring va yangi ro‘yxatga joylang:
+Ro‘yxatda nechta elementda harflar soni raqamlar sonidan ko‘p ekanini hisoblang:
 ```python
-nums = [1, 5, 9, 13]
+elements = ["abc123", "hello", "42", "py2025", "test"]
 ```
 
 ---
 
 ## ✅ 14-topshiriq:
-for loop yordamida berilgan stringni teskarisiga aylantiring:
+Ro‘yxatdagi sonlardan har birining raqamlari yig‘indisini hisoblab, yangi ro‘yxatga joylang:
 ```python
-word = "loop"
-# natija: "pool"
+nums = [12, 305, 47, 88]
+# natija: [3, 8, 11, 16]
 ```
 
 ---
 
 ## ✅ 15-topshiriq:
-Ro‘yxatda berilgan baholardan o‘rtacha bahoni for loop yordamida hisoblang:
+Ro‘yxatdagi elementlardan faqat birinchi harfi har doim katta, qolganlari kichik bo‘lgan yangi ro‘yxat yarating:
 ```python
-grades = [88, 92, 79, 95, 68]
+names = ["aNVAR", "mUROD", "dILSHOD"]
+# natija: ["Anvar", "Murod", "Dilshod"]
 ```
