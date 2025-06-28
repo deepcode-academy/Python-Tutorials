@@ -492,34 +492,77 @@ with open('data.json', 'w') as fayl:
     json.dump(data, fayl)
 ```
 
-# AMALIYOT
+# ✅ AMALIYOT
 
-🔢  `math` modulidan foydalanib, 10 ta sonning kvadrat ildizini hisoblovchi dastur yozing va natijalarni chiqaring.
+## ✅ 1-topshiriq:
+`math` modulidan foydalanib, 10 ta sonning kvadrat ildizini hisoblovchi dastur yozing va natijalarni chiqaring.
 
-🎲  `random` modulidan foydalanib, 1 dan 100 gacha bo‘lgan 5 ta tasodifiy butun sonlarni ro‘yxatga joylashtiring va ularni ekranga chiqaring.
+---
 
-📅  `datetime` modulidan foydalanib, bugungi sanani va vaqtni formatlangan holda `YYYY-MM-DD HH:MM:SS` ko‘rinishida ekranga chiqaring.
+## ✅ 2-topshiriq:
+`random` modulidan foydalanib, 1 dan 100 gacha bo‘lgan 5 ta tasodifiy butun sonlarni ro‘yxatga joylashtiring va ularni ekranga chiqaring.
 
-📂  O‘zingizning kichik modul faylingizni yarating (`mycalc.py`) va unga `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` funksiyalarini yozing. Keyin ularni boshqa dasturga import qilib chaqiring.
+---
 
-📐  `math` modulidan `pi` va `sin` funksiyalarini import qilib, 0 dan π gacha bo‘lgan 5 ta qiymat uchun sinuslarini hisoblab chiqaring.
+## ✅ 3-topshiriq:
+`datetime` modulidan foydalanib, bugungi sanani va vaqtni formatlangan holda `YYYY-MM-DD HH:MM:SS` ko‘rinishida ekranga chiqaring.
 
-👥  `random.choice()` funksiyasi yordamida ro‘yxatdan tasodifiy 3 ta ism tanlab, ularni ekranga chiqaring.
+---
 
-🔀  `random.shuffle()` yordamida berilgan ro‘yxat elementlarini aralashtiring va natijani chop eting.
+## ✅ 4-topshiriq:
+O‘zingizning kichik modul faylingizni yarating (`mycalc.py`) va unga `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` funksiyalarini yozing. Keyin ularni boshqa dasturga import qilib, natijalarni ko‘rsating.
 
-📆  `datetime` modulidan foydalanib, foydalanuvchidan yil, oy, kun kiritishini so‘rang va shu sanani `datetime.date` obyekti sifatida saqlang.
+---
 
-👋  Yangi modul yarating, unga `greet(name)` funksiyasini yozing, u berilgan ismga salom beradi. Modulni import qilib, turli ismlar bilan chaqiring.
+## ✅ 5-topshiriq:
+`math` modulidan `pi` va `sin` funksiyalarini import qilib, 0 dan π gacha bo‘lgan 5 ta qiymat uchun sinuslarini hisoblab chiqaring.
 
-🛠️  `math` modulining `ceil` va `floor` funksiyalarini import qilib, foydalanuvchi kiritgan haqiqiy son uchun ikkala qiymatni ham chiqaring.
+---
 
-✔️  O‘z modulingizda yangi funksiya yarating — `is_even(number)` — son juft yoki toqligini tekshiradi va `True` yoki `False` qaytaradi. Modulni import qilib, ro‘yxatdagi sonlarni tekshiring.
+## ✅ 6-topshiriq:
+`random.choice()` funksiyasi yordamida ro‘yxatdan tasodifiy 3 ta ism tanlab, ularni ekranga chiqaring.
 
-🃏  `random` modulidan foydalanib, 52 ta kartadan iborat ro‘yxat yarating (masalan: "Queen of Hearts", "10 of Diamonds", va hokazo), keyin tasodifiy 5 ta kartani tanlab chiqaring. (Diamonds, Hearts, Clubs, Spades)
+---
 
-⏰  `datetime` modulidan hozirgi vaqtni olib, uni soat, daqiqa va sekundga ajratib chiqaradigan dastur yozing.
+## ✅ 7-topshiriq:
+`random.shuffle()` yordamida berilgan ro‘yxat elementlarini aralashtiring va natijani chop eting.
 
-🧮  Modulga yangi funksiyalar qo‘shing: `factorial(n)` va `is_prime(n)`, ularni o‘zingiz yozing (modulda) va keyin asosiy dasturda chaqiring.
+---
 
-⚡  `math` modulidan `pow` funksiyasini import qilib, foydalanuvchidan asosi va darajani qabul qilib, natijani hisoblang.
+## ✅ 8-topshiriq:
+`datetime` modulidan foydalanib, foydalanuvchidan yil, oy, kun kiritishini so‘rang va shu sanani `datetime.date` obyekti sifatida saqlang.
+
+---
+
+## ✅ 9-topshiriq:
+Yangi modul yarating, unga `greet(name)` funksiyasini yozing, u berilgan ismga salom beradi. Modulni import qilib, turli ismlar bilan chaqiring.
+
+---
+
+## ✅ 10-topshiriq:
+`math` modulining `ceil` va `floor` funksiyalarini import qilib, foydalanuvchi kiritgan haqiqiy son uchun ikkala qiymatni ham chiqaring.
+
+---
+
+## ✅ 11-topshiriq:
+O‘z modulingizda yangi funksiya yarating — `is_even(number)` — son juft yoki toqligini tekshiradi va `True` yoki `False` qaytaradi. Modulni import qilib, ro‘yxatdagi sonlarni tekshiring.
+
+---
+
+## ✅ 12-topshiriq:
+`random` modulidan foydalanib, 52 ta kartadan iborat ro‘yxat yarating (masalan: "Queen of Hearts", "10 of Diamonds", va hokazo), keyin tasodifiy 5 ta kartani tanlab chiqaring. (Diamonds, Hearts, Clubs, Spades)
+
+---
+
+## ✅ 13-topshiriq:
+`datetime` modulidan hozirgi vaqtni olib, uni soat, daqiqa va sekundga ajratib chiqaradigan dastur yozing.
+
+---
+
+## ✅ 14-topshiriq:
+Modulga yangi funksiyalar qo‘shing: `factorial(n)` va `is_prime(n)`, ularni o‘zingiz yozing (modulda) va keyin asosiy dasturda chaqiring.
+
+---
+
+## ✅ 15-topshiriq:
+`math` modulidan `pow` funksiyasini import qilib, foydalanuvchidan asosi va darajani qabul qilib, natijani hisoblang.
