@@ -140,37 +140,78 @@ except ValueError as x:
     print(f"Xatolik: {x}")
 ```
 
-## ✅ AMALIYOT
+# ✅ AMALIYOT
 
-⚠️  Nolga bo‘lish  
-- Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalaning.
 
-⚠️  Raqamga aylantirish  
-- Foydalanuvchidan matn ko‘rinishida qiymat oling va uni `int` yoki `float` ga aylantiring. Agar foydalanuvchi harf kiritsa, xatolik chiqsin.
+## ✅ 1-topshiriq:
+Foydalanuvchidan ikkita son oling va birinchisini ikkinchisiga bo‘ling. Nolga bo‘lishdan himoyalangan holda exception handling bilan dastur tuzing.
 
-⚠️  Notog‘ri operator  
-- Foydalanuvchi ikkita son va bitta operator kiritsin (`+`, `-`, `*`, `/`). Operator noto‘g‘ri bo‘lsa, xatolik chiqsin.
+---
 
-⚠️  Manfiy sonni taqiqlash  
-- Foydalanuvchi son kiritadi. Agar son manfiy bo‘lsa, `raise` orqali `ValueError` chiqarilsin: `"Manfiy son kiritish mumkin emas!"`
+## ✅ 2-topshiriq:
+Foydalanuvchidan matn ko‘rinishida qiymat oling va uni `int` yoki `float` ga aylantiring. Agar foydalanuvchi harf kiritsa, xatolik chiqsin.
 
-⚠️  Listdagi elementga murojaat  
-- Berilgan ro‘yxatdan (`list`) indeks orqali element oling. Agar noto‘g‘ri indeks kiritilsa, `IndexError` chiqsin.
+---
 
-⚠️  Lug‘atdan qiymat o‘qish  
-- Foydalanuvchi lug‘atdan `key` bo‘yicha ma’lumot olishga harakat qiladi. Agar `key` mavjud bo‘lmasa, `KeyError` chiqsin.
+## ✅ 3-topshiriq:
+Foydalanuvchi ikkita son va bitta operator kiritsin (`+`, `-`, `*`, `/`). Operator noto‘g‘ri bo‘lsa, xatolik chiqsin.
 
-⚠️  Foydalanuvchidan parol olish  
-- Foydalanuvchi parol kiritadi. Agar parol bo‘sh bo‘lsa, `raise ValueError` bilan xatolik chiqarilsin.
+---
 
-⚠️  Har doim ishlaydigan kod  
-- Foydalanuvchi son kiritadi va uni `int` ga aylantirib chiqarasiz. `finally` blokida `"Dastur tugadi"` degan matn chiqsin.
+## ✅ 4-topshiriq:
+Foydalanuvchi son kiritadi. Agar son manfiy bo‘lsa, `raise` orqali `ValueError` chiqarilsin: `"Manfiy son kiritish mumkin emas!"`
 
-⚠️  Bir nechta xatolarni ushlash  
-- Foydalanuvchidan son kiriting va 10 ni ushbu songa bo‘ling. `ValueError` yoki `ZeroDivisionError` yuz bersa, bitta `except` bilan ushlang.
+---
 
-⚠️  Funksiya orqali xatolik  
-- Funksiya yarating: son kiritsa va u 100 dan katta bo‘lsa, `raise ValueError("100 dan katta son kiritish mumkin emas")` chiqsin.
+## ✅ 5-topshiriq:
+Berilgan ro‘yxatdan (`list`) indeks orqali element oling. Agar noto‘g‘ri indeks kiritilsa, `IndexError` chiqsin.
 
-⚠️  Float sonni tekshirish  
-- Foydalanuvchi haqiqiy son kiritsin. Agar son butun bo‘lsa, `raise ValueError("Faqat haqiqiy son kiriting")` chiqsin.
+---
+
+## ✅ 6-topshiriq:
+Foydalanuvchi lug‘atdan `key` bo‘yicha ma’lumot olishga harakat qiladi. Agar `key` mavjud bo‘lmasa, `KeyError` chiqsin.
+
+---
+
+## ✅ 7-topshiriq:
+Foydalanuvchi parol kiritadi. Agar parol bo‘sh bo‘lsa, `raise ValueError` bilan xatolik chiqarilsin.
+
+---
+
+## ✅ 8-topshiriq:
+Foydalanuvchi son kiritadi va uni `int` ga aylantirib chiqarasiz. `finally` blokida `"Dastur tugadi"` degan matn chiqsin.
+
+---
+
+## ✅ 9-topshiriq:
+Foydalanuvchidan son kiriting va 10 ni ushbu songa bo‘ling. `ValueError` yoki `ZeroDivisionError` yuz bersa, bitta `except` bilan ushlang.
+
+---
+
+## ✅ 10-topshiriq:
+Funksiya yarating: son kiritsa va u 100 dan katta bo‘lsa, `raise ValueError("100 dan katta son kiritish mumkin emas")` chiqsin.
+
+---
+
+## ✅ 11-topshiriq:
+Foydalanuvchi haqiqiy son kiritsin. Agar son butun bo‘lsa, `raise ValueError("Faqat haqiqiy son kiriting")` chiqsin.
+
+---
+
+## ✅ 12-topshiriq:
+Fayl ochishga harakat qiling. Fayl mavjud bo‘lmasa, xatolik xabarini chiqaring (FileNotFoundError).
+
+---
+
+## ✅ 13-topshiriq:
+Biror list yarating va foydalanuvchidan indeks so‘rang. Indeks noto‘g‘ri bo‘lsa, foydalanuvchiga tushunarli xabar chiqaring.
+
+---
+
+## ✅ 14-topshiriq:
+Foydalanuvchidan yoshini so‘raydigan funksiya yozing. Agar foydalanuvchi manfiy yoki 120 dan katta yosh kiritsa, `raise ValueError` chiqsin.
+
+---
+
+## ✅ 15-topshiriq:
+Foydalanuvchidan ikkita raqamli string so‘rang va ularni son sifatida qo‘shing. Agar harflar kiritsa, xatolikdan foydalanuvchiga ogohlantirish chiqaring.
