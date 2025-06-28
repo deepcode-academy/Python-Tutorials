@@ -4,6 +4,16 @@
 
 📌 for – bu **tsikl operatori**, ya’ni **takrorlovchi kod**. Agar sizda bir nechta qiymatlar bo‘lsa (masalan, ro‘yxat, sonlar, harflar), for tsikli ularni **birma-bir** olib, har biriga bir xil amalni bajarish uchun ishlatiladi.
 
+```python
+# 'salom' degan matnli o'zgaruvchi yaratildi
+soz = "salom"
+
+# soz o'zgaruvchisidagi har bir harf bo'yicha yuramiz
+for harf in soz:
+    # Har bir harfni alohida qilib ekranga chiqaramiz
+    print(harf)
+```
+
 
 ## ✅ LISTLAR BILAN ISHLASH
 
