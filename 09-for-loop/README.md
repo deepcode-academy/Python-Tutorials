@@ -432,15 +432,39 @@ for main_menu, submenus in menu.items():
         print(f"  - {submenu}")
 ```
 
-### `else` BILAN `for` TSIKLI
-- Pythonda `for` tsiklining oxirida `else` bloki ishlatilishi mumkin. Agar `for` tsikli to'liq tugasa (hech qanday break holatidan to'xtatilmasa), `else` bloki ishlaydi.
+## ✅ FOR ELSE
+
+📌 Python dasturlash tilida `for...else` bu — `for` tsikli bilan birga ishlatiladigan maxsus konstruktsiya bo‘lib, u orqali loop muvaffaqiyatli tugaganidan keyin `else` qismi bajariladi.
+
+🎯 Foydalanuvchi ro‘yxatida admin borligini tekshirish
 
 ```python
-for i in range(5):
-    print(i)
+users = ["ali", "sara", "lola", "jamshid"]
+
+for user in users:
+    if user == "admin":
+        print("Admin foydalanuvchi topildi.")
+        break
 else:
-    print("Tsikl tugadi")
+    print("Admin foydalanuvchi ro'yxatda yo'q.")
 ```
+
+🎯 Parol to‘g‘riligini tekshirish
+
+```python
+# Parollar bazasi
+correct_passwords = ["pass123", "admin456", "qwerty789"]
+
+user_input = "admin456"
+
+for password in correct_passwords:
+    if user_input == password:
+        print("Parol to'g'ri.")
+        break
+else:
+    print("Parol noto'g'ri.")
+```
+
 
 ### `break` OPERATORI
 - `break` operatori siklni to'xtatadi. Bu operator `for` yoki `while` siklida ishlatilishi mumkin. `break` siklning bajarilishini to'xtatadi va sikldan chiqadi, hatto sikl to'liq tugamagan bo'lsa ham.
