@@ -193,61 +193,74 @@ else:
     print("File not found")
 ```
 
-# AMALIYOT
+# ✅ AMALIYOT
 
+# ✅ FILE HANDLING AMALIYOT
 
----
-
-📖 Yuqoridagi `example.txt` faylini ochib, uning ichidagi matnni to‘liq o‘qing va ekranga chiqaring.
-
----
-
-🆕 `info.txt` nomli yangi fayl yarating va foydalanuvchidan `ism`, `familiya` va `yosh` so‘rab, faylga yozing.
+## ✅ 1-topshiriq:
+`example.txt` faylini ochib, uning ichidagi matnni to‘liq o‘qing va ekranga chiqaring.
 
 ---
 
-🔢 `numbers.txt` nomli faylga `1` dan `10` gacha bo‘lgan sonlarni har birini yangi qatordan yozing.
+## ✅ 2-topshiriq:
+`info.txt` nomli yangi fayl yarating va foydalanuvchidan `ism`, `familiya` va `yosh` so‘rab, faylga yozing.
 
 ---
 
-✖️ `numbers.txt` faylini o‘qing va har bir qatordagi sonni ikkiga ko‘paytirib ekranga chiqaring.
+## ✅ 3-topshiriq:
+`numbers.txt` nomli faylga `1` dan `10` gacha bo‘lgan sonlarni har birini yangi qatordan yozing.
 
 ---
 
-➕ `append_example.txt` fayliga har safar dasturni ishga tushirganingizda `"New line"` yozuvi qo‘shilsin.
+## ✅ 4-topshiriq:
+`numbers.txt` faylini o‘qing va har bir qatordagi sonni ikkiga ko‘paytirib ekranga chiqaring.
 
 ---
 
-🖊️ Foydalanuvchidan `3` ta gap yozdirib oling va ularni `sentences.txt` fayliga yozing.
+## ✅ 5-topshiriq:
+`append_example.txt` fayliga har safar dasturni ishga tushirganingizda `"New line"` yozuvi qo‘shilsin.
 
 ---
 
-🔍 `sentences.txt` faylidan faqat birinchi qatorni o‘qib chiqaring va chop eting.
+## ✅ 6-topshiriq:
+Foydalanuvchidan `3` ta gap yozdirib oling va ularni `sentences.txt` fayliga yozing.
 
 ---
 
-📏 `lines.txt` faylida `5` ta qatordan iborat matn bor deb tasavvur qiling. Har bir qatordagi belgilar sonini chiqaring.
+## ✅ 7-topshiriq:
+`sentences.txt` faylidan faqat birinchi qatorni o‘qib chiqaring va chop eting.
 
 ---
 
-❌ `data.txt` fayli mavjud bo‘lsa, uni o‘chiring. Mavjud emasligini tekshirib, foydalanuvchiga bildiring.
+## ✅ 8-topshiriq:
+`lines.txt` faylida `5` ta qatordan iborat matn bor deb tasavvur qiling. Har bir qatordagi belgilar sonini chiqaring.
 
 ---
 
-📂 `old.txt` faylini `new.txt` deb o‘zgartiring. Fayl mavjud emas bo‘lsa, `“Fayl topilmadi”` deb chiqaring.
+## ✅ 9-topshiriq:
+`data.txt` fayli mavjud bo‘lsa, uni o‘chiring. Mavjud emasligini tekshirib, foydalanuvchiga bildiring.
 
 ---
 
-👥 `users.txt` faylida foydalanuvchilarning ismlari bo‘lsin. Fayldan ro‘yxatni o‘qib, har bir ismni `Hello, <ism>!` shaklida ekranga chiqaring.
+## ✅ 10-topshiriq:
+`old.txt` faylini `new.txt` deb o‘zgartiring. Fayl mavjud emas bo‘lsa, `“Fayl topilmadi”` deb chiqaring.
 
 ---
 
-📝 `text.txt` fayliga inglizcha `3` gap yozing. So‘ng ushbu faylni o‘qib, har bir gapdagi so‘zlar sonini hisoblang.
+## ✅ 11-topshiriq:
+`users.txt` faylida foydalanuvchilarning ismlari bo‘lsin. Fayldan ro‘yxatni o‘qib, har bir ismni `Hello, <ism>!` shaklida ekranga chiqaring.
 
 ---
 
-🖼️ Rasmlar uchun `photo.jpg` faylini `rb` (binary read) rejimida oching va fayl hajmini (baytlarda) aniqlang.
+## ✅ 12-topshiriq:
+`text.txt` fayliga inglizcha `3` gap yozing. So‘ng ushbu faylni o‘qib, har bir gapdagi so‘zlar sonini hisoblang.
 
 ---
 
-📋 `items.txt` faylidan barcha qatorlarni ro‘yxatga o‘qing, ushbu ro‘yxatni `output.txt` fayliga nusxa ko‘chiring.
+## ✅ 13-topshiriq:
+Rasmlar uchun `photo.jpg` faylini `rb` (binary read) rejimida oching va fayl hajmini (baytlarda) aniqlang.
+
+---
+
+## ✅ 14-topshiriq:
+`items.txt` faylidan barcha qatorlarni ro‘yxatga o‘qing, ushbu ro‘yxatni `output.txt` fayliga nusxa ko‘chiring.
