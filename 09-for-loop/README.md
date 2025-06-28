@@ -245,6 +245,28 @@ else:
     print("Noto‘g‘ri promo kod!")
 ```
 
+🎯 API javobini tahlil qilish (dictionary ko‘rinishida)
+
+```python
+# API dan kelgan javob
+response = {
+    "status": "success",
+    "data": {
+        "id": 102,
+        "title": "New blog post",
+        "author": "Umid",
+        "views": 1234
+    }
+}
+
+# Ma'lumotni tahlil qilish
+if response["status"] == "success":
+    blog = response["data"]
+    print(f"Post: {blog['title']} (Author: {blog['author']}) — {blog['views']} views")
+else:
+    print("Xatolik yuz berdi.")
+```
+
 ### SETS BILAN ISHLASH
 To'plamlar ham takrorlanadigan obyekt bo'lib, ularda tartiblanmagan elementlar mavjud.
 ```python
