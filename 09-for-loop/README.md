@@ -5,7 +5,7 @@
 📌 for – bu **tsikl operatori**, ya’ni **takrorlovchi kod**. Agar sizda bir nechta qiymatlar bo‘lsa (masalan, ro‘yxat, sonlar, harflar), for tsikli ularni **birma-bir** olib, har biriga bir xil amalni bajarish uchun ishlatiladi.
 
 
-### LISTLAR BILAN ISHLASH
+## ✅ LISTLAR BILAN ISHLASH
 
 📌 Ro'yxatlar eng keng tarqalgan takrorlanadigan obyektlardan biri hisoblanadi.
 
@@ -22,9 +22,7 @@ for item in orders:
     print(f"Ordered item: {item}")
 ```
 
-
 🎯 Narxlar ro'yxati bilan umumiy xarajatni hisoblash
-
 
 ```python
 # Har bir mahsulot narxi (dollar)
@@ -42,35 +40,32 @@ for price in prices:
 print(f"Total cost: ${total_cost}")
 ```
 
+🎯 Email ro'yxatidan foydalanuvchilarga xabar yuborish (simulyatsiya)
 
 ```python
-# Misol ro'yxat
-numbers = [1, 2, 3, 4, 5]
+# Email manzillar ro'yxati
+emails = ["ali@example.com", "vali@example.com", "sara@example.com"]
 
-# Har bir sonning kvadratini hisoblash uchun tsikl
-for number in numbers:
-    square = number ** 2
-    print(f"{number} ning kvadrati {square}")
+# Har bir foydalanuvchiga xabar yuboramiz (simulyatsiya)
+for email in emails:
+    # Xabar yuborilganini bildiruvchi matn
+    print(f"Sending email to: {email}")
 ```
-- Tushuntirish:
-    - `numbers` raqamlardan iborat ro'yhat.
-    - `for number in numbers`: bu kod qatorida `number` o'zgaruvchisi ro'yxatdagi har bir elementni o'z ichiga oladi.
-    - `square = number ** 2`: square o'zgaruvchisiga ro'yhatimiz ichidagi har bir raqamning kvadratini saqladik.
-    - print() funksiyasi orqali sonlar kvadratini terminalga chiqardik.
 
-- Ro'yxatdagi elementlarni yig'indisini hisoblash:
+🎯 Login bo‘lgan foydalanuvchilarni filtrlash
+
 ```python
-# Misol ro'yxat
-numbers = [10, 20, 30, 40, 50]
+# Foydalanuvchilar va ularning login statusi (True - tizimga kirgan)
+users = [
+    {"username": "admin", "logged_in": True},
+    {"username": "john", "logged_in": False},
+    {"username": "alice", "logged_in": True},
+]
 
-# Yig'indini hisoblash uchun o'zgaruvchi
-total = 0
-
-# For tsikli bilan ro'yxat bo'ylab yurish
-for number in numbers:
-    total += number
-
-print(f"Yig'indi: {total}")
+# Faqat login bo'lgan foydalanuvchilarni chiqaramiz
+for user in users:
+    if user["logged_in"]:
+        print(f"{user['username']} is currently online.")
 ```
 
 - Ro'yxatdagi elementlarni filtrlash.
