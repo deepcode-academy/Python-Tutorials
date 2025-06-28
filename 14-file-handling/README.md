@@ -195,7 +195,6 @@ else:
 
 # ✅ AMALIYOT
 
-# ✅ FILE HANDLING AMALIYOT
 
 ## ✅ 1-topshiriq:
 `example.txt` faylini ochib, uning ichidagi matnni to‘liq o‘qing va ekranga chiqaring.
