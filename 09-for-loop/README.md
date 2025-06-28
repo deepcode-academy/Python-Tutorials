@@ -125,8 +125,9 @@ for number in numbers:
 print("Odd numbers:", odd_numbers)
 ```
 
-### `range()` FUNKSIYASI BILAN TAKRORLASH
-- `range()` funksiyasi takrorlash uchun sonlar oralig'ini yaratadi. Bu sonlar qatori ustidan `for` tsikli yordamida aylanib chiqish mumkin.
+## ✅ RANGE
+
+📌 Python dasturlash tilida `range()` funksiyasi ketma-ket sonlar qatorini yaratish uchun ishlatiladi. Bu funksiya odatda `for` loop bilan birga ishlatiladi va bizga ma’lum bir sonlar oralig‘ida takrorlash (aylanib chiqish) imkonini beradi.
 
 ```python
 for i in range(5):
