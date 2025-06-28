@@ -361,8 +361,11 @@ for product_id, name, price in products:
     print(f"ID: {product_id}, Nomi: {name}, Narxi: ${price}")
 ```
 
-### ICHMA-ICH(NESTED) `for` TSIKLLAR
-- Bir `for` tsikli ichida boshqa bir `for` tsiklining ishlatilishi mumkin. Buni **ichma-ich**(`nested`) tsikllar deb atashadi.
+## ✅ NESTED LOOPS
+
+
+🎯 2D ro'yxat (matritsa) elementlarini ko‘rsatish
+
 ```python
 matrix = [
     [1, 2, 3],
@@ -375,7 +378,8 @@ for row in matrix:
         print(element, end=" ")
     print()  # Qator oxirida yangi qatorga o'tish
 ```
-- `end=''` operatori qator tugaganida nimalarni chiqarish kerakligini belgilaydi. Odatda, `print()` funksiyasida qator tugagach yangi qatorga o‘tish (`\n`) avtomatik ravishda amalga oshadi, lekin `end=''` operatori yordamida buning o‘rniga boshqa belgini qo‘yish mumkin.
+
+📌 Python dasturlash tilida `print()` funksiyasi biror narsani ekranga chiqargandan so‘ng avtomatik tarzda yangi qatorga o‘tadi. Bu yangi qator belgisi `\n` deb ataladi. Ammo ba’zida har bir chiqishdan keyin yangi qatorga o‘tmasdan, boshqa belgi (masalan, bo‘sh joy yoki vergul) qo‘yishni xohlaysiz. Shu holatda `print()` funksiyasida `end` parametri ishlatiladi.
 
 ### `else` BILAN `for` TSIKLI
 - Pythonda `for` tsiklining oxirida `else` bloki ishlatilishi mumkin. Agar `for` tsikli to'liq tugasa (hech qanday break holatidan to'xtatilmasa), `else` bloki ishlaydi.
