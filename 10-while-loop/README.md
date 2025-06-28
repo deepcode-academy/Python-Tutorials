@@ -67,7 +67,31 @@ while i < len(products):
     # Indeksni 1 ga oshiramiz, keyingi elementga o‘tamiz
     i += 1
 ```
-Yuqorida misolda, **loop** sonlar ro'yxatidagi **manfiy** va **0** qiymatlarini o'tkazib yuboradi. Musbat sonlar chop etiladi.
+
+🎯 Manfiy va nol sonlarni tashlab ketish (continue bilan)
+
+```python
+# Sonlar ro'yxatini yaratamiz
+numbers = [-3, -1, 0, 2, 4, 6]
+
+# Indeksni 0 dan boshlaymiz
+i = 0
+
+# Tsikl: indeks ro'yxat uzunligidan kichik bo‘lsa davom etadi
+while i < len(numbers):
+    # Agar hozirgi son 0 yoki manfiy bo‘lsa
+    if numbers[i] <= 0:
+        # Indeksni 1 ga oshiramiz, keyingi songa o‘tamiz
+        i += 1
+        # Ushbu davrani tashlab, tsikl boshiga qaytamiz
+        continue
+
+    # Agar son musbat bo‘lsa, uni ekranga chiqaramiz
+    print(numbers[i])
+
+    # Indeksni 1 ga oshirib, keyingi elementga o‘tamiz
+    i += 1
+```
 
 ### `while loop` KAMCHILIKLARI
 - **Cheksiz loop:** Agar shart hech qachon `False` bo'lmasa, loop cheksiz davom etishi mumkin, bu esa dasturiy ta'minotning ishdan chiqishiga olib kelishi mumkin.
