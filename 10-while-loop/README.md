@@ -116,6 +116,23 @@ if login_attempts == 3:  # 3 marta noto‘g‘ri kirilgan bo‘lsa
     print("🚫 Urinishlar tugadi, kirish bloklandi.")
 ```
 
+🎯 Infinite Loop (Cheksiz tsikl) va undan himoyalanish
+
+📌 Har doim shart o‘zgaruvchisini yangilashni unutmang
+
+```python
+# num o'zgaruvchiga 1 qiymati beriladi
+num = 1
+
+# Tsikl: num 5 dan kichik bo‘lsa davom etadi
+while num < 5:
+    # num qiymatini chiqaradi
+    print(num)
+    
+    # ❌ Indeks oshirilmayapti, shuning uchun num har doim 1 bo‘lib qoladi
+    # num += 1 YO‘Q! => bu yerda indeksni oshirish yo‘q, shuning uchun bu tsikl hech qachon tugamaydi
+```
+
 ## AMALIYOT
 1. 1 dan 10 gacha bo'lgan sonlarni terminalga chiqarish:
     - `1` dan `10` gacha bo'lgan sonlarni `while loop` yordamida terminalga chiqaradigan dastur yozing.
