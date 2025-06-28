@@ -655,3 +655,106 @@ for user in users:
 
 
 # ✅ AMALIYOT
+
+# ✅ AMALIYOT: For Loop
+
+## ✅ 1-topshiriq:
+1 dan 10 gacha bo‘lgan sonlarni for loop yordamida ekranga chiqaring.
+
+---
+
+## ✅ 2-topshiriq:
+Ro‘yxatda berilgan mevalarni har birini yangi qatordan chiqaring:
+```python
+fruits = ["olma", "banan", "gilos", "shaftoli"]
+```
+
+---
+
+## ✅ 3-topshiriq:
+for loop yordamida 1 dan 20 gacha bo‘lgan juft sonlarni ekranga chiqaring.
+
+---
+
+## ✅ 4-topshiriq:
+Foydalanuvchi 5 ta ism kiritadi. for loop yordamida ularni ro‘yxatga qo‘shing va ekranga chiqaring.
+
+---
+
+## ✅ 5-topshiriq:
+Ro‘yxatda berilgan sonlarning kvadratlarini yangi ro‘yxatga joylang:
+```python
+nums = [2, 4, 6, 8]
+```
+
+---
+
+## ✅ 6-topshiriq:
+100 dan 110 gacha bo‘lgan sonlarni for loop yordamida ekranga chiqarib, ularning yig‘indisini hisoblang.
+
+---
+
+## ✅ 7-topshiriq:
+for loop yordamida berilgan matndagi har bir harfni alohida qatordan chiqaring:
+```python
+text = "python"
+```
+
+---
+
+## ✅ 8-topshiriq:
+Ro‘yxatda nechta manfiy son borligini for loop yordamida hisoblang:
+```python
+numbers = [3, -5, 8, 0, -2, 7, -1]
+```
+
+---
+
+## ✅ 9-topshiriq:
+Ro‘yxatda berilgan ismlarning uzunligi 5 dan ko‘p bo‘lsa, ularni ekranga chiqaring:
+```python
+names = ["Anvar", "Murod", "Dilshod", "Iroda", "Sardor"]
+```
+
+---
+
+## ✅ 10-topshiriq:
+1 dan 10 gacha bo‘lgan sonlarning faktorialini for loop yordamida hisoblang va ekranga chiqaring.
+
+---
+
+## ✅ 11-topshiriq:
+Ro‘yxatda berilgan matnlardan nechtasi 'a' harfi bilan boshlanishini for loop yordamida aniqlang:
+```python
+words = ["apple", "banana", "avocado", "grape", "apricot"]
+```
+
+---
+
+## ✅ 12-topshiriq:
+for loop yordamida 1 dan 50 gacha bo‘lgan sonlar ichidan faqat 3 ga bo‘linadiganlarini ekranga chiqaring.
+
+---
+
+## ✅ 13-topshiriq:
+for loop yordamida berilgan ro‘yxatdagi har bir sonni 2 ga ko‘paytiring va yangi ro‘yxatga joylang:
+```python
+nums = [1, 5, 9, 13]
+```
+
+---
+
+## ✅ 14-topshiriq:
+for loop yordamida berilgan stringni teskarisiga aylantiring:
+```python
+word = "loop"
+# natija: "pool"
+```
+
+---
+
+## ✅ 15-topshiriq:
+Ro‘yxatda berilgan baholardan o‘rtacha bahoni for loop yordamida hisoblang:
+```python
+grades = [88, 92, 79, 95, 68]
+```
