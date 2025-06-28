@@ -473,17 +473,23 @@ else:
 🎯 Ma’lumotlar bazasidan kerakli foydalanuvchini topish
 
 ```python
+# Foydalanuvchilar ro'yxatini lug'atlar ko'rinishida yaratdik
 users = [
     {"id": 1, "name": "Ali"},
     {"id": 2, "name": "Sara"},
     {"id": 3, "name": "Diyor"}
 ]
 
+# Qidirilayotgan foydalanuvchining ID raqamini belgiladik
 searched_id = 2
 
+# users ro'yxatidagi har bir element (ya'ni foydalanuvchi) bo'yicha yuramiz
 for user in users:
+    # Agar foydalanuvchining 'id' qiymati qidirilayotgan id ga teng bo'lsa
     if user["id"] == searched_id:
+        # Foydalanuvchi topilganini ekranga chiqaramiz
         print(f"Foydalanuvchi topildi: {user['name']}")
+        # Qolgan elementlarni tekshirishning hojati yo'q, loop ni to'xtatamiz
         break
 ```
 
@@ -491,29 +497,50 @@ for user in users:
 
 
 ```python
+# Postlar listini yaratdik, har bir post dictionary ko'rinishida berilgan
 posts = [
     {"id": 1, "title": "Salom"},
     {"id": 2, "title": "Python haqida"},
     {"id": 3, "title": "Xayr"}
 ]
 
+# Qidirilayotgan postning sarlavhasini belgiladik
 search_title = "Python haqida"
 
+# posts listdagi har bir post bo'yicha yuramiz
 for post in posts:
+    # Agar postning 'title' qiymati qidirilayotgan sarlavhaga teng bo'lsa
     if post["title"] == search_title:
+        # Post topilganini ekranga chiqaramiz
         print("Post topildi:", post)
+        # Endi qolgan postlarni tekshirishning hojati yo'q, loop ni to'xtatamiz
         break
 ```
-- Noma'lum Hajmdagi Ma'lumotlarni Qidirish:
-```python
-sonlar = [7, 10, 2, 6, 11]
 
-for son in sonlar:
-    if son % 2 == 0:
-        print(f'Juft son topildi: {son}')
+🎯 for + else bilan birga break ishlatish
+
+```python
+# Shaharlar nomlari yozilgan ro'yxat yaratildi
+cities = ["Toshkent", "Samarqand", "Buxoro", "Xiva"]
+
+# Qidirilayotgan shahar nomi belgilanmoqda
+search = "Andijon"
+
+# cities ro'yxatidagi har bir shahar ustida yurib chiqamiz
+for city in cities:
+    # Agar ro'yxatdagi shahar nomi qidirilayotgan nomga teng bo‘lsa
+    if city == search:
+        # Ekranga topilganligi haqida xabar chiqaramiz
+        print("Shahar topildi!")
+        # Endi boshqa shaharlarni tekshirish shart emas, loop to‘xtatiladi
         break
+# Agar loop oxirigacha borib chiqqan bo‘lsa va break ishlamagan bo‘lsa
+else:
+    # Demak shahar ro'yxatda yo‘q, degan xabar chiqariladi
+    print("Shahar ro'yxatda yo'q.")
 ```
-Yuqoridagi kodda ro'yhat ichidan juft son bor yoqligini tekshirdik va juft son topilgandan keyin kod `break` orqali toxtatdik.
+
+
 ### `continue` OPERATORI
 > [!NOTE] 
 > `continue` operatori **for loop** ichida ishlatiladi va u **for loop**ning takrorlanishini to'xtatib, keyingi takrorlashga o'tadi. Ya'ni, `continue` operatori **for loop** ichidagi qolgan kodni bajarishdan voz kechib, **for loop**ning keyingi takrorlanishga o'tishni ta'minlaydi.
