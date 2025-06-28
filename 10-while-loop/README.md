@@ -17,16 +17,19 @@ while son <= 5:
     son += 1
 ```
 
+🎯 Foydalanuvchidan ma'lumot olish (stop deb yozmaguncha)
 
-Yuqoridagi misolda, **loop** `son` o'zgaruvchisi `5` dan kichik yoki teng bo'lgan vaqtda ishlaydi. Har bir takrorlashda son `1` ga oshiriladi. son `6` bo'lganda shart `False` bo'ladi va loop to'xtaydi.
-
-- Quyidagi misolda, `while loop` foydalanuvchidan ma'lumot so'raydi va `stop` so'zi kiritilmaguncha davom etadi.
 ```python
-kiritma = ""
+# Foydalanuvchi kiritgan matnni saqlash uchun bo‘sh o‘zgaruvchi yaratamiz
+user_input = ""
 
-while kiritma != "stop":
-    kiritma = input("So'z kiriting (to'xtatish uchun 'stop' yozing): ")
-    print(f"Siz '{kiritma}' so'zini kiritdingiz")
+# while tsikli: foydalanuvchi 'stop' deb yozmaguncha davom etadi
+while user_input.lower() != "stop":
+    # Foydalanuvchidan matn kiritishni so‘raymiz
+    user_input = input("So'z kiriting (to‘xtatish uchun 'stop'): ")
+    
+    # Foydalanuvchi kiritgan so‘zni ekranga chiqaramiz
+    print(f"Siz '{user_input}' kiritdingiz")
 ```
 Yuqoridagi misolda, foydalanuvchi `stop` so'zini kiritmaguncha loop ishlashda davom etadi. `stop` so'zini kiritilgach, shart `False` bo'ladi va **loop** tugaydi.
 
