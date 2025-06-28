@@ -415,7 +415,22 @@ for category, items in categories.items():
         print(f" - {item}")
 ```
 
+🎯 Sayt menyusini chiqarish (asosiy bo‘lim + ichki bo‘limlar)
 
+```python
+# Sayt menyusi
+menu = {
+    "Bosh sahifa": [],
+    "Kurslar": ["Python", "Django", "Flask"],
+    "Aloqa": ["Biz haqimizda", "Bog‘lanish"]
+}
+
+# Menyuni chiqaramiz
+for main_menu, submenus in menu.items():
+    print(main_menu)
+    for submenu in submenus:
+        print(f"  - {submenu}")
+```
 
 ### `else` BILAN `for` TSIKLI
 - Pythonda `for` tsiklining oxirida `else` bloki ishlatilishi mumkin. Agar `for` tsikli to'liq tugasa (hech qanday break holatidan to'xtatilmasa), `else` bloki ishlaydi.
