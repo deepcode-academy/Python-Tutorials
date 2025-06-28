@@ -541,49 +541,57 @@ else:
 ```
 
 
-### `continue` OPERATORI
-> [!NOTE] 
-> `continue` operatori **for loop** ichida ishlatiladi va u **for loop**ning takrorlanishini to'xtatib, keyingi takrorlashga o'tadi. Ya'ni, `continue` operatori **for loop** ichidagi qolgan kodni bajarishdan voz kechib, **for loop**ning keyingi takrorlanishga o'tishni ta'minlaydi.
-- `continue` operatoridan foydalanish:
-    - Agar **for loop** ichida muayyan shart bajarilganda qolgan kodlarni bajarish kerak bo'lmasa, `continue` operatoridan foydalaniladi.
+## ✅ CONTINUE
+
+📌 Python dasturlash tilida continue operatori tsikl ichida ishlatiladigan boshqaruvchi buyruq bo‘lib, u ishga tushganda tsikldagi shu takrorlanishning qolgan qismini o‘tkazib yuboradi va keyingi takrorlanishga (iteration) o‘tadi.
+
 ```python
+# Sonlardan iborat ro'yxat yaratildi
 sonlar = [1, 2, 3, 4, 5]
 
+# sonlar ro'yxatidagi har bir son bo'yicha yuramiz
 for son in sonlar:
+    # Agar hozirgi son 2 ga bo‘linganda qoldiq 0 bo‘lsa, ya’ni juft bo‘lsa
     if son % 2 == 0:
+        # Bu sonni tashlab o‘tamiz va loop keyingi son bilan davom etadi
         continue
+    # Agar son toq bo‘lsa (ya’ni yuqoridagi shart bajarilmagan bo‘lsa), uni chiqaramiz
     print(son)
 ```
-- `continue` operatorining foydalari
-    - **Shart Bajarilganda Kodni O'tkazib Yuborish:** Agar siz **for loop**ning qolgan qismidagi kodni o'tkazib yuborishni xohlasangiz, `continue` operatori juda foydali bo'lishi mumkin.
-    - **Tajriba Va Shartlarga Ko'ra Kodni Soddalashtirish:** `continue` operatori yordamida siz ko'proq shartni tekshirishni oldini olishingiz mumkin, bu esa kodingizni soddalashtiradi va o'qilishini yaxshilaydi.
-    - **For loopni Boshqarish:** `continue` operatori **for loop**ni boshqarishga yordam beradi, masalan, ba'zi holatlarda faqat muayyan shart bajarilganida kod bajarilishi kerak bo'lganda.
 
-- Faqat musbat sonlarni chiqarish:
+🎯 Faqat musbat sonlarni chiqarish
+
 ```python
+# Musbat va manfiy sonlardan iborat ro'yxat yaratildi
 sonlar = [-1, 2, -3, 4, -5]
 
+# sonlar ro'yxatidagi har bir son bo'yicha yuramiz
 for son in sonlar:
+    # Agar hozirgi son 0 dan kichik bo‘lsa, ya’ni manfiy bo‘lsa
     if son < 0:
+        # Manfiy sonni chiqarib o‘tib ketamiz, ya’ni pastdagi qator bajarilmaydi
         continue
+    # Faqat musbat sonlar (0 va undan katta) shu yerda ekranga chiqariladi
     print(son)
 ```
-Yuqoridagi misolda, manfiy sonlar o'tkazib yuboriladi va faqat musbat sonlar ekranga chiqariladi.
 
-- Faqat juft indexdagi elementlar bilan ishalash:
+🎯 Faqat juft indeksli mevalarni chiqarish
+
 ```python
+# Mevalardan iborat ro'yxat yaratildi
 mevalar = ['olma', 'banan', 'apelsin', 'anjir']
 
+# range() funksiyasi orqali indekslar bo'yicha 0 dan len(mevalar) gacha yuramiz
 for i in range(len(mevalar)):
+    # Agar hozirgi indeks toq bo‘lsa (ya'ni 1, 3, ...)
     if i % 2 != 0:
+        # Bu indeksdagi elementni o‘tkazib yuboramiz va loop davom etadi
         continue
+    # Faqat juft indeks (0, 2, ...) dagi mevalar ekranga chiqariladi
     print(mevalar[i])
 ```
-Yuqoridagi misolda, faqat juft indekslardagi elementlar ekranga chiqariladi.
 
-- `continue` operatorining kamchiliklari
-    - **Kodni o'qish murakkablashishi mumkin:** Ba'zi hollarda, `continue` operatoridan haddan tashqari foydalanish kodingizni murakkablashtirishi mumkin, chunki har bir iteratsiyadagi kodning bajarilishini tushunish qiyinlashadi.
-    - **Tuzilishi noqulay bo'lishi mumkin:** Agar **for loop**da juda ko'p shartlar bo'lsa va ular har xil `continue` operatorlariga bog'liq bo'lsa, bu kodni murakkab va noqulay tuzishga olib kelishi mumkin.
+
 
 ### pass OPERATORI
 > [!NOTE]
