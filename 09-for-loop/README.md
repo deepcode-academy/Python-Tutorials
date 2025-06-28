@@ -333,13 +333,32 @@ print("Hozir offline foydalanuvchilar:")
 print(offline_users)
 ```
 
-### TUPLE BILAN ISHLASH
-- Tuplelar ham ro'yxatlarga o'xshash, lekin o'zgarmas tuzilma bo'lib, ularning elementlari ustidan tsikl ishlatish mumkin.
+## ✅ TUPLE BILAN ISHLASH
+
+🎯 Oddiy tuple ustidan for tsik
+
 ```python
+# Koordinatalar (o'zgarmas qiymatlar)
 coordinates = (10, 20, 30)
 
+# Har bir koordinatani chiqarish
 for coordinate in coordinates:
     print(coordinate)
+```
+
+🎯 Mahsulotlar ro‘yxati tupleda (ID, nomi, narxi)
+
+```python
+# Har bir mahsulot: (id, nomi, narxi)
+products = (
+    (1, "Laptop", 1200),
+    (2, "Mouse", 30),
+    (3, "Keyboard", 50),
+)
+
+# Mahsulotlar haqida to‘liq ma’lumot chiqaramiz
+for product_id, name, price in products:
+    print(f"ID: {product_id}, Nomi: {name}, Narxi: ${price}")
 ```
 
 ### ICHMA-ICH(NESTED) `for` TSIKLLAR
