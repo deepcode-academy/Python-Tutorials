@@ -135,8 +135,6 @@ while num < 5:
 
 # ✅ AMALIYOT
 
-# ✅ WHILE LOOP AMALIYOT
-
 ## ✅ 1-topshiriq:
 Foydalanuvchi kiritgan natural son uchun 1 dan shu songacha bo‘lgan sonlar yig‘indisini while loop orqali hisoblang.
 
