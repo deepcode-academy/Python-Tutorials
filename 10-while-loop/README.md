@@ -133,14 +133,4 @@ while num < 5:
     # num += 1 YO‘Q! => bu yerda indeksni oshirish yo‘q, shuning uchun bu tsikl hech qachon tugamaydi
 ```
 
-## AMALIYOT
-1. 1 dan 10 gacha bo'lgan sonlarni terminalga chiqarish:
-    - `1` dan `10` gacha bo'lgan sonlarni `while loop` yordamida terminalga chiqaradigan dastur yozing.
-2. Foydalanuvchi kiritgan sonning raqamlarini yig'indisini hisoblash:
-    - Foydalanuvchidan bir son kiritishini so'rang va ushbu sonning raqamlarini yig'indisini hisoblaydigan dastur yozing. Masalan, foydalanuvchi `123` sonini kiritgan bo'lsa, natija `6` bo'lishi kerak (`1 + 2 + 3`).
-3. Foydalanuvchi kiritgan ma'lumot bilan ishlash:
-    - Foydalanuvchi `exit` so'zini kiritmaguncha, uning kiritgan ma'lumotlarini qabul qilib terminalga chiqaring.
-4. Juft sonlarni hisoblash:
-    - Foydalanuvchidan son kiriitishini so'rang va `1` dan ushbu songacha bo'lgan barcha juft sonlarni ekranga chiqaring.
-5. Minimal sonni topish:
-    - Foydalanuvchidan bir nechta sonlar kiritishni so'rang va foydalanuvchi `0` ni kiritganda kiritilgan sonlar ichidan eng kichik sonni ekranga chiqaring.
+# ✅ AMALIYOT
