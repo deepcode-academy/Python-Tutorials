@@ -93,9 +93,28 @@ while i < len(numbers):
     i += 1
 ```
 
-### `while loop` KAMCHILIKLARI
-- **Cheksiz loop:** Agar shart hech qachon `False` bo'lmasa, loop cheksiz davom etishi mumkin, bu esa dasturiy ta'minotning ishdan chiqishiga olib kelishi mumkin.
-- **Shartni tekshirish:** Har safar shartni diqqat bilan tekshirish kerak, chunki noto'g'ri shart **loop**ning noto'g'ri ishlashiga olib kelishi mumkin.
+🎯 Foydalanuvchi login tizimi
+
+```python
+correct_username = "admin"  # To‘g‘ri login
+correct_password = "12345"  # To‘g‘ri parol
+
+login_attempts = 0  # Urinishlar soni
+
+while login_attempts < 3:  # Faqat 3 marta urinib ko‘rish huquqi
+    username = input("Login kiriting: ")  # Login so‘rashi
+    password = input("Parol kiriting: ")  # Parol so‘rashi
+
+    if username == correct_username and password == correct_password:
+        print("✅ Xush kelibsiz, tizimga kirildi!")
+        break  # To‘g‘ri kirilgan bo‘lsa, tsikl tugaydi
+    else:
+        print("❌ Login yoki parol noto‘g‘ri.")
+        login_attempts += 1  # Urinishlar sonini oshirish
+
+if login_attempts == 3:  # 3 marta noto‘g‘ri kirilgan bo‘lsa
+    print("🚫 Urinishlar tugadi, kirish bloklandi.")
+```
 
 ## AMALIYOT
 1. 1 dan 10 gacha bo'lgan sonlarni terminalga chiqarish:
