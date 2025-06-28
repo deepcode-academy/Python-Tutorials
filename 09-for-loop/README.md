@@ -466,27 +466,42 @@ else:
 ```
 
 
-### `break` OPERATORI
-- `break` operatori siklni to'xtatadi. Bu operator `for` yoki `while` siklida ishlatilishi mumkin. `break` siklning bajarilishini to'xtatadi va sikldan chiqadi, hatto sikl to'liq tugamagan bo'lsa ham.
-```python
-numbers = [1, 2, 3, 4, 5]
+## ✅ BREAK
 
-for number in numbers:
-    if number == 3:
-        break  # Agar son 3 ga teng bo'lsa, loop to'xtaydi
-    print(number)
+📌 `break` operatori loopni to'xtatadi. Bu operator `for` yoki `while` loopda ishlatilishi mumkin. `break` loopning bajarilishini to'xtatadi va loopdan chiqadi, hatto loop to'liq tugamagan bo'lsa ham.
+
+🎯 Ma’lumotlar bazasidan kerakli foydalanuvchini topish
+
+```python
+users = [
+    {"id": 1, "name": "Ali"},
+    {"id": 2, "name": "Sara"},
+    {"id": 3, "name": "Diyor"}
+]
+
+searched_id = 2
+
+for user in users:
+    if user["id"] == searched_id:
+        print(f"Foydalanuvchi topildi: {user['name']}")
+        break
 ```
-- `break` Operatorining Foydalari
-    - **Shart Bajarilganda To'xtatish:** Siz siklni ma'lum bir shart bajarilganda to'xtatishingiz mumkin. Bu, masalan, kerakli ma'lumot topilganida yoki xato yuzaga kelganida foydalidir.
-    - **Resurslarni Tejash:** Agar sikl uzun bo'lsa va siz biror bir shart bajarilganda ishni to'xtatmoqchi bo'lsangiz, break orqali resurslarni tejashingiz mumkin.
-    - **Tashqi Aylanishlarga Osonlik:** `break` siklni to'xtatishi mumkin bo'lgan eng yaqin blok (ya'ni, `for` yoki `while` sikli) ichida ishlaydi.
-- Faqat Birinchi To'g'ri Elementni Qidirish:
-```python
-mevalar = ['olma', 'banan', 'apelsin', 'anjir']
 
-for meva in mevalar:
-    if meva == 'apelsin':
-        print('Apelsin topildi!')
+🎯 API javobidan kerakli postni topish
+
+
+```python
+posts = [
+    {"id": 1, "title": "Salom"},
+    {"id": 2, "title": "Python haqida"},
+    {"id": 3, "title": "Xayr"}
+]
+
+search_title = "Python haqida"
+
+for post in posts:
+    if post["title"] == search_title:
+        print("Post topildi:", post)
         break
 ```
 - Noma'lum Hajmdagi Ma'lumotlarni Qidirish:
