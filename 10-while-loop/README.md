@@ -31,18 +31,20 @@ while user_input.lower() != "stop":
     # Foydalanuvchi kiritgan so‘zni ekranga chiqaramiz
     print(f"Siz '{user_input}' kiritdingiz")
 ```
-Yuqoridagi misolda, foydalanuvchi `stop` so'zini kiritmaguncha loop ishlashda davom etadi. `stop` so'zini kiritilgach, shart `False` bo'ladi va **loop** tugaydi.
 
-- Quyidagi misolda, `while loop` sonni qidiradi va topilganda to'xtaydi.
+🎯 Foydalanuvchi parolni to‘g‘ri kiritmaguncha bajariladi.
+
 ```python
-sonlar = [1, 3, 5, 7, 9, 11]
-i = 0
+# Foydalanuvchi kiritgan matnni saqlash uchun bo‘sh o‘zgaruvchi yaratamiz
+user_input = ""
 
-while i < len(sonlar):
-    if sonlar[i] == 7:
-        print("7 soni topildi!")
-        break
-    i += 1
+# while tsikli: foydalanuvchi 'stop' deb yozmaguncha davom etadi
+while user_input.lower() != "stop":
+    # Foydalanuvchidan matn kiritishni so‘raymiz
+    user_input = input("So'z kiriting (to‘xtatish uchun 'stop'): ")
+    
+    # Foydalanuvchi kiritgan so‘zni ekranga chiqaramiz
+    print(f"Siz '{user_input}' kiritdingiz")
 ```
 Yuqoridagi misolda, `while loop` ro'yxatdagi sonlarni ketma-ket tekshiradi. `7` soni topilganida, **loop** `break` operatori yordamida to'xtatiladi.
 
