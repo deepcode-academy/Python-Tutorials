@@ -2,20 +2,8 @@
 
 # 🧩 9-DARS FOR LOOP
 
-> [!NOTE]
-> **for** — bu takrorlovchi tsikl, ya’ni bir nechta qiymatlar ustida yurib chiqib, har bir qiymat ustida amal bajaradi.
+📌 for – bu **tsikl operatori**, ya’ni **takrorlovchi kod**. Agar sizda bir nechta qiymatlar bo‘lsa (masalan, ro‘yxat, sonlar, harflar), for tsikli ularni **birma-bir** olib, har biriga bir xil amalni bajarish uchun ishlatiladi.
 
-### FOR LOOP SINTAKSISI
-- Pythonda `for` tsiklining umumiy sintaksisi quyidagicha:
-```python
-for element in iterable:
-    # tsikl tanasi
-```
-
-- Bu yerda:
-    - `element` — bu takrorlanadigan har bir element.
-    - `iterable` — bu takrorlash mumkin bo'lgan obyekt (**masalan**, `ro'yxat`, `tuple`, `set`, string`, `dictionary`, va hokazo).
-    - `tsikl tanasi` — har bir takrorlashda bajariladigan kod bloki.
 
 ### LISTLAR BILAN ISHLASH
 - Ro'yxatlar eng keng tarqalgan takrorlanadigan obyektlardan biri hisoblanadi.
