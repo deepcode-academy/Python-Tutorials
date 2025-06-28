@@ -91,17 +91,40 @@ for product in products:
     print(f"{product['name']}: ${product['price']}")
 ```
 
-- Ro'yxatdagi matnlarni(string) katta harfga o'zgartirish:
+🎯 Foydalanuvchi ismlarini bosh harf bilan yozib chiqish
+
 ```python
-# Misol ro'yxat
-fruits = ["olma", "banan", "gilos"]
+# Foydalanuvchilar ismlari ro'yxati (kichik harflarda)
+usernames = ["ali", "sara", "bekzod", "nigora"]
 
-# For tsikli bilan ro'yxat bo'ylab yurish
-for i in range(len(fruits)):
-    fruits[i] = fruits[i].upper()
+# Har bir ismni bosh harf bilan yangilaymiz
+for i in range(len(usernames)):
+    # `.capitalize()` birinchi harfni katta qiladi
+    usernames[i] = usernames[i].capitalize()
 
-print(f"Katta harfdagi mevalar: {fruits}")
+# Natijani chiqaramiz
+print("Capitalized usernames:", usernames)
 ```
+
+🎯 Sonlar ro'yxatidan faqat toq sonlarni ajratib olish
+
+```python
+# Sonlar ro'yxati
+numbers = [4, 7, 12, 9, 15, 2, 8]
+
+# Faqat toq sonlar uchun yangi ro'yxat
+odd_numbers = []
+
+# Har bir sonni tekshiramiz
+for number in numbers:
+    if number % 2 != 0:
+        # Toq bo'lsa yangi ro'yxatga qo'shamiz
+        odd_numbers.append(number)
+
+# Natijani chiqaramiz
+print("Odd numbers:", odd_numbers)
+```
+
 ### `range()` FUNKSIYASI BILAN TAKRORLASH
 - `range()` funksiyasi takrorlash uchun sonlar oralig'ini yaratadi. Bu sonlar qatori ustidan `for` tsikli yordamida aylanib chiqish mumkin.
 
