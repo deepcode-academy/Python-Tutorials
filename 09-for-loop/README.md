@@ -162,6 +162,17 @@ for i in range(10, 0, -1):
     print(i)
 ```
 
+🎯 Har bir foydalanuvchiga ID berish
+
+```python
+# 3 ta foydalanuvchi nomi
+users = ["Ali", "Vali", "Sardor"]
+
+# Foydalanuvchilarga ID raqam berish (1 dan boshlab)
+for i in range(len(users)):
+    print(f"User ID: {i+1} - Name: {users[i]}")
+```
+
 ### DICTIONARY BILAN ISHLASH
 - Lug'atlar `kalit-qiymat` juftlaridan iborat bo'ladi. `for` tsikli yordamida lug'atlarni takrorkashda, kalitlar orqali aylanib chiqish mumkin.
 ```python
