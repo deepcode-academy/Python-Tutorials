@@ -381,6 +381,42 @@ for row in matrix:
 
 📌 Python dasturlash tilida `print()` funksiyasi biror narsani ekranga chiqargandan so‘ng avtomatik tarzda yangi qatorga o‘tadi. Bu yangi qator belgisi `\n` deb ataladi. Ammo ba’zida har bir chiqishdan keyin yangi qatorga o‘tmasdan, boshqa belgi (masalan, bo‘sh joy yoki vergul) qo‘yishni xohlaysiz. Shu holatda `print()` funksiyasida `end` parametri ishlatiladi.
 
+🎯 Foydalanuvchilar va ularning telefon raqamlari
+
+```python
+# Har bir foydalanuvchining bir nechta telefon raqami bor
+users = {
+    "Ali": ["+998901112233", "+998912223344"],
+    "Sara": ["+998933445566"],
+    "Diyor": ["+998935551234", "+998998887766"]
+}
+
+# Har bir foydalanuvchi va raqamlarini chiqaramiz
+for name, phones in users.items():
+    print(f"{name}ning raqamlari:")
+    for phone in phones:
+        print(f" - {phone}")
+```
+
+🎯 Kategoriya va mahsulotlar
+
+```python
+# Mahsulotlar toifalar bo'yicha guruhlangan
+categories = {
+    "Elektronika": ["Telefon", "Noutbuk", "Smart soat"],
+    "Kiyim": ["Ko‘ylak", "Shim", "Poyabzal"],
+    "Oziq-ovqat": ["Non", "Sut", "Yog‘"]
+}
+
+# Har bir kategoriya va mahsulotlarini chiqaramiz
+for category, items in categories.items():
+    print(f"{category}:")
+    for item in items:
+        print(f" - {item}")
+```
+
+
+
 ### `else` BILAN `for` TSIKLI
 - Pythonda `for` tsiklining oxirida `else` bloki ishlatilishi mumkin. Agar `for` tsikli to'liq tugasa (hech qanday break holatidan to'xtatilmasa), `else` bloki ishlaydi.
 
