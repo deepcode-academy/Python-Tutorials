@@ -210,29 +210,39 @@ for item in cart:
 print(f"Umumiy summa: ${total}")
 ```
 
+🎯 Talabalar baholari bo‘yicha statistika
 
-- Qiymatlar ustida ishlash:
 ```python
-person = {
-    'name':'Umid',
-    'age':20,
-    'job':'teacher'
+# Talabalar va ularning baholari
+grades = {
+    "Ali": 87,
+    "Sardor": 92,
+    "Nigora": 78,
+    "Lola": 85
 }
 
-for qiymat in person.values():
-    print(qiymat)
+# O‘rtacha bahoni hisoblaymiz
+average = sum(grades.values()) / len(grades)
+print(f"O‘rtacha baho: {average}")
 ```
 
-- Kalitlar va qiymatlar ustida ishlash.
-    - Agar siz kalitlar bilan birga qiymatlarni ham olishni istasangiz, `.items()` metodidan foydalanishingiz mumkin:
+🎯 Chegirma tizimi (promo code)
+
 ```python
-person = {
-    'name':'Umid',
-    'age':20,
-    'job':'teacher'
+# Promo kodlar va ularning chegirmalari (%)
+promo_codes = {
+    "SALE10": 10,
+    "WELCOME15": 15,
+    "VIP20": 20
 }
-for kalit, qiymat in person.items():
-    print(f"{kalit}: {qiymat}")
+
+code = input("Promo kodni kiriting: ").upper()
+
+# Kodni tekshirib chegirma beramiz
+if code in promo_codes:
+    print(f"Sizga {promo_codes[code]}% chegirma berildi!")
+else:
+    print("Noto‘g‘ri promo kod!")
 ```
 
 ### SETS BILAN ISHLASH
