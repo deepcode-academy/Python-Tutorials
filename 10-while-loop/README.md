@@ -46,18 +46,25 @@ while user_input.lower() != "stop":
     # Foydalanuvchi kiritgan so‘zni ekranga chiqaramiz
     print(f"Siz '{user_input}' kiritdingiz")
 ```
-Yuqoridagi misolda, `while loop` ro'yxatdagi sonlarni ketma-ket tekshiradi. `7` soni topilganida, **loop** `break` operatori yordamida to'xtatiladi.
 
-- Quyidagi misolda, `while loop` **musbat** sonlarni ekranga chiqaradi va **manfiy** sonlarni o'tkazib yuboradi.
+🎯 Ro‘yxatda kerakli qiymatni topish (break bilan)
+
 ```python
-sonlar = [-2, -1, 0, 1, 2, 3]
+# Mahsulotlar ro'yxatini yaratamiz
+products = ["apple", "banana", "lemon", "melon", "grapes"]
+
+# Indeksni 0 dan boshlaymiz
 i = 0
 
-while i < len(sonlar):
-    if sonlar[i] < 1:
-        i += 1
-        continue
-    print(sonlar[i])
+# Tsikl: indeks ro'yxat uzunligidan kichik bo‘lsa davom etadi
+while i < len(products):
+    # Agar hozirgi element 'lemon' bo‘lsa
+    if products[i] == "lemon":
+        # 'lemon' topilganini ekranga chiqaramiz
+        print("✅ 'lemon' mahsuloti topildi!")
+        # Tsiklni to‘xtatamiz
+        break
+    # Indeksni 1 ga oshiramiz, keyingi elementga o‘tamiz
     i += 1
 ```
 Yuqorida misolda, **loop** sonlar ro'yxatidagi **manfiy** va **0** qiymatlarini o'tkazib yuboradi. Musbat sonlar chop etiladi.
