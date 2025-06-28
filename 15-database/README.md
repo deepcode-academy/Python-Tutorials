@@ -260,70 +260,89 @@ finally:
     conn.close()
 ```
 
-# PRACTICS
+# ✅ AMALIYOT
 
-### 🧩 Yangi jadval yaratish
-   - `"library.db"` nomli SQLite bazasini yarating.
-   - `"books"` nomli jadval yarating (`id`, `title`, `author`, `year`).
-   - PK: `id INTEGER PRIMARY KEY AUTOINCREMENT.`
-   - NOT NULL: `title`, `author`, `year`.
+## ✅ 1-topshiriq:
+`"library.db"` nomli SQLite bazasini yarating. `"books"` nomli jadval yarating (`id`, `title`, `author`, `year`).  
+- `id INTEGER PRIMARY KEY AUTOINCREMENT`
+- `title`, `author`, `year` NOT NULL
 
-### 📚 Kitoblar ma’lumotlarini kiritish
-   - `"books"` jadvaliga quyidagi ma’lumotlarni kiriting:
-   - `executemany()` funksiyasidan foydalaning.
+---
 
+## ✅ 2-topshiriq:
+`"books"` jadvaliga quyidagi ma’lumotlarni kiriting (`executemany()` funksiyasidan foydalaning):
 | id  | title              | author        | year  |
 |-----|--------------------|---------------|-------|
 | 1   | Python Basics      | John Smith    | 2020  |
 | 2   | SQL for Beginners  | Alice Brown   | 2018  |
 | 3   | Data Science Guide | Michael Clark | 2021  |
 
-### 🔍 Barcha kitoblarni chiqarish
-    - `"books"` jadvalidagi barcha kitoblarni ekranga chiqaring.
-    - Natija `id`, `title`, `author`, `year` formatida bo‘lsin.
+---
 
-### 📝 Muallif bo‘yicha qidirish
-    - Foydalanuvchidan **muallif nomini** so‘rang.
-    - Shu muallif tomonidan yozilgan barcha kitoblarni chiqaring.
-    - Agar kitob topilmasa, `"Bu muallifning kitoblari yo'q"` deb chiqaring.
+## ✅ 3-topshiriq:
+`"books"` jadvalidagi barcha kitoblarni ekranga chiqaring. Natija `id`, `title`, `author`, `year` formatida bo‘lsin.
 
-### 🔄 Kitob yilini yangilash
-   - `"SQL for Beginners"` kitobining chiqish yilini `2019` ga o‘zgartiring.
-   - Yangilangan ma’lumotni ekranga chiqaring.
+---
 
-### ⏳ Eng eski kitobni topish
-    - `"books"` jadvalidan chiqish yili eng kichik bo‘lgan kitobni toping.
+## ✅ 4-topshiriq:
+Foydalanuvchidan **muallif nomini** so‘rang. Shu muallif tomonidan yozilgan barcha kitoblarni chiqaring.
+Agar kitob topilmasa, `"Bu muallifning kitoblari yo'q"` deb chiqaring.
 
-### 📅 2020-yildan keyin chiqqan kitoblarni chiqarish
-   - `"books"` jadvalidan `2020` yildan keyin chiqqan kitoblarni chiqarish kodini yozing.
+---
 
-### ❌ Kitobni o‘chirish
-   - `"Data Science Guide"` kitobini `"books"` jadvalidan o‘chiring.
-   - O‘chirilganidan keyin jadvaldagi barcha kitoblarni ekranga chiqaring.
+## ✅ 5-topshiriq:
+`"SQL for Beginners"` kitobining chiqish yilini `2019` ga o‘zgartiring. Yangilangan ma’lumotni ekranga chiqaring.
 
-### 🎓 Talabalar jadvallarini yaratish
-   - `"university.db"` bazasini yarating.
-   - `"students"` jadvalini yarating:
-   - `id INTEGER PRIMARY KEY AUTOINCREMENT`,
-   - `name TEXT NOT NULL`,
-   - `age INTEGER NOT NULL`,
-   - `faculty TEXT NOT NULL`.
+---
 
-### ✏️ Talabalar jadvaliga ma’lumot qo‘shish
-    - `"students"` jadvaliga kamida 5 ta talaba haqida ma’lumot kiriting.
+## ✅ 6-topshiriq:
+`"books"` jadvalidan chiqish yili eng kichik bo‘lgan kitobni toping (eng eski kitob).
 
-### 🏫 Fakultet bo‘yicha qidirish
-    - Foydalanuvchidan fakultet nomini so‘rang.
-    - Shu fakultetdagi talabalarni chiqaring.
+---
 
-### 👶 Eng yosh talabani topish
-    - `"students"` jadvalidan eng yosh talabani toping.
+## ✅ 7-topshiriq:
+`"books"` jadvalidan `2020` yildan keyin chiqqan kitoblarni chiqarish kodini yozing.
 
-### 🔧 Talabaning yoshini yangilash
-    - `"name"` ismli talabaning yoshini `21` ga o‘zgartiring.
+---
 
-### 📊 Fakultet bo‘yicha talabalarni sanash
-    - `"students"` jadvalidagi har bir fakultet bo‘yicha nechta talaba borligini hisoblang.
+## ✅ 8-topshiriq:
+`"Data Science Guide"` kitobini `"books"` jadvalidan o‘chiring. O‘chirilganidan keyin jadvaldagi barcha kitoblarni ekranga chiqaring.
 
-### 🏆 Eng ko‘p talabaga ega fakultetni topish
-    - `"students"` jadvalidan eng ko‘p talabaga ega bo‘lgan fakultetni aniqlang.
+---
+
+## ✅ 9-topshiriq:
+`"university.db"` bazasini yarating va `"students"` jadvalini yarating:
+- `id INTEGER PRIMARY KEY AUTOINCREMENT`
+- `name TEXT NOT NULL`
+- `age INTEGER NOT NULL`
+- `faculty TEXT NOT NULL`
+
+---
+
+## ✅ 10-topshiriq:
+`"students"` jadvaliga kamida 5 ta talaba haqida ma’lumot kiriting.
+
+---
+
+## ✅ 11-topshiriq:
+Foydalanuvchidan fakultet nomini so‘rang va shu fakultetdagi talabalarni chiqaring.
+
+---
+
+## ✅ 12-topshiriq:
+`"students"` jadvalidan eng yosh talabani toping.
+
+---
+
+## ✅ 13-topshiriq:
+`"name"` ismli talabaning yoshini `21` ga o‘zgartiring.
+
+---
+
+## ✅ 14-topshiriq:
+`"students"` jadvalidagi har bir fakultet bo‘yicha nechta talaba borligini hisoblang.
+
+---
+
+## ✅ 15-topshiriq:
+`"students"` jadvalidan eng ko‘p talabaga ega bo‘lgan fakultetni aniqlang.
