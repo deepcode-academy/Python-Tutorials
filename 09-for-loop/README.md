@@ -68,21 +68,27 @@ for user in users:
         print(f"{user['username']} is currently online.")
 ```
 
-- Ro'yxatdagi elementlarni filtrlash.
-    - Ro'yxatdan faqat juft sonlarni tanlab olish:
+🎯 Mahsulot narxlarini chegirma bilan yangilash
+
 ```python
-# Misol ro'yxat
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Mahsulotlar va ularning narxlari ro'yxati
+products = [
+    {"name": "laptop", "price": 1000},
+    {"name": "keyboard", "price": 100},
+    {"name": "mouse", "price": 50},
+]
 
-# Juft sonlarni saqlash uchun yangi ro'yxat
-even_numbers = []
+# Har bir mahsulotga 10% chegirma beramiz
+for product in products:
+    # Chegirma miqdorini hisoblaymiz
+    discount = product["price"] * 0.1
+    # Narxni yangilaymiz
+    product["price"] -= discount
 
-# For tsikli bilan ro'yxat bo'ylab yurish
-for number in numbers:
-    if number % 2 == 0:
-        even_numbers.append(number)
-
-print(f"Juft sonlar: {even_numbers}")
+# Natijani chiqaramiz
+print("Discounted products:")
+for product in products:
+    print(f"{product['name']}: ${product['price']}")
 ```
 
 - Ro'yxatdagi matnlarni(string) katta harfga o'zgartirish:
