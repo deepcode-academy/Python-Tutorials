@@ -173,29 +173,44 @@ for i in range(len(users)):
     print(f"User ID: {i+1} - Name: {users[i]}")
 ```
 
-### DICTIONARY BILAN ISHLASH
-- Lug'atlar `kalit-qiymat` juftlaridan iborat bo'ladi. `for` tsikli yordamida lug'atlarni takrorkashda, kalitlar orqali aylanib chiqish mumkin.
-```python
-person = {
-    "name": "John", 
-    "age": 30, "city": 
-    "New York"
-    }
+## ✅ DICTIONARY BILAN ISHLASH
 
-for key in person:
-    print(key, ":", person[key])
-```
-- Faqat kalitlar ustida ishlash:
-```python
-person = {
-    'name':'Umid',
-    'age':20,
-    'job':'teacher'
-}
 
-for keys in person:
-    print(keys)
+🎯 Foydalanuvchi profillari ro‘yxati
+
+```python
+# Bir nechta foydalanuvchilarning profillari
+users = [
+    {"username": "ali", "email": "ali@example.com", "is_active": True},
+    {"username": "sara", "email": "sara@example.com", "is_active": False},
+    {"username": "diyor", "email": "diyor@example.com", "is_active": True},
+]
+
+# Faqat aktiv foydalanuvchilarni chiqaramiz
+for user in users:
+    if user["is_active"]:
+        print(f"{user['username']} (email: {user['email']}) is active.")
 ```
+
+🎯 Savatdagi mahsulotlar va umumiy narxni hisoblash
+
+```python
+# Xarid savatidagi mahsulotlar
+cart = [
+    {"name": "laptop", "price": 850.0, "quantity": 1},
+    {"name": "mouse", "price": 25.0, "quantity": 2},
+    {"name": "keyboard", "price": 45.0, "quantity": 1},
+]
+
+# Umumiy narxni hisoblaymiz
+total = 0
+for item in cart:
+    total += item["price"] * item["quantity"]
+
+print(f"Umumiy summa: ${total}")
+```
+
+
 - Qiymatlar ustida ishlash:
 ```python
 person = {
