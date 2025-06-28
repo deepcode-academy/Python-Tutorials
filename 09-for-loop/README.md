@@ -6,27 +6,42 @@
 
 
 ### LISTLAR BILAN ISHLASH
-- Ro'yxatlar eng keng tarqalgan takrorlanadigan obyektlardan biri hisoblanadi.
-```python
-numbers = [1, 2, 3, 4, 5]
 
-for number in numbers:
-    print(number)
-```
-- Bu misolda `for` tsikli `numbers` ro'yxatidagi har bir elementni `takrorlab`, ularni ekranga chiqaradi.
+📌 Ro'yxatlar eng keng tarqalgan takrorlanadigan obyektlardan biri hisoblanadi.
+
+
+🎯 Buyurtmalar ro‘yxatini ekranga chiqarish
 
 ```python
-# Mevalar ro'yxati
-fruits = ["olma", "banan", "gilos"]
+# Buyurtma qilingan mahsulotlar ro'yxati
+orders = ["bread", "milk", "eggs", "cheese"]
 
-# Ro'yxat bo'yicha tsikl
-for fruit in fruits:
-    print(fruit)
+# Har bir mahsulot bo'yicha yurib chiqamiz
+for item in orders:
+    # Mahsulot nomini ekranga chiqaramiz
+    print(f"Ordered item: {item}")
 ```
-- Tushuntirish:
-    - `fruits` uchta matndan(string) dan iborat ro'yxat.
-    - `for fruit in fruits`: bu kod qatorida `fruit` o'zgaruvchisi ro'yxatdagi har bir elementni o'z ichiga oladi.
-    - `print(fruit)` esa har bir elementni ekranga chiqaradi.
+
+
+🎯 Narxlar ro'yxati bilan umumiy xarajatni hisoblash
+
+
+```python
+# Har bir mahsulot narxi (dollar)
+prices = [2.5, 1.0, 3.2, 4.8]
+
+# Umumiy summa uchun o'zgaruvchi
+total_cost = 0
+
+# Har bir narx ustida yuramiz
+for price in prices:
+    # Narxni umumiy summaga qo'shamiz
+    total_cost += price
+
+# Umumiy narxni ekranga chiqaramiz
+print(f"Total cost: ${total_cost}")
+```
+
 
 ```python
 # Misol ro'yxat
