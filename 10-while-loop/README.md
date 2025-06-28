@@ -2,30 +2,22 @@
 
 # 🧩 10-DARS WHILE LOOP
 
+📌 `while` — bu tsikl operatori, ya’ni biror shart True bo‘lganida kodni qayta-qayta bajaradi. Agar shart False bo‘lsa, while tsikli to‘xtaydi va keyingi kodga o‘tadi.
 
-## while loop NIMA?
-> [!NOTE]
-> `while loop` Pythonda shart bajarilgunga qadar kod blokini qayta-qayta bajarish uchun ishlatiladi. Shart `True` bo'lganida `loop` ishlashda davom etadi, `False` bo'lganda esa to'xtaydi.
-
-### `while loop` SINTAKSISI
 ```python
-while shart:
-    # bajariladigan kod
-```
-**Shart:** Bu `boolean` ifoda bo'lib, u `True` yoki `False` qiymatiga ega bo'lishi kerak. Agar `True` bo'lsa, loop davom etadi, agar `False` bo'lsa, loop tugaydi.
-
-### `while loop`DAN FOYDALANISH
-- **Foydalanuvchi kiritmalarini tekshirish:** `while loop` foydalanuvchi kiritgan ma'lumotlarni qayta-qayta tekshirish uchun ishlatilishi mumkin.
-- **Ma'lum bir shartga erishilmaguncha bajariladigan operatsiyalar:** Ma'lum bir shart bajarilgunga qadar kodni qayta-qayta bajarish kerak bo'lganda `while loop` ishlatiladi.
-
-- Quyidagi misolda, `while loop` `1` dan `5` gacha bo'lgan sonlarni ekranga chiqaradi.
-```python
+# son degan o'zgaruvchiga 1 qiymatini beramiz
 son = 1
 
+# while tsikli: son 5 dan kichik yoki teng bo‘lguncha davom etadi
 while son <= 5:
+    # hozirgi son qiymatini ekranga chiqaramiz
     print(son)
+    
+    # son qiymatini 1 ga oshiramiz, shunda tsikl keyingi son bilan davom etadi
     son += 1
 ```
+
+
 Yuqoridagi misolda, **loop** `son` o'zgaruvchisi `5` dan kichik yoki teng bo'lgan vaqtda ishlaydi. Har bir takrorlashda son `1` ga oshiriladi. son `6` bo'lganda shart `False` bo'ladi va loop to'xtaydi.
 
 - Quyidagi misolda, `while loop` foydalanuvchidan ma'lumot so'raydi va `stop` so'zi kiritilmaguncha davom etadi.
