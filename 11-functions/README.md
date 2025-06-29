@@ -264,6 +264,8 @@ send_welcome(user_list)
 
 ## ✅ IXTIIYORIY ARGUMENTLAR: *ARGS
 
+📌 ***args** – bu funksiya istalgancha sonli argument qabul qilishi uchun ishlatiladi. U ***** belgisi bilan yoziladi, va Python uni tuple sifatida saqlaydi.
+
 ```python
 def total_sum(*args):
     # args — tuple, istalgancha argument qabul qiladi
