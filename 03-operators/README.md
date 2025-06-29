@@ -561,61 +561,83 @@ print(chapga)       # 28
 print(ongga)        # 1
 ```
 
-## TAYINLASH(ASSIGN) OPERATORALRI
-Pythonda **tayinlash**(`assign`) operatorlari yordamida o'zgaruvchilarga qiymatlar tayinlanadi. Bu operatorlar nafaqat qiymatlarni o'zgaruvchilarga tayinlash, balki matematik amallarni bajarib, natijani ham o'zgaruvchiga saqlash imkonini beradi. Quyida tayinlash operatorlarining to'liq ro'yxati va ulardan foydalanish misollari keltirilgan:
+## ✅ TAYINLASH(ASSIGN) OPERATORALRI
 
-1. `=` - **Oddiy tayinlash operatori**
-    - Bu operator oddiy qiymat tayinlash uchun ishlatiladi.
+📌 Pythonda tayinlash operatorlari yordamida o‘zgaruvchiga qiymat beriladi. Shuningdek, ba’zi operatorlar matematik amalni bajarib, natijani o‘sha o‘zgaruvchining o‘ziga yozib qo‘yadi.
+
+### ❇️ =
+
+📌 Bu operator bilan o‘zgaruvchiga qiymat beriladi.
+
 ```python
 x = 10
 y = 5
 ```
-Yuqoridagi misolda `x` o'zgaruvchisiga `10`, `y` o'zgaruvchisiga esa `5` qiymati tayinlanadi.
 
-2. `+=` - **Qo'shish va tayinlash**
-    - Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatga qo'shib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+
+### ❇️ +=
+
+📌 Bu operator orqali x ga biror son qo‘shiladi va natija yana x ga yoziladi.
+
 ```python
 x = 10
 x += 5  # x endi 15 ga teng bo'ladi
 ```
 
-3. `-=` - **Ayirish va tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatdan ayirib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+### ❇️ -=
+
+📌 Bu operator orqali x dan son ayriladi va natija x ga yoziladi.
+
 ```python
 x = 10
 x -= 3  # x endi 7 ga teng bo'ladi
 ```
 
-4. `*=` - **Ko'paytirish va tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatga ko'paytirib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+### ❇️ *=
+
+📌 Bu operator orqali x ga biror son ko‘paytiriladi va natija x ga yoziladi.
+
 ```python
 x = 4
 x *= 2  # x endi 8 ga teng bo'ladi
 ```
-5. `/=` - **Bo'lish va tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatga bo'lib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+
+### ❇️ /=
+
+📌 Bu operator orqali x bo‘linadi va natija kasr (float) ko‘rinishda saqlanadi.
+
 ```python
 x = 20
 x /= 4  # x endi 5.0 ga teng bo'ladi (natija float turida bo'ladi)
 ```
-6. `%=` - **Qoldiqni tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatga bo'lgandan keyin qoldiqni o'zgaruvchiga qayta tayinlash mumkin.
+
+Bu operator orqali x dan y bo‘linadi va qoldiq x ga yoziladi.
+
+### ❇️ %=
+
+📌 Bu operator orqali x dan y bo‘linadi va qoldiq x ga yoziladi.
+
 ```python
 x = 10
 x %= 3  # x endi 1 ga teng bo'ladi (qoldiq)
 ```
-7. `**=` - **Daraja va tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan darajaga oshirib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+### ❇️ **=
+
+📌 Bu operator orqali x o‘zining darajasiga oshiriladi va natija x ga yoziladi.
 ```python
+
 x = 3
 x **= 2  # x endi 9 ga teng bo'ladi (3^2 = 9)
 ```
-8. `//=` - **Butun bo'lish va tayinlash**
-- Bu operator yordamida o'zgaruvchi qiymatini berilgan qiymatga butun bo'lib, natijani o'zgaruvchiga qayta tayinlash mumkin.
+### ❇️ //=
+
+📌 Bu operator orqali x bo‘linadi, lekin faqat butun qismi olinadi.
+
 ```python
 x = 10
 x //= 3  # x endi 3 ga teng bo'ladi (butun qismini oladi)
 ```
+
 ## A'ZOLIK(MEMBERSHIP) OPERATORLARI
 - Pythonda a'zolik (membership) operatorlari ma'lum bir elementning **ketma-ketlik**(`sequence`), masalan, **ro'yxat**(`list`), **qator**(`string`) yoki **to'plam**(`set`) ichida mavjudligini tekshirish uchun ishlatiladi. 
 1. `in` **operatori**
