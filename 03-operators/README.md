@@ -534,15 +534,31 @@ print(natija_xor)  # 10
 ```
 8. `NOT`, **chapga va o'ngga siljitish bilan:**
 ```python
-x = 7  # 0111
+# x o'zgaruvchiga 7 qiymati berilmoqda
+# 7 ning ikkilik (binary) ko‘rinishi: 0111
+x = 7
 
-natija_not = ~x     # -1000 (-8)
-chapga = x << 2     # 11100 (28)
-ongga = x >> 2     # 0001 (1)
+# NOT (~) operatori: barcha bitlarni teskari qiladi (1→0, 0→1)
+# ~0111 → 1000 (lekin bu -8 bo‘ladi, chunki bu bitlar manfiy son sifatida talqin qilinadi)
+# Pythonda ~x bu -x-1 bo‘ladi: ~7 = -7 - 1 = -8
+natija_not = ~x     # -8
 
-print(natija_not)
-print(chapga)
-print(ongga)
+# CHAPGA siljitish (<<): bitlarni chapga siljitadi, har bir siljitish 2 baravar oshadi
+# 0111 << 2 → 11100 (ya'ni 7 * 2 * 2 = 28)
+chapga = x << 2     # 28
+
+# O‘NGGA siljitish (>>): bitlarni o‘ngga siljitadi, har bir siljitish 2 ga kamaytiradi
+# 0111 >> 2 → 0001 (ya'ni 7 // 2 // 2 = 1)
+ongga = x >> 2      # 1
+
+# NOT natijani chiqaramiz
+print(natija_not)   # -8
+
+# CHAPGA siljitish natijasini chiqaramiz
+print(chapga)       # 28
+
+# O‘NGGA siljitish natijasini chiqaramiz
+print(ongga)        # 1
 ```
 
 ## TAYINLASH(ASSIGN) OPERATORALRI
