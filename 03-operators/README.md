@@ -494,16 +494,43 @@ print(natija)
 7. EXTRA EXAMPLES 
 - `AND`, `OR`, `XOR` **operatorlari bilan:**
 ```python
-a = 12  # 1100
-b = 6   # 0110
+# a o'zgaruvchiga 12 soni berilmoqda
+# 12 ning ikkilik (binary) ko‘rinishi: 1100
+a = 12
 
-natija_and = a & b  # 0100 (4)
-natija_or = a | b   # 1110 (14)
-natija_xor = a ^ b  # 1010 (10)
+# b o'zgaruvchiga 6 soni berilmoqda
+# 6 ning ikkilik (binary) ko‘rinishi: 0110
+b = 6
 
-print(natija_and)
-print(natija_or)
-print(natija_xor)
+# AND (&) operatori: faqat ikkala bit ham 1 bo‘lsa, natija 1 bo‘ladi
+# 1100
+# &0110
+# ----
+# 0100 → 10likda bu 4 ga teng
+natija_and = a & b
+
+# OR (|) operatori: kamida bittasi 1 bo‘lsa, natija 1 bo‘ladi
+# 1100
+# |0110
+# ----
+# 1110 → 10likda bu 14 ga teng
+natija_or = a | b
+
+# XOR (^) operatori: agar bitlar turlicha bo‘lsa, natija 1 bo‘ladi
+# 1100
+# ^0110
+# ----
+# 1010 → 10likda bu 10 ga teng
+natija_xor = a ^ b
+
+# AND natijani ekranga chiqaramiz
+print(natija_and)  # 4
+
+# OR natijani ekranga chiqaramiz
+print(natija_or)   # 14
+
+# XOR natijani ekranga chiqaramiz
+print(natija_xor)  # 10
 ```
 8. `NOT`, **chapga va o'ngga siljitish bilan:**
 ```python
