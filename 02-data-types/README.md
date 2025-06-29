@@ -706,65 +706,34 @@ print("PI qiymati:", PI)  # Natija: 3.14
 
 # ✅ AMALIYOT
 
-## 🟢 1-topshiriq: String birlashtirish
-
+## ✅ 1-topshiriq: String birlashtirish
 Foydalanuvchidan ism va familiya input() orqali oling. Ularni birlashtirib, "F.I.O: <ism> <familiya>" tarzida ekranga chiqaring.
 
-**Kutilgan natija:**
-```
-F.I.O: Umid G'aybullayev
-```
-
 ---
 
-## 🟢 2-topshiriq: String uzunligini topish
-
+## ✅ 2-topshiriq: String uzunligini topish
 Foydalanuvchidan matn input() orqali oling va uning uzunligini `len()` yordamida aniqlang.
 
-**Kutilgan natija:**
-```
-Matn uzunligi: 13
-```
-
 ---
 
-## 🟢 3-topshiriq: String indekslash va kesish
-
+## ✅ 3-topshiriq: String indekslash va kesish
 "Python dasturlash" matnini o‘zgaruvchiga saqlang. Birinchi harfini, oxirgi harfini va "dastur" so‘zini alohida ekranga chiqaring.
 
-**Kutilgan natija:**
-```
-P
-h
-dastur
-```
-
 ---
 
-## 🟢 4-topshiriq: String ko‘paytirish
-
+## ✅ 4-topshiriq: String ko‘paytirish
 Foydalanuvchidan so‘z oling va uni 4 marta ketma-ket chiqaruvchi dastur yozing.
 
-**Kutilgan natija:**
-```
-hellohellohellohello
-```
+---
+
+## ✅ 5-topshiriq: F-stringdan foydalanish
+Foydalanuvchidan ism va yosh input() orqali olib, quyidagicha f-string yordamida chiqaring.  
+Misol: `Ismingiz: Aziza, Yoshingiz: 19`
 
 ---
 
-## 🟢 5-topshiriq: F-stringdan foydalanish
-
-Foydalanuvchidan ism va yosh input() orqali olib, quyidagicha f-string yordamida chiqaring:
-
-```
-Ismingiz: Aziza, Yoshingiz: 19
-```
-
----
-
-## 🟢 6-topshiriq: String metodlari bilan ishlash
-
-Foydalanuvchidan matn input() orqali oling. Uni
+## ✅ 6-topshiriq: String metodlari bilan ishlash
+Foydalanuvchidan matn input() orqali oling. Uni:
 - katta harflarga,
 - kichik harflarga,
 - birinchi harfini katta qilishga
@@ -772,81 +741,48 @@ o‘zgartirib, har birini alohida ekranga chiqaring.
 
 ---
 
-## 🟢 7-topshiriq: .replace() va .split() metodi
-
+## ✅ 7-topshiriq: .replace() va .split() metodi
 Foydalanuvchidan telefon raqami oling (masalan: "+998 90 123 45 67") va uni bo‘sh joylar va "+" belgisidan tozalang, so‘ng split() yordamida 2 xonali bloklarga ajrating.
 
-**Kutilgan natija:**
-```
-998901234567
-['99', '89', '01', '23', '45', '67']
-```
-
 ---
 
-## 🟢 8-topshiriq: .join() va .count()
-
+## ✅ 8-topshiriq: .join() va .count()
 Foydalanuvchidan so‘zlar ro‘yxatini input() orqali so‘rab, ularni vergul bilan birlashtiring va "a" harfi necha marta qatnashganini hisoblang.
 
-**Kutilgan natija:**
-```
-apple,banana,grape
-3
-```
-
 ---
 
-## 🟢 9-topshiriq: .find(), .startswith(), .endswith()
-
+## ✅ 9-topshiriq: .find(), .startswith(), .endswith()
 Foydalanuvchidan matn va so‘z oling. Matnda so‘z qayerdan boshlanishini, matn aynan shu so‘z bilan boshlanish yoki tugashini aniqlang.
 
 ---
 
-## 🟢 10-topshiriq: Integer va float ustida amallar
-
+## ✅ 10-topshiriq: Integer va float ustida amallar
 Foydalanuvchidan ikkita butun son va bir float son oling. Ularning yig‘indisi, ko‘paytmasi va o‘zaro bo‘linmasini hisoblang.
 
 ---
 
-## 🟢 11-topshiriq: Uzoq sonni guruhlash
-
+## ✅ 11-topshiriq: Uzoq sonni guruhlash
 Bank hisobingizdagi pul miqdorini pastki chiziq yordamida o‘qish oson bo‘ladigan formatda yozing va ekranga chiqaring.
-
-**Kutilgan natija:**
-```
-Sizning hisobingizda: 1_200_000_000 so'm
-```
 
 ---
 
-## 🟢 12-topshiriq: Type casting (turini o‘zgartirish)
-
+## ✅ 12-topshiriq: Type casting (turini o‘zgartirish)
 Foydalanuvchidan raqamli matn oling va uni int, float, str va bool turiga o‘tkazib, har birini va turini chiqaring.
 
 ---
 
-## 🟢 13-topshiriq: Kompleks son
-
+## ✅ 13-topshiriq: Kompleks son
 Real va imag qismlarni input orqali olib, kompleks son yarating va uni ekranga chiqaring.
-
-**Kutilgan natija:**
-```
-(3+4j)
-```
 
 ---
 
-## 🟢 14-topshiriq: Konstantadan foydalanish
-
+## ✅ 14-topshiriq: Konstantadan foydalanish
 PI va MAX_USERS konstantasini yarating (katta harflar bilan). Ularni ekranga chiqaruvchi dastur yozing.
 
 ---
 
-## 🟢 15-topshiriq: Foydalanuvchi yoshi va input
+## ✅ 15-topshiriq: Foydalanuvchi yoshi va input
+Foydalanuvchidan tug‘ilgan yilini input orqali olib, yoshini hisoblab chiqaring (hozirgi yilni o‘zingiz yozing).  
+Misol: `Siz 20 yoshdasiz.`
 
-Foydalanuvchidan tug‘ilgan yilini input orqali olib, yoshini hisoblab chiqaring (hozirgi yilni o‘zingiz yozing).
-
-**Kutilgan natija:**
-```
-Siz 20 yoshdasiz.
-```
+---
