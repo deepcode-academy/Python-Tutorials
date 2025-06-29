@@ -98,7 +98,7 @@ send_email(
 
 ## ✅ DEFAULT PARAMETERS (STANDART PARAMETRLAR)
 
-📌 Standart parametr — bu funksiyada oldindan belgilangan qiymatga ega bo‘lgan parametr. Agar funksiyani chaqirishda bu parametr uchun argument berilmasa, u default qiymatni ishlatadi.
+📌 **Standart parametr** — bu funksiyada oldindan belgilangan qiymatga ega bo‘lgan parametr. Agar funksiyani chaqirishda bu parametr uchun argument berilmasa, u default qiymatni ishlatadi.
 
 ```python
 # Funksiya yaratildi, exponent parametri uchun default qiymat 2
@@ -134,12 +134,33 @@ print(generate_password(12))    # Masalan: jD93kLm8Tz2Q
 
 ## ✅ QIYMAT QAYTARISH (RETURN)
 
-```python
-def multiply(x, y):
-    return x * y  # Natija qaytariladi
+📌 **return** — bu funksiya natijasini (qiymatini) tashqariga qaytarish uchun ishlatiladi. Bu qiymatni keyin saqlash, chiqarish yoki boshqa hisob-kitoblarda ishlatish mumkin.
 
+```python
+# Funksiya: x va y ni ko‘paytiradi
+def multiply(x, y):
+    return x * y  # Natija return orqali qaytariladi
+
+# multiply(4, 5) = 20, bu qiymat product o‘zgaruvchisiga saqlanadi
 product = multiply(4, 5)
+
+# Natijani ekranga chiqaramiz
 print(product)  # 20
+```
+
+🎯 Siz onlayn do‘konda mahsulotga 15% QQS solig‘i qo‘shilgan yakuniy narxni hisoblashni xohlaysiz.
+
+```python
+# Funksiya: mahsulot narxiga 15% soliq qo‘shadi
+def hisobla_qqs(narx):
+    qqs = narx * 0.15
+    umumiy = narx + qqs
+    return umumiy  # Yakuniy narx qaytariladi
+
+# 100 000 so‘mlik mahsulot uchun yakuniy narx
+yakuniy_narx = hisobla_qqs(100000)
+
+print(f"Yakuniy narx (QQS bilan): {yakuniy_narx} so'm")
 ```
 
 ## ✅ HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR (VOID FUNCTION)
