@@ -132,7 +132,7 @@ print(generate_password())      # Masalan: a7B3kL2q
 print(generate_password(12))    # Masalan: jD93kLm8Tz2Q
 ```
 
-## ✅ QIYMAT QAYTARISH (RETURN)
+## ✅ RETURN (QIYMAT QAYTARISH)
 
 📌 **return** — bu funksiya natijasini (qiymatini) tashqariga qaytarish uchun ishlatiladi. Bu qiymatni keyin saqlash, chiqarish yoki boshqa hisob-kitoblarda ishlatish mumkin.
 
@@ -163,13 +163,30 @@ yakuniy_narx = hisobla_qqs(100000)
 print(f"Yakuniy narx (QQS bilan): {yakuniy_narx} so'm")
 ```
 
-## ✅ HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR (VOID FUNCTION)
+## ✅ VOID FUNCTION (HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR)
+
+📌 Void function – bu funksiya natija (qiymat) qaytarmaydi, faqat biror amalni bajaradi, masalan: ekranga chiqarish, faylga yozish, yoki ma’lumot bazasiga yozish.
 
 ```python
+# Funksiya: foydalanuvchini kutib oladi
 def print_welcome(name):
-    print(f"Welcome, {name}!")  # Faqat ekranga chiqaradi, qiymat qaytarmaydi
+    print(f"Welcome, {name}!")  # Faqat chop etadi, hech nima qaytarmaydi
 
+# Funksiyani chaqiramiz
 print_welcome("Ali")
+```
+
+🎯 Sizda har bir foydalanuvchi tizimga kirganda logga yozib boradigan funksiya kerak. Bu funksiya hech narsa qaytarmaydi — faqat faylga yozadi.
+
+```python
+# Foydalanuvchini log fayliga yozish funksiyasi
+def log_user_login(username):
+    with open("log.txt", "a") as fayl:
+        fayl.write(f"{username} tizimga kirdi.\n")
+
+# Funksiyani chaqirish
+log_user_login("Ali")
+log_user_login("Laylo")
 ```
 
 ## ✅ QIYMAT QAYTARADIGAN FUNKSIYALAR (VALUE-RETURNING FUNCTION)
