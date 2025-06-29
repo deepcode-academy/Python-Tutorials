@@ -318,14 +318,36 @@ save_user(name="Ali", age=25)
 save_user(name="Laylo", phone="998901234567", email="laylo@mail.com")
 ```
 
-## ✅ LAMBDA FUNKSIYALAR (QISQA FUNKSIYALAR)
+## ✅ LAMBDA FUNKSIYALAR
+
+📌 **lambda** — bu bir qatorli va tez yoziladigan funksiyalardir. Odatdagi def funksiyalarga o‘xshaydi, lekin juda sodda va qisqa ko‘rinishda yoziladi. Lambda funksiyalar odatda bir martalik, oddiy amallar uchun ishlatiladi (masalan: hisoblash, filtrlash, saralash).
 
 ```python
+# 1. Sonni kvadratga ko‘tarish (x ** 2)
 square = lambda x: x ** 2
 print(square(6))  # 36
 
+# 2. Ikkita sonni qo‘shish (x + y)
 add = lambda x, y: x + y
 print(add(3, 4))  # 7
+```
+
+🎯 Sizda bir nechta foydalanuvchi bor, ularni yosh bo‘yicha tartiblash kerak. Bunda lambda funksiyadan foydalanish mumkin.
+
+```python
+# Foydalanuvchilar (lug‘atlar ro‘yxati)
+users = [
+    {"name": "Ali", "age": 25},
+    {"name": "Laylo", "age": 20},
+    {"name": "Javohir", "age": 30},
+]
+
+# Yosh bo‘yicha tartiblash (lambda yordamida)
+sorted_users = sorted(users, key=lambda user: user["age"])
+
+# Natijani chiqaramiz
+for user in sorted_users:
+    print(f"{user['name']} - {user['age']} yosh")
 ```
 
 ## ✅ FUNKSIYALAR ICHIDA FUNKSIYALAR (NESTED FUNCTIONS)
