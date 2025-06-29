@@ -13,10 +13,18 @@ def greet():
     print("Hello, world!")
 ```
 
-## ✅ FUNKSIYANI CHAQIRISH (CALLING A FUNCTION)
+## ✅ CALLING A FUNCTION(FUNKSIYANI CHAQIRISH)
+
+📌 Pythonda yozilgan funksiyani ishlatish uchun uni chaqirish kerak bo‘ladi. Buning uchun faqat funksiyaning nomi va qavslar () yoziladi.
 
 ```python
-greet()  # Funksiyani chaqirish natijasida "Hello, world!" chiqadi
+# Bu yerda biz greet() degan nomli funksiya yaratdik
+def greet():
+    # Funksiya ichida "Hello, world!" degan matnni chiqaradigan buyruq bor
+    print("Hello, world!")
+
+# Bu yerda esa yuqorida yaratilgan greet() funksiyasini chaqiryapmiz
+greet()
 ```
 
 ## ✅ PARAMETRLAR (PARAMETERS) VA ARGUMENTLAR (ARGUMENTS)
