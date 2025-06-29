@@ -1,231 +1,222 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 11-DARS FUNCTIONS
+## 🧩 11-DARS: FUNKSIYALAR (FUNCTIONS)
 
-> [!NOTE]
-> Python dasturlash tilida `funksiyalar` bu kod bo'laklarini qayta-qayta ishlatish uchun qulay vositadir. `Funksiyalar` yordamida kodni tartibli, tushunarli va takrorlanadigan qila olamiz.
+> **Eslatma:**  
+> Python dasturlash tilida **funksiya** bu — kodni bir joyda yozib, ko‘p joylarda chaqirish, kodni tartibli va qisqa qilish uchun qulay vositadir. Funksiya yordamida kodni modullashtirish va takrorlanadigan qismni soddalashtirish mumkin.
 
-## FUNKSIYALARNI YARATISH VA CHAQIRISH
-Pythonda funksiyani `def` kalit so'zi yordamida yaratamiz. Funksiya quyidagi tuzilishga ega:
+---
+
+## FUNKSIYA YARATISH VA CHAQIRISH
+
+Pythonda funksiya yaratish uchun `def` kalit so‘zi ishlatiladi:
+
 ```python
-# Funksiya yaratish uchun 'def' kalit so‘zi yoziladi
-# function_name — bu funksiya nomi (odatda ingliz tilida bo‘ladi)
-# (parameters) — bu parametrlar, ya’ni funksiyaga uzatiladigan qiymatlar
 def function_name(parameters):
-
-    # Bu yerga funksiyaning tanasi yoziladi, ya’ni bajariladigan kodlar
-    # Istalgancha kod yozish mumkin
-
-    # return — bu funksiya natijasini qaytaradi (agar kerak bo‘lsa)
-    return value
+    # Funksiya tanasi (bu yerda kodlar bo'ladi)
+    # ...
+    return value  # Natija qaytarish (ixtiyoriy)
 ```
-### Oddiy funksiya
-- Bu funksiya ikkita sonni qo'shib, natijani qaytaradi:
+
+**Oddiy misol:**
+
 ```python
-# add_numbers — bu funksiyaning nomi
-# a va b — bu parametrlar, ya’ni kiruvchi sonlar
 def add_numbers(a, b):
-
-    # a va b ning yig'indisini result o‘zgaruvchisiga saqlaymiz
+    # a va b ni qo'shamiz
     result = a + b
+    return result  # Natijani qaytaramiz
 
-    # result qiymatini funksiyadan tashqariga qaytaramiz
-    return result
-
-# Funksiyani chaqiramiz, unga 3 va 5 sonlarini uzatamiz
-# Natijani sum_result o‘zgaruvchisiga saqlaymiz
-sum_result = add_numbers(3, 5)
-
-# Natijani ekranga chiqaramiz (8 chiqadi)
-print(sum_result)  # Output: 8
+sum_result = add_numbers(3, 5)  # Funksiyani 3 va 5 argumentlari bilan chaqiramiz
+print(sum_result)  # 8 chiqaradi
 ```
-### PARAMETR VA ARGUMENTLAR
-- Parametrlar
-    - `Parametrlar` – bu funksiyani yaratishda unga o'tkaziladigan o'zgaruvchilar. `Parametrlar` funksiya tanasida ishlatiladigan qiymatlarni belgilaydi. Ular funksiyani chaqirganda haqiqiy qiymatlar bilan almashtiriladi.
-```python
-# square_number — funksiyaning nomi (inglizcha)
-# number — bu parametr, funksiyaga uzatiladigan son
-def square_number(number):
 
-    # number ning kvadrati hisoblanadi va darhol qaytariladi
+---
+
+## PARAMETR VA ARGUMENTLAR
+
+- **Parametr** — funksiya yaratilganda e'lon qilinadigan o‘zgaruvchilar.
+- **Argument** — funksiya chaqirilganda parametrga uzatiladigan haqiqiy qiymat.
+
+```python
+def square_number(number):
+    # number parametrining kvadratini hisoblaymiz va natijani qaytaramiz
     return number ** 2
 
-# square_number funksiyasini chaqiryapmiz va 5 ni uzatyapmiz
-# Natija 'result' o‘zgaruvchisiga saqlanadi
-result = square_number(5)
-
-# Natijani ekranga chiqaramiz (25 chiqadi)
-print(result)  # Natija: 25
-```
-- Argumentlar
-    - `Argumentlar` – bu funksiyani chaqirganda `parametrlar` uchun beriladigan haqiqiy qiymatlar. Ular funksiyaga ma'lum bir qiymatlarni berish uchun ishlatiladi.
-```python
-def yigindini_xisobla(a, b):
-    return a + b
-
-# 'a' va 'b' parametrlar uchun beriladigan qiymatlar bu yerda argumentlar bo'ladi.
-natija = yigindini_xisobla(3, 7)
-print(natija)  # Natija: 10
-```
-### POSITION VA KALIT SO'ZLI ARGUMENTLAR
-- Position argumentlar
-    - Pozitsion argumentlar funksiyaga o'z joyi (`pozitsiyasi`) bo'yicha beriladi. Argumentlar `parametrlar` qatoriga mos ravishda ketma-ketlikda beriladi.
-```python
-def yigindini_xisobla(a, b):
-    return a + b
-
-# 'a' = 2 va 'b' = 3 bo'ladi.
-natija = yigindini_xisobla(2, 3)
-print(natija)  # Natija: 5
-```
-- Kalit so'zli argumentlar
-    - Kalit so'zli argumentlar `parametr` nomi bilan bog'langan qiymat sifatida beriladi. Bu usul `pozitsion` ketma-ketlikka bog'liq emas va kodni tushunishni osonlashtiradi.
-```python
-def yigindini_xisobla(a, b):
-    return a + b
-
-# Bu yerda 'b' birinchi, 'a' esa ikkinchi bo'lib berilmoqda.
-natija = yigindini_xisobla(b=3, a=2)
-print(natija)  # Natija: 5
+result = square_number(5)  # 5 argument sifatida uzatiladi
+print(result)  # 25 chiqaradi
 ```
 
-### QAYTISH QIYMATI(return)
-> [!NOTE] 
-> Funksiya natijani qaytarish uchun `return` operatoridan foydalanadi. `return` funksiyani to'xtatadi va qaytadigan qiymatni chaqirgan joyga yuboradi.
-- Qaytarish qiymatli funksiya
+---
+
+## POSITIONAL VA KEYWORD ARGUMENTLAR
+
+- **Positional (pozitsion) argumentlar:** tartib bo‘yicha uzatiladi
+- **Keyword (kalit so‘zli) argumentlar:** parametr nomi bilan uzatiladi
+
 ```python
-def kvadratni_xisobla(son):
-    return son ** 2
+def multiply(a, b):
+    # a va b ni ko'paytirib natijani qaytaramiz
+    return a * b
 
-natija = kvadratni_xisobla(4)
-print(natija)  # Natija: 16
-```
-Yuqoridagi funksiya sonning kvadratini hisoblaydi
-
-### DEFAULT QIYMATLAR
-- Ba'zida `parametrlar` uchun oldindan belgilangan `standart` qiymatlar berish mumkin. Agar funksiyani chaqirganingizda bu `parametr` uchun qiymat bermasangiz, `standart` qiymatdan foydalaniladi.
-```python
-def salomlash(ism="Do'stim"):
-    print(f"Salom, {ism}!")
-
-salomlash()  # Natija: Salom, Do'stim!
-salomlash("Ali")  # Natija: Salom, Ali!
+result1 = multiply(2, 4)        # Pozitsion argumentlar: a=2, b=4
+result2 = multiply(b=5, a=3)    # Kalit so'zli argumentlar: a=3, b=5
+print(result1)  # 8
+print(result2)  # 15
 ```
 
-### *args va **kwargs
-- Agar funksiya turli xil sonli argumentlarni qabul qilishi kerak bo'lsa, `*args `va `**kwargs` dan foydalanamiz.
+---
 
-- *args argumentlar
-    - `*args` funksiya ichida tuple(to'plam) shaklida beriladi va turli pozitsion argumentlarni qabul qiladi.
+## QAYTISH QIYMATI (`return`)
+
+Funksiya natijani `return` operatori yordamida qaytaradi. `return`dan keyingi kod bajarilmaydi.
+
 ```python
-def summa(*args):
+def power(base, exponent):
+    # base ni exponent darajaga ko'taramiz va natijani qaytaramiz
+    return base ** exponent
+
+result = power(2, 3)  # 2^3 = 8
+print(result)  # 8
+```
+
+---
+
+## DEFAULT (STANDART) QIYMATLI PARAMETRLAR
+
+Agar funksiya chaqirilganda ba’zi parametrlar uzatilmasa, u holda oldindan ko‘rsatilgan qiymat ishlatiladi.
+
+```python
+def greet(name="Friend"):
+    # Agar name uzatilmasa, "Friend" ishlatiladi
+    print(f"Hello, {name}!")
+
+greet()          # Hello, Friend!
+greet("Alice")   # Hello, Alice!
+```
+
+---
+
+## *ARGS VA **KWARGS
+
+Agar funksiya argumentlar soni oldindan noma’lum bo‘lsa, `*args` va `**kwargs` ishlatiladi.
+
+- `*args` — turli sonli **pozitsion** argumentlarni tuple ko‘rinishida qabul qiladi.
+- `**kwargs` — turli sonli **kalit so‘zli** argumentlarni dictionary ko‘rinishida qabul qiladi.
+
+```python
+def total_sum(*args):
+    # args — tuple ko'rinishida barcha argumentlarni oladi
     return sum(args)
-# *args bilan foydalanish
-print(summa(1, 2, 3, 4))  # Natija: 10
-```
-- **kwargs argumentlar
-    - **kwargs funksiya ichida dictionary (lug'at) shaklida beriladi va kalit so'zli argumentlarni qabul qiladi.
-```python
-def malumot_korsat(**kwargs):
-    for kalit, qiymat in kwargs.items():
-        print(f"{kalit}: {qiymat}")
 
-# **kwargs bilan foydalanish
-malumot_korsat(ism="Ali", yosh=25, shahar="Toshkent")
-# Natija:
-# ism: Ali
-# yosh: 25
-# shahar: Toshkent
-```
-### Lambda FUNCTION
-> [!NOTE] 
-> Lambda funksiyalari qisqa funksiyalar bo'lib, ularni bir qator kod bilan yozish mumkin.
-- Lambda funksiyasini yaratish uchun lambda kalit so'zidan foydalanamiz, va u quyidagi tuzilishga ega:
-```python
-lambda argumentlar: ifoda
-```
-- Bu yerda
-    - **lambda** - `lambda` funksiyasini yaratish uchun kalit so'z.
-    - **argumentlar** - funksiyaga kiruvchi qiymatlar (`parametrlar`).
-    - **ifoda** - funksiyaning qaytaradigan natijasi (ko'pincha bitta ifoda bo'ladi).
-- Keling, ikkita sonni qo'shadigan oddiy `lambda` funksiyasini yarataylik:
-```python
-yigindi = lambda x, y: x + y
-natija = yigindi(5, 3)
-print(natija)  # Natija: 8
-```
-Bu yerda `lambda x, y: x + y` funksiyasi ikki argumentni qabul qiladi (`x` va `y`) va ularni qo'shib, natijani qaytaradi. Funksiya `yigindi` nomi bilan saqlanadi va keyin chaqiriladi.
+print(total_sum(1, 2, 3, 4))  # 10
 
-`Lambda` funksiyalari va `def` bilan yaratilgan funksiyalar o'rtasidagi farq
-- `Lambda` funksiyalari va `def` yordamida yaratilgan funksiyalar o'rtasidagi asosiy farq shundaki, `lambda` funksiyalari juda qisqa va faqat bitta ifodani bajaradi, `def` esa ko'proq qatorli kodlarni o'z ichiga olishi mumkin.
+def show_info(**kwargs):
+    # kwargs — dictionary ko'rinishida barcha kalit-qiymatlarni oladi
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
-`def` bilan funksiya yaratish
+show_info(name="Alice", age=22, city="Tashkent")
+# name: Alice
+# age: 22
+# city: Tashkent
+```
+
+---
+
+## LAMBDA FUNKSIYALARI
+
+> **Lambda** — qisqa (bir qatorli) anonim funksiya. Ko‘pincha qisqa operatsiyalar uchun ishlatiladi.
+
 ```python
-def yigindini_xosobla(x, y):
+# Lambda funksiyasi: ikki sonni qo'shadi
+sum_func = lambda x, y: x + y
+result = sum_func(5, 3)
+print(result)  # 8
+```
+
+**Def orqali xuddi shu funksiya:**
+
+```python
+def add(x, y):
     return x + y
 
-natija = yigindini_xosobla(5, 3)
-print(natija)  # Natija: 8
+result = add(5, 3)
+print(result)  # 8
 ```
-> [!NOTE]
-> `Lambda` funksiyalari ko'pincha oddiy hisob-kitoblar yoki anonim funksiyalar kerak bo'lgan joylarda ishlatiladi, masalan, `map`, `filter`, va `sorted` kabi funksiyalarda.
 
-### `lambda` FUNKSIYASIDAN FOYDALANISH
-1. `map()` funksiyasi bilan lambda
-- `map()` funksiyasi berilgan funksiyani har bir elementga qo'llaydi va yangi ro'yxat qaytaradi.
-```python
-sonlar = [1, 2, 3, 4]
-kvadratlar = list(map(lambda x: x ** 2, sonlar))
-print(kvadratlar)  # Natija: [1, 4, 9, 16]
-```
-Yuqorida `lambda x: x ** 2` har bir elementni kvadratga ko'paytiradi.
-2. `filter()` funksiyasi bilan **lambda**
-- `filter()` funksiyasi berilgan shart bo'yicha elementlarni saralaydi.
-```python
-sonlar = [1, 2, 3, 4, 5, 6, 7, 8]
-juft_sonlar = list(filter(lambda x: x % 2 == 0, sonlar))
-print(juft_sonlar)  # Natija: [2, 4, 6, 8]
-```
-Yuqorida `lambda x: x % 2 == 0` juft sonlarni tanlaydi.
-3. `sorted()` funksiyasi bilan **lambda**
-- `sorted()` funksiyasi ro'yxatni tartiblaydi va `lambda` yordamida tartiblash qoidalarini belgilash mumkin.
-```python
-mevalar = ["olma", "banan", "apelsin", "anor"]
-tartiblangan = sorted(mevalar, key=lambda x: len(x))
-print(tartiblangan)  # Natija: ['olma', 'anor', 'banan', 'apelsin']
-```
-Bu yerda `lambda x: len(x)` uzunligi bo'yicha mevalarni tartiblaydi.
-### ICHMA-ICH lambda FUNKSIYALAR
-- `Lambda` funksiyalarni boshqa funksiyalarga ichida ishlatish mumkin, bu esa kodni qisqartirish va tezkor ishlatish imkonini beradi.
-```python
-def tashqi_funksiya(karrali):
-    return lambda x: x * karrali
+**Lambda funksiyalarni map, filter, sorted bilan ishlatish:**
 
-ikki = tashqi_funksiya(2)
-uch = tashqi_funksiya(3)
-
-print(ikki(5))  # Natija: 10
-print(uch(5))  # Natija: 15
-```
-Yuqorida `tashqi_funksiya` funksiya ichida `lambda` funksiyani qaytaradi va bu `lambda` funksiyasi karrali sonni hisoblaydi.
-
-### FUNKSIYA ICHIDA FUNKSIYA YARATISH
-- Pythonda funksiya ichida boshqa bir funksiyani yaratish imkoniyati mavjud. Bu imkoniyatni `ichki funksiyalar` deb ataladi. Ichki funksiyalar biror bir funksiyaning ichida aniqlanadi va odatda shu tashqi funksiyaga xos bo'lgan operatsiyalarni bajarish uchun ishlatiladi.
 ```python
-def tashqi_funksiya(x):
-    def ichki_funksiya(y):
+# map — har bir elementga amal bajaradi
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x ** 2, numbers))
+print(squares)  # [1, 4, 9, 16]
+
+# filter — shart bo'yicha elementlarni tanlaydi
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # [2, 4]
+
+# sorted — tartiblashda lambda ishlatish
+fruits = ["apple", "banana", "peach", "orange"]
+sorted_fruits = sorted(fruits, key=lambda x: len(x))
+print(sorted_fruits)  # ['peach', 'apple', 'banana', 'orange']
+```
+
+---
+
+## ICHKI FUNKSIYA (FUNCTION INSIDE FUNCTION)
+
+Funksiya ichida boshqa funksiya e'lon qilish mumkin — **ichki funksiya**.
+
+```python
+def outer_function(x):
+    # Ichki funksiya
+    def inner_function(y):
+        # y ning kvadratini hisoblaydi
         return y ** 2
-    return ichki_funksiya(x) + 5
+    # inner_function natijasiga 5 qo'shib qaytaradi
+    return inner_function(x) + 5
 
-natija = tashqi_funksiya(3)
-print(natija)  # Natija: 14
+result = outer_function(3)
+print(result)  # 14
 ```
-Yuqorida `ichki_funksiya(y)` funksiya tashqi funksiyaning ichida aniqlangan va u sonning kvadratini hisoblaydi. `tashqi_funksiya(x)` funksiyasi esa `ichki_funksiya(x)` chaqirib, natijaga 5 qo'shadi va umumiy natijani qaytaradi.
 
-- Ichki funksiyalarning qo'llanilishi:
-    - **Kapsulatsiya:** Tashqi funksiyaga xos bo'lgan kodni izolyatsiya qilish uchun. Ichki funksiya faqat tashqi funksiyaning ichida mavjud bo'lib, uni tashqi funksiyadan tashqarida chaqirib bo'lmaydi.
-    - **Kod takrorlanishini kamaytirish:** Ko'p martalik ishlatiladigan kod qismlarini ichki funksiya ichida yozish.
-    - **Murakkab funksional tuzilmalarni yaratish:** Funksiya ichidagi funksiya orqali murakkab hisob-kitoblarni bajarish.
+**Ichki funksiya afzalliklari:**
+- Kapsulatsiya — kodni izolyatsiya qilish
+- Kod takrorlanishini kamaytirish
+- Murakkab funksiyalar uchun yordamchi funksiya sifatida
+
+---
+
+## FUNKSIYA ICHIDA LAMBDA QAYTARISH
+
+Lambda funksiyani boshqa funksiya ichida qaytarish mumkin.
+
+```python
+def multiplier(factor):
+    # Lambda funksiya factor ga ko'paytiradi
+    return lambda x: x * factor
+
+double = multiplier(2)  # double endi x2 ko'paytiradi
+triple = multiplier(3)  # triple endi x3 ko'paytiradi
+
+print(double(5))  # 10
+print(triple(5))  # 15
+```
+
+---
+
+## QISQA XULOSA
+
+- Funksiya — kodni modular va qayta ishlatish uchun vosita.
+- Parametrlar va argumentlar, pozitsion va kalit so‘zli argumentlar farqini biling.
+- *args va **kwargs yordamida o‘zgaruvchan argumentlar bilan ishlang.
+- Lambda qisqa va bir qatordan iborat funksiya uchun qulay.
+- Ichki funksiyalar va lambda yordamida murakkab tuzilmalarni yaratish mumkin.
+
+> **Amaliy mashq:**  
+> Har bir misoldagi kodni o'zingiz yozib, qanday ishlashini tekshirib ko’ring va qatorlardagi izoh (comment)larni diqqat bilan o’qing.
+
 ## AMALIYOT
 - Oddiy matematik funksiya:
     - Funksiya yarating, u ikkita sonni qabul qilib, ularni ko'paytirib qaytarsin. Agar foydalanuvchi son bermasa, ikkala son uchun standart qiymat 1 bo'lsin. <br>
