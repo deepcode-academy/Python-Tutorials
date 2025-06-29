@@ -632,8 +632,6 @@ print(kamayuvchi)
 
 # ✅ AMALIYOT
 
-# ✅ LISTS AMALIYOT
-
 ## ✅ 1-topshiriq: Ro'yxat yaratish va elementga murojaat qilish
 Quyidagi elementlarga ega bo‘lgan ro'yxatni yarating: `'olma'`, `'banan'`, `'gilos'`, `'xurmo'`, `'anjir'`.  
 Ro'yxatning **ikkinchi** va **to‘rtinchi** elementlarini terminalga chiqaring.
