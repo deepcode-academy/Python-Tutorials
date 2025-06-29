@@ -29,7 +29,7 @@ greet()
 
 ## ✅ PARAMETERS AND ARGUMENTS (PARAMETRLAR VA ARGUMENTLAR)
 
-📌 **Parametr** – bu funksiya yaratilyotganda (definitsiyada) yoziladigan o‘zgaruvchilar bo‘lib, ular funksiyaga ma’lumot qabul qilish uchun ishlatiladi.
+📌 **Parametr** – bu funksiya yaratilyotganda yoziladigan o‘zgaruvchilar bo‘lib, ular funksiyaga ma’lumot qabul qilish uchun ishlatiladi.
 
 ```python
 # Funksiya yaratilyapti, u 2 ta parametr oladi: a va b
@@ -67,6 +67,34 @@ add_user("Laylo", 22)
 print(users)
 ```
 
+📌 **Argument** – bu funksiyani chaqirayotganingizda beriladigan **real qiymat**. Parametrga haqiqiy qiymat uzatish uchun ishlatiladi.
+
+```python
+# Funksiya yaratildi. Parametr: ism
+def salom_ber(ism):
+    print(f"Salom, {ism}!")
+
+# Funksiyani chaqirdik, argument sifatida "Umid" uzatildi
+salom_ber("Umid")
+```
+
+🎯 Sizda email jo‘natuvchi tizim bor va siz **to**, **subject**, **body** argumentlarini berib, email jo‘natasiz.
+
+```python
+# Email jo‘natish funksiyasi
+def send_email(to, subject, body):
+    print(f"To: {to}")
+    print(f"Subject: {subject}")
+    print(f"Body: {body}")
+    print("Email muvaffaqiyatli yuborildi!")
+
+# Real loyiha – argumentlar bilan chaqirilmoqda
+send_email(
+    to="user@example.com",            # Argument: kimga yuboriladi
+    subject="Xush kelibsiz!",         # Argument: sarlavha
+    body="Siz muvaffaqiyatli ro‘yxatdan o‘tdingiz."  # Argument: matn
+)
+```
 
 ## ✅ STANDART PARAMETRLAR (DEFAULT PARAMETERS)
 
