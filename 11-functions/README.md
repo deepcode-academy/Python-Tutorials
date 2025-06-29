@@ -264,14 +264,28 @@ send_welcome(user_list)
 
 ## ✅ IXTIIYORIY ARGUMENTLAR: *ARGS
 
-📌 ***args** – bu funksiya istalgancha sonli argument qabul qilishi uchun ishlatiladi. U ***** belgisi bilan yoziladi, va Python uni tuple sifatida saqlaydi.
+📌 ***args** – bu funksiya istalgancha sonli argument qabul qilishi uchun ishlatiladi. U * belgisi bilan yoziladi, va Python uni tuple sifatida saqlaydi.
 
 ```python
+# Funksiya: istalgancha son qabul qilib, ularning yig‘indisini qaytaradi
 def total_sum(*args):
-    # args — tuple, istalgancha argument qabul qiladi
+    # args bu tuple ko‘rinishidagi o‘zgaruvchi
     return sum(args)
 
-print(total_sum(1, 2, 3, 4, 5))  # 15
+# Funksiyaga 5 ta son uzatdik
+print(total_sum(1, 2, 3, 4, 5))  # Natija: 15
+```
+
+🎯 Sizda savatdagi mahsulotlar narxini avtomatik hisoblaydigan funksiya bor.
+
+```python
+# Funksiya: mahsulot narxlarini qabul qilib, umumiy summani hisoblaydi
+def hisobla_savat(*narxlar):
+    umumiy = sum(narxlar)
+    return umumiy
+
+# Mahsulotlar: non 8000, sut 12000, guruch 25000, choy 15000
+print(hisobla_savat(8000, 12000, 25000, 15000))  # Natija: 60000
 ```
 
 ## ✅ KALITLI ARGUMENTLAR: **KWARGS
