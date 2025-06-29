@@ -19,6 +19,3 @@
 17. [Third Party Packages](https://github.com/deepcode-academy/Python-Tutorials/blob/main/16-third-party-packages/README.md)
 18. [OOP](https://github.com/deepcode-academy/Python-Tutorials/blob/main/17-oop/README.md)
 19. [Tasks](https://github.com/deepcode-academy/Python-Tutorials/blob/main/18-tasks/README.md)
-
-
-[Ko‘proq fayllar va natijalarni GitHub’da ko‘rish uchun bu yerni bosing.](https://github.com/deepcode-academy/Python-Tutorials/search?q=README.md)
