@@ -630,116 +630,99 @@ print(kamayuvchi)
 ```
 
 
-## ✅ AMALIYOT
+# ✅ AMALIYOT
 
-Quyidagi 15 ta topshiriq orqali `list` mavzusini mustahkamlaysiz. Har bir mashqni alohida bajaring va natijani `print()` yordamida terminalda ko‘ring.
+# ✅ LISTS AMALIYOT
 
----
-
-## 1. Ro'yxat yaratish va elementga murojaat qilish
-
-- Quyidagi elementlarga ega bo‘lgan ro'yxatni yarating: `'olma'`, `'banan'`, `'gilos'`, `'xurmo'`, `'anjir'`.
-- Ro'yxatning **ikkinchi** va **to‘rtinchi** elementlarini terminalga chiqaring.
+## ✅ 1-topshiriq: Ro'yxat yaratish va elementga murojaat qilish
+Quyidagi elementlarga ega bo‘lgan ro'yxatni yarating: `'olma'`, `'banan'`, `'gilos'`, `'xurmo'`, `'anjir'`.  
+Ro'yxatning **ikkinchi** va **to‘rtinchi** elementlarini terminalga chiqaring.
 
 ---
 
-## 2. Ro'yxatni o‘zgartirish
-
-- `1` dan `5` gacha bo‘lgan sonlar ro'yxatini yarating.
-- Ro'yxatdagi **uchinchi** elementni `10` ga almashtiring va natijani chiqaring.
-
----
-
-## 3. Element qo‘shish va o‘chirish
-
-- Bo‘sh ro'yxat yarating.
-- Ro'yxatga `'dog'`, `'cat'`, `'chicken'` elementlarini qo‘shing.
-- `'cat'` elementini o‘chirib, ro'yxatni chiqaring.
+## ✅ 2-topshiriq: Ro'yxatni o‘zgartirish
+`1` dan `5` gacha bo‘lgan sonlar ro'yxatini yarating.  
+Ro'yxatdagi **uchinchi** elementni `10` ga almashtiring va natijani chiqaring.
 
 ---
 
-## 4. Ro'yxat uzunligini topish
-
-- Ro'yxat: `'red'`, `'green'`, `'blue'`, `'yellow'`, `'purple'`.
-- Ro'yxatning uzunligini hisoblab, terminalga chiqaring.
-
----
-
-## 5. Ro'yxatlarni birlashtirish
-
-- Ikkita ro'yxat yarating:
-  - `['a', 'b', 'c']`
-  - `['d', 'e', 'f']`
-- Ularni birlashtirib, yangi ro'yxatni terminalga chiqaring.
+## ✅ 3-topshiriq: Element qo‘shish va o‘chirish
+Bo‘sh ro'yxat yarating.  
+Ro'yxatga `'dog'`, `'cat'`, `'chicken'` elementlarini qo‘shing.  
+`'cat'` elementini o‘chirib, ro'yxatni chiqaring.
 
 ---
 
-## 6. Element mavjudligini tekshirish
-
-- Ro'yxat: `['mashina', 'avtobus', 'velosiped', 'poyezd']`
-- `'avtobus'` ro'yxatda bormi? Tekshirib natijani (`True` yoki `False`) chiqaring.
-
----
-
-## 7. Ro'yxatni saralash
-
-- Ro'yxat: `[3, 1, 4, 2, 5]`
-- O'sish tartibida saralang va natijani chiqaring.
+## ✅ 4-topshiriq: Ro'yxat uzunligini topish
+Ro'yxat: `'red'`, `'green'`, `'blue'`, `'yellow'`, `'purple'`.  
+Ro'yxatning uzunligini hisoblab, terminalga chiqaring.
 
 ---
 
-## 8. Teskari tartibda chiqarish
-
-- Ro'yxat: `[10, 20, 30, 40, 50]`
-- `.reverse()` metodi yordamida ro'yxatni teskari chiqarish.
-
----
-
-## 9. Ro'yxatni tozalash
-
-- Ro'yxat: `['kitob', 'qalam', 'daftar', 'sumka']`
-- `.clear()` yordamida barcha elementlarni o‘chirib, natijani chiqaring.
+## ✅ 5-topshiriq: Ro'yxatlarni birlashtirish
+Ikkita ro'yxat yarating:  
+- `['a', 'b', 'c']`  
+- `['d', 'e', 'f']`  
+Ularni birlashtirib, yangi ro'yxatni terminalga chiqaring.
 
 ---
 
-## 10. Ro'yxatni ko‘paytirish
-
-- Ro'yxat: `[1, 2, 3]`
-- Ro'yxatni `4` marta ko‘paytirib, yangi ro'yxatni terminalga chiqaring.
-
----
-
-## 11. Minimal va maksimal qiymatni topish
-
-- Ro'yxat: `[25, 17, 9, 50, 33]`
-- `min()` va `max()` funksiyalari yordamida eng kichik va eng katta qiymatlarni toping.
+## ✅ 6-topshiriq: Element mavjudligini tekshirish
+Ro'yxat: `['mashina', 'avtobus', 'velosiped', 'poyezd']`  
+`'avtobus'` ro'yxatda bormi? Tekshirib natijani (`True` yoki `False`) chiqaring.
 
 ---
 
-## 12. Ro'yxatni nusxalash
-
-- Ro'yxat: `[100, 200, 300, 400, 500]`
-- Nusxa ko‘chiring (`copy()`) va yangi ro'yxatni chiqarib ko‘rsating.
-
----
-
-## 13. Ro'yxatdagi elementlar yig‘indisi
-
-- Ro'yxat: `[2, 4, 6, 8, 10]`
-- `sum()` funksiyasi orqali yig‘indini hisoblang va natijani chiqaring.
+## ✅ 7-topshiriq: Ro'yxatni saralash
+Ro'yxat: `[3, 1, 4, 2, 5]`  
+O'sish tartibida saralang va natijani chiqaring.
 
 ---
 
-## 14. Slicing va step ishlatish
-
-- Ro'yxat: `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
-- Har ikkinchi elementni ajratib olib, yangi ro'yxat hosil qiling.
+## ✅ 8-topshiriq: Teskari tartibda chiqarish
+Ro'yxat: `[10, 20, 30, 40, 50]`  
+`.reverse()` metodi yordamida ro'yxatni teskari chiqarish.
 
 ---
 
-## 15. Multi-dimensional listdan element olish
+## ✅ 9-topshiriq: Ro'yxatni tozalash
+Ro'yxat: `['kitob', 'qalam', 'daftar', 'sumka']`  
+`.clear()` yordamida barcha elementlarni o‘chirib, natijani chiqaring.
 
-- Ro'yxat: `[[1, 2], [3, 4], [5, 6]]`
-- Ikkinchi ichki ro'yxatdagi ikkinchi elementni (`4`) terminalga chiqaring.
+---
+
+## ✅ 10-topshiriq: Ro'yxatni ko‘paytirish
+Ro'yxat: `[1, 2, 3]`  
+Ro'yxatni `4` marta ko‘paytirib, yangi ro'yxatni terminalga chiqaring.
+
+---
+
+## ✅ 11-topshiriq: Minimal va maksimal qiymatni topish
+Ro'yxat: `[25, 17, 9, 50, 33]`  
+`min()` va `max()` funksiyalari yordamida eng kichik va eng katta qiymatlarni toping.
+
+---
+
+## ✅ 12-topshiriq: Ro'yxatni nusxalash
+Ro'yxat: `[100, 200, 300, 400, 500]`  
+Nusxa ko‘chiring (`copy()`) va yangi ro'yxatni chiqarib ko‘rsating.
+
+---
+
+## ✅ 13-topshiriq: Ro'yxatdagi elementlar yig‘indisi
+Ro'yxat: `[2, 4, 6, 8, 10]`  
+`sum()` funksiyasi orqali yig‘indini hisoblang va natijani chiqaring.
+
+---
+
+## ✅ 14-topshiriq: Slicing va step ishlatish
+Ro'yxat: `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  
+Har ikkinchi elementni ajratib olib, yangi ro'yxat hosil qiling.
+
+---
+
+## ✅ 15-topshiriq: Multi-dimensional listdan element olish
+Ro'yxat: `[[1, 2], [3, 4], [5, 6]]`  
+Ikkinchi ichki ro'yxatdagi ikkinchi elementni (`4`) terminalga chiqaring.
 
 ---
