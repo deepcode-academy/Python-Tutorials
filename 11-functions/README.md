@@ -534,3 +534,80 @@ def view_dashboard():
 
 # Endi bu chaqirilganda avval dekorator ishlaydi, keyin as
 ```
+
+# ✅ AMALIYOT
+
+## ✅ 1-topshiriq:
+`hello()` nomli funksiya yozing, u chaqirilganda "Assalomu alaykum!" matnini chiqarsin.
+
+---
+
+## ✅ 2-topshiriq:
+`to_square(x)` funksiyasini yozing, u argument sifatida berilgan sonning kvadratini qaytarsin.
+
+---
+
+## ✅ 3-topshiriq:
+`multiply(a, b)` funksiyasini tuzing, u berilgan ikki sonning ko‘paytmasini qaytarsin.
+
+---
+
+## ✅ 4-topshiriq:
+`say_hello(name)` funksiyasiga ism argumenti berilganda, "Salom, {ism}!" ko‘rinishida xabar chiqaring.
+
+---
+
+## ✅ 5-topshiriq:
+`power(base, exponent=2)` funksiyasi uchun, exponent argumenti berilmasa, sonni kvadratga ko‘tarsin.
+
+---
+
+## ✅ 6-topshiriq:
+`show_list(items)` funksiyasiga ro‘yxat berilganda, har bir elementni yangi qatordan chiqarsin.
+
+---
+
+## ✅ 7-topshiriq:
+`print_line()` funksiyasi har chaqirilganda 40 ta "-" belgisi chiqarib bersin.
+
+---
+
+## ✅ 8-topshiriq:
+`get_max(a, b)` funksiyasi ikki sonning kattasini qaytarsin.
+
+---
+
+## ✅ 9-topshiriq:
+`sum_all(*numbers)` funksiyasi har qancha son qabul qilib, ularning yig‘indisini qaytarsin.
+
+---
+
+## ✅ 10-topshiriq:
+`user_info(**kwargs)` funksiyasi kalit-qiymat juftliklarini qabul qilib, har birini alohida qatordan ko‘rsatsin.
+
+---
+
+## ✅ 11-topshiriq:
+`ages = [19, 21, 17, 25]` ro‘yxatini lambda funksiyasi yordamida o‘sish tartibida sort qiling.
+
+---
+
+## ✅ 12-topshiriq:
+`outer()` nomli funksiya yarating, uning ichida `inner()` funksiyasi bo‘lsin va `outer()` chaqirilganda natija qaytarsin.
+
+---
+
+## ✅ 13-topshiriq:
+`factorial(n)` funksiyasini yozing, u n faktorialni hisoblab qaytarsin.
+
+---
+
+## ✅ 14-topshiriq:
+`add_numbers(a: int, b: int) -> int` funksiyasi yarating, natijasini chop eting.
+
+---
+
+## ✅ 15-topshiriq:
+`subtract(a, b)` funksiyasini yozing va unga tushuntiruvchi docstring yozing. Docstringni funksiyaning `__doc__` atributi orqali chop eting.
+
+---
