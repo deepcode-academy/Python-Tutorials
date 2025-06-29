@@ -189,38 +189,77 @@ log_user_login("Ali")
 log_user_login("Laylo")
 ```
 
-## ✅ QIYMAT QAYTARADIGAN FUNKSIYALAR (VALUE-RETURNING FUNCTION)
+## ✅ VALUE-RETURNING FUNCTION (QIYMAT QAYTARADIGAN FUNKSIYALAR)
+
+📌 Qiymat qaytaradigan funksiya — bu funksiya return operatori yordamida natijani (qiymatni) qaytaradi.
 
 ```python
+# Funksiya: ikki sonning kattasini aniqlaydi
 def get_maximum(a, b):
     if a > b:
-        return a
+        return a  # Agar a katta bo‘lsa, a ni qaytar
     else:
-        return b
+        return b  # Aks holda b ni qaytar
 
+# Funksiyani chaqiramiz, 7 va 10 ni argument sifatida uzatamiz
 max_number = get_maximum(7, 10)
+
+# Natijani chiqaramiz
 print(max_number)  # 10
 ```
 
-## ✅ BIR NECHTA PARAMETRLAR BILAN ISHLASH
+🎯 Siz onlayn do‘kon qilayapsiz va sizga mahsulotlar ichidan eng qimmatini topuvchi funksiya kerak.
 
 ```python
-def info(name, age, city):
-    print(f"Name: {name}, Age: {age}, City: {city}")
+# Funksiya: 2 ta mahsulot narxidan eng kattasini qaytaradi
+def get_expensive(price1, price2):
+    if price1 > price2:
+        return price1
+    else:
+        return price2
 
-info("Alice", 25, "Tashkent")
+# Misol uchun 2 ta mahsulot narxi
+narx1 = 850_000
+narx2 = 990_000
+
+# Funksiyani chaqiramiz va natijani saqlaymiz
+eng_qimmat = get_expensive(narx1, narx2)
+
+print(f"Eng qimmat mahsulot narxi: {eng_qimmat} so'm")
 ```
+
 
 ## ✅ FUNKSIYAGA RO‘YXAT (LIST) UZATISH
 
+📌 Pythonda funksiya yaratganda parametr sifatida ro‘yxat (list) berishimiz mumkin. Bu funksiyaga bir nechta qiymatni birdan uzatish imkonini beradi.
+
 ```python
+# Funksiya: ro‘yxatdagi elementlarni ekranga chiqaradi
 def print_list(items):
-    # Har bir elementni ekranga chiqaradi
+    # Har bir element ustida aylanish (for loop)
     for item in items:
         print(item)
 
+# Ro‘yxat yaratamiz
 fruits = ["apple", "banana", "cherry"]
+
+# Funksiyaga ro‘yxatni argument sifatida uzatamiz
 print_list(fruits)
+```
+
+🎯 Sizda Telegram bot bor va siz bir nechta foydalanuvchilarga avtomatik xabar yubormoqchisiz. Har bir foydalanuvchining ismi ro‘yxatda berilgan.
+
+```python
+# Funksiya: har bir foydalanuvchiga xush kelibsiz xabari yuboradi
+def send_welcome(users):
+    for user in users:
+        print(f"Assalomu alaykum, {user}!")
+
+# Foydalanuvchilar ro‘yxati
+user_list = ["Ali", "Laylo", "Javohir"]
+
+# Funksiyani chaqiramiz
+send_welcome(user_list)
 ```
 
 ## ✅ IXTIIYORIY ARGUMENTLAR: *ARGS
