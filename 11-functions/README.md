@@ -7,9 +7,9 @@
 
 ---
 
-## FUNKSIYA YARATISH VA CHAQIRISH
+## ✅ FUNKSIYA YARATISH VA CHAQIRISH
 
-Pythonda funksiya yaratish uchun `def` kalit so‘zi ishlatiladi:
+📌 Pythonda funksiya yaratish uchun `def` kalit so‘zi ishlatiladi:
 
 ```python
 def function_name(parameters):
@@ -17,8 +17,6 @@ def function_name(parameters):
     # ...
     return value  # Natija qaytarish (ixtiyoriy)
 ```
-
-**Oddiy misol:**
 
 ```python
 def add_numbers(a, b):
@@ -30,9 +28,7 @@ sum_result = add_numbers(3, 5)  # Funksiyani 3 va 5 argumentlari bilan chaqirami
 print(sum_result)  # 8 chiqaradi
 ```
 
----
-
-## PARAMETR VA ARGUMENTLAR
+## ✅ PARAMETR VA ARGUMENTLAR
 
 - **Parametr** — funksiya yaratilganda e'lon qilinadigan o‘zgaruvchilar.
 - **Argument** — funksiya chaqirilganda parametrga uzatiladigan haqiqiy qiymat.
@@ -46,9 +42,8 @@ result = square_number(5)  # 5 argument sifatida uzatiladi
 print(result)  # 25 chiqaradi
 ```
 
----
 
-## POSITIONAL VA KEYWORD ARGUMENTLAR
+## ✅ POSITIONAL VA KEYWORD ARGUMENTLAR
 
 - **Positional (pozitsion) argumentlar:** tartib bo‘yicha uzatiladi
 - **Keyword (kalit so‘zli) argumentlar:** parametr nomi bilan uzatiladi
@@ -64,9 +59,8 @@ print(result1)  # 8
 print(result2)  # 15
 ```
 
----
 
-## QAYTISH QIYMATI (`return`)
+## ✅ QAYTISH QIYMATI (`return`)
 
 Funksiya natijani `return` operatori yordamida qaytaradi. `return`dan keyingi kod bajarilmaydi.
 
@@ -79,9 +73,8 @@ result = power(2, 3)  # 2^3 = 8
 print(result)  # 8
 ```
 
----
 
-## DEFAULT (STANDART) QIYMATLI PARAMETRLAR
+## ✅ DEFAULT (STANDART) QIYMATLI PARAMETRLAR
 
 Agar funksiya chaqirilganda ba’zi parametrlar uzatilmasa, u holda oldindan ko‘rsatilgan qiymat ishlatiladi.
 
@@ -94,9 +87,8 @@ greet()          # Hello, Friend!
 greet("Alice")   # Hello, Alice!
 ```
 
----
 
-## *ARGS VA **KWARGS
+## ✅ *ARGS VA **KWARGS
 
 Agar funksiya argumentlar soni oldindan noma’lum bo‘lsa, `*args` va `**kwargs` ishlatiladi.
 
@@ -121,9 +113,8 @@ show_info(name="Alice", age=22, city="Tashkent")
 # city: Tashkent
 ```
 
----
 
-## LAMBDA FUNKSIYALARI
+## ✅ LAMBDA FUNKSIYALARI
 
 > **Lambda** — qisqa (bir qatorli) anonim funksiya. Ko‘pincha qisqa operatsiyalar uchun ishlatiladi.
 
@@ -162,9 +153,8 @@ sorted_fruits = sorted(fruits, key=lambda x: len(x))
 print(sorted_fruits)  # ['peach', 'apple', 'banana', 'orange']
 ```
 
----
 
-## ICHKI FUNKSIYA (FUNCTION INSIDE FUNCTION)
+## ✅ ICHKI FUNKSIYA (FUNCTION INSIDE FUNCTION)
 
 Funksiya ichida boshqa funksiya e'lon qilish mumkin — **ichki funksiya**.
 
@@ -186,9 +176,8 @@ print(result)  # 14
 - Kod takrorlanishini kamaytirish
 - Murakkab funksiyalar uchun yordamchi funksiya sifatida
 
----
 
-## FUNKSIYA ICHIDA LAMBDA QAYTARISH
+## ✅ FUNKSIYA ICHIDA LAMBDA QAYTARISH
 
 Lambda funksiyani boshqa funksiya ichida qaytarish mumkin.
 
@@ -204,18 +193,6 @@ print(double(5))  # 10
 print(triple(5))  # 15
 ```
 
----
-
-## QISQA XULOSA
-
-- Funksiya — kodni modular va qayta ishlatish uchun vosita.
-- Parametrlar va argumentlar, pozitsion va kalit so‘zli argumentlar farqini biling.
-- *args va **kwargs yordamida o‘zgaruvchan argumentlar bilan ishlang.
-- Lambda qisqa va bir qatordan iborat funksiya uchun qulay.
-- Ichki funksiyalar va lambda yordamida murakkab tuzilmalarni yaratish mumkin.
-
-> **Amaliy mashq:**  
-> Har bir misoldagi kodni o'zingiz yozib, qanday ishlashini tekshirib ko’ring va qatorlardagi izoh (comment)larni diqqat bilan o’qing.
 
 ## AMALIYOT
 - Oddiy matematik funksiya:
