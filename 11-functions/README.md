@@ -96,15 +96,40 @@ send_email(
 )
 ```
 
-## ✅ STANDART PARAMETRLAR (DEFAULT PARAMETERS)
+## ✅ DEFAULT PARAMETERS (STANDART PARAMETRLAR)
+
+📌 Standart parametr — bu funksiyada oldindan belgilangan qiymatga ega bo‘lgan parametr. Agar funksiyani chaqirishda bu parametr uchun argument berilmasa, u default qiymatni ishlatadi.
 
 ```python
+# Funksiya yaratildi, exponent parametri uchun default qiymat 2
 def power(base, exponent=2):
-    # exponent uchun default qiymat 2
+    # base son exponent darajaga ko‘tariladi
     return base ** exponent
 
-print(power(3))      # 9 (3^2)
-print(power(3, 3))   # 27 (3^3)
+# Faqat bitta argument berdik – base = 3, exponent 2 deb olinadi (default)
+print(power(3))      # Natija: 9 (3^2)
+
+# Ikkala argumentni ham berdik – base = 3, exponent = 3
+print(power(3, 3))   # Natija: 27 (3^3)
+```
+
+🎯 Sizda parol yaratish funksiyasi bor. Unga uzunlik (length) parametri beriladi, lekin foydalanuvchi kiritmasa, standart qiymat sifatida 8 belgilanadi.
+
+```python
+import random
+import string
+
+# Parol yaratish funksiyasi: uzunlik uchun standart qiymat 8
+def generate_password(length=8):
+    belgilar = string.ascii_letters + string.digits
+    parol = ''.join(random.choice(belgilar) for _ in range(length))
+    return parol
+
+# Default uzunlik bilan chaqirish
+print(generate_password())      # Masalan: a7B3kL2q
+
+# Uzunlikni o‘zimiz beramiz
+print(generate_password(12))    # Masalan: jD93kLm8Tz2Q
 ```
 
 ## ✅ QIYMAT QAYTARISH (RETURN)
