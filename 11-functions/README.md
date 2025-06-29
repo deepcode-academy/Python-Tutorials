@@ -350,16 +350,43 @@ for user in sorted_users:
     print(f"{user['name']} - {user['age']} yosh")
 ```
 
-## ✅ FUNKSIYALAR ICHIDA FUNKSIYALAR (NESTED FUNCTIONS)
+## ✅ NESTED FUNCTIONS
+
+📌 **Nested function** — bu bir funksiyaning ichida boshqa funksiya yaratish demakdir. Ichki funksiya (inner) faqat tashqi funksiya (outer) ichida mavjud bo‘ladi va tashqaridan chaqirib bo‘lmaydi. Bu usul kodni modullashtirish, xavfsizroq saqlash va faqat kerakli joyda ishlatish uchun qulay.
 
 ```python
-def outer(x):
-    def inner(y):
-        return y + 2
-    return inner(x) * 2
+def outer(x):  # Tashqi funksiya
+    def inner(y):  # Ichki funksiya
+        return y + 2  # Ichki funksiya 2 ni qo‘shadi
+    return inner(x) * 2  # Inner natijasi 2 ga ko‘paytiriladi
 
 result = outer(5)  # (5 + 2) * 2 = 14
 print(result)  # 14
+```
+
+🎯 Siz foydalanuvchiga xush kelibsiz xabarini turli tillarda chiqarishni xohlaysiz.
+
+```python
+def greeting(language):
+    def get_message(name):
+        if language == "uz":
+            return f"Salom, {name}!"
+        elif language == "en":
+            return f"Hello, {name}!"
+        elif language == "ru":
+            return f"Привет, {name}!"
+        else:
+            return f"Hi, {name}!"
+    
+    return get_message  # Ichki funksiyani qaytaramiz
+
+# O‘zbekcha salomlashuv funksiyasi
+salomlash_uz = greeting("uz")
+print(salomlash_uz("Umid"))  # Salom, Umid!
+
+# Inglizcha salomlashuv funksiyasi
+salomlash_en = greeting("en")
+print(salomlash_en("Umid"))  # Hello, Umid!
 ```
 
 ## ✅ REKURSIV FUNKSIYALAR (RECURSIVE FUNCTIONS)
