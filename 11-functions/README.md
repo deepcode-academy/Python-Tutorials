@@ -1,11 +1,11 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 11-DARS: FUNKSIYALAR (FUNCTIONS)
+# 🧩 11-DARS FUNCTIONS
 
  📌 Python dasturlash tilida **funksiya** bu — kodni bir joyda yozib, ko‘p joylarda chaqirish, kodni tartibli va qisqa qilish uchun qulay vositadir. Funksiya yordamida kodni modullashtirish va takrorlanadigan qismni soddalashtirish mumkin.
 
 
-## FUNKSIYA YARATISH (DEF)
+## ✅ FUNKSIYA YARATISH (DEF)
 
 ```python
 def greet():
@@ -13,13 +13,13 @@ def greet():
     print("Hello, world!")
 ```
 
-## FUNKSIYANI CHAQIRISH (CALLING A FUNCTION)
+## ✅ FUNKSIYANI CHAQIRISH (CALLING A FUNCTION)
 
 ```python
 greet()  # Funksiyani chaqirish natijasida "Hello, world!" chiqadi
 ```
 
-## PARAMETRLAR (PARAMETERS) VA ARGUMENTLAR (ARGUMENTS)
+## ✅ PARAMETRLAR (PARAMETERS) VA ARGUMENTLAR (ARGUMENTS)
 
 ```python
 def add(a, b):
@@ -30,7 +30,7 @@ result = add(2, 3)  # 2 va 3 argument sifatida uzatiladi
 print(result)  # 5
 ```
 
-## STANDART PARAMETRLAR (DEFAULT PARAMETERS)
+## ✅ STANDART PARAMETRLAR (DEFAULT PARAMETERS)
 
 ```python
 def power(base, exponent=2):
@@ -41,7 +41,7 @@ print(power(3))      # 9 (3^2)
 print(power(3, 3))   # 27 (3^3)
 ```
 
-## QIYMAT QAYTARISH (RETURN)
+## ✅ QIYMAT QAYTARISH (RETURN)
 
 ```python
 def multiply(x, y):
@@ -51,7 +51,7 @@ product = multiply(4, 5)
 print(product)  # 20
 ```
 
-## HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR (VOID FUNCTION)
+## ✅ HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR (VOID FUNCTION)
 
 ```python
 def print_welcome(name):
@@ -60,7 +60,7 @@ def print_welcome(name):
 print_welcome("Ali")
 ```
 
-## QIYMAT QAYTARADIGAN FUNKSIYALAR (VALUE-RETURNING FUNCTION)
+## ✅ QIYMAT QAYTARADIGAN FUNKSIYALAR (VALUE-RETURNING FUNCTION)
 
 ```python
 def get_maximum(a, b):
@@ -73,7 +73,7 @@ max_number = get_maximum(7, 10)
 print(max_number)  # 10
 ```
 
-## BIR NECHTA PARAMETRLAR BILAN ISHLASH
+## ✅ BIR NECHTA PARAMETRLAR BILAN ISHLASH
 
 ```python
 def info(name, age, city):
@@ -82,7 +82,7 @@ def info(name, age, city):
 info("Alice", 25, "Tashkent")
 ```
 
-## FUNKSIYAGA RO‘YXAT (LIST) UZATISH
+## ✅ FUNKSIYAGA RO‘YXAT (LIST) UZATISH
 
 ```python
 def print_list(items):
@@ -94,7 +94,7 @@ fruits = ["apple", "banana", "cherry"]
 print_list(fruits)
 ```
 
-## IXTIIYORIY ARGUMENTLAR: *ARGS
+## ✅ IXTIIYORIY ARGUMENTLAR: *ARGS
 
 ```python
 def total_sum(*args):
@@ -104,7 +104,7 @@ def total_sum(*args):
 print(total_sum(1, 2, 3, 4, 5))  # 15
 ```
 
-## KALITLI ARGUMENTLAR: **KWARGS
+## ✅ KALITLI ARGUMENTLAR: **KWARGS
 
 ```python
 def print_profile(**kwargs):
@@ -115,7 +115,7 @@ def print_profile(**kwargs):
 print_profile(name="Bob", age=30, profession="Engineer")
 ```
 
-## LAMBDA FUNKSIYALAR (QISQA FUNKSIYALAR)
+## ✅ LAMBDA FUNKSIYALAR (QISQA FUNKSIYALAR)
 
 ```python
 square = lambda x: x ** 2
@@ -125,7 +125,7 @@ add = lambda x, y: x + y
 print(add(3, 4))  # 7
 ```
 
-## FUNKSIYALAR ICHIDA FUNKSIYALAR (NESTED FUNCTIONS)
+## ✅ FUNKSIYALAR ICHIDA FUNKSIYALAR (NESTED FUNCTIONS)
 
 ```python
 def outer(x):
@@ -137,7 +137,7 @@ result = outer(5)  # (5 + 2) * 2 = 14
 print(result)  # 14
 ```
 
-## REKURSIV FUNKSIYALAR (RECURSIVE FUNCTIONS)
+## ✅ REKURSIV FUNKSIYALAR (RECURSIVE FUNCTIONS)
 
 ```python
 def factorial(n):
@@ -150,7 +150,7 @@ def factorial(n):
 print(factorial(5))  # 120
 ```
 
-## TYPE ANNOTATION – TURINI KO‘RSATISH
+## ✅ TYPE ANNOTATION – TURINI KO‘RSATISH
 
 ```python
 def add_numbers(a: int, b: int) -> int:
@@ -160,7 +160,7 @@ result: int = add_numbers(10, 20)
 print(result)  # 30
 ```
 
-## DOCSTRING – FUNKSIYAGA HUJJAT YOZISH
+## ✅ DOCSTRING – FUNKSIYAGA HUJJAT YOZISH
 
 ```python
 def multiply(a: int, b: int) -> int:
@@ -175,7 +175,7 @@ def multiply(a: int, b: int) -> int:
 print(multiply.__doc__)
 ```
 
-## ICHKI (BUILT-IN) FUNKSIYALAR
+## ✅ ICHKI (BUILT-IN) FUNKSIYALAR
 
 ```python
 # len()
@@ -207,7 +207,7 @@ for i in range(3):
     print(i)  # 0, 1, 2
 ```
 
-## HIGHER-ORDER FUNKSIYALAR
+## ✅ HIGHER-ORDER FUNKSIYALAR
 
 - **Higher-order function** — boshqa funksiyani argument sifatida qabul qiladigan yoki funksiya qaytaradigan funksiya.
 
@@ -223,7 +223,7 @@ result = apply_twice(increment, 5)
 print(result)  # 7
 ```
 
-## DEKORATORLAR (DECORATORS)
+## ✅ DEKORATORLAR (DECORATORS)
 
 ```python
 def uppercase_decorator(func):
