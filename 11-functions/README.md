@@ -13,7 +13,7 @@ def greet():
     print("Hello, world!")
 ```
 
-## ✅ CALLING A FUNCTION(FUNKSIYANI CHAQIRISH)
+## ✅ CALLING A FUNCTION (FUNKSIYANI CHAQIRISH)
 
 📌 Pythonda yozilgan funksiyani ishlatish uchun uni chaqirish kerak bo‘ladi. Buning uchun faqat funksiyaning nomi va qavslar () yoziladi.
 
@@ -27,16 +27,46 @@ def greet():
 greet()
 ```
 
-## ✅ PARAMETRLAR (PARAMETERS) VA ARGUMENTLAR (ARGUMENTS)
+## ✅ PARAMETERS AND ARGUMENTS (PARAMETRLAR VA ARGUMENTLAR)
+
+📌 **Parametr** – bu funksiya yaratilyotganda (definitsiyada) yoziladigan o‘zgaruvchilar bo‘lib, ular funksiyaga ma’lumot qabul qilish uchun ishlatiladi.
 
 ```python
+# Funksiya yaratilyapti, u 2 ta parametr oladi: a va b
 def add(a, b):
-    # a va b parametrlar
+    # a va b sonlar qo‘shilib, natija qaytariladi
     return a + b
 
-result = add(2, 3)  # 2 va 3 argument sifatida uzatiladi
-print(result)  # 5
+# Funksiyani chaqiryapmiz, 2 va 3 argument sifatida uzatilyapti
+result = add(2, 3)
+
+# Natijani chiqaramiz
+print(result)  # Natija: 5
 ```
+
+🎯 Tasavvur qilaylik, siz foydalanuvchi ma’lumotlarini qabul qilib, uni ro‘yxatga qo‘shishingiz kerak.
+
+```python
+# Bo‘sh foydalanuvchilar ro‘yxati
+users = []
+
+# Funksiya foydalanuvchi ma’lumotlarini qabul qiladi
+def add_user(name, age):
+    # name va age – bu parametrlar
+    user = {
+        "name": name,
+        "age": age
+    }
+    users.append(user)  # user ma’lumoti ro‘yxatga qo‘shiladi
+
+# Funksiyani chaqiramiz, foydalanuvchi ma’lumotlarini argument sifatida beramiz
+add_user("Ali", 25)
+add_user("Laylo", 22)
+
+# Natijada users ro‘yxatida 2 ta foydalanuvchi bo‘ladi
+print(users)
+```
+
 
 ## ✅ STANDART PARAMETRLAR (DEFAULT PARAMETERS)
 
