@@ -425,7 +425,7 @@ print(count_files("/home/umid/hujjatlar"))
 
 ## ✅ TYPE ANNOTATION – TURINI KO‘RSATISH
 
-Type annotation — bu o‘zgaruvchilar, parametrlar va return (natija) uchun ma’lumot turini ko‘rsatish usulidir. Bu yordamida kod ancha tushunarli bo‘ladi, xatolarni aniqlash osonlashadi, IDE (VS Code, PyCharm) avtomatik tekshirish qiladi.
+📌 **Type annotation** — bu o‘zgaruvchilar, parametrlar va return (natija) uchun ma’lumot turini ko‘rsatish usulidir. Bu yordamida kod ancha tushunarli bo‘ladi, xatolarni aniqlash osonlashadi, IDE (VS Code, PyCharm) avtomatik tekshirish qiladi.
 
 
 ```python
@@ -451,7 +451,9 @@ user_info: dict = create_user("Umid", 25, True)
 print(user_info)
 ```
 
-## ✅ DOCSTRING – FUNKSIYAGA HUJJAT YOZISH
+## ✅ DOCSTRING
+
+📌 Docstring (documentation string) — bu funksiya, klass yoki modul nima qilishini tavsiflab beruvchi matn. U funksiyaning birinchi qatorida uchta qo‘shtirnoq (""") bilan yoziladi. Maqsad: Funksiya qanday ishlaydi, qanday parametrlar oladi, va nima qaytaradi — bularni tushuntirish.
 
 ```python
 def multiply(a: int, b: int) -> int:
@@ -466,66 +468,69 @@ def multiply(a: int, b: int) -> int:
 print(multiply.__doc__)
 ```
 
-## ✅ ICHKI (BUILT-IN) FUNKSIYALAR
-
-```python
-# len()
-numbers = [1, 2, 3]
-print(len(numbers))  # 3
-
-# type()
-print(type(numbers))  # <class 'list'>
-
-# print()
-print("Hello, Python!")
-
-# input()
-# name = input("Ismingizni kiriting: ")
-# print(name)
-
-# sum()
-values = [4, 5, 6]
-print(sum(values))  # 15
-
-# max()
-print(max(values))  # 6
-
-# min()
-print(min(values))  # 4
-
-# range()
-for i in range(3):
-    print(i)  # 0, 1, 2
-```
-
 ## ✅ HIGHER-ORDER FUNKSIYALAR
 
-- **Higher-order function** — boshqa funksiyani argument sifatida qabul qiladigan yoki funksiya qaytaradigan funksiya.
+📌 **Higher-order function** — bu boshqa funksiyani argument sifatida qabul qiladigan yoki funksiya sifatida natijada qaytaradigan funksiyadir. Pythonda funksiyalar ham "obyekt" bo‘lgani uchun, ularni o‘zgaruvchiga berish, funksiyaga uzatish, yoki qaytarish mumkin.
 
 ```python
+# apply_twice funksiyasi boshqa funksiya (func) va qiymat (value) oladi
 def apply_twice(func, value):
-    # func — boshqa funksiya
+    # func(value) chaqiriladi → natijasi yana func ga beriladi
     return func(func(value))
 
+# increment funksiyasi bitta sonni 1 ga oshiradi
 def increment(x):
     return x + 1
 
+# apply_twice funksiyasiga increment funksiyasi va 5 soni uzatilmoqda
 result = apply_twice(increment, 5)
-print(result)  # 7
+print(result)  # 7 chiqadi, chunki: increment(increment(5)) → increment(6) → 7
 ```
 
-## ✅ DEKORATORLAR (DECORATORS)
+## ✅ DECORATORS
+
+📌 Dekorator — bu boshqa funksiyani o‘rab, unga qo‘shimcha imkoniyatlar qo‘shadigan higher-order funksiyadir. Asosiy funksiyani o‘zgartirmasdan unga funksional qo‘shish uchun ishlatiladi.
 
 ```python
 def uppercase_decorator(func):
+    # Ichki funksiyani yaratamiz
     def wrapper():
-        result = func()
-        return result.upper()
-    return wrapper
+        result = func()          # Asosiy funksiyani chaqiramiz
+        return result.upper()    # Natijani katta harflarga o‘zgartiramiz
+    return wrapper               # wrapper funksiyasini qaytaramiz
 
 @uppercase_decorator
 def greet():
     return "hello"
 
 print(greet())  # "HELLO"
+```
+
+🎯 APIda foydalanuvchini tekshirish (auth) uchun dekorator
+
+```python
+# login_required — bu dekorator funksiyasi bo‘lib, boshqa funksiyani argument sifatida qabul qiladi
+def login_required(func):
+    
+    # Ichki wrapper funksiyasi — bu o‘ralgan yangi funksiya
+    def wrapper():
+        # Qo‘shimcha amal: foydalanuvchining login holatini tekshirish imitatsiyasi
+        print("🔐 Foydalanuvchi login bo‘lganligini tekshiryapmiz...")
+        
+        # Asl funksiyani chaqiramiz (masalan: view_dashboard)
+        return func()
+    
+    # wrapper funksiyasini qaytaramiz — ya’ni dekoratsiya qilingan yangi funksiya
+    return wrapper
+
+
+# Bu yerda view_dashboard funksiyasi login_required dekoratori bilan "bezanmoqda"
+# Ya'ni, view_dashboard = login_required(view_dashboard)
+@login_required
+def view_dashboard():
+    # Asl funksiyadagi ish: dashboard ochilishini bildiradi
+    print("📊 Dashboard ochildi.")
+
+
+# Endi bu chaqirilganda avval dekorator ishlaydi, keyin as
 ```
