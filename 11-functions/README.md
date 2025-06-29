@@ -389,27 +389,66 @@ salomlash_en = greeting("en")
 print(salomlash_en("Umid"))  # Hello, Umid!
 ```
 
-## ✅ REKURSIV FUNKSIYALAR (RECURSIVE FUNCTIONS)
+## ✅ RECURSIVE FUNCTIONS
+
+📌 **Rekursiv funksiya** — bu o‘zini o‘zi ichida chaqiradigan funksiya. Bu usul, odatda takroriy (recursive) muammolarni hal qilish uchun ishlatiladi — masalan: faktorial, Fibonachchi, fayl strukturalari, daraxt ko‘rinishidagi ma’lumotlar va hokazo.
 
 ```python
 def factorial(n):
-    # Bazaviy holat
+    # Bazaviy holat: n 0 bo‘lsa, 1 ni qaytar
     if n == 0:
         return 1
-    # Rekursiv chaqirish
+    # Rekursiv chaqirish: n * factorial(n - 1)
     return n * factorial(n - 1)
 
 print(factorial(5))  # 120
 ```
 
+🎯 Kompyuterdagi papkalar ichida yana papkalar bo‘lishi mumkin. Har bir darajadagi fayllarni hisoblash uchun rekursiya ishlatiladi (o‘rnatilgan os moduli orqali).
+
+```python
+import os
+
+def count_files(folder_path):
+    total = 0
+    for item in os.listdir(folder_path):
+        full_path = os.path.join(folder_path, item)
+        if os.path.isdir(full_path):
+            total += count_files(full_path)  # Ichki papkani tekshirish
+        else:
+            total += 1  # Fayl topildi
+    return total
+
+# Misol uchun: "/home/umid/hujjatlar"
+print(count_files("/home/umid/hujjatlar"))
+```
+
 ## ✅ TYPE ANNOTATION – TURINI KO‘RSATISH
+
+Type annotation — bu o‘zgaruvchilar, parametrlar va return (natija) uchun ma’lumot turini ko‘rsatish usulidir. Bu yordamida kod ancha tushunarli bo‘ladi, xatolarni aniqlash osonlashadi, IDE (VS Code, PyCharm) avtomatik tekshirish qiladi.
+
 
 ```python
 def add_numbers(a: int, b: int) -> int:
+    # a va b butun sonlar sifatida olinadi, natija ham int bo‘ladi
     return a + b
 
 result: int = add_numbers(10, 20)
 print(result)  # 30
+```
+
+🎯 Siz API orqali yangi foydalanuvchi yaratadigan funksiya yozmoqchisiz. Ushbu foydalanuvchining ismi, yoshi va faollik holati (True yoki False) bo‘lishi kerak.
+
+```python
+def create_user(name: str, age: int, active: bool) -> dict:
+    return {
+        "name": name,
+        "age": age,
+        "active": active
+    }
+
+user_info: dict = create_user("Umid", 25, True)
+print(user_info)
 ```
 
 ## ✅ DOCSTRING – FUNKSIYAGA HUJJAT YOZISH
