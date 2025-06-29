@@ -5,229 +5,237 @@
 > **Eslatma:**  
 > Python dasturlash tilida **funksiya** bu — kodni bir joyda yozib, ko‘p joylarda chaqirish, kodni tartibli va qisqa qilish uchun qulay vositadir. Funksiya yordamida kodni modullashtirish va takrorlanadigan qismni soddalashtirish mumkin.
 
----
 
-## ✅ FUNKSIYA YARATISH VA CHAQIRISH
-
-📌 Pythonda funksiya yaratish uchun `def` kalit so‘zi ishlatiladi:
+## FUNKSIYA YARATISH (DEF)
 
 ```python
-def function_name(parameters):
-    # Funksiya tanasi (bu yerda kodlar bo'ladi)
-    # ...
-    return value  # Natija qaytarish (ixtiyoriy)
+def greet():
+    # Oddiy funksiya: salomlashish
+    print("Hello, world!")
 ```
 
-```python
-def add_numbers(a, b):
-    # a va b ni qo'shamiz
-    result = a + b
-    return result  # Natijani qaytaramiz
+## FUNKSIYANI CHAQIRISH (CALLING A FUNCTION)
 
-sum_result = add_numbers(3, 5)  # Funksiyani 3 va 5 argumentlari bilan chaqiramiz
-print(sum_result)  # 8 chiqaradi
+```python
+greet()  # Funksiyani chaqirish natijasida "Hello, world!" chiqadi
 ```
 
-## ✅ PARAMETR VA ARGUMENTLAR
-
-- **Parametr** — funksiya yaratilganda e'lon qilinadigan o‘zgaruvchilar.
-- **Argument** — funksiya chaqirilganda parametrga uzatiladigan haqiqiy qiymat.
+## PARAMETRLAR (PARAMETERS) VA ARGUMENTLAR (ARGUMENTS)
 
 ```python
-def square_number(number):
-    # number parametrining kvadratini hisoblaymiz va natijani qaytaramiz
-    return number ** 2
+def add(a, b):
+    # a va b parametrlar
+    return a + b
 
-result = square_number(5)  # 5 argument sifatida uzatiladi
-print(result)  # 25 chiqaradi
+result = add(2, 3)  # 2 va 3 argument sifatida uzatiladi
+print(result)  # 5
 ```
 
-
-## ✅ POSITIONAL VA KEYWORD ARGUMENTLAR
-
-- **Positional (pozitsion) argumentlar:** tartib bo‘yicha uzatiladi
-- **Keyword (kalit so‘zli) argumentlar:** parametr nomi bilan uzatiladi
+## STANDART PARAMETRLAR (DEFAULT PARAMETERS)
 
 ```python
-def multiply(a, b):
-    # a va b ni ko'paytirib natijani qaytaramiz
-    return a * b
-
-result1 = multiply(2, 4)        # Pozitsion argumentlar: a=2, b=4
-result2 = multiply(b=5, a=3)    # Kalit so'zli argumentlar: a=3, b=5
-print(result1)  # 8
-print(result2)  # 15
-```
-
-
-## ✅ QAYTISH QIYMATI (`return`)
-
-Funksiya natijani `return` operatori yordamida qaytaradi. `return`dan keyingi kod bajarilmaydi.
-
-```python
-def power(base, exponent):
-    # base ni exponent darajaga ko'taramiz va natijani qaytaramiz
+def power(base, exponent=2):
+    # exponent uchun default qiymat 2
     return base ** exponent
 
-result = power(2, 3)  # 2^3 = 8
-print(result)  # 8
+print(power(3))      # 9 (3^2)
+print(power(3, 3))   # 27 (3^3)
 ```
 
-
-## ✅ DEFAULT (STANDART) QIYMATLI PARAMETRLAR
-
-Agar funksiya chaqirilganda ba’zi parametrlar uzatilmasa, u holda oldindan ko‘rsatilgan qiymat ishlatiladi.
+## QIYMAT QAYTARISH (RETURN)
 
 ```python
-def greet(name="Friend"):
-    # Agar name uzatilmasa, "Friend" ishlatiladi
-    print(f"Hello, {name}!")
+def multiply(x, y):
+    return x * y  # Natija qaytariladi
 
-greet()          # Hello, Friend!
-greet("Alice")   # Hello, Alice!
+product = multiply(4, 5)
+print(product)  # 20
 ```
 
+## HECH NIMA QAYTARMAYDIGAN FUNKSIYALAR (VOID FUNCTION)
 
-## ✅ *ARGS VA **KWARGS
+```python
+def print_welcome(name):
+    print(f"Welcome, {name}!")  # Faqat ekranga chiqaradi, qiymat qaytarmaydi
 
-Agar funksiya argumentlar soni oldindan noma’lum bo‘lsa, `*args` va `**kwargs` ishlatiladi.
+print_welcome("Ali")
+```
 
-- `*args` — turli sonli **pozitsion** argumentlarni tuple ko‘rinishida qabul qiladi.
-- `**kwargs` — turli sonli **kalit so‘zli** argumentlarni dictionary ko‘rinishida qabul qiladi.
+## QIYMAT QAYTARADIGAN FUNKSIYALAR (VALUE-RETURNING FUNCTION)
+
+```python
+def get_maximum(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+max_number = get_maximum(7, 10)
+print(max_number)  # 10
+```
+
+## BIR NECHTA PARAMETRLAR BILAN ISHLASH
+
+```python
+def info(name, age, city):
+    print(f"Name: {name}, Age: {age}, City: {city}")
+
+info("Alice", 25, "Tashkent")
+```
+
+## FUNKSIYAGA RO‘YXAT (LIST) UZATISH
+
+```python
+def print_list(items):
+    # Har bir elementni ekranga chiqaradi
+    for item in items:
+        print(item)
+
+fruits = ["apple", "banana", "cherry"]
+print_list(fruits)
+```
+
+## IXTIIYORIY ARGUMENTLAR: *ARGS
 
 ```python
 def total_sum(*args):
-    # args — tuple ko'rinishida barcha argumentlarni oladi
+    # args — tuple, istalgancha argument qabul qiladi
     return sum(args)
 
-print(total_sum(1, 2, 3, 4))  # 10
+print(total_sum(1, 2, 3, 4, 5))  # 15
+```
 
-def show_info(**kwargs):
-    # kwargs — dictionary ko'rinishida barcha kalit-qiymatlarni oladi
+## KALITLI ARGUMENTLAR: **KWARGS
+
+```python
+def print_profile(**kwargs):
+    # kwargs — dictionary, kalit so‘zli argumentlar qabul qiladi
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-show_info(name="Alice", age=22, city="Tashkent")
-# name: Alice
-# age: 22
-# city: Tashkent
+print_profile(name="Bob", age=30, profession="Engineer")
 ```
 
-
-## ✅ LAMBDA FUNKSIYALARI
-
-> **Lambda** — qisqa (bir qatorli) anonim funksiya. Ko‘pincha qisqa operatsiyalar uchun ishlatiladi.
+## LAMBDA FUNKSIYALAR (QISQA FUNKSIYALAR)
 
 ```python
-# Lambda funksiyasi: ikki sonni qo'shadi
-sum_func = lambda x, y: x + y
-result = sum_func(5, 3)
-print(result)  # 8
+square = lambda x: x ** 2
+print(square(6))  # 36
+
+add = lambda x, y: x + y
+print(add(3, 4))  # 7
 ```
 
-**Def orqali xuddi shu funksiya:**
+## FUNKSIYALAR ICHIDA FUNKSIYALAR (NESTED FUNCTIONS)
 
 ```python
-def add(x, y):
-    return x + y
+def outer(x):
+    def inner(y):
+        return y + 2
+    return inner(x) * 2
 
-result = add(5, 3)
-print(result)  # 8
-```
-
-**Lambda funksiyalarni map, filter, sorted bilan ishlatish:**
-
-```python
-# map — har bir elementga amal bajaradi
-numbers = [1, 2, 3, 4]
-squares = list(map(lambda x: x ** 2, numbers))
-print(squares)  # [1, 4, 9, 16]
-
-# filter — shart bo'yicha elementlarni tanlaydi
-even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
-print(even_numbers)  # [2, 4]
-
-# sorted — tartiblashda lambda ishlatish
-fruits = ["apple", "banana", "peach", "orange"]
-sorted_fruits = sorted(fruits, key=lambda x: len(x))
-print(sorted_fruits)  # ['peach', 'apple', 'banana', 'orange']
-```
-
-
-## ✅ ICHKI FUNKSIYA (FUNCTION INSIDE FUNCTION)
-
-Funksiya ichida boshqa funksiya e'lon qilish mumkin — **ichki funksiya**.
-
-```python
-def outer_function(x):
-    # Ichki funksiya
-    def inner_function(y):
-        # y ning kvadratini hisoblaydi
-        return y ** 2
-    # inner_function natijasiga 5 qo'shib qaytaradi
-    return inner_function(x) + 5
-
-result = outer_function(3)
+result = outer(5)  # (5 + 2) * 2 = 14
 print(result)  # 14
 ```
 
-**Ichki funksiya afzalliklari:**
-- Kapsulatsiya — kodni izolyatsiya qilish
-- Kod takrorlanishini kamaytirish
-- Murakkab funksiyalar uchun yordamchi funksiya sifatida
-
-
-## ✅ FUNKSIYA ICHIDA LAMBDA QAYTARISH
-
-Lambda funksiyani boshqa funksiya ichida qaytarish mumkin.
+## REKURSIV FUNKSIYALAR (RECURSIVE FUNCTIONS)
 
 ```python
-def multiplier(factor):
-    # Lambda funksiya factor ga ko'paytiradi
-    return lambda x: x * factor
+def factorial(n):
+    # Bazaviy holat
+    if n == 0:
+        return 1
+    # Rekursiv chaqirish
+    return n * factorial(n - 1)
 
-double = multiplier(2)  # double endi x2 ko'paytiradi
-triple = multiplier(3)  # triple endi x3 ko'paytiradi
-
-print(double(5))  # 10
-print(triple(5))  # 15
+print(factorial(5))  # 120
 ```
 
+## TYPE ANNOTATION – TURINI KO‘RSATISH
 
-## AMALIYOT
-- Oddiy matematik funksiya:
-    - Funksiya yarating, u ikkita sonni qabul qilib, ularni ko'paytirib qaytarsin. Agar foydalanuvchi son bermasa, ikkala son uchun standart qiymat 1 bo'lsin. <br>
-    **Natija:**
-    ```python
-    print(kopaytirish(5, 3))  # Natija: 15
-    print(kopaytirish())      # Natija: 1
-    ```
-- Salomlash funksiyasi:
-    - Funksiya yarating, u ismni qabul qilsin va foydalanuvchiga `Salom, [ism]!` deb salomlashsin. Agar ism berilmasa, `Salom, Do'stim!` deb salomlashsin. <br>
-    **Natija:**
-    ```python
-    print(salomlash("Ali"))  # Natija: Salom, Ali!
-    print(salomlash())       # Natija: Salom, Do'stim!
-    ```
-- Sonlarning kvadratlari:
-    - Funksiya yarating, u bir ro'yxat qabul qilib, har bir elementning kvadratini qaytarsin. Ro'yxatni `map()` va lambda funksiyasi yordamida qayta ishlang. <br>
-    **Natija:**
-    ```python
-    print(kvadratlar([1, 2, 3, 4]))  # Natija: [1, 4, 9, 16]
-    ```
-- Juft sonlarni filtrlang:
-    - Funksiya yarating, u ro'yxatdan faqat juft sonlarni ajratib qaytarsin. `filter()` va lambda funksiyasidan foydalaning. <br>
-    **Natija:**
-    ```python
-    print(juft_sonlar([1, 2, 3, 4, 5, 6]))  # Natija: [2, 4, 6]
-    ```
-- Student ma'lumotlarini qaytaruvchi funksiya:
-    - Funksiya yarating, u talabaning `ismi`, `yoshi`, va `kursini` qabul qilib, bu ma'lumotlarni tartiblangan ko'rinishda qaytarsin. `**kwargs` dan foydalaning. <br>
-    **Natija:**
-    ```python
-    talaba_ma'lumotlari(ism="Ali", yosh=21, kurs="Python")
-    # Natija:
-    # ism: Ali
-    # yosh: 21
-    # kurs: Python
-    ```
+```python
+def add_numbers(a: int, b: int) -> int:
+    return a + b
+
+result: int = add_numbers(10, 20)
+print(result)  # 30
+```
+
+## DOCSTRING – FUNKSIYAGA HUJJAT YOZISH
+
+```python
+def multiply(a: int, b: int) -> int:
+    """
+    Ikki sonni ko'paytiradi va natijani qaytaradi.
+    :param a: birinchi son
+    :param b: ikkinchi son
+    :return: natija (int)
+    """
+    return a * b
+
+print(multiply.__doc__)
+```
+
+## ICHKI (BUILT-IN) FUNKSIYALAR
+
+```python
+# len()
+numbers = [1, 2, 3]
+print(len(numbers))  # 3
+
+# type()
+print(type(numbers))  # <class 'list'>
+
+# print()
+print("Hello, Python!")
+
+# input()
+# name = input("Ismingizni kiriting: ")
+# print(name)
+
+# sum()
+values = [4, 5, 6]
+print(sum(values))  # 15
+
+# max()
+print(max(values))  # 6
+
+# min()
+print(min(values))  # 4
+
+# range()
+for i in range(3):
+    print(i)  # 0, 1, 2
+```
+
+## HIGHER-ORDER FUNKSIYALAR
+
+- **Higher-order function** — boshqa funksiyani argument sifatida qabul qiladigan yoki funksiya qaytaradigan funksiya.
+
+```python
+def apply_twice(func, value):
+    # func — boshqa funksiya
+    return func(func(value))
+
+def increment(x):
+    return x + 1
+
+result = apply_twice(increment, 5)
+print(result)  # 7
+```
+
+## DEKORATORLAR (DECORATORS)
+
+```python
+def uppercase_decorator(func):
+    def wrapper():
+        result = func()
+        return result.upper()
+    return wrapper
+
+@uppercase_decorator
+def greet():
+    return "hello"
+
+print(greet())  # "HELLO"
+```
