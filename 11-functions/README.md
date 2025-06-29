@@ -262,9 +262,9 @@ user_list = ["Ali", "Laylo", "Javohir"]
 send_welcome(user_list)
 ```
 
-## ✅ IXTIIYORIY ARGUMENTLAR: *ARGS
+## ✅ *ARGS
 
-📌 ***args** – bu funksiya istalgancha sonli argument qabul qilishi uchun ishlatiladi. U * belgisi bilan yoziladi, va Python uni tuple sifatida saqlaydi.
+📌 *args – bu funksiya istalgancha sonli argument qabul qilishi uchun ishlatiladi. U * belgisi bilan yoziladi, va Python uni tuple sifatida saqlaydi.
 
 ```python
 # Funksiya: istalgancha son qabul qilib, ularning yig‘indisini qaytaradi
@@ -288,15 +288,34 @@ def hisobla_savat(*narxlar):
 print(hisobla_savat(8000, 12000, 25000, 15000))  # Natija: 60000
 ```
 
-## ✅ KALITLI ARGUMENTLAR: **KWARGS
+## ✅ **KWARGS
+
+📌 **kwargs — bu funksiyaga kalit-qiymat juftliklari ko‘rinishida istalgancha argument yuborish imkonini beradi. U lug‘at (dictionary) sifatida qabul qilinadi: *key: value*
 
 ```python
+# Funksiya: foydalanuvchi profilidagi har bir kalit-qiymatni chiqaradi
 def print_profile(**kwargs):
-    # kwargs — dictionary, kalit so‘zli argumentlar qabul qiladi
+    # kwargs — dictionary, .items() bilan kalit-qiymatlarni ajratamiz
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
+# Funksiyani chaqiramiz, kalit-qiymat juftliklari bilan
 print_profile(name="Bob", age=30, profession="Engineer")
+```
+
+🎯 Sizda foydalanuvchini ma’lumotlar bazasiga yozish funksiyasi bor. Har bir foydalanuvchi har xil ma’lumot yuborishi mumkin: faqat **ism**, yoki **ism + yoshi**, yoki hammasi.
+
+
+```python
+def save_user(**info):
+    print("Yangi foydalanuvchi ma'lumotlari:")
+    for key, value in info.items():
+        print(f"{key}: {value}")
+    print("✅ Saqlandi\n")
+
+# Turli foydalanuvchilar turlicha ma'lumot yuboradi
+save_user(name="Ali", age=25)
+save_user(name="Laylo", phone="998901234567", email="laylo@mail.com")
 ```
 
 ## ✅ LAMBDA FUNKSIYALAR (QISQA FUNKSIYALAR)
