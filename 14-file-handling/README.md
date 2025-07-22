@@ -1,6 +1,6 @@
 # 🐍 PYTHON DASTURLASH ASOSLARI
 
-# 🧩 14-DARS FILES
+# 🧩 14-DARS FILE HANDLING
 
 📌 Fayl — bu kompyuterda ma'lumotlar saqlanadigan obyekt. U matn, rasm, ovoz yoki dasturiy kod bo‘lishi mumkin. Biz dasturda aynan matnli fayllar bilan ko‘p ishlaymiz, masalan: .txt, .csv, .json fayllar.
 
