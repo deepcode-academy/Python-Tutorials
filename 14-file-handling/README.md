@@ -149,7 +149,7 @@ f.write("Bu matn faylga yoziladi.")
 
 ### ✅ 4. MA'LUMOTLAR BUZILISHI YOKI YO‘QOLISHI MUMKIN
 
-📌 Agar yozish davomida fayl yopiqlmasa va dastur to‘satdan to‘xtasa, yozilgan ma'lumotlar saqlanmasligi yoki fayl buzilishi mumkin.
+📌 Agar yozish davomida fayl yopilmasa va dastur to‘satdan to‘xtasa, yozilgan ma'lumotlar saqlanmasligi yoki fayl buzilishi mumkin.
 
 ## ✅ FAYL REJIMLARI
 
