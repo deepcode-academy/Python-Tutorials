@@ -388,7 +388,7 @@ print(salomlash_uz("Umid"))  # Salom, Umid!
 salomlash_en = greeting("en")
 print(salomlash_en("Umid"))  # Hello, Umid!
 ```
-
+<!-- 
 ## ✅ RECURSIVE FUNCTIONS
 
 📌 **Rekursiv funksiya** — bu o‘zini o‘zi ichida chaqiradigan funksiya. Bu usul, odatda takroriy (recursive) muammolarni hal qilish uchun ishlatiladi — masalan: faktorial, Fibonachchi, fayl strukturalari, daraxt ko‘rinishidagi ma’lumotlar va hokazo.
@@ -533,7 +533,7 @@ def view_dashboard():
 
 
 # Endi bu chaqirilganda avval dekorator ishlaydi, keyin as
-```
+``` -->
 
 # ✅ AMALIYOT
 
